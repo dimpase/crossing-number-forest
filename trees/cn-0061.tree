@@ -3,7 +3,7 @@
 \meta{dependencies}{None.}
 \meta{provenance}{Expository organization and source review, 9 October 2026.}
 
-\p{This argument concerns subspaces of a finite-dimensional real vector space and [univariate polynomials with vector coefficients](cn-0064). Choose distinct real numbers at which to impose conditions on polynomial values; these evaluation points are called [interpolation nodes](cn-0063). The route is evaluation dimensions, rank loss at those points, multiplicity of polynomial determinants, and a degree count. Graphs of linear maps then turn intersection dimensions into matrix ranks.}
+\p{Let #{W} be the finite-dimensional real space of coefficient vectors. We consider [univariate polynomials](cn-0064) #{P(\xi)=\sum_r w_r\xi^r} with #{w_r\in W}; slot #{r} of the coefficient tuple corresponds to monomial #{\xi^r}. Choose distinct real numbers at which to impose subspace conditions on polynomial values; these evaluation points are called [interpolation nodes](cn-0063). The route is evaluation dimensions, rank loss at those points, multiplicity of polynomial determinants, and a degree count. Graphs of linear maps then turn intersection dimensions into matrix ranks.}
 
 \transclude{cn-0064}
 \transclude{cn-0063}

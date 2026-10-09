@@ -1,28 +1,35 @@
 \title{Univariate polynomials with vector coefficients}
 \taxon{Definition}
 \tag{definition}
-\meta{defines}{vector-valued univariate polynomial; polynomial with vector coefficients; coefficient tuple}
+\meta{defines}{vector-valued univariate polynomial; polynomial with vector coefficients; coefficient tuple; polynomial coefficient matrix}
 \meta{dependencies}{None.}
 \meta{provenance}{Notation used in [OpenAI, 23 September 2026](cn-0042), proof of Lemma 2.1; explanatory definition added on 9 October 2026.}
 
-\p{Let #{Z} be a real vector space. A \em{univariate polynomial with coefficients in #{Z}} is a finite formal sum}
+\p{Let #{W} be a finite-dimensional real vector space, the space of coefficient vectors. A \em{univariate polynomial with coefficients in #{W}} is a finite formal sum}
 
-##{P(\xi)=\sum_{r=0}^{h}z_r\xi^r,\qquad z_r\in Z.}
+##{P(\xi)=\sum_{r=0}^{h}w_r\xi^r,\qquad w_r\in W.}
 
-\p{There is one indeterminate, #{\xi}, and each coefficient #{z_r} is a vector in #{Z}. The notation #{Z[\xi]} denotes the space of all such polynomials. For #{P\ne0}, its degree is the largest #{r} with #{z_r\ne0}; the zero polynomial is included in every degree bound. Evaluation at a real number #{\zeta} uses scalar multiplication in #{Z}:}
+\p{There is one indeterminate, #{\xi}. The notation #{W[\xi]} denotes the space of all such polynomials. For #{P\ne0}, its degree is the largest #{r} with #{w_r\ne0}; the zero polynomial is included in every degree bound. For a fixed bound #{h\geq0}, the \em{coefficient tuple} gives the linear bijection}
 
-##{P(\zeta)=\sum_{r=0}^{h}\zeta^r z_r\in Z.}
+##{\begin{aligned}
+W^{h+1}&\longrightarrow W[\xi]_{\leq h},\\
+(w_0,\ldots,w_h)&\longmapsto\sum_{r=0}^{h}w_r\xi^r.
+\end{aligned}}
 
-\p{For degree at most #{h}, the \em{coefficient tuple} is #{v=(z_0,\ldots,z_h)\in Z^{h+1}}. With the monomial vector #{\widehat\zeta=(1,\zeta,\ldots,\zeta^h)\in\mathbb R^{h+1}}, one can write #{P(\zeta)=\langle v,\widehat\zeta\rangle} using the bilinear pairing}
+\p{Tuple slots are numbered #{0,\ldots,h}: slot #{r} contains the vector coefficient of the monomial #{\xi^r}. This is the correspondence #{r\leftrightarrow\xi^r} between slots and monomial degrees. Evaluation at a scalar #{\zeta\in\mathbb R} gives #{P(\zeta)=\sum_{r=0}^{h}\zeta^r w_r\in W}.}
 
-##{\langle(z_0,\ldots,z_h),(a_0,\ldots,a_h)\rangle=\sum_{r=0}^{h}a_rz_r\in Z.}
+\p{To express each coefficient vector in scalar coordinates, choose a basis #{e_1,\ldots,e_N} of #{W} and write #{w_r=\sum_{j=1}^{N}c_{jr}e_j}. The \em{polynomial coefficient matrix} #{C=(c_{jr})} has #{N} rows and #{h+1} columns. Row #{j} records the #{e_j}-coordinate in #{W}; column #{r}, numbered from zero, records the coefficient of #{\xi^r}. Equivalently, the scalar coordinates of the whole polynomial correspond to the basis elements #{e_j\xi^r}, indexed by pairs #{(j,r)}.}
 
-\p{This pairing takes values in #{Z}; it requires only the vector-space operations on #{Z}. Thus the whole coefficient tuple belongs to #{Z^{h+1}}, while each individual coefficient and each evaluated value belong to #{Z}.}
+##{[P(\zeta)]_{(e_1,\ldots,e_N)}=C\begin{pmatrix}1\\\zeta\\\vdots\\\zeta^h\end{pmatrix}.}
 
-\p{If #{e_1,\ldots,e_d} is a basis of #{Z}, equivalently #{P(\xi)=\sum_{j=1}^{d}p_j(\xi)e_j} with scalar univariate polynomials #{p_j\in\mathbb R[\xi]}. There are #{d=\dim Z} coordinate polynomials; their common degree bound #{h} is independent of #{d}. In these coordinates the coefficient tuple is a #{d\times(h+1)} real matrix, which multiplies the column monomial vector to give the coordinates of #{P(\zeta)}.}
+\p{Thus #{N=\dim W} counts coordinates of each vector coefficient, while #{h+1} counts monomial slots. These are independent parameters. For a subspace #{Z\subseteq W}, the notation #{Z[\xi]} imposes #{w_r\in Z} for every #{r}; its degree-at-most-#{h} part corresponds to #{Z^{h+1}}.}
 
-\p{For example, with #{Z=\mathbb R^2},}
+\p{For example, with #{W=\mathbb R^2},}
 
 ##{P(\xi)=(1,3)+\xi(2,0)+\xi^2(0,-1)=(1+2\xi,\,3-\xi^2).}
+
+\p{Its coefficient matrix has columns corresponding, in order, to #{1,\xi,\xi^2}:}
+
+##{C=\begin{pmatrix}1&2&0\\3&0&-1\end{pmatrix}.}
 
 \p{This is a degree-two polynomial in one variable, with values in #{\mathbb R^2}; for instance #{P(1)=(3,2)}.}
