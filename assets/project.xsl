@@ -15,6 +15,23 @@
     <xsl:value-of select="."/>
   </xsl:template>
 
+  <!-- Bibliography contents use permanent note tags in place of ordinal labels. -->
+  <xsl:template match="f:tree[f:frontmatter/f:taxon='Reference' and f:frontmatter/f:display-uri and f:frontmatter/f:route]" mode="toc">
+    <li>
+      <xsl:for-each select="f:frontmatter">
+        <a class="bullet" href="{f:route}" title="{f:title/@text} [{f:display-uri}]">
+          <xsl:text>■</xsl:text>
+        </a>
+        <span class="link local" data-target="#{generate-id(..)}">
+          <span class="reference-tag">[<xsl:value-of select="f:display-uri"/>]</span>
+          <xsl:text> </xsl:text>
+          <xsl:apply-templates select="f:title"/>
+        </span>
+      </xsl:for-each>
+      <xsl:apply-templates select="f:mainmatter" mode="toc"/>
+    </li>
+  </xsl:template>
+
   <!-- Status precedes the mathematics; provenance and dependencies follow it. -->
   <xsl:template match="f:mainmatter">
     <xsl:for-each select="../f:frontmatter/f:meta[@name='status']">

@@ -27,6 +27,9 @@ and brief context, unless the user requests a detailed comparison.
   or finite computation passes.
 - Reference entries have their own tags and `Reference` taxon; collect them
   in cn-0041. Retain precise theorem/section locators at citations.
+- Keep the general notice about bibliographic review scope once in cn-0041,
+  rather than repeating it in each reference. Reference entries in tables
+  of contents use their permanent cn tags, via assets/project.xsl.
 - Use plain explanatory prose, explicit hypotheses and quantifiers, and
   connecting paragraphs that explain why each step is needed.
 - In the algebraic branch, call P: R -> W a univariate polynomial map.
