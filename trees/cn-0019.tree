@@ -2,12 +2,16 @@
 \taxon{Definition}
 \tag{definition}
 \meta{defines}{constrained polynomial space; evaluation space; dimension increment; evaluation-filtration increment}
-\meta{dependencies}{[Interpolation nodes](cn-0063)}
+\meta{dependencies}{[Univariate polynomials with vector coefficients](cn-0064); [Interpolation nodes](cn-0063)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), proof of Lemma 2.1; reconstructed as a reading account on 9 October 2026. [Lean source: PolynomialFiltration](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolynomialFiltration.lean).}
 
-\p{Let #{W} be a finite-dimensional real vector space, #{U_1,\ldots,U_m\subseteq W} subspaces, and #{t_1,\ldots,t_m} distinct real numbers chosen as [interpolation nodes](cn-0063), the points at which we impose conditions on polynomial values. For a subspace #{Z\subseteq W}, let #{Z[\xi]} denote polynomials with coefficients in #{Z}. The \em{constrained polynomial space} is}
+\p{Let #{W} be a finite-dimensional real vector space, #{U_1,\ldots,U_m\subseteq W} subspaces, and #{t_1,\ldots,t_m} distinct real numbers chosen as [interpolation nodes](cn-0063), the points at which we impose conditions on polynomial values. For a subspace #{Z\subseteq W}, write #{Z[\xi]} for the [univariate polynomials with vector coefficients](cn-0064): #{P(\xi)=\sum_{r=0}^{h}z_r\xi^r} with each #{z_r\in Z}.}
+
+\p{The \em{constrained polynomial space}, for #{h\geq0}, is}
 
 ##{\mathcal P_h(Z)=\{P\in Z[\xi]:\deg P\leq h,\ P(t_i)\in U_i\text{ for every }i\},\qquad \mathcal P_{-1}(Z)=0.}
+
+\p{Each constraint means #{\sum_{r=0}^{h}t_i^r z_r\in U_i}. This sum already belongs to #{Z}, so the permitted value lies in #{U_i\cap Z}. The coefficients form a tuple in #{Z^{h+1}}, and these are linear conditions on that tuple.}
 
 \p{Its \em{evaluation space} and \em{dimension increment} are}
 

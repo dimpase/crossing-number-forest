@@ -1,0 +1,28 @@
+\title{Univariate polynomials with vector coefficients}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{vector-valued univariate polynomial; polynomial with vector coefficients; coefficient tuple}
+\meta{dependencies}{None.}
+\meta{provenance}{Notation used in [OpenAI, 23 September 2026](cn-0042), proof of Lemma 2.1; explanatory definition added on 9 October 2026.}
+
+\p{Let #{Z} be a real vector space. A \em{univariate polynomial with coefficients in #{Z}} is a finite formal sum}
+
+##{P(\xi)=\sum_{r=0}^{h}z_r\xi^r,\qquad z_r\in Z.}
+
+\p{There is one indeterminate, #{\xi}, and each coefficient #{z_r} is a vector in #{Z}. The notation #{Z[\xi]} denotes the space of all such polynomials. For #{P\ne0}, its degree is the largest #{r} with #{z_r\ne0}; the zero polynomial is included in every degree bound. Evaluation at a real number #{\zeta} uses scalar multiplication in #{Z}:}
+
+##{P(\zeta)=\sum_{r=0}^{h}\zeta^r z_r\in Z.}
+
+\p{For degree at most #{h}, the \em{coefficient tuple} is #{v=(z_0,\ldots,z_h)\in Z^{h+1}}. With the monomial vector #{\widehat\zeta=(1,\zeta,\ldots,\zeta^h)\in\mathbb R^{h+1}}, one can write #{P(\zeta)=\langle v,\widehat\zeta\rangle} using the bilinear pairing}
+
+##{\langle(z_0,\ldots,z_h),(a_0,\ldots,a_h)\rangle=\sum_{r=0}^{h}a_rz_r\in Z.}
+
+\p{This pairing takes values in #{Z}; it requires only the vector-space operations on #{Z}. Thus the whole coefficient tuple belongs to #{Z^{h+1}}, while each individual coefficient and each evaluated value belong to #{Z}.}
+
+\p{If #{e_1,\ldots,e_d} is a basis of #{Z}, equivalently #{P(\xi)=\sum_{j=1}^{d}p_j(\xi)e_j} with scalar univariate polynomials #{p_j\in\mathbb R[\xi]}. There are #{d=\dim Z} coordinate polynomials; their common degree bound #{h} is independent of #{d}. In these coordinates the coefficient tuple is a #{d\times(h+1)} real matrix, which multiplies the column monomial vector to give the coordinates of #{P(\zeta)}.}
+
+\p{For example, with #{Z=\mathbb R^2},}
+
+##{P(\xi)=(1,3)+\xi(2,0)+\xi^2(0,-1)=(1+2\xi,\,3-\xi^2).}
+
+\p{This is a degree-two polynomial in one variable, with values in #{\mathbb R^2}; for instance #{P(1)=(3,2)}.}

@@ -35,8 +35,8 @@ serves only generated output/.
 
 ## Reading routes
 
-There are 64 trees: the landing page and cn-0001 through cn-0063, including
-17 tagged definitions and 18 bibliographic entries. Next unused: cn-0064.
+There are 65 trees: the landing page and cn-0001 through cn-0064, including
+18 tagged definitions and 18 bibliographic entries. Next unused: cn-0065.
 
 - cn-0001: guided reading; cn-0007: main theorem and proof assembly.
 - cn-0061: algebraic branch, from polynomial constraints to the rank sum.
