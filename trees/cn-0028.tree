@@ -2,10 +2,10 @@
 \taxon{Definition}
 \tag{definition}
 \meta{defines}{bivariate polynomial space; evaluation vector; two-triangle pattern}
-\meta{dependencies}{None.}
+\meta{dependencies}{[Interpolation nodes](cn-0063)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Lemma 4.1, equation (4.1); reconstructed as a reading account on 9 October 2026. [Lean source: TwoTriangleIndices](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/TwoTriangleIndices.lean).}
 
-\p{Fix #{s\geq1}, #{n=2s+1}, and distinct real nodes #{x_1,\ldots,x_n}. The \em{bivariate polynomial space} used here consists of #{P(u,v)} of degree at most #{s-1} in each variable separately. Its dimension is #{s^2}, with basis #{u^a v^b}, #{0\leq a,b<s}. Its \em{evaluation vector} at #{(x_p,x_q)} is #{h_{pq}=(x_p^a x_q^b)_{0\leq a,b<s}}.}
+\p{Fix #{s\geq1}, #{n=2s+1}, and distinct real [interpolation nodes](cn-0063) #{x_1,\ldots,x_n}. The \em{bivariate polynomial space} used here consists of #{P(u,v)} of degree at most #{s-1} in each variable separately. Its dimension is #{s^2}, with basis #{u^a v^b}, #{0\leq a,b<s}. Its \em{evaluation vector} at #{(x_p,x_q)} is #{h_{pq}=(x_p^a x_q^b)_{0\leq a,b<s}}.}
 
 \p{The \em{two-triangle pattern} is}
 

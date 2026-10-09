@@ -1,0 +1,10 @@
+\title{Interpolation nodes}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{interpolation node; constraint node; non-node}
+\meta{dependencies}{None.}
+\meta{provenance}{Terminology used in [OpenAI, 23 September 2026](cn-0042), Sections 2 and 4; explanatory definition added on 9 October 2026.}
+
+\p{Choose distinct real numbers #{t_1,\ldots,t_m} at which polynomials will be evaluated. These chosen evaluation points are called \em{interpolation nodes}, or simply nodes. A \em{non-node} is a real number #{t\notin\{t_1,\ldots,t_m\}}.}
+
+\p{In the [constrained polynomial spaces](cn-0019), the conditions #{P(t_i)\in U_i} are imposed at these points, so they are also called \em{constraint nodes}. They are auxiliary scalars: any distinct choices work, for example #{t_i=i}. With three nodes #{1,2,3}, the conditions concern #{P(1),P(2),P(3)}, while #{t=0} is a non-node.}
