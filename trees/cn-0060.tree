@@ -6,6 +6,7 @@
 \p{This branch explains how an arbitrary continuous drawing yields [the block relation](cn-0018). [Normalization](cn-0009) makes local geometry manageable. Signed interior intersections alone omit contributions at common endpoints; the half-order terms restore the cycle identity. Definitions are [drawings](cn-0003), [crossings](cn-0004), [normalization](cn-0008), [signed intersections](cn-0010), [spoke orders](cn-0011), [cycle vectors](cn-0012), and [the corrected matrix](cn-0013).}
 
 \transclude{cn-0009}
+\transclude{cn-0068}
 \transclude{cn-0014}
 \transclude{cn-0015}
 \transclude{cn-0016}

@@ -1,0 +1,12 @@
+\title{Endpoint coefficients of an oriented chord}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{endpoint coefficient of an oriented chord; endpoint-coefficient function}
+\meta{dependencies}{None.}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), notation immediately before equation (3.3), inside the proof of Lemma 3.1; made explicit on 9 October 2026.}
+
+\p{Let #{C} be a straight chord of a round disk, oriented from its starting endpoint #{c_-} to its terminal endpoint #{c_+}. Write #{\partial C=\{c_-,c_+\}} for its two-element endpoint set. The \em{endpoint-coefficient function} #{\epsilon_C:\partial C\to\{-1,+1\}} is defined by}
+
+##{\epsilon_C(u)=\begin{cases}-1&u=c_-,\\+1&u=c_+.\end{cases}}
+
+\p{Thus #{\epsilon_C(u)} is the \em{endpoint coefficient} of #{C} at #{u}. For another oriented chord #{E}, the notation #{\epsilon_E(w)} has the same meaning: #{-1} at the start of #{E} and #{+1} at its end. Each chord's two coefficients sum to zero; this is the cancellation used in [the local chord formula](cn-0014).}

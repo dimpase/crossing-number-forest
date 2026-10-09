@@ -1,10 +1,10 @@
 \title{The local chord formula}
 \taxon{Lemma}
 \meta{status}{proof-account}
-\meta{dependencies}{[Signed intersections](cn-0010); [Comparison signs](cn-0011)}
+\meta{dependencies}{[Signed intersections](cn-0010); [Comparison signs](cn-0011); [Endpoint coefficients](cn-0068)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equation (3.3), inside the proof of Lemma 3.1; reconstructed as a reading account on 9 October 2026. [Lean source: ChordPairing](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/ChordPairing.lean).}
 
-\p{\strong{Statement.} Let #{C,E} be oriented straight chords of a round disk, with four distinct boundary endpoints. Assign endpoint coefficient #{-1} to each start and #{+1} to each end. For a boundary cut avoiding the endpoints, use the counterclockwise [comparison sign](cn-0011) #{T(u,w)}. Then their [signed intersection](cn-0010) is}
+\p{\strong{Statement.} Let #{C,E} be oriented straight chords of a round disk, with four distinct boundary endpoints. Write #{\partial C,\partial E} for their endpoint sets and #{\epsilon_C(u),\epsilon_E(w)} for their [endpoint coefficients](cn-0068): #{-1} at the start of the corresponding chord and #{+1} at its end. Choose a boundary cut avoiding the endpoints. The counterclockwise [comparison sign](cn-0011) #{T(u,w)} is #{+1} if #{u} precedes #{w} when reading from the cut, and #{-1} otherwise. Then their [signed intersection](cn-0010) is}
 
 ##{I(C,E)=\frac12\sum_{u\in\partial C}\sum_{w\in\partial E}\epsilon_C(u)\epsilon_E(w)T(u,w).}
 

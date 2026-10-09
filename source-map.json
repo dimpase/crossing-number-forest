@@ -279,6 +279,13 @@
       "label": "Question 2 and discussion, pp. 103\u2013104 \u2014 Complete graphs",
       "status": "verified",
       "destination": "cn-0067"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Notation before equation (3.3) \u2014 Endpoint coefficients of an oriented chord",
+      "status": "verified",
+      "destination": "cn-0068"
     }
   ]
 }
