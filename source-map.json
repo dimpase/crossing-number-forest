@@ -286,6 +286,13 @@
       "label": "Notation before equation (3.3) \u2014 Endpoint coefficients of an oriented chord",
       "status": "verified",
       "destination": "cn-0068"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Final topological step in Lemma 3.1 \u2014 Mutual intersections counted by segment traversals",
+      "status": "verified",
+      "destination": "cn-0069"
     }
   ]
 }

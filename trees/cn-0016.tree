@@ -14,7 +14,7 @@
 
 \p{In a crossing disk the shifted strand avoids its original strand and crosses the other original strand once with the original sign. In a bend disk both shifted ends lie in the same component of the complement of the original bent arc, so a polygonal connector in that component avoids the original arc. Distinct remaining compact stretches have positive separation. With a single sufficiently small shift, no additional intersections or contacts at seams and corners arise.}
 
-\p{Consequently, the exterior signed intersection of #{\gamma} with each shifted walk is #{z^TIy}. This also handles common edges: a shifted track avoids its own original copy. When both cycles use both strands of an original crossing, the two ordered contributions are counted separately with their traversal coefficients.}
+\p{Consequently, the exterior [mutual signed intersection](cn-0069) of #{\gamma} with each shifted walk is #{z^TIy}. This also handles common edges: a shifted track avoids its own original copy. When both cycles use both strands of an original crossing, the two ordered contributions are counted separately with their traversal coefficients.}
 
 \p{In a vertex disk, the [endpoint coefficients](cn-0068) are #{\sigma_{ve}z_e} and #{\sigma_{vf}y_f}. An incoming traversal starts its chord and contributes #{-1}; an outgoing traversal ends it and contributes #{+1}. Apply [the chord formula](cn-0014) in each shift. For different spokes their order sign is #{T_v(e,f)} in both shifts. For a common spoke, the shifted endpoint lies on opposite sides of the original endpoint in the two boundary orders, so its two comparison signs average to zero. This is exactly the convention #{T_v(e,e)=0}; opposite cycle traversals change coefficients, not that cancellation.}
 
