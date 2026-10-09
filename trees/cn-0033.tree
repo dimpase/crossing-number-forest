@@ -1,0 +1,17 @@
+\title{What the detector kills, and its support rank bound}
+\taxon{Lemma}
+\meta{status}{proof-account}
+\meta{dependencies}{[Additive matrices](cn-0017); [Barycentric cancellation](cn-0031); [Detector](cn-0032)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Lemma 4.2(i)–(ii), equation (4.4); reconstructed as a reading account on 9 October 2026. [Lean source: DetectorAnnihilation](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/DetectorAnnihilation.lean).}
+
+\p{\strong{Statement.} The [rank detector](cn-0032) annihilates every diagonal matrix and every [row-plus-column matrix](cn-0017). Its atom #{B_{pq}} has rank one for #{p\ne q} and is zero for #{p=q}. In particular,}
+
+##{\operatorname{rank}\Phi(H)\leq\#\{(p,q):p\ne q,\ H(p,q)\ne0\}.}
+
+\p{\strong{Proof.} For #{p=q}, the factor #{x_p-x_q} vanishes. For #{p\ne q}, the scalar weight is nonzero and #{h_{pq}} has constant coordinate #{1}, so its outer product has rank one. Rank subadditivity gives the support bound.}
+
+\p{An entry of #{B_{pq}}, indexed by #{(a,b),(a',b')}, is}
+
+##{w_p w_q(x_p-x_q)x_p^{a+a'}x_q^{b+b'}.}
+
+\p{Its numerator has degree at most #{2s-1=n-2} in either variable separately. Apply [barycentric cancellation](cn-0031) with the other variable fixed to obtain #{\sum_q B_{pq}=0} for every #{p} and #{\sum_p B_{pq}=0} for every #{q}. Consequently #{\Phi((r_p+c_q)_{p,q})=0}.}

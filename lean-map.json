@@ -1,0 +1,78 @@
+{
+  "repository_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "scope": "Source-level correspondence, not compiled verification.",
+  "correspondences": [
+    {
+      "note": "cn-0007",
+      "paper_label": "Theorem 1.1",
+      "module": "Main",
+      "declaration": "mainTarget_proof"
+    },
+    {
+      "note": "cn-0005",
+      "paper_label": "Ordinary crossing number",
+      "module": "DrawingDefinition",
+      "declaration": "ordinaryCrossingNumber"
+    },
+    {
+      "note": "cn-0009",
+      "paper_label": "Lemma A.1",
+      "module": "LocallyTransverseNormalization",
+      "declaration": "polygonal_no_adjacent_locally_transverse"
+    },
+    {
+      "note": "cn-0024",
+      "paper_label": "Lemma 2.1",
+      "module": "SubspaceIntersection",
+      "declaration": "lemma2_1"
+    },
+    {
+      "note": "cn-0027",
+      "paper_label": "Corollary 2.3",
+      "module": "MatrixRankSum",
+      "declaration": "matrix_rank_sum_bound"
+    },
+    {
+      "note": "cn-0016",
+      "paper_label": "Lemma 3.1",
+      "module": "CyclePairing",
+      "declaration": "lemma3_1"
+    },
+    {
+      "note": "cn-0018",
+      "paper_label": "Lemma 3.2",
+      "module": "AdditiveBlockRelation",
+      "declaration": "lemma3_2"
+    },
+    {
+      "note": "cn-0029",
+      "paper_label": "Lemma 4.1",
+      "module": "TwoTriangleUnisolvence",
+      "declaration": "twoTriangle_unisolvent"
+    },
+    {
+      "note": "cn-0034",
+      "paper_label": "Lemma 4.2",
+      "module": "HalfOrderInvertibility",
+      "declaration": "lemma4_2"
+    },
+    {
+      "note": "cn-0035",
+      "paper_label": "Section 5.2",
+      "module": "OddNormalizedLowerBound",
+      "declaration": "odd_normalized_crossing_lower_bound"
+    },
+    {
+      "note": "cn-0037",
+      "paper_label": "Section 5.3",
+      "module": "DeletionCount",
+      "declaration": "sum_delete_crossingCount"
+    },
+    {
+      "note": "cn-0036",
+      "paper_label": "Section 5.1",
+      "module": "BalancedAxisCrossingCount",
+      "declaration": "crossingCount_eq"
+    }
+  ]
+}

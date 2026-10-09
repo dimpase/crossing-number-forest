@@ -1,0 +1,11 @@
+\title{Woodall: Cyclic-order graphs and Zarankiewicz’s conjecture}
+\taxon{Reference}
+\tag{bibliography}
+\meta{dependencies}{None.}
+\meta{provenance}{Expository organization and source review, 9 October 2026.}
+
+\p{\strong{Paper reference 15.} D. R. Woodall. \em{Cyclic-order graphs and Zarankiewicz’s crossing-number conjecture}. Journal of Graph Theory 17(6) (1993), 657–671. [Source](https://doi.org/10.1002/jgt.3190170602).}
+
+\p{Page 658 is cited for [the axis construction](cn-0036); Theorem 1 and Corollary 1.1 for [vertex deletion](cn-0037).}
+
+\p{Bibliographic details and the stated role are taken from the pinned paper's [bibliography](cn-0042); these entries are not claims that every cited paper was independently reviewed here.}

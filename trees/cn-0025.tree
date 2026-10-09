@@ -1,0 +1,13 @@
+\title{Why the subspace constant is sharp}
+\taxon{Proposition}
+\meta{status}{proof-account}
+\meta{dependencies}{[Subspace inequality](cn-0024)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Remark 2.2; reconstructed as a reading account on 9 October 2026.}
+
+\p{\strong{Statement.} The constant in [the subspace inequality](cn-0024) cannot be decreased.}
+
+\p{\strong{Proof.} Write #{W=P\oplus Q} and divide the #{m} indices into groups of sizes #{a=\lfloor m/2\rfloor} and #{b=\lceil m/2\rceil}. In the first group set #{(U_i,V_i)=(P,Q)}; in the second set #{(U_i,V_i)=(Q,P)}. Every designated pair is disjoint. Only indices from different groups contribute, with total}
+
+##{ab\dim P+ab\dim Q=\left\lfloor\frac{m^2}{4}\right\rfloor\dim W.}
+
+\p{For example, three indices split #{1+2} give total #{2\dim W}. This construction makes the balanced product #{e(m-e)} in the proof less mysterious.}

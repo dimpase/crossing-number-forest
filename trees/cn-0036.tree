@@ -1,0 +1,18 @@
+\title{The balanced-axis drawing gives the upper bound}
+\taxon{Theorem}
+\meta{status}{proof-account}
+\meta{dependencies}{[Complete bipartite graphs](cn-0002); [Admissibility](cn-0004); [Balanced pair counts](cn-0006)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Section 5.1, equation (5.1); reconstructed as a reading account on 9 October 2026. [Lean source: BalancedAxisCrossingCount](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/BalancedAxisCrossingCount.lean).}
+
+\p{\strong{Statement.} For positive integers #{m,n}, there is an [admissible drawing](cn-0004) of [#{K_{m,n}}](cn-0002) with exactly the [Zarankiewicz count](cn-0006) #{d_m d_n}.}
+
+\p{\strong{Proof.} Put the first-class vertices on the vertical axis, split evenly between its positive and negative rays. Put the second-class vertices on the horizontal axis with the same balanced split. Choose distinct nonzero positions and draw straight edges. Every edge interior lies in an open quadrant.}
+
+\p{If a quadrant has #{u} first-class and #{v} second-class vertices on its bounding rays, each choice of two from each ray forms a convex quadrilateral. Exactly its two diagonals cross. Thus the quadrant contributes #{\binom u2\binom v2} crossings, provided triple concurrence is avoided. Summing the four products gives}
+
+##{\left(\binom{\lfloor m/2\rfloor}{2}+\binom{\lceil m/2\rceil}{2}\right)
+\left(\binom{\lfloor n/2\rfloor}{2}+\binom{\lceil n/2\rceil}{2}\right)=d_m d_n.}
+
+\p{To avoid triple concurrence, note that three edges concurrent in their interiors have six distinct endpoints: adjacent straight edges do not meet in their interiors. For each such triple, concurrence imposes a nonzero polynomial condition on its axis intercepts. Holding two segments fixed and varying an intercept of the third shows that this condition is not identically zero. The product of the finitely many polynomials cannot vanish on the open set of permitted positions. Choose positions outside its zero set. The resulting crossings are transverse and no three edges meet, so the drawing is admissible.}
+
+\p{This is the classical construction, cited in the paper through [Woodall, page 658](cn-0057) and [Zarankiewicz](cn-0058).}

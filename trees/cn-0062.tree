@@ -1,0 +1,14 @@
+\title{The detector branch: interpolation to full-rank orders}
+\taxon{Overview}
+\meta{dependencies}{None.}
+\meta{provenance}{Expository organization and source review, 9 October 2026.}
+
+\p{The detector must do three things at once: kill the additive ambiguity, charge at most one rank per crossing contribution, and give full rank for every vertex order. Barycentric cancellation gives the first property; rank-one atoms give the second; two-triangle interpolation gives the third. The [four-by-four example](cn-0040) makes the construction concrete.}
+
+\transclude{cn-0028}
+\transclude{cn-0029}
+\transclude{cn-0030}
+\transclude{cn-0031}
+\transclude{cn-0032}
+\transclude{cn-0033}
+\transclude{cn-0034}

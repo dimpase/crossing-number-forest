@@ -1,0 +1,5 @@
+[forest]
+trees = ["trees"]
+assets = ["assets"]
+url = "http://localhost/"
+home = "index"

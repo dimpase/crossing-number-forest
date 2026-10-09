@@ -1,0 +1,256 @@
+{
+  "mappings": [
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Section 1 \u2014 Complete bipartite graphs and stars",
+      "status": "verified",
+      "destination": "cn-0002"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Section 1 \u2014 Continuous plane drawings",
+      "status": "verified",
+      "destination": "cn-0003"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Section 1 \u2014 Proper crossings and admissible drawings",
+      "status": "verified",
+      "destination": "cn-0004"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Section 1 \u2014 Crossing count and ordinary crossing number",
+      "status": "verified",
+      "destination": "cn-0005"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "equation (1.1) \u2014 Balanced pair counts and the Zarankiewicz number",
+      "status": "verified",
+      "destination": "cn-0006"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Theorem 1.1 and Section 5 \u2014 The crossing-number formula: statement and assembly",
+      "status": "verified",
+      "destination": "cn-0007"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Section 3 and Lemma A.1 \u2014 Normalized drawings",
+      "status": "verified",
+      "destination": "cn-0008"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Appendix A, Lemma A.1 \u2014 Normalization without increasing the point count",
+      "status": "verified",
+      "destination": "cn-0009"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Section 3 before equation (3.1) \u2014 Signed interior intersections",
+      "status": "verified",
+      "destination": "cn-0010"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Section 3 and Lemma 4.2 \u2014 Spoke orders and half-order matrices",
+      "status": "verified",
+      "destination": "cn-0011"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Lemma 3.1 \u2014 Signed edge vectors of cycles",
+      "status": "verified",
+      "destination": "cn-0012"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "equation (3.1) \u2014 The endpoint-corrected intersection matrix",
+      "status": "verified",
+      "destination": "cn-0013"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "equation (3.3), inside the proof of Lemma 3.1 \u2014 The local chord formula",
+      "status": "verified",
+      "destination": "cn-0014"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "final topological step in the proof of Lemma 3.1 \u2014 Closed polygonal walks have zero total signed intersection",
+      "status": "verified",
+      "destination": "cn-0015"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Lemma 3.1 \u2014 Cycle pairing with shared edges",
+      "status": "verified",
+      "destination": "cn-0016"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "equation (3.5) and the proof of Lemma 3.2 \u2014 Row-plus-column matrices",
+      "status": "verified",
+      "destination": "cn-0017"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Lemma 3.2, equation (3.6) \u2014 Cycle pairing makes the star blocks additive",
+      "status": "verified",
+      "destination": "cn-0018"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "proof of Lemma 2.1 \u2014 Polynomial constraints and evaluation filtrations",
+      "status": "verified",
+      "destination": "cn-0019"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "equations (2.2)\u2013(2.3) \u2014 Evaluation away from the nodes and at all nodes",
+      "status": "verified",
+      "destination": "cn-0020"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "determinant-divisibility step in Lemma 2.1 \u2014 Rank deficiency forces determinant multiplicity",
+      "status": "verified",
+      "destination": "cn-0021"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "equation (2.5) \u2014 Disjointness bounds the rank at an interpolation node",
+      "status": "verified",
+      "destination": "cn-0022"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "equations (2.4) and (2.6) \u2014 Adapted minors give a degree budget",
+      "status": "verified",
+      "destination": "cn-0023"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Lemma 2.1, equation (2.1) \u2014 The subspace-intersection inequality",
+      "status": "verified",
+      "destination": "cn-0024"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Remark 2.2 \u2014 Why the subspace constant is sharp",
+      "status": "verified",
+      "destination": "cn-0025"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "proof of Corollary 2.3 \u2014 Graphs of linear maps",
+      "status": "verified",
+      "destination": "cn-0026"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Corollary 2.3, equation (2.7) \u2014 A rank-sum lower bound for matrix differences",
+      "status": "verified",
+      "destination": "cn-0027"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Lemma 4.1, equation (4.1) \u2014 Bivariate evaluation vectors and the two triangles",
+      "status": "verified",
+      "destination": "cn-0028"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Lemma 4.1, equation (4.2) \u2014 Two-triangle interpolation",
+      "status": "verified",
+      "destination": "cn-0029"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "equation (4.3) \u2014 Barycentric interpolation weights",
+      "status": "verified",
+      "destination": "cn-0030"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "equation (4.5) \u2014 Barycentric cancellation below the top degree",
+      "status": "verified",
+      "destination": "cn-0031"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "equation (4.3) \u2014 The rank detector and its atoms",
+      "status": "verified",
+      "destination": "cn-0032"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Lemma 4.2(i)\u2013(ii), equation (4.4) \u2014 What the detector kills, and its support rank bound",
+      "status": "verified",
+      "destination": "cn-0033"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Lemma 4.2(iii), equation (4.6) \u2014 Every spoke order has an invertible detector image",
+      "status": "verified",
+      "destination": "cn-0034"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Section 5.2, equations (5.2)\u2013(5.4) \u2014 The lower bound when the second part is odd",
+      "status": "verified",
+      "destination": "cn-0035"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Section 5.1, equation (5.1) \u2014 The balanced-axis drawing gives the upper bound",
+      "status": "verified",
+      "destination": "cn-0036"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Section 5.3 \u2014 Vertex deletion transfers the lower bound to even sizes",
+      "status": "verified",
+      "destination": "cn-0037"
+    }
+  ]
+}

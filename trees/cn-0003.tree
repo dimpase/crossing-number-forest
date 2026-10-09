@@ -1,0 +1,10 @@
+\title{Continuous plane drawings}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{continuous plane drawing; edge interior}
+\meta{dependencies}{[Complete bipartite graphs](cn-0002)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Section 1; reconstructed as a reading account on 9 October 2026. [Lean source: DrawingDefinition](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingDefinition.lean).}
+
+\p{A \em{continuous plane drawing} of a finite simple graph assigns distinct points of #{\mathbb R^2} to its vertices and an injectively parameterized continuous arc to each edge. The arc joins its endpoint vertices, and its interior contains no vertex. Curved routes and arbitrary vertex positions are allowed.}
+
+\p{For [#{K_{m,n}}](cn-0002), write #{\gamma_{ip}:[0,1]\to\mathbb R^2} for the arc from #{a_i} to #{b_p}. Its \em{edge interior} is #{\gamma_{ip}((0,1))}. Intersections between edge interiors are further restricted by [admissibility](cn-0004).}

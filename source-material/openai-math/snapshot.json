@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/openai/math",
+  "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "retrieved": "2026-10-09",
+  "scope": "Paper PDF, complete LaTeX source and bibliography; all 339 Crossing Lean modules; challenge, build and verification metadata. Mathlib and unrelated OAI modules are not vendored."
+}

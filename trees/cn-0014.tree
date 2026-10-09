@@ -1,0 +1,13 @@
+\title{The local chord formula}
+\taxon{Lemma}
+\meta{status}{proof-account}
+\meta{dependencies}{[Signed intersections](cn-0010); [Comparison signs](cn-0011)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equation (3.3), inside the proof of Lemma 3.1; reconstructed as a reading account on 9 October 2026. [Lean source: ChordPairing](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/ChordPairing.lean).}
+
+\p{\strong{Statement.} Let #{C,E} be oriented straight chords of a round disk, with four distinct boundary endpoints. Assign endpoint coefficient #{-1} to each start and #{+1} to each end. For a boundary cut avoiding the endpoints, use the counterclockwise [comparison sign](cn-0011) #{T(u,w)}. Then their [signed intersection](cn-0010) is}
+
+##{I(C,E)=\frac12\sum_{u\in\partial C}\sum_{w\in\partial E}\epsilon_C(u)\epsilon_E(w)T(u,w).}
+
+\p{\strong{Proof.} Moving the cut past an endpoint changes the expression by a multiple of the other chord's total endpoint coefficient, which is zero. Cut just before the start of #{C}. The expression simplifies to minus the sum of the coefficients of #{E}'s endpoints on the open counterclockwise arc from the start to the end of #{C}. This boundary arc lies on the right of directed #{C}.}
+
+\p{If the endpoints do not alternate, that sum is zero. If they alternate, #{E} goes from right to left or from left to right across #{C}, giving respectively #{+1} or #{-1}. These are precisely the determinant signs of the two chord directions.}

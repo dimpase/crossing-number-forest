@@ -1,0 +1,4 @@
+# Versions used for the site build and supplied exact report checks.
+lxml==6.1.2
+sympy==1.14.0
+markdown-it-py==4.2.0

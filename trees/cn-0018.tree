@@ -1,0 +1,17 @@
+\title{Cycle pairing makes the star blocks additive}
+\taxon{Lemma}
+\meta{status}{proof-account}
+\meta{dependencies}{[Star blocks](cn-0013); [Cycle pairing](cn-0016); [Additive matrices](cn-0017)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Lemma 3.2, equation (3.6); reconstructed as a reading account on 9 October 2026. [Lean source: AdditiveBlockRelation](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/AdditiveBlockRelation.lean).}
+
+\p{\strong{Statement.} The [star blocks](cn-0013) of a normalized drawing satisfy}
+
+##{J^{ik}-J^{i1}-J^{1k}+J^{11}\in\mathcal L,}
+
+\p{where #{\mathcal L} is the space of [row-plus-column matrices](cn-0017). Any fixed first-class vertex may replace the reference vertex #{a_1}.}
+
+\p{\strong{Proof.} Call the displayed matrix #{H}. For #{i,k\ne1}, #{p\ne p'}, and #{q\ne q'}, take the four-cycle vector with entries #{+1} on #{ip,1p'} and #{-1} on #{ip',1p}, and the analogous vector using #{k,q,q'}. Expanding [cycle pairing](cn-0016) gives}
+
+##{0=H(p,q)-H(p,q')-H(p',q)+H(p',q').}
+
+\p{If one of the index differences is trivial, the rectangular difference vanishes directly. Thus all rectangular differences of #{H} vanish, and the characterization in [the definition](cn-0017) shows that #{H\in\mathcal L}. Shared vertices or edges of the chosen four-cycles cause no exception because the cycle lemma explicitly permits them.}

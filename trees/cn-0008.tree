@@ -1,0 +1,10 @@
+\title{Normalized drawings}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{normalized drawing}
+\meta{dependencies}{[Admissible drawings](cn-0004); [Adjacent edges](cn-0002)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Section 3 and Lemma A.1; reconstructed as a reading account on 9 October 2026. [Lean source: LocallyTransverseNormalization](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/LocallyTransverseNormalization.lean).}
+
+\p{A \em{normalized drawing} is an [admissible drawing](cn-0004) whose edges are polygonal, are straight near vertices and crossings, and have no crossings between [adjacent edges](cn-0002). Distinct outward spokes at a vertex have distinct directions. Independent edges may still cross repeatedly.}
+
+\p{These conditions allow crossing signs and local spoke orders to be read from straight segments. [Normalization](cn-0009) preserves the endpoints as abstract graph vertices and does not increase the ordinary point count; it need not preserve the original vertex positions.}

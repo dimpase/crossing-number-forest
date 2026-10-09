@@ -1,0 +1,21 @@
+\title{The lower bound when the second part is odd}
+\taxon{Theorem}
+\meta{status}{proof-account}
+\meta{dependencies}{[Admissible drawings](cn-0004); [Crossing count](cn-0005); [Balanced factors](cn-0006); [Normalization](cn-0009); [Corrected matrix](cn-0013); [Additive block relation](cn-0018); [Rank sum](cn-0027); [Annihilation and rank bound](cn-0033); [Order invertibility](cn-0034)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Section 5.2, equations (5.2)–(5.4); reconstructed as a reading account on 9 October 2026. [Lean source: OddNormalizedLowerBound](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/OddNormalizedLowerBound.lean).}
+
+\p{\strong{Statement.} For #{m\geq3} and #{n=2s+1\geq3}, every [admissible drawing](cn-0004) of #{K_{m,n}} has [crossing count](cn-0005) at least #{d_m d_n}, with [#{d_n=s^2}](cn-0006).}
+
+\p{\strong{Proof.} [Normalize](cn-0009) the drawing without increasing its count. Form [the corrected star blocks](cn-0013), fix any one tuple of distinct detector nodes, and set}
+
+##{R^{ik}=\Phi(J^{ik}),\qquad X_i=R^{i1},\qquad Y_k=R^{11}-R^{1k}.}
+
+\p{[The additive block relation](cn-0018) and [detector annihilation](cn-0033) give #{R^{ik}=X_i-Y_k}. On the diagonal, #{J^{ii}} is the spoke half-order matrix. By [invertibility for every order](cn-0034), #{\operatorname{rank}(X_i-Y_i)=s^2}.}
+
+\p{For #{i\ne k}, let #{c_{ik}} count crossing points between the stars at #{a_i,a_k}. The entries #{J^{ik}(p,p)} may contain terms at their shared second-class endpoint, but the detector kills all diagonal entries. For #{p\ne q}, the edges are independent, so #{J^{ik}(p,q)} is just their signed crossing count. A nonzero entry requires at least one crossing of that pair. The rank-one support bound therefore gives #{\operatorname{rank}R^{ik}\leq c_{ik}}. Repeated crossings and cancellation of signs can only decrease this rank estimate.}
+
+\p{Apply [the rank-sum corollary](cn-0027), then sum the crossing bounds over ordered pairs:}
+
+##{2d_m s^2\leq\sum_{i\ne k}\operatorname{rank}R^{ik}\leq\sum_{i\ne k}c_{ik}=2c(D).}
+
+\p{The final equality uses normalization: every crossing involves two distinct first-class stars and contributes once to each of their two orders. Divide by two. The original drawing has at least as many crossings as its normalized replacement, so the lower bound holds for it as well.}

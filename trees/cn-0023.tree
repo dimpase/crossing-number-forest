@@ -1,0 +1,21 @@
+\title{Adapted minors give a degree budget}
+\taxon{Lemma}
+\meta{status}{proof-account}
+\meta{dependencies}{[Evaluation filtration](cn-0019); [Evaluation dimensions](cn-0020); [Determinant multiplicity](cn-0021); [Node-rank loss](cn-0022)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equations (2.4) and (2.6); reconstructed as a reading account on 9 October 2026. [Lean source: StageDegreeBound](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/StageDegreeBound.lean).}
+
+\p{\strong{Statement.} In the [polynomial setup](cn-0019), assume #{U_j\cap V_j=0} for every #{j}. At each degree #{h\geq0},}
+
+##{\sum_j k_h(V_j)\leq\sum_{e=0}^h e\ell_e.}
+
+\p{\strong{Proof.} Fix a non-node #{t_*}. At stage #{e}, choose #{\ell_e} polynomials of degree at most #{e} whose evaluations at #{t_*} extend the previously chosen basis of the evaluation space. Through stage #{h} there are #{r_h=k_h(W)} columns, independent at #{t_*}. Some #{r_h}-row square minor #{\Delta_h} is therefore nonzero at #{t_*}.}
+
+\p{Expanding its determinant and using the degree of each column gives}
+
+##{\deg\Delta_h\leq\sum_{e=0}^h e\ell_e.}
+
+\p{At #{t_j}, [the node-rank bound](cn-0022) gives rank at most #{k_h(W)-k_h(V_j)} for the full evaluated column matrix. Restricting rows cannot increase rank, so the square minor has deficiency at least #{k_h(V_j)}. By [determinant multiplicity](cn-0021),}
+
+##{\prod_j(\xi-t_j)^{k_h(V_j)}\mid\Delta_h(\xi).}
+
+\p{Compare degrees. If #{r_h=0}, all #{k_h(V_j)=0} by inclusion of evaluation spaces at a non-node, and the empty determinant #{1} gives the same conclusion.}

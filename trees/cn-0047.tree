@@ -1,0 +1,11 @@
+\title{de Klerk, Pasechnik, and Schrijver: Symmetric semidefinite programs}
+\taxon{Reference}
+\tag{bibliography}
+\meta{dependencies}{None.}
+\meta{provenance}{Expository organization and source review, 9 October 2026.}
+
+\p{\strong{Paper reference 5.} Etienne de Klerk, Dmitrii V. Pasechnik, and Alexander Schrijver. \em{Reduction of symmetric semidefinite programs using the regular *-representation}. Mathematical Programming 109(2–3) (2007), 613–624. [Source](https://doi.org/10.1007/s10107-006-0039-7).}
+
+\p{Cited as reference 5 in the introduction for symmetry reduction in semidefinite crossing-number bounds.}
+
+\p{Bibliographic details and the stated role are taken from the pinned paper's [bibliography](cn-0042); these entries are not claims that every cited paper was independently reviewed here.}

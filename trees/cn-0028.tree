@@ -1,0 +1,27 @@
+\title{Bivariate evaluation vectors and the two triangles}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{bivariate polynomial space; evaluation vector; two-triangle pattern}
+\meta{dependencies}{None.}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Lemma 4.1, equation (4.1); reconstructed as a reading account on 9 October 2026. [Lean source: TwoTriangleIndices](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/TwoTriangleIndices.lean).}
+
+\p{Fix #{s\geq1}, #{n=2s+1}, and distinct real nodes #{x_1,\ldots,x_n}. The \em{bivariate polynomial space} used here consists of #{P(u,v)} of degree at most #{s-1} in each variable separately. Its dimension is #{s^2}, with basis #{u^a v^b}, #{0\leq a,b<s}. Its \em{evaluation vector} at #{(x_p,x_q)} is #{h_{pq}=(x_p^a x_q^b)_{0\leq a,b<s}}.}
+
+\p{The \em{two-triangle pattern} is}
+
+##{Q_s=\{(p,q):1\leq q<p\leq s+1\}\ \cup\ \{(p,q):s+1<p<q\leq2s+1\}.}
+
+\p{It has #{s(s+1)/2+s(s-1)/2=s^2} positions. For #{s=2}, it is #{\{(2,1),(3,1),(3,2),(4,5)\}}. The order of the nodes need not agree with their numerical sizes. This freedom is crucial when [relabeling spoke orders](cn-0034).}
+
+\p{For #{s=3}, the selected positions are the bullets in this grid (row #{p}, column #{q}). The proof first removes row #{4}, then column #{1}; exchanging the remaining groups and swapping coordinates leaves the pattern for #{s=2}.}
+
+##{\begin{array}{c|ccccccc}
+ &1&2&3&4&5&6&7\\\hline
+1&\cdot&\cdot&\cdot&\cdot&\cdot&\cdot&\cdot\\
+2&\bullet&\cdot&\cdot&\cdot&\cdot&\cdot&\cdot\\
+3&\bullet&\bullet&\cdot&\cdot&\cdot&\cdot&\cdot\\
+4&\bullet&\bullet&\bullet&\cdot&\cdot&\cdot&\cdot\\
+5&\cdot&\cdot&\cdot&\cdot&\cdot&\bullet&\bullet\\
+6&\cdot&\cdot&\cdot&\cdot&\cdot&\cdot&\bullet\\
+7&\cdot&\cdot&\cdot&\cdot&\cdot&\cdot&\cdot
+\end{array}}

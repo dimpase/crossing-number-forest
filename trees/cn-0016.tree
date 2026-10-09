@@ -1,0 +1,25 @@
+\title{Cycle pairing with shared edges}
+\taxon{Lemma}
+\meta{status}{proof-account}
+\meta{dependencies}{[Cycle vectors](cn-0012); [Corrected matrix](cn-0013); [Chord formula](cn-0014); [Closed-walk intersections](cn-0015)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Lemma 3.1; reconstructed as a reading account on 9 October 2026. [Lean source: CyclePairing](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/CyclePairing.lean).}
+
+\p{\strong{Statement.} For the [endpoint-corrected matrix](cn-0013) #{J} of a normalized drawing and [signed edge vectors](cn-0012) #{z,y} of oriented simple graph cycles,}
+
+##{z^TJy=0.}
+
+\p{\strong{Proof.} Put disjoint small round disks around the vertices, meeting edges only in straight spokes. Replace each passage of the first cycle through a disk by a chord. Outside the disks keep its original tracks, obtaining a closed polygonal walk #{\gamma}.}
+
+\p{For the second cycle construct two walks #{\eta_+,\eta_-}, shifting its tracks a small distance left and right relative to each fixed edge orientation. Join the shifted endpoints inside each vertex disk by chords. To construct the exterior tracks, also isolate bends and crossings in disjoint small disks and shift each intervening straight stretch parallel to itself.}
+
+\p{In a crossing disk the shifted strand avoids its original strand and crosses the other original strand once with the original sign. In a bend disk both shifted ends lie in the same component of the complement of the original bent arc, so a polygonal connector in that component avoids the original arc. Distinct remaining compact stretches have positive separation. With a single sufficiently small shift, no additional intersections or contacts at seams and corners arise.}
+
+\p{Consequently, the exterior signed intersection of #{\gamma} with each shifted walk is #{z^TIy}. This also handles common edges: a shifted track avoids its own original copy. When both cycles use both strands of an original crossing, the two ordered contributions are counted separately with their traversal coefficients.}
+
+\p{In a vertex disk, the endpoint coefficients are #{\sigma_{ve}z_e} and #{\sigma_{vf}y_f}. Apply [the chord formula](cn-0014) in each shift. For different spokes their order sign is #{T_v(e,f)} in both shifts. For a common spoke, the shifted endpoint lies on opposite sides of the original endpoint in the two boundary orders, so its two comparison signs average to zero. This is exactly the convention #{T_v(e,e)=0}; opposite cycle traversals change coefficients, not that cancellation.}
+
+\p{Thus the averaged local contribution at #{v} is}
+
+##{\frac12\sum_{e,f\text{ incident with }v}z_e y_f\sigma_{ve}\sigma_{vf}T_v(e,f).}
+
+\p{Each total intersection of #{\gamma} with #{\eta_+} or #{\eta_-} is zero by [the closed-walk lemma](cn-0015). Average those two zero totals. Adding the exterior term to the local contributions gives #{z^TJy}, proving the identity.}

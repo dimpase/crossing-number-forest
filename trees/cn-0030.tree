@@ -1,0 +1,12 @@
+\title{Barycentric interpolation weights}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{node polynomial; barycentric weights}
+\meta{dependencies}{None.}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equation (4.3); reconstructed as a reading account on 9 October 2026. [Lean source: NodeMoments](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/NodeMoments.lean).}
+
+\p{For distinct real nodes #{x_1,\ldots,x_n}, define the \em{node polynomial} and \em{barycentric weights} by}
+
+##{F(t)=\prod_{p=1}^n(t-x_p),\qquad w_p=\frac1{F'(x_p)}=\frac1{\prod_{q\ne p}(x_p-x_q)}.}
+
+\p{Distinctness makes every denominator nonzero. The usual Lagrange basis polynomial is #{w_p F(t)/(t-x_p)}. See [Berrut–Trefethen, Section 3](cn-0044) for the classical weights. The next lemma extracts the particular cancellation needed by the detector.}

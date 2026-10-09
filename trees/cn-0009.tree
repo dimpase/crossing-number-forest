@@ -1,0 +1,21 @@
+\title{Normalization without increasing the point count}
+\taxon{Lemma}
+\meta{status}{proof-account}
+\meta{dependencies}{[Admissibility](cn-0004); [Point count](cn-0005); [Normalized drawings](cn-0008)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Appendix A, Lemma A.1; reconstructed as a reading account on 9 October 2026. [Lean source: LocallyTransverseNormalization](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/LocallyTransverseNormalization.lean).}
+
+\p{\strong{Statement.} Every [admissible drawing](cn-0004) of a finite simple graph can be replaced by a [normalized drawing](cn-0008) with no greater [crossing count](cn-0005).}
+
+\p{\strong{Proof.} \em{Isolate finitely many marks.} Mark the vertices and crossings. On each injectively parameterized edge choose disjoint parameter neighborhoods of its marks, with disjoint closures. The compact remainder of that edge avoids each corresponding mark. Compactness and finiteness therefore allow disjoint closed round disks around the marks, such that all visits to a disk occur inside its chosen parameter neighborhood and nonincident edges avoid the disk.}
+
+\p{At an interior mark remove the interval from the first to the last visit to its disk. At an initial vertex remove the initial interval through the last visit; at a terminal vertex remove the final interval from the first visit. The retained pieces are disjoint compact arcs, with distinct boundary endpoints and interiors outside all disks. This use of first and last visits avoids assuming finitely many intersections with a disk boundary.}
+
+\p{Give those compact pieces pairwise disjoint open neighborhoods. At each boundary endpoint take a short radial outward spur. A sufficiently small exterior collar connects its tip to a nearby point of the original arc without entering any disk. The resulting connection lies in an open set. Cover its compact image by small balls in that set, subdivide the parameter interval, and replace each short subarc by a straight segment within its ball. This gives a polygonal path with the required endpoints. Subdivide its finite segment arrangement and take a simple graph path to erase loops and overlaps. Disjoint neighborhoods keep the replacements disjoint.}
+
+\p{Inside a crossing disk connect the two endpoint pairs by straight chords. Four distinct boundary points give at most one transverse crossing. Inside a vertex disk choose a new vertex off the finitely many lines through pairs of boundary points, and connect all points to it by straight spokes. Assemble the exterior pieces and disk pieces in their original edge order. Each edge is simple, no interior contains a vertex, and every new crossing lies in an old crossing disk. There is at most one crossing per such disk and no third edge there.}
+
+\p{\strong{Remove adjacent crossings.} Suppose #{vu} and #{vw} cross at #{x}. In a small disk containing just that crossing, exchange their prefixes from #{v} and reconnect each exchanged prefix to the appropriate original suffix. The new connections pair adjacent boundary points, so disjoint chords remove the crossing. Outside the disk the two walks use each old open track exactly once in total.}
+
+\p{Subdivide their tracks at bends and crossings, and delete closed subwalks until each walk is simple. At a remaining old crossing, either the two tracks belong to different walks, in which case retained passages remain straight through, or both belong to one walk, in which case a new turn can occur only where the other walk and all third edges are absent. The same reasoning applies to meetings with third edges. Thus this simplification adds no crossings or improper meetings. It preserves the abstract endpoints and strictly reduces the point count.}
+
+\p{Repeat while an adjacent crossing remains. The nonnegative integer count decreases at every step, so the process terminates. Straightness near the remaining vertices and crossings is preserved. This proves the assertion. The paper discusses the standard ordinary-crossing reduction with reference to [Fulek et al.](cn-0049); the continuous-arc construction is written out in its Appendix A.}

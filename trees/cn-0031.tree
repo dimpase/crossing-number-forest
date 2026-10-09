@@ -1,0 +1,15 @@
+\title{Barycentric cancellation below the top degree}
+\taxon{Lemma}
+\meta{status}{proof-account}
+\meta{dependencies}{[Barycentric weights](cn-0030)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equation (4.5); reconstructed as a reading account on 9 October 2026. [Lean source: NodeMoments](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/NodeMoments.lean).}
+
+\p{\strong{Statement.} For the [barycentric weights](cn-0030) on #{n} distinct nodes, every scalar polynomial #{A} of degree at most #{n-2} satisfies}
+
+##{\sum_{p=1}^n w_p A(x_p)=0.}
+
+\p{\strong{Proof.} Lagrange interpolation gives}
+
+##{A(t)=\sum_p A(x_p)w_p\frac{F(t)}{t-x_p}.}
+
+\p{Both sides have degree at most #{n-1} and agree at all #{n} nodes, so the identity follows from the root bound for polynomials. Each quotient #{F(t)/(t-x_p)} is monic of degree #{n-1}, whereas the coefficient of that degree in #{A} is zero. Comparing those coefficients proves the assertion.}

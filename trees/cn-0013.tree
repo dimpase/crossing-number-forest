@@ -1,0 +1,14 @@
+\title{The endpoint-corrected intersection matrix}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{endpoint-corrected intersection matrix; star block}
+\meta{dependencies}{[Normalized drawings](cn-0008); [Signed intersections](cn-0010); [Spoke signs](cn-0011)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equation (3.1); reconstructed as a reading account on 9 October 2026. [Lean source: CycleMatrixBlocks](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/CycleMatrixBlocks.lean).}
+
+\p{For a [normalized drawing](cn-0008), combine the [interior intersection counts](cn-0010) and [spoke-order signs](cn-0011) into the \em{endpoint-corrected intersection matrix}}
+
+##{J(e,f)=I(e,f)+\frac12\sum_{v\text{ common to }e,f}\sigma_{ve}\sigma_{vf}T_v(e,f),\qquad J(e,e)=0.}
+
+\p{Its \em{star block} #{J^{ik}} is the #{n\times n} matrix #{J^{ik}(p,q)=J(ip,kq)}. At a first-class vertex all incident orientations are outward. Since adjacent edges do not cross, #{J^{ii}} is exactly its half-order matrix. For #{i\ne k}, the entry with #{p=q} can have an endpoint term at #{b_p}; entries with #{p\ne q} are purely signed crossing counts.}
+
+\p{The half-endpoint terms are essential: [cycle pairing](cn-0016) vanishes for #{J}, and cannot simply be asserted for the interior-count matrix alone.}

@@ -1,0 +1,12 @@
+\title{The rank detector and its atoms}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{detector atom; rank detector}
+\meta{dependencies}{[Evaluation vectors](cn-0028); [Barycentric weights](cn-0030)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equation (4.3); reconstructed as a reading account on 9 October 2026. [Lean source: RankDetector](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/RankDetector.lean).}
+
+\p{Fix #{s\geq1}, #{n=2s+1}, and distinct real nodes. Using the [evaluation vectors](cn-0028) and [barycentric weights](cn-0030), define the \em{detector atoms} and the linear \em{rank detector}}
+
+##{B_{pq}=(x_p-x_q)w_pw_q\,h_{pq}h_{pq}^T,\qquad \Phi(H)=\sum_{p,q=1}^n H(p,q)B_{pq}.}
+
+\p{Thus #{\Phi:\mathbb R^{n\times n}\to\mathbb R^{s^2\times s^2}}. The nodes are fixed once for the entire drawing. Different vertex orders are fed into this same map. The scalar weights may have either sign: the argument uses matrix rank and invertibility, not positive semidefiniteness.}

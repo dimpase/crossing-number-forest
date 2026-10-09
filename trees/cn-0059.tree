@@ -1,0 +1,9 @@
+\title{The accompanying Lean development and Comparator target}
+\taxon{Reference}
+\tag{bibliography}
+\meta{dependencies}{None.}
+\meta{provenance}{Expository organization and source review, 9 October 2026.}
+
+\p{OpenAI math repository, [Crossing Lean development](https://github.com/openai/math/tree/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/Crossing), commit fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb. [Local Main.lean](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/Main.lean); [formalization catalogue](/source-material/openai-math/lean/formalization.yaml); [Comparator configuration](/source-material/openai-math/lean/ComparatorChallenges/BipartiteCrossing.json).}
+
+\p{The [reading guide](cn-0038) maps paper results to declarations. The [verification record](cn-0039) reports the static checks performed here and distinguishes them from local compilation and formal verification. The archived toolchain is Lean 4.34.1 with Mathlib commit d13f23b723b8a846827a245b89c10fc7d3f11612, as recorded in [lakefile.lean](/source-material/openai-math/lean/lakefile.lean) and [lake-manifest.json](/source-material/openai-math/lean/lake-manifest.json).}

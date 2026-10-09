@@ -1,0 +1,35 @@
+\title{Reading the Lean proof alongside the paper}
+\taxon{Overview}
+\meta{dependencies}{None.}
+\meta{provenance}{Expository organization and source review, 9 October 2026.}
+
+\p{Start with [the theorem's Lean entry point](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/Main.lean). The main declaration is OAI.Zarankiewicz.mainTarget_proof. Its conclusion combines an explicit drawing attaining the claimed count with a lower bound for every admissible drawing. The companion ordinary_crossing_number_eq then identifies the infimum with that value.}
+
+\p{The following table is a route through the [pinned Lean sources](cn-0059). The two topology lemmas are in the namespace OAI.Zarankiewicz.TruncatedSpokeCoordinates; most other declarations are in OAI.Zarankiewicz. Source files expose their full namespaces and hypotheses.}
+
+\<html:table>{\<html:tr>{\<html:th>{Paper / forest}\<html:th>{Lean declaration}}
+\<html:tr>{\<html:td>{[Theorem 1.1](cn-0007)}\<html:td>{[mainTarget_proof](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/Main.lean)}}
+\<html:tr>{\<html:td>{[Ordinary crossing number](cn-0005)}\<html:td>{[ordinaryCrossingNumber](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingDefinition.lean)}}
+\<html:tr>{\<html:td>{[Lemma A.1](cn-0009)}\<html:td>{[polygonal_no_adjacent_locally_transverse](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/LocallyTransverseNormalization.lean)}}
+\<html:tr>{\<html:td>{[Lemma 2.1](cn-0024)}\<html:td>{[lemma2_1](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/SubspaceIntersection.lean)}}
+\<html:tr>{\<html:td>{[Corollary 2.3](cn-0027)}\<html:td>{[matrix_rank_sum_bound](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/MatrixRankSum.lean)}}
+\<html:tr>{\<html:td>{[Lemma 3.1](cn-0016)}\<html:td>{[lemma3_1](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/CyclePairing.lean)}}
+\<html:tr>{\<html:td>{[Lemma 3.2](cn-0018)}\<html:td>{[lemma3_2](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/AdditiveBlockRelation.lean)}}
+\<html:tr>{\<html:td>{[Lemma 4.1](cn-0029)}\<html:td>{[twoTriangle_unisolvent](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/TwoTriangleUnisolvence.lean)}}
+\<html:tr>{\<html:td>{[Lemma 4.2](cn-0034)}\<html:td>{[lemma4_2](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/HalfOrderInvertibility.lean)}}
+\<html:tr>{\<html:td>{[Section 5.2](cn-0035)}\<html:td>{[odd_normalized_crossing_lower_bound](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/OddNormalizedLowerBound.lean)}}
+\<html:tr>{\<html:td>{[Section 5.3](cn-0037)}\<html:td>{[sum_delete_crossingCount](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/DeletionCount.lean)}}
+\<html:tr>{\<html:td>{[Section 5.1](cn-0036)}\<html:td>{[crossingCount_eq](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/BalancedAxisCrossingCount.lean)}}
+}
+
+\p{\strong{Read from the central assembly.} In OddNormalizedLowerBound, the objects H, X, and Y are the paper's #{R^{ik}}, #{X_i}, and #{Y_k}. The local equality hH proves the matrix-difference form; hdiag proves diagonal invertibility; hlower invokes the abstract rank-sum bound; hupper bounds the ordered rank sum by twice the crossing count. These are the four mathematical steps in [the odd lower bound](cn-0035).}
+
+\p{\strong{Follow one branch at a time.} MatrixRankSum leads to SubspaceIntersection and the constrained polynomial argument. HalfOrderInvertibility leads to TriangleFactorization, TwoTriangleUnisolvence, and NodeMoments. CyclePairing and LocallyTransverseNormalization lead to the geometric construction of tracks, disks, and admissible replacements. The geometric branch is much larger because the paper's local deformation arguments are expanded into explicit path and incidence statements.}
+
+\p{\strong{Notation differences.} Lean's Fin n numbers indices from zero, whereas the paper uses #{1,\ldots,n}. The detector matrix is indexed by Fin s × Fin s, with cardinality #{s^2}. IsUnit means invertibility here. Natural-number division m*m/4 is the floor of #{m^2/4}. PolynomialKernel.Bounded k means all coefficients of index at least #{k} vanish, so its constrained space at #{h+1} corresponds to the paper's degree bound #{h}.}
+
+\p{\strong{Definition check.} DrawingDefinition uses continuous injective paths, excludes vertices from edge interiors, requires finitely many proper crossings and no triples, and counts the finite set of crossing points. Ten shared declarations, including MainTarget, agree textually with the independently specified [challenge file](/source-material/openai-math/lean/ComparatorChallenges/BipartiteCrossing.lean). The challenge's final sorry is a placeholder for the solution to be compared against it; it is not part of the imported proof development.}
+
+\p{\strong{What was checked here.} All 339 Crossing modules lie in Main's project-import closure. Their remaining imports come from Mathlib and Lean. The local static scan found no sorry, admit, axiom, unsafe, native_decide, implemented_by, or extern tokens in uncommented proof sources. These observations help locate the logic; they do not establish that the sources elaborate or that the compiled theorem has only permitted axioms. Lean and Comparator have not been run locally. See [the verification record](cn-0039) and [the full source audit](/computations/lean-source-audit.json).}
+
+\p{The upstream [Comparator configuration](/source-material/openai-math/lean/ComparatorChallenges/BipartiteCrossing.json) permits propext, Quot.sound, and Classical.choice, and sets enable_nanoda to false. Its [verification instructions](/source-material/openai-math/lean/ComparatorChallenges/README.md) describe the additional tooling. The archived toolchain is Lean 4.34.1; these requirements are separate from the Forester environment used to read this site.}

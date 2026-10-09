@@ -1,0 +1,13 @@
+\title{Rank deficiency forces determinant multiplicity}
+\taxon{Lemma}
+\meta{status}{proof-account}
+\meta{dependencies}{None.}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), determinant-divisibility step in Lemma 2.1; reconstructed as a reading account on 9 October 2026. [Lean source: RankMultiplicity](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/RankMultiplicity.lean).}
+
+\p{\strong{Statement.} Let #{A(\xi)} be an #{r\times r} real polynomial matrix. If #{\operatorname{rank}A(t)\leq r-q}, then #{(\xi-t)^q} divides #{\det A(\xi)}. If distinct nodes #{t_j} have deficiencies at least #{q_j} and the determinant is nonzero, then}
+
+##{\sum_j q_j\leq\deg\det A.}
+
+\p{\strong{Proof.} Choose #{q} independent vectors in the kernel of #{A(t)} and extend them to a basis. Right multiplication by this constant change-of-basis matrix makes #{q} columns vanish at #{t}. Every entry of those columns is divisible by #{\xi-t}, so multilinearity gives a factor #{(\xi-t)^q} in the determinant. The change of basis only multiplies the determinant by a nonzero constant.}
+
+\p{For distinct nodes these powers are relatively prime, so their product divides the determinant. Comparing degrees proves the inequality. The zero-size case uses the empty determinant #{1}. This is the multiplicity step that turns nodewise rank loss into a global degree bound.}

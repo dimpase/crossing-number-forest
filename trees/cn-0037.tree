@@ -1,0 +1,13 @@
+\title{Vertex deletion transfers the lower bound to even sizes}
+\taxon{Lemma}
+\meta{status}{proof-account}
+\meta{dependencies}{[Admissibility](cn-0004); [Crossing count](cn-0005); [Balanced factors](cn-0006); [Normalization](cn-0009); [Odd lower bound](cn-0035)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Section 5.3; reconstructed as a reading account on 9 October 2026. [Lean source: DeletionCount](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/DeletionCount.lean).}
+
+\p{\strong{Statement.} If the lower bound #{c(D')\geq d_m d_{n-1}} holds for every [admissible drawing](cn-0004) of #{K_{m,n-1}}, and #{n>2} is even, then every drawing of #{K_{m,n}} has [crossing count](cn-0005) at least #{d_m d_n}.}
+
+\p{\strong{Proof.} [Normalize](cn-0009) without increasing the count. Delete each of the #{n} second-class vertices in turn. Each remaining drawing has at least #{d_m d_{n-1}} crossings. Every crossing of the normalized drawing has two distinct second-class endpoints, so survives precisely #{n-2} of the deletions. Therefore}
+
+##{(n-2)c(D)\geq n d_m d_{n-1}=(n-2)d_m d_n.}
+
+\p{The equality follows from [the balanced factors](cn-0006): for #{n=2s}, #{d_n=s(s-1)} and #{d_{n-1}=(s-1)^2}. Divide by #{n-2>0}. The case #{n=2} is instead settled by the zero-factor upper bound. The paper cites [Kleitman, Section 3](cn-0052) and [Woodall, Theorem 1 and Corollary 1.1](cn-0057) for this deletion count.}

@@ -1,0 +1,13 @@
+\title{Balanced pair counts and the Zarankiewicz number}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{balanced pair count; Zarankiewicz number}
+\meta{dependencies}{None.}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equation (1.1); reconstructed as a reading account on 9 October 2026. [Lean source: FloorArithmetic](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/FloorArithmetic.lean).}
+
+\p{For an integer #{r\geq1}, the \em{balanced pair count} is}
+
+##{d_r=\left\lfloor\frac r2\right\rfloor\left\lfloor\frac{r-1}{2}\right\rfloor
+=\binom{\lfloor r/2\rfloor}{2}+\binom{\lceil r/2\rceil}{2}.}
+
+\p{The \em{Zarankiewicz number} is #{Z(m,n)=d_m d_n}. In particular #{d_{2s}=s(s-1)}, #{d_{2s+1}=s^2}, and #{d_1=d_2=0}. The binomial formula counts pairs lying on the same ray when #{r} vertices are split as evenly as possible between two opposite rays. This is the count used by [the upper-bound construction](cn-0036).}

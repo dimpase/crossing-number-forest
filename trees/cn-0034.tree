@@ -1,0 +1,17 @@
+\title{Every spoke order has an invertible detector image}
+\taxon{Lemma}
+\meta{status}{proof-account}
+\meta{dependencies}{[Half-order matrices](cn-0011); [Two-triangle pattern](cn-0028); [Interpolation basis](cn-0029); [Detector](cn-0032); [Annihilation](cn-0033)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Lemma 4.2(iii), equation (4.6); reconstructed as a reading account on 9 October 2026. [Lean source: HalfOrderInvertibility](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/HalfOrderInvertibility.lean).}
+
+\p{\strong{Statement.} For every [half-order matrix](cn-0011) #{S_\prec}, the image #{\Phi(S_\prec)} under the fixed [rank detector](cn-0032) is invertible.}
+
+\p{\strong{Proof.} \em{The natural order.} Put #{H(p,q)=1_{q<p}}. Then #{S=\tfrac12\mathbf1\mathbf1^T-H-\tfrac12 I_n}. Since [additive and diagonal terms are killed](cn-0033), #{\Phi(S)=-\Phi(H)}. Subtract #{1} from every row of #{H} with #{p>s+1}, obtaining #{H'}. This row operation changes #{H} by an additive matrix, so #{\Phi(H')=\Phi(H)}.}
+
+\p{Off the diagonal, #{H'} is supported exactly on [the two triangles](cn-0028): its value is #{+1} on the lower triangle and #{-1} on the upper triangle. Let #{A_Q} have columns #{h_{pq}} for those #{s^2} positions. Then}
+
+##{\Phi(S)=-A_Q D_Q A_Q^T,\qquad D_Q=\operatorname{diag}\bigl(H'(p,q)(x_p-x_q)w_pw_q\bigr)_{(p,q)\in Q_s}.}
+
+\p{[Two-triangle interpolation](cn-0029) makes #{A_Q} invertible; all diagonal entries of #{D_Q} are nonzero. Their product is invertible, regardless of its signature.}
+
+\p{\strong{An arbitrary order.} List its indices as #{\pi(1)\prec\cdots\prec\pi(n)} and apply the argument to the distinct node tuple #{x_{\pi(1)},\ldots,x_{\pi(n)}}. This only reindexes the sum defining #{\Phi(S_\prec)}: the node polynomial #{F} and the original linear map are unchanged. The interpolation theorem required distinct nodes, not increasing numerical order. Thus one fixed detector works at every vertex.}

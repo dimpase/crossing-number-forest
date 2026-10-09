@@ -1,0 +1,21 @@
+\title{Evaluation away from the nodes and at all nodes}
+\taxon{Lemma}
+\meta{status}{proof-account}
+\meta{dependencies}{[Polynomial spaces and increments](cn-0019)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equations (2.2)–(2.3); reconstructed as a reading account on 9 October 2026. [Lean source: Interpolation](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/Interpolation.lean).}
+
+\p{\strong{Statement.} For the [constrained polynomial spaces](cn-0019), evaluation at a non-node #{t} has kernel #{(\xi-t)\mathcal P_{h-1}(Z)}, and hence}
+
+##{\dim E_h(Z;t)=k_h(Z).}
+
+\p{Evaluation at the #{m} constraint nodes identifies #{\mathcal P_{m-1}(Z)} with #{\bigoplus_i(U_i\cap Z)}. Consequently}
+
+##{\sum_{h=0}^{m-1}k_h(Z)=\sum_{i=1}^m\dim(U_i\cap Z).}
+
+\p{\strong{Proof.} A polynomial vanishing at #{t} is divisible by #{\xi-t}, coordinate by coordinate in #{Z}. At each constraint node, division rescales its value by the nonzero scalar #{(t_i-t)^{-1}}, so membership in #{U_i} is preserved. Multiplication proves the reverse inclusion. Rank-nullity yields the first identity.}
+
+\p{For values #{z_i\in U_i\cap Z}, the Lagrange interpolant}
+
+##{P(\xi)=\sum_i\left(\prod_{j\ne i}\frac{\xi-t_j}{t_i-t_j}\right)z_i}
+
+\p{belongs to #{\mathcal P_{m-1}(Z)} and has those values. Uniqueness follows because a scalar polynomial of degree at most #{m-1} with #{m} distinct roots is zero, applied to each coordinate. Taking dimensions and telescoping the increments proves the second identity.}

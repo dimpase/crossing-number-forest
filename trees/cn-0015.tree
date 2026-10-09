@@ -1,0 +1,11 @@
+\title{Closed polygonal walks have zero total signed intersection}
+\taxon{Lemma}
+\meta{status}{proof-account}
+\meta{dependencies}{[Signed intersections](cn-0010)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), final topological step in the proof of Lemma 3.1; reconstructed as a reading account on 9 October 2026. [Lean source: ClosedPolygonIntersection](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/ClosedPolygonIntersection.lean).}
+
+\p{\strong{Statement.} Two closed polygonal walks in the plane that meet transversely away from corners have total [signed intersection](cn-0010) zero, counting their segment traversals with multiplicity. Self-intersections of the walks are allowed.}
+
+\p{\strong{Proof.} For the first walk, cone every oriented segment #{[u,w]} to a point #{o}, forming the oriented triangle #{[o,u,w]}. Choose #{o} away from the finitely many lines that cause degenerate triangles, nontransverse cone-segment intersections, or encounters with corners of the second walk.}
+
+\p{A closed second walk has equally many entrances into and exits from each triangle, with opposite intersection signs along its oriented boundary. Each triangle boundary therefore has total signed intersection zero. Sum the oriented triangle boundaries: the extra cone segments cancel in oppositely oriented pairs, leaving the first walk. Its intersection sum is zero. Counting traversals makes the argument valid for nonsimple walks.}

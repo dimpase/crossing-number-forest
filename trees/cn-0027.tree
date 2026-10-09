@@ -1,0 +1,17 @@
+\title{A rank-sum lower bound for matrix differences}
+\taxon{Corollary}
+\meta{status}{proof-account}
+\meta{dependencies}{[Balanced count](cn-0006); [Subspace inequality](cn-0024); [Graph subspaces](cn-0026)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Corollary 2.3, equation (2.7); reconstructed as a reading account on 9 October 2026. [Lean source: IndexedMatrixRankSum](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/IndexedMatrixRankSum.lean).}
+
+\p{\strong{Statement.} Let #{X_i,Y_i} be real #{d\times d} matrices for #{1\leq i\leq m}, with every #{X_i-Y_i} invertible. For the [balanced count](cn-0006) #{d_m},}
+
+##{\sum_{i\ne j}\operatorname{rank}(X_i-Y_j)\geq2d_m d.}
+
+\p{The sum is over ordered pairs.}
+
+\p{\strong{Proof.} Apply [the subspace inequality](cn-0024) in #{W=\mathbb R^d\oplus\mathbb R^d} to the [graph subspaces](cn-0026) #{U_i=\Gamma_{X_i}} and #{V_j=\Gamma_{Y_j}}. Their intersection dimensions equal #{d-\operatorname{rank}(X_i-Y_j)}, giving}
+
+##{\sum_{i,j}\operatorname{rank}(X_i-Y_j)\geq\left(m^2-2\left\lfloor\frac{m^2}{4}\right\rfloor\right)d.}
+
+\p{Each of the #{m} diagonal terms is #{d}. Remove them and use #{m^2-m-2\lfloor m^2/4\rfloor=2d_m}, checked separately for even and odd #{m}. This yields the assertion. The full rank of the diagonal differences is the only hypothesis involving the matrices.}

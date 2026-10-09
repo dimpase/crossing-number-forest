@@ -1,0 +1,16 @@
+\title{The algebraic branch: interpolation to rank sums}
+\taxon{Overview}
+\meta{dependencies}{None.}
+\meta{provenance}{Expository organization and source review, 9 October 2026.}
+
+\p{This argument does not involve drawings. The only geometric-looking objects are subspaces of a finite-dimensional real vector space. The route is evaluation dimensions, rank loss at constraint nodes, multiplicity of polynomial determinants, and a degree count. Graphs of linear maps then turn intersection dimensions into matrix ranks.}
+
+\transclude{cn-0019}
+\transclude{cn-0020}
+\transclude{cn-0021}
+\transclude{cn-0022}
+\transclude{cn-0023}
+\transclude{cn-0024}
+\transclude{cn-0025}
+\transclude{cn-0026}
+\transclude{cn-0027}

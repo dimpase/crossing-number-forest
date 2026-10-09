@@ -1,0 +1,3385 @@
+{
+  "scope": "Static source inspection only; Lean and Comparator were not run locally.",
+  "project_modules": 339,
+  "project_bytes": 893808,
+  "external_libraries": [
+    "Mathlib",
+    "Lean"
+  ],
+  "direct_mathlib_imports": 75,
+  "forbidden_source_tokens": [],
+  "challenge_definition_matches": [
+    "Plane",
+    "BipartiteVertex",
+    "BipartiteEdge",
+    "ContinuousDrawing",
+    "edgeInterior",
+    "ProperCrossing",
+    "crossingPoints",
+    "AdmissibleDrawing",
+    "crossingCount",
+    "MainTarget"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false,
+  "imports": {
+    "OAI.Combinatorics.Crossing.AdaptedFamily": [],
+    "OAI.Combinatorics.Crossing.AdditiveBlockRelation": [
+      "OAI.Combinatorics.Crossing.CyclePairing",
+      "OAI.Combinatorics.Crossing.FourCyclePairing"
+    ],
+    "OAI.Combinatorics.Crossing.AdjacentSurgeryDrawing": [
+      "OAI.Combinatorics.Crossing.AdjacentSurgeryRoutes"
+    ],
+    "OAI.Combinatorics.Crossing.AdjacentSurgeryPointRemoval": [
+      "OAI.Combinatorics.Crossing.AdjacentSurgeryDrawing",
+      "OAI.Combinatorics.Crossing.PolygonalParametrizationCover"
+    ],
+    "OAI.Combinatorics.Crossing.AdjacentSurgeryRoutes": [
+      "OAI.Combinatorics.Crossing.ReplaceDrawingEdges",
+      "OAI.Combinatorics.Crossing.ReconnectedPointRemoval"
+    ],
+    "OAI.Combinatorics.Crossing.AdmissibleAdjacentSurgery": [
+      "OAI.Combinatorics.Crossing.SurgeryFiniteDrawing"
+    ],
+    "OAI.Combinatorics.Crossing.AffineIntervalRestriction": [
+      "OAI.Combinatorics.Crossing.FiniteAffineCover",
+      "OAI.Combinatorics.Crossing.PathSubarc"
+    ],
+    "OAI.Combinatorics.Crossing.AffinePathHalves": [
+      "OAI.Combinatorics.Crossing.IntervalSegments"
+    ],
+    "OAI.Combinatorics.Crossing.AffineSideEvents": [
+      "OAI.Combinatorics.Crossing.StepEvents"
+    ],
+    "OAI.Combinatorics.Crossing.AffineSubdivisionRefinement": [
+      "OAI.Combinatorics.Crossing.OrderedAffineSubdivision"
+    ],
+    "OAI.Combinatorics.Crossing.AlternatingPaths": [
+      "OAI.Combinatorics.Crossing.FinitePathChain"
+    ],
+    "OAI.Combinatorics.Crossing.ArcRangeMinimality": [
+      "OAI.Combinatorics.Crossing.DrawingDefinition"
+    ],
+    "OAI.Combinatorics.Crossing.AssembledAdmissibleDrawing": [
+      "OAI.Combinatorics.Crossing.CrossingDiskNeighborhood",
+      "OAI.Combinatorics.Crossing.ProperSegmentCrossing",
+      "OAI.Combinatorics.Crossing.ProperCrossingLocality"
+    ],
+    "OAI.Combinatorics.Crossing.AssembledContinuousDrawing": [
+      "OAI.Combinatorics.Crossing.AssembledEdge"
+    ],
+    "OAI.Combinatorics.Crossing.AssembledCrossings": [
+      "OAI.Combinatorics.Crossing.MiddleEdgeIncidence",
+      "OAI.Combinatorics.Crossing.CrossingDiskCount"
+    ],
+    "OAI.Combinatorics.Crossing.AssembledEdge": [
+      "OAI.Combinatorics.Crossing.MiddleSpokeMeeting"
+    ],
+    "OAI.Combinatorics.Crossing.AssembledNoTriples": [
+      "OAI.Combinatorics.Crossing.AssembledCrossings"
+    ],
+    "OAI.Combinatorics.Crossing.AssembledPortIncidence": [
+      "OAI.Combinatorics.Crossing.AssembledCrossings"
+    ],
+    "OAI.Combinatorics.Crossing.AxisAdmissibility": [
+      "OAI.Combinatorics.Crossing.AxisFiniteCrossings",
+      "OAI.Combinatorics.Crossing.AxisGenericPositions",
+      "OAI.Combinatorics.Crossing.RowCrossingCount"
+    ],
+    "OAI.Combinatorics.Crossing.AxisConcurrency": [
+      "OAI.Combinatorics.Crossing.AxisSegments",
+      "OAI.Combinatorics.Crossing.GenericPolynomialBox"
+    ],
+    "OAI.Combinatorics.Crossing.AxisContinuousDrawing": [
+      "OAI.Combinatorics.Crossing.AxisSegments"
+    ],
+    "OAI.Combinatorics.Crossing.AxisCrossingOrder": [
+      "OAI.Combinatorics.Crossing.BalancedAxisDrawing",
+      "OAI.Combinatorics.Crossing.BalancedRayPairs"
+    ],
+    "OAI.Combinatorics.Crossing.AxisFiniteCrossings": [
+      "OAI.Combinatorics.Crossing.AxisContinuousDrawing"
+    ],
+    "OAI.Combinatorics.Crossing.AxisGenericPositions": [
+      "OAI.Combinatorics.Crossing.AxisConcurrency"
+    ],
+    "OAI.Combinatorics.Crossing.AxisSegments": [
+      "OAI.Combinatorics.Crossing.ProperSegmentCrossing"
+    ],
+    "OAI.Combinatorics.Crossing.BalancedAxisCrossingCount": [
+      "OAI.Combinatorics.Crossing.AxisCrossingOrder",
+      "OAI.Combinatorics.Crossing.EvenCrossingLowerBound"
+    ],
+    "OAI.Combinatorics.Crossing.BalancedAxisDrawing": [
+      "OAI.Combinatorics.Crossing.AxisAdmissibility",
+      "OAI.Combinatorics.Crossing.BalancedAxisIntervals"
+    ],
+    "OAI.Combinatorics.Crossing.BalancedAxisIntervals": [
+      "OAI.Combinatorics.Crossing.AxisGenericPositions"
+    ],
+    "OAI.Combinatorics.Crossing.BalancedRayPairs": [
+      "OAI.Combinatorics.Crossing.FloorArithmetic"
+    ],
+    "OAI.Combinatorics.Crossing.BipartiteDartGeometry": [
+      "OAI.Combinatorics.Crossing.FourCycles",
+      "OAI.Combinatorics.Crossing.DrawnEdgeChains"
+    ],
+    "OAI.Combinatorics.Crossing.Bivariate": [
+      "OAI.Combinatorics.Crossing.Interpolation"
+    ],
+    "OAI.Combinatorics.Crossing.BivariateCoefficients": [
+      "OAI.Combinatorics.Crossing.TwoTriangleUnisolvence"
+    ],
+    "OAI.Combinatorics.Crossing.BoundaryCollar": [
+      "OAI.Combinatorics.Crossing.RadialExterior"
+    ],
+    "OAI.Combinatorics.Crossing.ChainPieceInteriors": [
+      "OAI.Combinatorics.Crossing.MinimumChainVertexPieces",
+      "OAI.Combinatorics.Crossing.OpenSegmentEndpoints",
+      "OAI.Combinatorics.Crossing.DrawingRangeCrossings"
+    ],
+    "OAI.Combinatorics.Crossing.ChainTracePieces": [
+      "OAI.Combinatorics.Crossing.ReducedPolygonalPresentation",
+      "OAI.Combinatorics.Crossing.GraphWalkTrace"
+    ],
+    "OAI.Combinatorics.Crossing.ChordEdgeIntersections": [
+      "OAI.Combinatorics.Crossing.StraightChainTransversality",
+      "OAI.Combinatorics.Crossing.UniformCrossTypeGeometry"
+    ],
+    "OAI.Combinatorics.Crossing.ChordExteriorSeparation": [
+      "OAI.Combinatorics.Crossing.TrackChordSeparation",
+      "OAI.Combinatorics.Crossing.ConnectorOtherDisks",
+      "OAI.Combinatorics.Crossing.ShiftedTrackDisks"
+    ],
+    "OAI.Combinatorics.Crossing.ChordOrientations": [
+      "OAI.Combinatorics.Crossing.ChordPairing"
+    ],
+    "OAI.Combinatorics.Crossing.ChordPairing": [
+      "OAI.Combinatorics.Crossing.CircleChords"
+    ],
+    "OAI.Combinatorics.Crossing.ChordTransversality": [
+      "OAI.Combinatorics.Crossing.CircleChords",
+      "OAI.Combinatorics.Crossing.SegmentContinuity"
+    ],
+    "OAI.Combinatorics.Crossing.CircleChords": [
+      "OAI.Combinatorics.Crossing.SegmentSides"
+    ],
+    "OAI.Combinatorics.Crossing.CircleConnectors": [
+      "OAI.Combinatorics.Crossing.CircleOffset",
+      "OAI.Combinatorics.Crossing.CircleOffsetParameter",
+      "OAI.Combinatorics.Crossing.MovingSegmentStability"
+    ],
+    "OAI.Combinatorics.Crossing.CircleDeterminantOrder": [
+      "OAI.Combinatorics.Crossing.CircleChords",
+      "OAI.Combinatorics.Crossing.PlanarDeterminant"
+    ],
+    "OAI.Combinatorics.Crossing.CircleOffset": [
+      "OAI.Combinatorics.Crossing.CircleParameterChart",
+      "OAI.Combinatorics.Crossing.OffsetVectors"
+    ],
+    "OAI.Combinatorics.Crossing.CircleOffsetLine": [
+      "OAI.Combinatorics.Crossing.PhysicalCircleAveraging"
+    ],
+    "OAI.Combinatorics.Crossing.CircleOffsetParameter": [
+      "OAI.Combinatorics.Crossing.CircleOffset",
+      "OAI.Combinatorics.Crossing.CircleDeterminantOrder"
+    ],
+    "OAI.Combinatorics.Crossing.CircleParameterChart": [
+      "OAI.Combinatorics.Crossing.CircleChords"
+    ],
+    "OAI.Combinatorics.Crossing.ClosedPolygonIntersection": [
+      "OAI.Combinatorics.Crossing.TransversePolygonIntersection",
+      "OAI.Combinatorics.Crossing.PolygonTransversalityStability"
+    ],
+    "OAI.Combinatorics.Crossing.CollinearSegmentUnion": [
+      "OAI.Combinatorics.Crossing.ParallelDirection"
+    ],
+    "OAI.Combinatorics.Crossing.CompactCorridors": [
+      "OAI.Combinatorics.Crossing.MarkedCurveDisks"
+    ],
+    "OAI.Combinatorics.Crossing.ConeIntersection": [
+      "OAI.Combinatorics.Crossing.TriangleOrientations"
+    ],
+    "OAI.Combinatorics.Crossing.ConnectorOtherDisks": [
+      "OAI.Combinatorics.Crossing.ConnectorSupportingLines",
+      "OAI.Combinatorics.Crossing.MovingDiskClearance"
+    ],
+    "OAI.Combinatorics.Crossing.ConnectorSupportingLines": [
+      "OAI.Combinatorics.Crossing.SpokePieceIsolation",
+      "OAI.Combinatorics.Crossing.SpokeEndpointSeparation"
+    ],
+    "OAI.Combinatorics.Crossing.ConnectorTrackAvoidance": [
+      "OAI.Combinatorics.Crossing.ConnectorSupportingLines"
+    ],
+    "OAI.Combinatorics.Crossing.ConstructAdjacentSurgery": [
+      "OAI.Combinatorics.Crossing.AdjacentSurgeryPointRemoval",
+      "OAI.Combinatorics.Crossing.ExtraDrawingSubdivision",
+      "OAI.Combinatorics.Crossing.CrossingDiskOwners"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingCoordinates": [
+      "OAI.Combinatorics.Crossing.PlanarDeterminant"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingCutWalks": [
+      "OAI.Combinatorics.Crossing.CrossingPortClearance",
+      "OAI.Combinatorics.Crossing.DrawingWalkCutTraces",
+      "OAI.Combinatorics.Crossing.ExteriorSegmentGraph"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingDiskCount": [
+      "OAI.Combinatorics.Crossing.CrossingDiskUniqueness"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingDiskIncidence": [
+      "OAI.Combinatorics.Crossing.InnerDrawingPassages"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingDiskNeighborhood": [
+      "OAI.Combinatorics.Crossing.AssembledNoTriples"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingDiskOwners": [
+      "OAI.Combinatorics.Crossing.OrderedCrossingPorts"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingDiskUniqueness": [
+      "OAI.Combinatorics.Crossing.DiskFillingContainment",
+      "OAI.Combinatorics.Crossing.SegmentIntersectionUnique"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingIncidence": [
+      "OAI.Combinatorics.Crossing.DrawingDefinition"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingPortClearance": [
+      "OAI.Combinatorics.Crossing.OrderedCrossingPorts"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingReconnection": [
+      "OAI.Combinatorics.Crossing.SegmentCrossingCoordinates"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingSurgeryGraph": [
+      "OAI.Combinatorics.Crossing.SegmentAugmentation",
+      "OAI.Combinatorics.Crossing.ReconnectionChords",
+      "OAI.Combinatorics.Crossing.SubdivisionPointEndpoints",
+      "OAI.Combinatorics.Crossing.ExteriorSegmentGraph"
+    ],
+    "OAI.Combinatorics.Crossing.CurveDiskIsolation": [
+      "OAI.Combinatorics.Crossing.ParameterNeighborhoods",
+      "OAI.Combinatorics.Crossing.MarkedCurveDisks"
+    ],
+    "OAI.Combinatorics.Crossing.CutTraceSeparation": [
+      "OAI.Combinatorics.Crossing.CutVertexAvoidance"
+    ],
+    "OAI.Combinatorics.Crossing.CutVertexAvoidance": [
+      "OAI.Combinatorics.Crossing.ExteriorCrossingCut"
+    ],
+    "OAI.Combinatorics.Crossing.CycleBlockIntersections": [
+      "OAI.Combinatorics.Crossing.DartCyclePaths",
+      "OAI.Combinatorics.Crossing.DartPairIntersections",
+      "OAI.Combinatorics.Crossing.VertexChordIntersections"
+    ],
+    "OAI.Combinatorics.Crossing.CycleEndpointSum": [
+      "OAI.Combinatorics.Crossing.EndpointFlagPairing",
+      "OAI.Combinatorics.Crossing.CyclicSumArithmetic",
+      "OAI.Combinatorics.Crossing.RectangleAlgebra"
+    ],
+    "OAI.Combinatorics.Crossing.CycleMatrixBlocks": [
+      "OAI.Combinatorics.Crossing.AdditiveBlockRelation",
+      "OAI.Combinatorics.Crossing.DetectorCrossingBound"
+    ],
+    "OAI.Combinatorics.Crossing.CyclePairing": [
+      "OAI.Combinatorics.Crossing.CycleEndpointSum",
+      "OAI.Combinatorics.Crossing.WalkVectorSum"
+    ],
+    "OAI.Combinatorics.Crossing.CyclicSumArithmetic": [
+      "OAI.Combinatorics.Crossing.FourCycles"
+    ],
+    "OAI.Combinatorics.Crossing.CyclicWalkDarts": [
+      "OAI.Combinatorics.Crossing.BipartiteDartGeometry",
+      "OAI.Combinatorics.Crossing.PeriodicPolygon"
+    ],
+    "OAI.Combinatorics.Crossing.DartCyclePaths": [
+      "OAI.Combinatorics.Crossing.CyclicWalkDarts",
+      "OAI.Combinatorics.Crossing.DartPathRealizations"
+    ],
+    "OAI.Combinatorics.Crossing.DartPairIntersections": [
+      "OAI.Combinatorics.Crossing.DartPathRealizations",
+      "OAI.Combinatorics.Crossing.ShiftedEdgeIntersections",
+      "OAI.Combinatorics.Crossing.ChordEdgeIntersections"
+    ],
+    "OAI.Combinatorics.Crossing.DartPathRealizations": [
+      "OAI.Combinatorics.Crossing.BipartiteDartGeometry",
+      "OAI.Combinatorics.Crossing.PolygonalEndpointCasts"
+    ],
+    "OAI.Combinatorics.Crossing.DegreeCounting": [],
+    "OAI.Combinatorics.Crossing.DeletionCount": [
+      "OAI.Combinatorics.Crossing.DrawingDeletion"
+    ],
+    "OAI.Combinatorics.Crossing.DetectorAnnihilation": [
+      "OAI.Combinatorics.Crossing.RankDetector"
+    ],
+    "OAI.Combinatorics.Crossing.DetectorCrossingBound": [
+      "OAI.Combinatorics.Crossing.TruncatedSignedIntersections",
+      "OAI.Combinatorics.Crossing.DetectorRank"
+    ],
+    "OAI.Combinatorics.Crossing.DetectorRank": [
+      "OAI.Combinatorics.Crossing.RankDetector",
+      "OAI.Combinatorics.Crossing.MatrixRankBounds"
+    ],
+    "OAI.Combinatorics.Crossing.DetectorRelabeling": [
+      "OAI.Combinatorics.Crossing.RankDetector"
+    ],
+    "OAI.Combinatorics.Crossing.DiskFillingContainment": [
+      "OAI.Combinatorics.Crossing.CrossingDiskIncidence",
+      "OAI.Combinatorics.Crossing.DrawingVertexPlacement"
+    ],
+    "OAI.Combinatorics.Crossing.DiskPassage": [
+      "OAI.Combinatorics.Crossing.SublevelExtrema",
+      "OAI.Combinatorics.Crossing.RoundDiskVisits"
+    ],
+    "OAI.Combinatorics.Crossing.DiskSegments": [
+      "OAI.Combinatorics.Crossing.CircleConnectors"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingDefinition": [
+      "OAI.Combinatorics.Crossing.FloorArithmetic"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingDeletion": [
+      "OAI.Combinatorics.Crossing.DrawingRestriction"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingDiskIsolation": [
+      "OAI.Combinatorics.Crossing.CurveDiskIsolation",
+      "OAI.Combinatorics.Crossing.DrawingMarks"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingEdgeWalk": [
+      "OAI.Combinatorics.Crossing.DrawingSubdivisionGraph",
+      "OAI.Combinatorics.Crossing.GraphSequenceWalk"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingEdgeWalkTrace": [
+      "OAI.Combinatorics.Crossing.DrawingEdgeWalk",
+      "OAI.Combinatorics.Crossing.OrderedKnotCover"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingExteriorReplacement": [
+      "OAI.Combinatorics.Crossing.RetainedArcDisjointness",
+      "OAI.Combinatorics.Crossing.SimultaneousExteriorArcs"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingMarks": [
+      "OAI.Combinatorics.Crossing.FiniteIntersectionDrawing",
+      "OAI.Combinatorics.Crossing.CrossingIncidence",
+      "OAI.Combinatorics.Crossing.PathSubarc"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingPassages": [
+      "OAI.Combinatorics.Crossing.DrawingDiskIsolation",
+      "OAI.Combinatorics.Crossing.SortedMarkedParameters",
+      "OAI.Combinatorics.Crossing.OrderedPassages"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingPorts": [
+      "OAI.Combinatorics.Crossing.RetainedArcDisjointness"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingRangeCrossings": [
+      "OAI.Combinatorics.Crossing.DrawingDefinition"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingRestriction": [
+      "OAI.Combinatorics.Crossing.RowCrossingCount"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingSegmentIncidence": [
+      "OAI.Combinatorics.Crossing.SubdivisionSegments",
+      "OAI.Combinatorics.Crossing.EmbeddedGraphPaths"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingSpokePorts": [
+      "OAI.Combinatorics.Crossing.RadialBoundaryPorts",
+      "OAI.Combinatorics.Crossing.ChainPieceInteriors"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingSubdivisionGraph": [
+      "OAI.Combinatorics.Crossing.DrawingSegmentIncidence"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingVertexPlacement": [
+      "OAI.Combinatorics.Crossing.DrawingPorts",
+      "OAI.Combinatorics.Crossing.VertexDiskSpokes"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingWalkCutTraces": [
+      "OAI.Combinatorics.Crossing.DrawingEdgeWalkTrace"
+    ],
+    "OAI.Combinatorics.Crossing.DrawnEdgeChains": [
+      "OAI.Combinatorics.Crossing.FinitePolygonalComposition",
+      "OAI.Combinatorics.Crossing.TrackEndpointConnections"
+    ],
+    "OAI.Combinatorics.Crossing.EmbeddedGraphPaths": [
+      "OAI.Combinatorics.Crossing.PolygonalArcInjective",
+      "OAI.Combinatorics.Crossing.FiniteAffineCover"
+    ],
+    "OAI.Combinatorics.Crossing.EndpointFlagPairing": [
+      "OAI.Combinatorics.Crossing.GlobalCycleAveraging"
+    ],
+    "OAI.Combinatorics.Crossing.EndpointVisits": [
+      "OAI.Combinatorics.Crossing.FirstLastVisits"
+    ],
+    "OAI.Combinatorics.Crossing.EvaluationAmbient": [
+      "OAI.Combinatorics.Crossing.PolynomialFiltration"
+    ],
+    "OAI.Combinatorics.Crossing.EvenCrossingLowerBound": [
+      "OAI.Combinatorics.Crossing.OddCrossingLowerBound",
+      "OAI.Combinatorics.Crossing.DeletionCount"
+    ],
+    "OAI.Combinatorics.Crossing.ExpectedTrackGeometry": [
+      "OAI.Combinatorics.Crossing.UniformTrackPerturbation",
+      "OAI.Combinatorics.Crossing.LocallyTransverseNormalization"
+    ],
+    "OAI.Combinatorics.Crossing.ExteriorArcReplacement": [
+      "OAI.Combinatorics.Crossing.FiniteDiskCollar",
+      "OAI.Combinatorics.Crossing.PathEndpointNeighborhoods",
+      "OAI.Combinatorics.Crossing.PolygonalBoundaryReplacement"
+    ],
+    "OAI.Combinatorics.Crossing.ExteriorChordMeeting": [
+      "OAI.Combinatorics.Crossing.PolygonalExterior"
+    ],
+    "OAI.Combinatorics.Crossing.ExteriorCrossingCut": [
+      "OAI.Combinatorics.Crossing.SurgeryCutWalks"
+    ],
+    "OAI.Combinatorics.Crossing.ExteriorSegmentGraph": [
+      "OAI.Combinatorics.Crossing.GraphWalkTrace"
+    ],
+    "OAI.Combinatorics.Crossing.ExteriorSpokeMeeting": [
+      "OAI.Combinatorics.Crossing.ExteriorChordMeeting",
+      "OAI.Combinatorics.Crossing.VertexEndpointPorts"
+    ],
+    "OAI.Combinatorics.Crossing.ExtraDrawingSubdivision": [
+      "OAI.Combinatorics.Crossing.AffineSubdivisionRefinement",
+      "OAI.Combinatorics.Crossing.PolygonalNormalization"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteAffineCover": [
+      "OAI.Combinatorics.Crossing.AffinePathHalves",
+      "OAI.Combinatorics.Crossing.PolygonalChains",
+      "OAI.Combinatorics.Crossing.PlanarSegments"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteCircleCoordinates": [
+      "OAI.Combinatorics.Crossing.SimilarityCoordinates",
+      "OAI.Combinatorics.Crossing.RadialBoundaryPorts"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteConePoint": [
+      "OAI.Combinatorics.Crossing.FiniteLineAvoidance",
+      "OAI.Combinatorics.Crossing.TriangleOrientations"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteDiskCollar": [
+      "OAI.Combinatorics.Crossing.BoundaryCollar",
+      "OAI.Combinatorics.Crossing.RoundDiskVisits"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteEventualRadius": [
+      "OAI.Combinatorics.Crossing.FiniteSeparation"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteIntersectionDrawing": [
+      "OAI.Combinatorics.Crossing.DrawingDefinition"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteLineAvoidance": [
+      "OAI.Combinatorics.Crossing.PlanarSegments"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteMovingPoints": [
+      "OAI.Combinatorics.Crossing.MovingSegmentStability",
+      "OAI.Combinatorics.Crossing.FiniteSeparation"
+    ],
+    "OAI.Combinatorics.Crossing.FinitePathChain": [
+      "OAI.Combinatorics.Crossing.PathConcatenationInjective"
+    ],
+    "OAI.Combinatorics.Crossing.FinitePolygonalComposition": [
+      "OAI.Combinatorics.Crossing.SegmentTraversalReversal"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteScaledRadius": [
+      "OAI.Combinatorics.Crossing.FiniteSeparation"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteSeparation": [],
+    "OAI.Combinatorics.Crossing.FirstLastVisits": [
+      "OAI.Combinatorics.Crossing.MarkedCurveDisks"
+    ],
+    "OAI.Combinatorics.Crossing.FloorArithmetic": [],
+    "OAI.Combinatorics.Crossing.FourCyclePairing": [
+      "OAI.Combinatorics.Crossing.FourCycles",
+      "OAI.Combinatorics.Crossing.RectangleAlgebra"
+    ],
+    "OAI.Combinatorics.Crossing.FourCycles": [],
+    "OAI.Combinatorics.Crossing.GeneralOrderAveraging": [
+      "OAI.Combinatorics.Crossing.OrderShift"
+    ],
+    "OAI.Combinatorics.Crossing.GeneralSpokeAveraging": [
+      "OAI.Combinatorics.Crossing.GeneralOrderAveraging"
+    ],
+    "OAI.Combinatorics.Crossing.GenericPointExtension": [
+      "OAI.Combinatorics.Crossing.FiniteLineAvoidance",
+      "OAI.Combinatorics.Crossing.SegmentSides"
+    ],
+    "OAI.Combinatorics.Crossing.GenericPointFamily": [
+      "OAI.Combinatorics.Crossing.GenericPointExtension",
+      "OAI.Combinatorics.Crossing.TriangleOrientations"
+    ],
+    "OAI.Combinatorics.Crossing.GenericPolygonIntersection": [
+      "OAI.Combinatorics.Crossing.FiniteConePoint",
+      "OAI.Combinatorics.Crossing.ConeIntersection"
+    ],
+    "OAI.Combinatorics.Crossing.GenericPolynomialBox": [],
+    "OAI.Combinatorics.Crossing.GlobalCycleAveraging": [
+      "OAI.Combinatorics.Crossing.VertexPassagePairing"
+    ],
+    "OAI.Combinatorics.Crossing.GlobalCycleIntersection": [
+      "OAI.Combinatorics.Crossing.CycleBlockIntersections"
+    ],
+    "OAI.Combinatorics.Crossing.GraphSequenceWalk": [
+      "OAI.Combinatorics.Crossing.GraphWalkTrace"
+    ],
+    "OAI.Combinatorics.Crossing.GraphWalkRealizationLaws": [
+      "OAI.Combinatorics.Crossing.DrawingWalkCutTraces",
+      "OAI.Combinatorics.Crossing.ExteriorSegmentGraph"
+    ],
+    "OAI.Combinatorics.Crossing.GraphWalkTrace": [
+      "OAI.Combinatorics.Crossing.EmbeddedGraphPaths",
+      "OAI.Combinatorics.Crossing.UniqueWalkPassage"
+    ],
+    "OAI.Combinatorics.Crossing.HalfOrderInvertibility": [
+      "OAI.Combinatorics.Crossing.TriangleFactorization",
+      "OAI.Combinatorics.Crossing.DetectorRank"
+    ],
+    "OAI.Combinatorics.Crossing.HalfOrderReduction": [
+      "OAI.Combinatorics.Crossing.DetectorAnnihilation",
+      "OAI.Combinatorics.Crossing.DetectorRelabeling",
+      "OAI.Combinatorics.Crossing.OrderedNodeIndices"
+    ],
+    "OAI.Combinatorics.Crossing.IncidentSpokePorts": [
+      "OAI.Combinatorics.Crossing.DrawingSpokePorts",
+      "OAI.Combinatorics.Crossing.RowCrossingCount"
+    ],
+    "OAI.Combinatorics.Crossing.IndexedMatrixRankSum": [
+      "OAI.Combinatorics.Crossing.MatrixRankSum"
+    ],
+    "OAI.Combinatorics.Crossing.InnerDrawingPassages": [
+      "OAI.Combinatorics.Crossing.DrawingPorts",
+      "OAI.Combinatorics.Crossing.RoundCircleChords"
+    ],
+    "OAI.Combinatorics.Crossing.Interpolation": [
+      "OAI.Combinatorics.Crossing.PolynomialKernel"
+    ],
+    "OAI.Combinatorics.Crossing.IntervalSegmentStrict": [
+      "OAI.Combinatorics.Crossing.PathSubarc"
+    ],
+    "OAI.Combinatorics.Crossing.IntervalSegments": [
+      "OAI.Combinatorics.Crossing.DrawingDefinition"
+    ],
+    "OAI.Combinatorics.Crossing.LocalLineBends": [
+      "OAI.Combinatorics.Crossing.ParallelDirection",
+      "OAI.Combinatorics.Crossing.FiniteEventualRadius"
+    ],
+    "OAI.Combinatorics.Crossing.LocalSegmentTransversality": [
+      "OAI.Combinatorics.Crossing.LocalLineBends"
+    ],
+    "OAI.Combinatorics.Crossing.LocallyStraightNormalization": [
+      "OAI.Combinatorics.Crossing.PolygonalNormalization"
+    ],
+    "OAI.Combinatorics.Crossing.LocallyTransverseNormalization": [
+      "OAI.Combinatorics.Crossing.NoAdjacentLocalNormalization"
+    ],
+    "OAI.Combinatorics.Crossing.Main": [
+      "OAI.Combinatorics.Crossing.BalancedAxisCrossingCount"
+    ],
+    "OAI.Combinatorics.Crossing.MarkedCurveDisks": [
+      "OAI.Combinatorics.Crossing.RoundDiskClearance"
+    ],
+    "OAI.Combinatorics.Crossing.MatrixGraphs": [],
+    "OAI.Combinatorics.Crossing.MatrixRankBounds": [],
+    "OAI.Combinatorics.Crossing.MatrixRankSum": [
+      "OAI.Combinatorics.Crossing.SubspaceIntersection",
+      "OAI.Combinatorics.Crossing.MatrixGraphs",
+      "OAI.Combinatorics.Crossing.FloorArithmetic"
+    ],
+    "OAI.Combinatorics.Crossing.MiddleEdgeIncidence": [
+      "OAI.Combinatorics.Crossing.AssembledContinuousDrawing"
+    ],
+    "OAI.Combinatorics.Crossing.MiddlePathInjective": [
+      "OAI.Combinatorics.Crossing.OrderedExteriorPaths"
+    ],
+    "OAI.Combinatorics.Crossing.MiddleSpokeMeeting": [
+      "OAI.Combinatorics.Crossing.MiddlePathInjective",
+      "OAI.Combinatorics.Crossing.ExteriorSpokeMeeting"
+    ],
+    "OAI.Combinatorics.Crossing.MinimumChainGeometry": [
+      "OAI.Combinatorics.Crossing.PolygonalChainShortcuts",
+      "OAI.Combinatorics.Crossing.CollinearSegmentUnion"
+    ],
+    "OAI.Combinatorics.Crossing.MinimumChainVertexPieces": [
+      "OAI.Combinatorics.Crossing.ReducedPolygonalPresentation",
+      "OAI.Combinatorics.Crossing.CutVertexAvoidance"
+    ],
+    "OAI.Combinatorics.Crossing.MovingDiskClearance": [
+      "OAI.Combinatorics.Crossing.RoundDiskClearance",
+      "OAI.Combinatorics.Crossing.MovingSegmentStability"
+    ],
+    "OAI.Combinatorics.Crossing.MovingSegmentStability": [
+      "OAI.Combinatorics.Crossing.ShiftedSegmentStability"
+    ],
+    "OAI.Combinatorics.Crossing.NoAdjacentLocalNormalization": [
+      "OAI.Combinatorics.Crossing.NoAdjacentNormalization",
+      "OAI.Combinatorics.Crossing.LocallyStraightNormalization"
+    ],
+    "OAI.Combinatorics.Crossing.NoAdjacentNormalization": [
+      "OAI.Combinatorics.Crossing.AdmissibleAdjacentSurgery",
+      "OAI.Combinatorics.Crossing.RowCrossingCount"
+    ],
+    "OAI.Combinatorics.Crossing.NodeMoments": [],
+    "OAI.Combinatorics.Crossing.NodeRankLoss": [
+      "OAI.Combinatorics.Crossing.EvaluationAmbient",
+      "OAI.Combinatorics.Crossing.SubspaceProjection",
+      "OAI.Combinatorics.Crossing.PolynomialLinearMatrix"
+    ],
+    "OAI.Combinatorics.Crossing.NormalOffsetExterior": [
+      "OAI.Combinatorics.Crossing.TangentTrackIdentity",
+      "OAI.Combinatorics.Crossing.RadialExterior"
+    ],
+    "OAI.Combinatorics.Crossing.NormalizedPolygonalDrawing": [
+      "OAI.Combinatorics.Crossing.PolygonalNormalization",
+      "OAI.Combinatorics.Crossing.OrderedAffineSubdivision"
+    ],
+    "OAI.Combinatorics.Crossing.OddCrossingLowerBound": [
+      "OAI.Combinatorics.Crossing.OddNormalizedLowerBound",
+      "OAI.Combinatorics.Crossing.ExpectedTrackGeometry"
+    ],
+    "OAI.Combinatorics.Crossing.OddNormalizedLowerBound": [
+      "OAI.Combinatorics.Crossing.VertexOrderDetector",
+      "OAI.Combinatorics.Crossing.IndexedMatrixRankSum"
+    ],
+    "OAI.Combinatorics.Crossing.OffsetBendSegments": [
+      "OAI.Combinatorics.Crossing.OffsetSegments",
+      "OAI.Combinatorics.Crossing.SegmentAffineForms"
+    ],
+    "OAI.Combinatorics.Crossing.OffsetSegments": [
+      "OAI.Combinatorics.Crossing.OffsetVectors",
+      "OAI.Combinatorics.Crossing.SegmentSides"
+    ],
+    "OAI.Combinatorics.Crossing.OffsetTrack": [
+      "OAI.Combinatorics.Crossing.OffsetSegments",
+      "OAI.Combinatorics.Crossing.ParallelDirection",
+      "OAI.Combinatorics.Crossing.FiniteSeparation"
+    ],
+    "OAI.Combinatorics.Crossing.OffsetVectors": [
+      "OAI.Combinatorics.Crossing.PlanarDeterminant"
+    ],
+    "OAI.Combinatorics.Crossing.OpenSegmentEndpoints": [
+      "OAI.Combinatorics.Crossing.PathConcatenationInjective",
+      "OAI.Combinatorics.Crossing.PlanarSegments"
+    ],
+    "OAI.Combinatorics.Crossing.OrderShift": [
+      "OAI.Combinatorics.Crossing.ChordOrientations",
+      "OAI.Combinatorics.Crossing.FiniteSeparation"
+    ],
+    "OAI.Combinatorics.Crossing.OrderedAffineSubdivision": [
+      "OAI.Combinatorics.Crossing.AffineIntervalRestriction",
+      "OAI.Combinatorics.Crossing.SortedMarkedParameters",
+      "OAI.Combinatorics.Crossing.IntervalSegmentStrict",
+      "OAI.Combinatorics.Crossing.PolygonalParametrization"
+    ],
+    "OAI.Combinatorics.Crossing.OrderedCrossingPorts": [
+      "OAI.Combinatorics.Crossing.OrderedPathParts",
+      "OAI.Combinatorics.Crossing.AssembledPortIncidence",
+      "OAI.Combinatorics.Crossing.ExtraDrawingSubdivision",
+      "OAI.Combinatorics.Crossing.DrawingEdgeWalk"
+    ],
+    "OAI.Combinatorics.Crossing.OrderedExteriorPaths": [
+      "OAI.Combinatorics.Crossing.AlternatingPaths",
+      "OAI.Combinatorics.Crossing.ExteriorChordMeeting",
+      "OAI.Combinatorics.Crossing.CrossingDiskIncidence",
+      "OAI.Combinatorics.Crossing.VertexEndpointPorts"
+    ],
+    "OAI.Combinatorics.Crossing.OrderedKnotCover": [
+      "OAI.Combinatorics.Crossing.NormalizedPolygonalDrawing"
+    ],
+    "OAI.Combinatorics.Crossing.OrderedNodeIndices": [
+      "OAI.Combinatorics.Crossing.TwoTriangleBasis"
+    ],
+    "OAI.Combinatorics.Crossing.OrderedPassages": [
+      "OAI.Combinatorics.Crossing.DiskPassage",
+      "OAI.Combinatorics.Crossing.ParameterNeighborhoods",
+      "OAI.Combinatorics.Crossing.PathSubarc"
+    ],
+    "OAI.Combinatorics.Crossing.OrderedPathParts": [
+      "OAI.Combinatorics.Crossing.AffinePathHalves",
+      "OAI.Combinatorics.Crossing.AlternatingPaths"
+    ],
+    "OAI.Combinatorics.Crossing.OrientedSimilarity": [
+      "OAI.Combinatorics.Crossing.OffsetVectors",
+      "OAI.Combinatorics.Crossing.SegmentSymmetries"
+    ],
+    "OAI.Combinatorics.Crossing.ParallelDirection": [
+      "OAI.Combinatorics.Crossing.OffsetVectors"
+    ],
+    "OAI.Combinatorics.Crossing.ParameterNeighborhoods": [
+      "OAI.Combinatorics.Crossing.FiniteSeparation",
+      "OAI.Combinatorics.Crossing.DrawingDefinition"
+    ],
+    "OAI.Combinatorics.Crossing.PathConcatenationInjective": [
+      "OAI.Combinatorics.Crossing.PolygonalChains"
+    ],
+    "OAI.Combinatorics.Crossing.PathEndpointNeighborhoods": [
+      "OAI.Combinatorics.Crossing.PathSubarc"
+    ],
+    "OAI.Combinatorics.Crossing.PathSubarc": [
+      "OAI.Combinatorics.Crossing.IntervalSegments"
+    ],
+    "OAI.Combinatorics.Crossing.PeriodicPolygon": [
+      "OAI.Combinatorics.Crossing.PolygonalWalks"
+    ],
+    "OAI.Combinatorics.Crossing.PhysicalCircleAveraging": [
+      "OAI.Combinatorics.Crossing.FiniteCircleCoordinates",
+      "OAI.Combinatorics.Crossing.PhysicalSpokeAveraging"
+    ],
+    "OAI.Combinatorics.Crossing.PhysicalSpokeAveraging": [
+      "OAI.Combinatorics.Crossing.CircleOffsetParameter",
+      "OAI.Combinatorics.Crossing.GeneralSpokeAveraging",
+      "OAI.Combinatorics.Crossing.FiniteScaledRadius"
+    ],
+    "OAI.Combinatorics.Crossing.PhysicalVertexChords": [
+      "OAI.Combinatorics.Crossing.UniformSpokeRadii",
+      "OAI.Combinatorics.Crossing.RoundCircleChords",
+      "OAI.Combinatorics.Crossing.DiskSegments"
+    ],
+    "OAI.Combinatorics.Crossing.PlanarDeterminant": [
+      "OAI.Combinatorics.Crossing.PlanarSegments"
+    ],
+    "OAI.Combinatorics.Crossing.PlanarSegments": [
+      "OAI.Combinatorics.Crossing.DrawingDefinition"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonComposition": [
+      "OAI.Combinatorics.Crossing.PolygonalWalks"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonStability": [
+      "OAI.Combinatorics.Crossing.SegmentContinuity",
+      "OAI.Combinatorics.Crossing.PolygonalWalks",
+      "OAI.Combinatorics.Crossing.FiniteSeparation"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonTransversalityStability": [
+      "OAI.Combinatorics.Crossing.TransversalityStability",
+      "OAI.Combinatorics.Crossing.PolygonStability"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalArcInjective": [
+      "OAI.Combinatorics.Crossing.MinimumChainGeometry",
+      "OAI.Combinatorics.Crossing.PathConcatenationInjective"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalBoundaryReplacement": [
+      "OAI.Combinatorics.Crossing.SimultaneousPolygonalReplacement"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalChainComposition": [
+      "OAI.Combinatorics.Crossing.PolygonComposition",
+      "OAI.Combinatorics.Crossing.PolygonalChainOperations",
+      "OAI.Combinatorics.Crossing.ClosedPolygonIntersection"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalChainExistence": [
+      "OAI.Combinatorics.Crossing.PolygonalChains"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalChainOperations": [
+      "OAI.Combinatorics.Crossing.PolygonalChainExistence",
+      "OAI.Combinatorics.Crossing.PolygonComposition"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalChainShortcuts": [
+      "OAI.Combinatorics.Crossing.PolygonalChainOperations"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalChainTransversality": [
+      "OAI.Combinatorics.Crossing.PolygonalChainComposition"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalChains": [
+      "OAI.Combinatorics.Crossing.PolygonalReach"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalEndpointCasts": [
+      "OAI.Combinatorics.Crossing.FinitePolygonalComposition"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalExterior": [
+      "OAI.Combinatorics.Crossing.DrawingExteriorReplacement",
+      "OAI.Combinatorics.Crossing.DiskFillingContainment"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalNormalization": [
+      "OAI.Combinatorics.Crossing.AssembledAdmissibleDrawing",
+      "OAI.Combinatorics.Crossing.FiniteAffineCover"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalParametrization": [
+      "OAI.Combinatorics.Crossing.IntervalSegments",
+      "OAI.Combinatorics.Crossing.OffsetTrack",
+      "OAI.Combinatorics.Crossing.SegmentContinuity"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalParametrizationCover": [
+      "OAI.Combinatorics.Crossing.OrderedKnotCover"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalReach": [
+      "OAI.Combinatorics.Crossing.DrawingDefinition"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalWalks": [
+      "OAI.Combinatorics.Crossing.SegmentSymmetries"
+    ],
+    "OAI.Combinatorics.Crossing.PolynomialCoordinates": [
+      "OAI.Combinatorics.Crossing.PolynomialKernel",
+      "OAI.Combinatorics.Crossing.RankSpecialization"
+    ],
+    "OAI.Combinatorics.Crossing.PolynomialFiltration": [
+      "OAI.Combinatorics.Crossing.Interpolation",
+      "OAI.Combinatorics.Crossing.AdaptedFamily",
+      "OAI.Combinatorics.Crossing.PolynomialCoordinates"
+    ],
+    "OAI.Combinatorics.Crossing.PolynomialKernel": [],
+    "OAI.Combinatorics.Crossing.PolynomialLinearMatrix": [
+      "OAI.Combinatorics.Crossing.PolynomialCoordinates"
+    ],
+    "OAI.Combinatorics.Crossing.PolynomialMinors": [],
+    "OAI.Combinatorics.Crossing.ProperCrossingLocality": [
+      "OAI.Combinatorics.Crossing.DrawingDefinition"
+    ],
+    "OAI.Combinatorics.Crossing.ProperSegmentCrossing": [
+      "OAI.Combinatorics.Crossing.SegmentCrossingCoordinates"
+    ],
+    "OAI.Combinatorics.Crossing.RadialBoundaryPorts": [
+      "OAI.Combinatorics.Crossing.VertexSpokeBounds"
+    ],
+    "OAI.Combinatorics.Crossing.RadialExterior": [
+      "OAI.Combinatorics.Crossing.ParallelDirection"
+    ],
+    "OAI.Combinatorics.Crossing.RankDetector": [
+      "OAI.Combinatorics.Crossing.NodeMoments",
+      "OAI.Combinatorics.Crossing.TwoTriangleBasis"
+    ],
+    "OAI.Combinatorics.Crossing.RankMultiplicity": [
+      "OAI.Combinatorics.Crossing.PolynomialMinors"
+    ],
+    "OAI.Combinatorics.Crossing.RankSpecialization": [
+      "OAI.Combinatorics.Crossing.PolynomialMinors"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectedIntersectionCases": [
+      "OAI.Combinatorics.Crossing.ReconnectionOppositeCuts"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectedPaths": [
+      "OAI.Combinatorics.Crossing.ReconnectedWalks"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectedPointRemoval": [
+      "OAI.Combinatorics.Crossing.ReconnectedPaths",
+      "OAI.Combinatorics.Crossing.ReconnectionAvoidance"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectedVertexAvoidance": [
+      "OAI.Combinatorics.Crossing.ReconnectedPaths",
+      "OAI.Combinatorics.Crossing.CutVertexAvoidance",
+      "OAI.Combinatorics.Crossing.ReconnectionVertexAvoidance"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectedWalks": [
+      "OAI.Combinatorics.Crossing.ExteriorCrossingCut",
+      "OAI.Combinatorics.Crossing.SurgeryPathWitnesses"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectionAvoidance": [
+      "OAI.Combinatorics.Crossing.ReconnectionChords"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectionChords": [
+      "OAI.Combinatorics.Crossing.CrossingReconnection",
+      "OAI.Combinatorics.Crossing.CrossingDiskNeighborhood"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectionOppositeCuts": [
+      "OAI.Combinatorics.Crossing.ReconnectionOtherEdges",
+      "OAI.Combinatorics.Crossing.CutTraceSeparation"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectionOtherEdges": [
+      "OAI.Combinatorics.Crossing.ConstructAdjacentSurgery"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectionVertexAvoidance": [
+      "OAI.Combinatorics.Crossing.ReconnectionChords"
+    ],
+    "OAI.Combinatorics.Crossing.RectangleAlgebra": [],
+    "OAI.Combinatorics.Crossing.ReducedCrossingCorners": [
+      "OAI.Combinatorics.Crossing.LocalLineBends",
+      "OAI.Combinatorics.Crossing.ReducedPolygonalPresentation",
+      "OAI.Combinatorics.Crossing.LocallyStraightNormalization",
+      "OAI.Combinatorics.Crossing.DrawingRangeCrossings"
+    ],
+    "OAI.Combinatorics.Crossing.ReducedCrossingTransversality": [
+      "OAI.Combinatorics.Crossing.ReducedCrossingCorners",
+      "OAI.Combinatorics.Crossing.LocalSegmentTransversality",
+      "OAI.Combinatorics.Crossing.LocallyTransverseNormalization"
+    ],
+    "OAI.Combinatorics.Crossing.ReducedPolygonalPresentation": [
+      "OAI.Combinatorics.Crossing.SubdivisionSegments",
+      "OAI.Combinatorics.Crossing.PolygonalArcInjective",
+      "OAI.Combinatorics.Crossing.ArcRangeMinimality"
+    ],
+    "OAI.Combinatorics.Crossing.ReplaceDrawingEdges": [
+      "OAI.Combinatorics.Crossing.ReconnectedVertexAvoidance"
+    ],
+    "OAI.Combinatorics.Crossing.ReplaceDrawingRangeCases": [
+      "OAI.Combinatorics.Crossing.ReplaceDrawingEdges"
+    ],
+    "OAI.Combinatorics.Crossing.RetainedArcDisjointness": [
+      "OAI.Combinatorics.Crossing.RetainedDrawingArcs"
+    ],
+    "OAI.Combinatorics.Crossing.RetainedDrawingArcs": [
+      "OAI.Combinatorics.Crossing.DrawingPassages",
+      "OAI.Combinatorics.Crossing.IntervalSegmentStrict",
+      "OAI.Combinatorics.Crossing.FiniteDiskCollar"
+    ],
+    "OAI.Combinatorics.Crossing.RoundCircleChords": [
+      "OAI.Combinatorics.Crossing.RadialExterior",
+      "OAI.Combinatorics.Crossing.ChordTransversality"
+    ],
+    "OAI.Combinatorics.Crossing.RoundDiskChords": [
+      "OAI.Combinatorics.Crossing.RoundCircleChords",
+      "OAI.Combinatorics.Crossing.RoundDiskClearance"
+    ],
+    "OAI.Combinatorics.Crossing.RoundDiskClearance": [
+      "OAI.Combinatorics.Crossing.OffsetVectors",
+      "OAI.Combinatorics.Crossing.FiniteSeparation"
+    ],
+    "OAI.Combinatorics.Crossing.RoundDiskVisits": [
+      "OAI.Combinatorics.Crossing.EndpointVisits"
+    ],
+    "OAI.Combinatorics.Crossing.RowCrossingCount": [
+      "OAI.Combinatorics.Crossing.CrossingIncidence"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentAffineForms": [
+      "OAI.Combinatorics.Crossing.PlanarSegments"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentAugmentation": [
+      "OAI.Combinatorics.Crossing.EmbeddedGraphPaths",
+      "OAI.Combinatorics.Crossing.DrawingSubdivisionGraph"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentClosedIncidence": [
+      "OAI.Combinatorics.Crossing.SegmentContinuity"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentContinuity": [
+      "OAI.Combinatorics.Crossing.SegmentParameters"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentCrossingCoordinates": [
+      "OAI.Combinatorics.Crossing.CrossingCoordinates"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentIntersectionUnique": [
+      "OAI.Combinatorics.Crossing.SegmentContinuity"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentParameters": [
+      "OAI.Combinatorics.Crossing.SegmentSymmetries"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentSides": [
+      "OAI.Combinatorics.Crossing.SegmentParameters"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentSymmetries": [
+      "OAI.Combinatorics.Crossing.PlanarSegments"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentTraversalReversal": [
+      "OAI.Combinatorics.Crossing.PolygonalChainTransversality",
+      "OAI.Combinatorics.Crossing.SegmentClosedIncidence"
+    ],
+    "OAI.Combinatorics.Crossing.SharedTrackAvoidance": [
+      "OAI.Combinatorics.Crossing.OffsetTrack",
+      "OAI.Combinatorics.Crossing.OffsetBendSegments",
+      "OAI.Combinatorics.Crossing.ShiftedSegmentStability"
+    ],
+    "OAI.Combinatorics.Crossing.ShiftedEdgeIntersections": [
+      "OAI.Combinatorics.Crossing.StraightChainIntersections",
+      "OAI.Combinatorics.Crossing.ConnectorTrackAvoidance"
+    ],
+    "OAI.Combinatorics.Crossing.ShiftedRadialPieces": [
+      "OAI.Combinatorics.Crossing.TruncatedRadialDots"
+    ],
+    "OAI.Combinatorics.Crossing.ShiftedSegmentStability": [
+      "OAI.Combinatorics.Crossing.TransversalityStability",
+      "OAI.Combinatorics.Crossing.FiniteEventualRadius"
+    ],
+    "OAI.Combinatorics.Crossing.ShiftedTrackDisks": [
+      "OAI.Combinatorics.Crossing.ShiftedRadialPieces",
+      "OAI.Combinatorics.Crossing.MovingDiskClearance"
+    ],
+    "OAI.Combinatorics.Crossing.ShortVertexRadius": [
+      "OAI.Combinatorics.Crossing.VertexSpokeBounds"
+    ],
+    "OAI.Combinatorics.Crossing.SimilarityCoordinates": [
+      "OAI.Combinatorics.Crossing.OrientedSimilarity",
+      "OAI.Combinatorics.Crossing.ParallelDirection",
+      "OAI.Combinatorics.Crossing.CircleParameterChart"
+    ],
+    "OAI.Combinatorics.Crossing.SimultaneousExteriorArcs": [
+      "OAI.Combinatorics.Crossing.ExteriorArcReplacement"
+    ],
+    "OAI.Combinatorics.Crossing.SimultaneousPolygonalReplacement": [
+      "OAI.Combinatorics.Crossing.PolygonalArcInjective",
+      "OAI.Combinatorics.Crossing.CompactCorridors"
+    ],
+    "OAI.Combinatorics.Crossing.SortedMarkedParameters": [
+      "OAI.Combinatorics.Crossing.DrawingMarks"
+    ],
+    "OAI.Combinatorics.Crossing.SortedSideEvents": [
+      "OAI.Combinatorics.Crossing.AffineSideEvents"
+    ],
+    "OAI.Combinatorics.Crossing.SpokeEndpointSeparation": [
+      "OAI.Combinatorics.Crossing.TruncatedSpokeCoordinates",
+      "OAI.Combinatorics.Crossing.FiniteMovingPoints"
+    ],
+    "OAI.Combinatorics.Crossing.SpokePieceIsolation": [
+      "OAI.Combinatorics.Crossing.TruncatedSignedIntersections",
+      "OAI.Combinatorics.Crossing.TrackEndpointConnections"
+    ],
+    "OAI.Combinatorics.Crossing.SpokeTrackDirections": [
+      "OAI.Combinatorics.Crossing.IncidentSpokePorts",
+      "OAI.Combinatorics.Crossing.CircleOffsetLine"
+    ],
+    "OAI.Combinatorics.Crossing.StageDegreeBound": [
+      "OAI.Combinatorics.Crossing.NodeRankLoss",
+      "OAI.Combinatorics.Crossing.RankMultiplicity"
+    ],
+    "OAI.Combinatorics.Crossing.StepEvents": [],
+    "OAI.Combinatorics.Crossing.StraightChainIntersections": [
+      "OAI.Combinatorics.Crossing.DrawnEdgeChains"
+    ],
+    "OAI.Combinatorics.Crossing.StraightChainTransversality": [
+      "OAI.Combinatorics.Crossing.StraightChainIntersections"
+    ],
+    "OAI.Combinatorics.Crossing.SubdivisionPointEndpoints": [
+      "OAI.Combinatorics.Crossing.DrawingSubdivisionGraph"
+    ],
+    "OAI.Combinatorics.Crossing.SubdivisionSegments": [
+      "OAI.Combinatorics.Crossing.AffineSubdivisionRefinement"
+    ],
+    "OAI.Combinatorics.Crossing.SublevelExtrema": [
+      "OAI.Combinatorics.Crossing.FirstLastVisits"
+    ],
+    "OAI.Combinatorics.Crossing.SubspaceIntersection": [
+      "OAI.Combinatorics.Crossing.StageDegreeBound",
+      "OAI.Combinatorics.Crossing.DegreeCounting"
+    ],
+    "OAI.Combinatorics.Crossing.SubspaceProjection": [],
+    "OAI.Combinatorics.Crossing.SurgeryCrossingContainment": [
+      "OAI.Combinatorics.Crossing.SurgeryRouteIntersections",
+      "OAI.Combinatorics.Crossing.ReplaceDrawingRangeCases",
+      "OAI.Combinatorics.Crossing.DrawingRangeCrossings"
+    ],
+    "OAI.Combinatorics.Crossing.SurgeryCutWalks": [
+      "OAI.Combinatorics.Crossing.CrossingSurgeryGraph",
+      "OAI.Combinatorics.Crossing.CrossingCutWalks",
+      "OAI.Combinatorics.Crossing.GraphWalkRealizationLaws"
+    ],
+    "OAI.Combinatorics.Crossing.SurgeryFiniteDrawing": [
+      "OAI.Combinatorics.Crossing.SurgeryNoTriples",
+      "OAI.Combinatorics.Crossing.SurgeryStrictPointCount"
+    ],
+    "OAI.Combinatorics.Crossing.SurgeryNoTriples": [
+      "OAI.Combinatorics.Crossing.SurgeryCrossingContainment"
+    ],
+    "OAI.Combinatorics.Crossing.SurgeryPathWitnesses": [
+      "OAI.Combinatorics.Crossing.SurgeryCutWalks"
+    ],
+    "OAI.Combinatorics.Crossing.SurgeryRouteIntersections": [
+      "OAI.Combinatorics.Crossing.ReconnectedIntersectionCases"
+    ],
+    "OAI.Combinatorics.Crossing.SurgeryStrictPointCount": [
+      "OAI.Combinatorics.Crossing.SurgeryCrossingContainment"
+    ],
+    "OAI.Combinatorics.Crossing.TangentTrackIdentity": [
+      "OAI.Combinatorics.Crossing.CircleOffsetLine",
+      "OAI.Combinatorics.Crossing.CircleConnectors"
+    ],
+    "OAI.Combinatorics.Crossing.TrackChordSeparation": [
+      "OAI.Combinatorics.Crossing.RoundDiskChords",
+      "OAI.Combinatorics.Crossing.PhysicalVertexChords",
+      "OAI.Combinatorics.Crossing.SpokePieceIsolation"
+    ],
+    "OAI.Combinatorics.Crossing.TrackEndpointConnections": [
+      "OAI.Combinatorics.Crossing.TruncatedSpokeCoordinates"
+    ],
+    "OAI.Combinatorics.Crossing.TransversalityStability": [
+      "OAI.Combinatorics.Crossing.SegmentContinuity"
+    ],
+    "OAI.Combinatorics.Crossing.TransversePolygonIntersection": [
+      "OAI.Combinatorics.Crossing.GenericPolygonIntersection",
+      "OAI.Combinatorics.Crossing.GenericPointFamily",
+      "OAI.Combinatorics.Crossing.PolygonStability",
+      "OAI.Combinatorics.Crossing.PeriodicPolygon"
+    ],
+    "OAI.Combinatorics.Crossing.TriangleEntryExit": [
+      "OAI.Combinatorics.Crossing.TriangleSideEvent",
+      "OAI.Combinatorics.Crossing.SortedSideEvents",
+      "OAI.Combinatorics.Crossing.PolygonalWalks"
+    ],
+    "OAI.Combinatorics.Crossing.TriangleFactorization": [
+      "OAI.Combinatorics.Crossing.HalfOrderReduction",
+      "OAI.Combinatorics.Crossing.WeightedGram"
+    ],
+    "OAI.Combinatorics.Crossing.TriangleOrientations": [
+      "OAI.Combinatorics.Crossing.TriangleTransversality"
+    ],
+    "OAI.Combinatorics.Crossing.TriangleSideEvent": [
+      "OAI.Combinatorics.Crossing.SegmentSides",
+      "OAI.Combinatorics.Crossing.AffineSideEvents"
+    ],
+    "OAI.Combinatorics.Crossing.TriangleTransversality": [
+      "OAI.Combinatorics.Crossing.TriangleEntryExit"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedChainDirections": [
+      "OAI.Combinatorics.Crossing.TruncatedChainVertices"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedChainPath": [
+      "OAI.Combinatorics.Crossing.TruncatedTrackAvoidance"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedChainVertices": [
+      "OAI.Combinatorics.Crossing.DrawingSpokePorts"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedCrossingCorners": [
+      "OAI.Combinatorics.Crossing.TruncatedDrawingInteriors",
+      "OAI.Combinatorics.Crossing.ReducedCrossingCorners"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedCrossingRetention": [
+      "OAI.Combinatorics.Crossing.VertexDisksCrossingFree",
+      "OAI.Combinatorics.Crossing.TruncatedTraceDecomposition"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedDrawingDisks": [
+      "OAI.Combinatorics.Crossing.TruncatedRadialEnds"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedDrawingInteriors": [
+      "OAI.Combinatorics.Crossing.TruncatedCrossingRetention"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedRadialDots": [
+      "OAI.Combinatorics.Crossing.TrackEndpointConnections",
+      "OAI.Combinatorics.Crossing.NormalOffsetExterior"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedRadialEnds": [
+      "OAI.Combinatorics.Crossing.TruncatedChainPath",
+      "OAI.Combinatorics.Crossing.RadialExterior"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedSegmentTransversality": [
+      "OAI.Combinatorics.Crossing.TruncatedCrossingCorners",
+      "OAI.Combinatorics.Crossing.ReducedCrossingTransversality"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedSignedIntersections": [
+      "OAI.Combinatorics.Crossing.UniformTrackPerturbation",
+      "OAI.Combinatorics.Crossing.RowCrossingCount"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedSpokeCoordinates": [
+      "OAI.Combinatorics.Crossing.TruncatedSpokeDirections",
+      "OAI.Combinatorics.Crossing.TangentTrackIdentity"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedSpokeDirections": [
+      "OAI.Combinatorics.Crossing.VertexTruncationGeometry",
+      "OAI.Combinatorics.Crossing.SpokeTrackDirections"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedTraceDecomposition": [
+      "OAI.Combinatorics.Crossing.TruncatedChainPath"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedTrackAvoidance": [
+      "OAI.Combinatorics.Crossing.TruncatedChainDirections",
+      "OAI.Combinatorics.Crossing.SegmentClosedIncidence",
+      "OAI.Combinatorics.Crossing.SharedTrackAvoidance"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedTrackStability": [
+      "OAI.Combinatorics.Crossing.VertexTruncationGeometry"
+    ],
+    "OAI.Combinatorics.Crossing.TwoTriangleBasis": [
+      "OAI.Combinatorics.Crossing.BivariateCoefficients"
+    ],
+    "OAI.Combinatorics.Crossing.TwoTriangleIndices": [],
+    "OAI.Combinatorics.Crossing.TwoTriangleUnisolvence": [
+      "OAI.Combinatorics.Crossing.Bivariate",
+      "OAI.Combinatorics.Crossing.TwoTriangleIndices"
+    ],
+    "OAI.Combinatorics.Crossing.UniformCrossTypeGeometry": [
+      "OAI.Combinatorics.Crossing.ChordExteriorSeparation",
+      "OAI.Combinatorics.Crossing.ConnectorTrackAvoidance",
+      "OAI.Combinatorics.Crossing.SegmentTraversalReversal"
+    ],
+    "OAI.Combinatorics.Crossing.UniformSpokeRadii": [
+      "OAI.Combinatorics.Crossing.SpokeEndpointSeparation",
+      "OAI.Combinatorics.Crossing.FiniteScaledRadius"
+    ],
+    "OAI.Combinatorics.Crossing.UniformTrackPerturbation": [
+      "OAI.Combinatorics.Crossing.TruncatedTrackStability",
+      "OAI.Combinatorics.Crossing.PolygonalWalks"
+    ],
+    "OAI.Combinatorics.Crossing.UniqueWalkPassage": [],
+    "OAI.Combinatorics.Crossing.VertexChordIntersections": [
+      "OAI.Combinatorics.Crossing.StraightChainTransversality",
+      "OAI.Combinatorics.Crossing.UniformCrossTypeGeometry"
+    ],
+    "OAI.Combinatorics.Crossing.VertexDiskSpokes": [
+      "OAI.Combinatorics.Crossing.RoundCircleChords",
+      "OAI.Combinatorics.Crossing.FiniteLineAvoidance"
+    ],
+    "OAI.Combinatorics.Crossing.VertexDisksCrossingFree": [
+      "OAI.Combinatorics.Crossing.TruncatedDrawingDisks",
+      "OAI.Combinatorics.Crossing.IncidentSpokePorts"
+    ],
+    "OAI.Combinatorics.Crossing.VertexEndpointPorts": [
+      "OAI.Combinatorics.Crossing.DrawingVertexPlacement"
+    ],
+    "OAI.Combinatorics.Crossing.VertexOrderDetector": [
+      "OAI.Combinatorics.Crossing.CycleMatrixBlocks",
+      "OAI.Combinatorics.Crossing.HalfOrderInvertibility"
+    ],
+    "OAI.Combinatorics.Crossing.VertexPassagePairing": [
+      "OAI.Combinatorics.Crossing.GlobalCycleIntersection"
+    ],
+    "OAI.Combinatorics.Crossing.VertexPieceClearance": [
+      "OAI.Combinatorics.Crossing.MinimumChainVertexPieces",
+      "OAI.Combinatorics.Crossing.MarkedCurveDisks"
+    ],
+    "OAI.Combinatorics.Crossing.VertexSpokeBounds": [
+      "OAI.Combinatorics.Crossing.VertexTraceDisks"
+    ],
+    "OAI.Combinatorics.Crossing.VertexTraceDisks": [
+      "OAI.Combinatorics.Crossing.VertexPieceClearance",
+      "OAI.Combinatorics.Crossing.ChainTracePieces"
+    ],
+    "OAI.Combinatorics.Crossing.VertexTruncation": [
+      "OAI.Combinatorics.Crossing.TruncatedSegmentTransversality",
+      "OAI.Combinatorics.Crossing.ShortVertexRadius"
+    ],
+    "OAI.Combinatorics.Crossing.VertexTruncationGeometry": [
+      "OAI.Combinatorics.Crossing.VertexTruncation"
+    ],
+    "OAI.Combinatorics.Crossing.WalkVectorSum": [
+      "OAI.Combinatorics.Crossing.CyclicWalkDarts",
+      "OAI.Combinatorics.Crossing.RectangleAlgebra"
+    ],
+    "OAI.Combinatorics.Crossing.WeightedGram": []
+  },
+  "declarations": {
+    "OAI.Combinatorics.Crossing.AdaptedFamily": [
+      "exists_adapted_family"
+    ],
+    "OAI.Combinatorics.Crossing.AdditiveBlockRelation": [
+      "fourCycle_pairing_zero",
+      "lemma3_2"
+    ],
+    "OAI.Combinatorics.Crossing.AdjacentSurgeryDrawing": [
+      "adjacentSurgeryDrawing",
+      "adjacentSurgeryDrawing_vertex",
+      "adjacentSurgeryDrawing_first",
+      "adjacentSurgeryDrawing_second",
+      "adjacentSurgeryDrawing_other",
+      "adjacentSurgeryRouteP_hasFiniteAffineCover",
+      "adjacentSurgeryRouteQ_hasFiniteAffineCover"
+    ],
+    "OAI.Combinatorics.Crossing.AdjacentSurgeryPointRemoval": [
+      "adjacentSurgeryDrawing_hasFiniteAffineCover",
+      "adjacentSurgeryRoutes_avoid_crossing",
+      "adjacentSurgeryDrawing_avoids_crossing"
+    ],
+    "OAI.Combinatorics.Crossing.AdjacentSurgeryRoutes": [
+      "adjacentSurgeryRouteP",
+      "adjacentSurgeryRouteQ",
+      "adjacentSurgeryRouteP_injective",
+      "adjacentSurgeryRouteQ_injective",
+      "adjacentSurgeryRouteP_avoids_vertices",
+      "adjacentSurgeryRouteQ_avoids_vertices"
+    ],
+    "OAI.Combinatorics.Crossing.AdmissibleAdjacentSurgery": [
+      "exists_admissible_adjacent_surgery"
+    ],
+    "OAI.Combinatorics.Crossing.AffineIntervalRestriction": [
+      "intervalSegment_interpolate",
+      "segmentPoint_interpolate",
+      "path_affine_restrict"
+    ],
+    "OAI.Combinatorics.Crossing.AffinePathHalves": [
+      "intervalLeft",
+      "intervalRight",
+      "intervalLeft_strictMono",
+      "intervalRight_strictMono",
+      "intervalSegment_left",
+      "intervalSegment_right",
+      "path_trans_intervalLeft",
+      "path_trans_intervalRight",
+      "intervalSegment_zero_one"
+    ],
+    "OAI.Combinatorics.Crossing.AffineSideEvents": [
+      "positiveIndicator",
+      "slopeSign",
+      "sideBefore",
+      "sideAfter",
+      "sideAfter_sub_before",
+      "positiveIndicator_factor",
+      "sum_affine_side_events"
+    ],
+    "OAI.Combinatorics.Crossing.AffineSubdivisionRefinement": [
+      "HasFiniteAffineCover.refine",
+      "exists_marked_polygonal_subdivision"
+    ],
+    "OAI.Combinatorics.Crossing.AlternatingPaths": [
+      "alternatingPath",
+      "alternatingPath_range_iff",
+      "alternatingPath_injective"
+    ],
+    "OAI.Combinatorics.Crossing.ArcRangeMinimality": [
+      "path_range_eq_of_subset"
+    ],
+    "OAI.Combinatorics.Crossing.AssembledAdmissibleDrawing": [
+      "crossingChord_meeting_proper",
+      "assembled_crossings_proper",
+      "assembledAdmissible",
+      "assembled_crossingCount_le"
+    ],
+    "OAI.Combinatorics.Crossing.AssembledContinuousDrawing": [
+      "vertex_spoke_vertex_eq",
+      "middlePath_avoids_vertices",
+      "assembledEdge_vertex_eq",
+      "assembledEdge_interior_avoids_vertices",
+      "assembledDrawing",
+      "exists_assembledDrawing"
+    ],
+    "OAI.Combinatorics.Crossing.AssembledCrossings": [
+      "vertex_spokes_meeting",
+      "assembled_spoke_meeting",
+      "assembled_meeting_chords",
+      "assembled_crossings_subset",
+      "assembled_crossings_finite"
+    ],
+    "OAI.Combinatorics.Crossing.AssembledEdge": [
+      "startSpoke",
+      "endSpoke",
+      "assembledEdge",
+      "startSpoke_injective",
+      "endSpoke_range",
+      "endSpoke_injective",
+      "assembledEdge_injective",
+      "assembledEdge_range_iff"
+    ],
+    "OAI.Combinatorics.Crossing.AssembledNoTriples": [
+      "assembled_no_triples"
+    ],
+    "OAI.Combinatorics.Crossing.AssembledPortIncidence": [
+      "portPoint_mem_exterior",
+      "assembled_port_mem_range",
+      "assembled_exterior_edge_eq",
+      "assembled_port_unique_edge"
+    ],
+    "OAI.Combinatorics.Crossing.AxisAdmissibility": [
+      "axisContinuousDrawing_meeting_independent",
+      "axisContinuousDrawing_line_equation",
+      "axisAdmissibleDrawing",
+      "axisAdmissibleDrawing_noAdjacent"
+    ],
+    "OAI.Combinatorics.Crossing.AxisConcurrency": [
+      "axisConcurrency",
+      "axisSegmentPoint_line_equation",
+      "axisConcurrency_zero_of_meeting",
+      "axisConcurrencyPolynomial",
+      "axisConcurrencyPolynomial_eval",
+      "axisConcurrencyPolynomial_ne_zero"
+    ],
+    "OAI.Combinatorics.Crossing.AxisContinuousDrawing": [
+      "axisVertex",
+      "axisVertex_injective",
+      "axisContinuousDrawing",
+      "axisContinuousDrawing_interior"
+    ],
+    "OAI.Combinatorics.Crossing.AxisCrossingOrder": [
+      "positive_scaled_eq_sign",
+      "axis_meeting_abs_order",
+      "meeting_same_rays",
+      "meeting_reverse_horizontal_order",
+      "meeting_balanced_pairs"
+    ],
+    "OAI.Combinatorics.Crossing.AxisFiniteCrossings": [
+      "axis_open_intersection_subsingleton",
+      "axis_intercept_pair_ne",
+      "axisContinuousDrawing_pair_subsingleton",
+      "axisContinuousDrawing_crossings_finite",
+      "axisContinuousDrawing_crossings_proper"
+    ],
+    "OAI.Combinatorics.Crossing.AxisGenericPositions": [
+      "AxisIndependentTriple",
+      "exists_axis_generic_positions"
+    ],
+    "OAI.Combinatorics.Crossing.AxisSegments": [
+      "axisSegmentPoint",
+      "axisSegmentPoint_coordinates",
+      "axisSegmentPoint_injective",
+      "axisSegmentPoint_interior_off_axes",
+      "axisSegmentPoint_same_vertical",
+      "axisSegmentPoint_same_horizontal",
+      "axisSegmentPoint_meeting_det",
+      "axisSegmentPoint_meeting_proper"
+    ],
+    "OAI.Combinatorics.Crossing.BalancedAxisCrossingCount": [
+      "crossingCandidates",
+      "candidateCrossings",
+      "pairCrossings_card_le_one",
+      "crossings_covered_by_candidates",
+      "crossingCount_le",
+      "crossingCount_eq"
+    ],
+    "OAI.Combinatorics.Crossing.BalancedAxisDrawing": [
+      "BalancedAxisRealization",
+      "nonempty_balancedAxisRealization",
+      "vertical_injective",
+      "horizontal_injective",
+      "vertical_ne_zero",
+      "horizontal_ne_zero",
+      "vertical_abs_strictMono",
+      "horizontal_abs_strictMono",
+      "drawing",
+      "drawing_noAdjacent",
+      "drawing_vertex_left",
+      "drawing_vertex_right",
+      "drawing_edge",
+      "drawing_edgeInterior",
+      "exists_axis_admissible"
+    ],
+    "OAI.Combinatorics.Crossing.BalancedAxisIntervals": [
+      "axisIntervalLo",
+      "axisIntervalHi",
+      "axisInterval_nonempty",
+      "axisInterval_abs_bounds",
+      "axisInterval_sign",
+      "axisInterval_ne_zero",
+      "axisInterval_abs_strictMono",
+      "axisInterval_injective"
+    ],
+    "OAI.Combinatorics.Crossing.BalancedRayPairs": [
+      "positiveRayIndices",
+      "negativeRayIndices",
+      "balancedRayPairs",
+      "mem_balancedRayPairs",
+      "positiveRayIndices_card",
+      "negativeRayIndices_card",
+      "twice_choose_two",
+      "balanced_choose_two",
+      "balancedRayPairs_card"
+    ],
+    "OAI.Combinatorics.Crossing.BipartiteDartGeometry": [
+      "forwardBipartiteDart",
+      "backwardBipartiteDart",
+      "bipartiteDartEdge",
+      "bipartiteDartSign",
+      "bipartiteDart_cases",
+      "bipartiteDart_source_incident",
+      "bipartiteDart_target_incident",
+      "dartSourceIncident",
+      "dartTargetIncident",
+      "bipartiteDartEdge_symm",
+      "bipartiteDartSign_symm",
+      "orientedEdgeStep_dart"
+    ],
+    "OAI.Combinatorics.Crossing.Bivariate": [
+      "BiPoly",
+      "biCoeff",
+      "biEval",
+      "BiBounded",
+      "flattenBi",
+      "flattenBi_apply",
+      "swapBi",
+      "biCoeff_swap",
+      "bi_ext",
+      "swapBi_swapBi",
+      "swapBi_single",
+      "biEval_swap",
+      "biBounded_swap",
+      "boundedSpace",
+      "coefficients_of_mulRoot",
+      "bi_factor_row",
+      "biEval_mulRoot",
+      "bounded_eval_outer"
+    ],
+    "OAI.Combinatorics.Crossing.BivariateCoefficients": [
+      "BiExponent",
+      "biOfCoeffs",
+      "biCoeff_biOfCoeffs",
+      "biOfCoeffs_injective",
+      "biOfCoeffs_bounded",
+      "biEval_biOfCoeffs"
+    ],
+    "OAI.Combinatorics.Crossing.BoundaryCollar": [
+      "exists_radial_tip_collar"
+    ],
+    "OAI.Combinatorics.Crossing.ChainPieceInteriors": [
+      "drawing_chain_piece_open_subset_interior"
+    ],
+    "OAI.Combinatorics.Crossing.ChainTracePieces": [
+      "PolygonalChain.piece_subset_path_range",
+      "drawing_chain_range_eq",
+      "drawing_chain_pieces_pos"
+    ],
+    "OAI.Combinatorics.Crossing.ChordEdgeIntersections": [
+      "exists_chord_edge_radius"
+    ],
+    "OAI.Combinatorics.Crossing.ChordExteriorSeparation": [
+      "round_chord_exterior_disjoint",
+      "different_vertex_chords_disjoint",
+      "chord_connector_disjoint_all_passages"
+    ],
+    "OAI.Combinatorics.Crossing.ChordOrientations": [
+      "segmentCrossingSign_reverse_right",
+      "chordEndpointPairing_reverse_right",
+      "circle_chord_pairing_first_ordered",
+      "circle_chord_pairing"
+    ],
+    "OAI.Combinatorics.Crossing.ChordPairing": [
+      "orderSign",
+      "chordEndpointPairing",
+      "orderSign_swap",
+      "chordEndpointPairing_reverse_left",
+      "chordEndpointPairing_swap",
+      "circle_chords_separated",
+      "circle_chords_nested",
+      "circle_chord_pairing_ordered"
+    ],
+    "OAI.Combinatorics.Crossing.ChordTransversality": [
+      "segmentPairTransverse_of_noncollinear_endpoints",
+      "circle_orient_ne_zero",
+      "circle_chords_transverse"
+    ],
+    "OAI.Combinatorics.Crossing.CircleChords": [
+      "circlePoint",
+      "circle_denominator_pos",
+      "circlePoint_on_unit_circle",
+      "circlePoint_parameter",
+      "circlePoint_injective",
+      "circle_orient_formula",
+      "circle_orient_pos",
+      "orient2_cycle",
+      "orient2_swap_ends",
+      "circle_chords_alternating_positive"
+    ],
+    "OAI.Combinatorics.Crossing.CircleConnectors": [
+      "circleTangentOffset",
+      "squaredLength_radial",
+      "circleConnector_parameterization",
+      "circleConnector_outside",
+      "circleConnector_strictly_outside",
+      "circleConnector_side"
+    ],
+    "OAI.Combinatorics.Crossing.CircleDeterminantOrder": [
+      "circle_det_formula",
+      "circle_det_pos_iff",
+      "circle_det_neg_iff"
+    ],
+    "OAI.Combinatorics.Crossing.CircleOffset": [
+      "circleOffset",
+      "circleOffset_on_circle",
+      "circleOffset_side"
+    ],
+    "OAI.Combinatorics.Crossing.CircleOffsetLine": [
+      "similarity_circleOffset",
+      "rotated_parallel_det_ne_zero",
+      "circleTrackScale",
+      "circleTrackScale_ne_zero",
+      "circleOffset_track_level"
+    ],
+    "OAI.Combinatorics.Crossing.CircleOffsetParameter": [
+      "offsetParameter",
+      "continuous_circleOffset",
+      "continuousAt_offsetParameter_zero",
+      "exists_circle_offset_parameter_radius"
+    ],
+    "OAI.Combinatorics.Crossing.CircleParameterChart": [
+      "circlePoint_one_add_x",
+      "circlePoint_avoids_cut",
+      "circlePoint_surjective_away_cut"
+    ],
+    "OAI.Combinatorics.Crossing.ClosedPolygonIntersection": [
+      "closed_polygon_intersection_zero"
+    ],
+    "OAI.Combinatorics.Crossing.CollinearSegmentUnion": [
+      "collinear_segment_subset_union"
+    ],
+    "OAI.Combinatorics.Crossing.CompactCorridors": [
+      "finite_compact_corridors"
+    ],
+    "OAI.Combinatorics.Crossing.ConeIntersection": [
+      "polygon_intersection_zero_of_cone"
+    ],
+    "OAI.Combinatorics.Crossing.ConnectorOtherDisks": [
+      "exists_connector_other_disks_radius"
+    ],
+    "OAI.Combinatorics.Crossing.ConnectorSupportingLines": [
+      "det2_segmentPoint_sub",
+      "segment_line_level_zero",
+      "spokePort_is_piece_endpoint",
+      "continuous_tangentPort",
+      "tangentPort_zero",
+      "tangentPort_level",
+      "connector_level",
+      "connector_avoids_incident_piece"
+    ],
+    "OAI.Combinatorics.Crossing.ConnectorTrackAvoidance": [
+      "exists_nonincident_connector_radius",
+      "exists_all_connector_track_radius"
+    ],
+    "OAI.Combinatorics.Crossing.ConstructAdjacentSurgery": [
+      "exists_adjacentSurgery_continuousDrawing"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingCoordinates": [
+      "crossingCoordinates",
+      "crossingCoordinateInverse",
+      "crossingCoordinates_left_inverse",
+      "crossingCoordinates_right_inverse",
+      "crossingCoordinates_continuous",
+      "crossingCoordinateInverse_continuous",
+      "crossingCoordinateHomeomorph",
+      "crossingCoordinateChart"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingCutWalks": [
+      "crossing_cut_traces_disjoint",
+      "exists_exterior_crossing_cuts"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingDiskCount": [
+      "chordCrossingOrigin",
+      "chordCrossingOrigin_mapsTo",
+      "chordCrossingOrigin_injOn",
+      "chordCrossings_finite",
+      "chordCrossings_ncard_le"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingDiskIncidence": [
+      "innerIndex_eq_of_edge_mark",
+      "incomingPort_injective",
+      "outgoingPort_injective",
+      "incomingPort_ne_outgoingPort",
+      "incomingPoint_on_circle",
+      "outgoingPoint_on_circle",
+      "crossing_chords_transverse_at_mark",
+      "innerMark_no_triples"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingDiskNeighborhood": [
+      "crossingDisk",
+      "crossingDisk_isOpen",
+      "crossingDisk_subset_closed",
+      "crossingDisk_disjoint_vertex_disk",
+      "crossingChord_openTrace_iff",
+      "assembled_range_in_crossingDisk",
+      "assembled_trace_in_crossingDisk"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingDiskOwners": [
+      "assembled_in_crossingDisk_chord",
+      "assembled_crossingDisk_owner",
+      "assembled_other_edge_avoids_crossingDisk"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingDiskUniqueness": [
+      "innerIndex_at_mark_pair",
+      "chordCrossingsAt",
+      "chordCrossingsAt_subsingleton",
+      "chord_meeting_marks_eq",
+      "chordCrossings",
+      "chord_crossing_original_mark"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingIncidence": [
+      "crossingCount_attainment",
+      "ordinaryCrossingNumber_le_count",
+      "crossing_incident_iff",
+      "crossing_two_edges",
+      "pairCrossings",
+      "pairCrossings_self",
+      "pairCrossings_comm",
+      "crossing_ordered_incidence",
+      "sum_pairCrossings_card"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingPortClearance": [
+      "crossingChord_parameter_interior",
+      "assembled_crossing_disk_parameter_between",
+      "assembled_crossing_port_clearance"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingReconnection": [
+      "crossingCoordinates_affine",
+      "convex_combination_pos",
+      "crossing_reconnections_disjoint"
+    ],
+    "OAI.Combinatorics.Crossing.CrossingSurgeryGraph": [
+      "crossingSurgeryGraph",
+      "crossingSurgeryGraph_embedding",
+      "exterior_le_crossingSurgeryGraph",
+      "crossingSurgeryGraph_reconnection_adj"
+    ],
+    "OAI.Combinatorics.Crossing.CurveDiskIsolation": [
+      "finite_injective_curve_disk_isolation"
+    ],
+    "OAI.Combinatorics.Crossing.CutTraceSeparation": [
+      "first_parameter_point",
+      "last_parameter_point",
+      "prefix_subset_edge",
+      "suffix_subset_edge",
+      "incoming_not_suffix",
+      "outgoing_not_prefix",
+      "prefix_suffix_disjoint"
+    ],
+    "OAI.Combinatorics.Crossing.CutVertexAvoidance": [
+      "drawing_edge_vertex_parameter",
+      "first_parameter_lt_one",
+      "last_parameter_pos",
+      "prefix_vertex_eq",
+      "suffix_vertex_eq"
+    ],
+    "OAI.Combinatorics.Crossing.CycleBlockIntersections": [
+      "intersection_join_join",
+      "transverse_join_join",
+      "passageIntersection",
+      "exists_cycle_block_radius"
+    ],
+    "OAI.Combinatorics.Crossing.CycleEndpointSum": [
+      "passage_sum_eq_endpoint_sum",
+      "cycleIntersectionMatrix",
+      "closed_cycle_matrix_sum"
+    ],
+    "OAI.Combinatorics.Crossing.CycleMatrixBlocks": [
+      "leftHalfOrder",
+      "rightHalfOrder",
+      "flagPairing_left_block",
+      "flagPairing_right_block",
+      "cycleIntersectionMatrix_entry",
+      "cycleIntersectionMatrix_diagonal_block",
+      "cycleIntersectionMatrix_offDiagonal_block"
+    ],
+    "OAI.Combinatorics.Crossing.CyclePairing": [
+      "lemma3_1"
+    ],
+    "OAI.Combinatorics.Crossing.CyclicSumArithmetic": [
+      "sum_range_cycle_succ",
+      "double_sum_cycle_shift_right",
+      "double_sum_cycle_shift_left"
+    ],
+    "OAI.Combinatorics.Crossing.CyclicWalkDarts": [
+      "walkDart",
+      "walkDart_eq_getElem",
+      "cyclicWalkDart",
+      "cyclicWalkDart_period",
+      "cyclicWalkDart_seam",
+      "bipartiteDart_unoriented",
+      "walkDart_edge_injective",
+      "cyclicWalkDart_next_edge_ne"
+    ],
+    "OAI.Combinatorics.Crossing.DartCyclePaths": [
+      "incidentCast",
+      "incidentCast_val",
+      "dartPassageNext",
+      "dartPassage_ne",
+      "spokePort_cast",
+      "dartCycleVertex",
+      "dartCycleBlock",
+      "dartCycleChain",
+      "graphCycleChain",
+      "shiftedPort_cast",
+      "shiftedCycleVertex",
+      "shiftedCycleBlock",
+      "shiftedCycleChain",
+      "shiftedGraphCycleChain"
+    ],
+    "OAI.Combinatorics.Crossing.DartPairIntersections": [
+      "dart_pair_intersection",
+      "chord_dart_intersection",
+      "dart_chord_intersection",
+      "exists_dart_intersection_radius"
+    ],
+    "OAI.Combinatorics.Crossing.DartPathRealizations": [
+      "dartTrackChain",
+      "dartTrackChain_forward_vertices",
+      "dartTrackChain_backward_vertices",
+      "dartTrackChain_pieces",
+      "shiftedDartChain",
+      "shiftedDartChain_forward_vertices",
+      "shiftedDartChain_backward_vertices",
+      "shiftedDartChain_pieces"
+    ],
+    "OAI.Combinatorics.Crossing.DegreeCounting": [
+      "triangular_degree_sum",
+      "parabola_le_floor",
+      "total_degree_cost_le"
+    ],
+    "OAI.Combinatorics.Crossing.DeletionCount": [
+      "delete_crossing_finset",
+      "sum_delete_crossingCount",
+      "even_deletion_floor"
+    ],
+    "OAI.Combinatorics.Crossing.DetectorAnnihilation": [
+      "detectorAtom_entry_split",
+      "detectorAtom_row_sum",
+      "detectorAtom_column_sum",
+      "rankDetector_additive"
+    ],
+    "OAI.Combinatorics.Crossing.DetectorCrossingBound": [
+      "intersectionBlock",
+      "detector_rank_le_rowCrossingCount",
+      "ordered_detector_rank_le_twice_crossings"
+    ],
+    "OAI.Combinatorics.Crossing.DetectorRank": [
+      "detectorAtom_rank_le_one",
+      "detectorAtom_rank_one",
+      "rankDetector_single",
+      "rankDetector_support_bound"
+    ],
+    "OAI.Combinatorics.Crossing.DetectorRelabeling": [
+      "nodePolynomial_equiv",
+      "derivativeAtNode_equiv",
+      "detectorAtom_equiv",
+      "rankDetector_equiv",
+      "halfOrderMatrix",
+      "halfOrderMatrix_orderIso"
+    ],
+    "OAI.Combinatorics.Crossing.DiskFillingContainment": [
+      "round_chord_in_disk",
+      "crossingChord_range_subset_disk",
+      "crossingChord_interior_in_disk",
+      "crossingChords_disjoint_of_marks_ne",
+      "portPoint_outside_other_disk",
+      "portPoint_outside_open_disks",
+      "crossingChord_avoids_vertex_disks"
+    ],
+    "OAI.Combinatorics.Crossing.DiskPassage": [
+      "DiskPassage",
+      "nonempty_diskPassage",
+      "enter_lt_leave",
+      "enter_at_source",
+      "leave_at_target",
+      "enter_pos_of_source_outside",
+      "leave_lt_one_of_target_outside"
+    ],
+    "OAI.Combinatorics.Crossing.DiskSegments": [
+      "squaredLength_segment",
+      "unit_chord_in_disk",
+      "unit_chord_in_open_disk",
+      "unit_chord_connector_disjoint"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingDefinition": [
+      "Plane",
+      "BipartiteVertex",
+      "BipartiteEdge",
+      "ContinuousDrawing",
+      "edgeInterior",
+      "ProperCrossing",
+      "crossingPoints",
+      "AdmissibleDrawing",
+      "crossingCount",
+      "ordinaryCrossingNumber",
+      "MainTarget",
+      "crossing_mem_of_interiors"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingDeletion": [
+      "deleteRightVertex",
+      "crossing_survives_deletion_iff",
+      "crossing_columns_ne",
+      "two_excluded_indices",
+      "crossing_deletion_multiplicity"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingDiskIsolation": [
+      "DrawingMark",
+      "drawing_disk_isolation"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingEdgeWalk": [
+      "drawingEdgeSequence_adj",
+      "drawingEdgeWalk",
+      "drawingEdgeWalk_length",
+      "drawingEdgeWalk_getVert",
+      "drawingEdgeWalk_isPath",
+      "drawingEdgeWalk_uniqueVisit"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingEdgeWalkTrace": [
+      "range_pieceTrace_iff",
+      "drawingEdgeWalk_range_eq"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingExteriorReplacement": [
+      "drawing_exterior_polygonal_replacement"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingMarks": [
+      "drawingMarks",
+      "drawingMarks_finite",
+      "crossing_not_vertex",
+      "marked_parameters_finite",
+      "marked_parameter_zero",
+      "marked_parameter_one",
+      "unmarked_edge_point_interior",
+      "unmarked_intersection_same_edge"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingPassages": [
+      "DrawingPassages",
+      "nonempty_drawingPassages"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingPorts": [
+      "Port",
+      "portPoint",
+      "portMark",
+      "portPoint_mem_arc",
+      "portPoint_injective",
+      "portPoint_on_circle",
+      "PortsAt",
+      "portsAt_on_circle"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingRangeCrossings": [
+      "edgeInterior_subset_range",
+      "edgeInterior_of_range_not_vertices",
+      "edgeInterior_not_vertex",
+      "crossing_of_ranges_not_vertices"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingRestriction": [
+      "restrictEdge",
+      "restrictContinuousDrawing",
+      "restrict_edgeInterior",
+      "restrict_crossingPoints_subset",
+      "restrictDrawing",
+      "crossingCount_restrict_le",
+      "restrict_noAdjacentCrossings"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingSegmentIncidence": [
+      "drawing_curve_meeting_mark",
+      "DrawingPiece",
+      "drawingPieceStart",
+      "drawingPieceEnd",
+      "drawingPiece_endpoints_ne",
+      "drawing_pieces_meeting_endpoints"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingSpokePorts": [
+      "openSegmentTrace_reverse_mem",
+      "squaredLength_sub_comm",
+      "PolygonalChain.startPort",
+      "PolygonalChain.endPort",
+      "drawing_chain_startPort_interior",
+      "drawing_chain_endPort_interior",
+      "drawing_chain_startPort_circle",
+      "drawing_chain_endPort_circle"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingSubdivisionGraph": [
+      "drawingSubdivisionGraph",
+      "drawingSubdivisionGraph_piece_adj",
+      "common_endpoint_alternatives",
+      "drawingSubdivisionGraph_embedding",
+      "drawingSubdivisionGraph_finite_support"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingVertexPlacement": [
+      "vertexMark",
+      "vertexMark_injective",
+      "exists_drawing_vertex_placement",
+      "vertex_spoke_injective",
+      "vertex_spoke_interior"
+    ],
+    "OAI.Combinatorics.Crossing.DrawingWalkCutTraces": [
+      "graphWalkPath_range_cases",
+      "drawingEdgeWalk_take_trace",
+      "drawingEdgeWalk_drop_trace"
+    ],
+    "OAI.Combinatorics.Crossing.DrawnEdgeChains": [
+      "trackChain",
+      "chordChain",
+      "shiftedTrackChain",
+      "connectorChain",
+      "shiftedEdgeChain",
+      "shiftedChordChain",
+      "shiftedEdgeChain_pieces",
+      "shiftedEdgeChain_intersection_right"
+    ],
+    "OAI.Combinatorics.Crossing.EmbeddedGraphPaths": [
+      "StraightEdgeEmbedding",
+      "graphWalkPath",
+      "graphWalkPath_hasFiniteAffineCover",
+      "graphWalkPath_injective",
+      "exists_simple_graphWalkPath"
+    ],
+    "OAI.Combinatorics.Crossing.EndpointFlagPairing": [
+      "IncidentFlag",
+      "dartSourceFlag",
+      "dartTargetFlag",
+      "incidentCast_refl",
+      "incidentFlag_cast",
+      "dartPassageNext_flag",
+      "flagPairing",
+      "vertexChordPairing_flags",
+      "passagePairing_flags",
+      "edgeEndpointPairing",
+      "flagPairing_source_target",
+      "flagPairing_target_source",
+      "dart_endpoint_pairing"
+    ],
+    "OAI.Combinatorics.Crossing.EndpointVisits": [
+      "last_sublevel_visit",
+      "first_sublevel_visit"
+    ],
+    "OAI.Combinatorics.Crossing.EvaluationAmbient": [
+      "constrainedInclusion",
+      "constrainedInclusion_eval",
+      "ambientEval",
+      "ambientEvalRange",
+      "finrank_ambientEvalRange",
+      "finrank_ambientEvalRange_off_node",
+      "ambientEvalRange_mono_coeff",
+      "ambientEvalRange_le_coeff",
+      "ambientEvalRange_at_node_le"
+    ],
+    "OAI.Combinatorics.Crossing.EvenCrossingLowerBound": [
+      "even_successor_crossing_lower_bound",
+      "crossing_lower_bound"
+    ],
+    "OAI.Combinatorics.Crossing.ExpectedTrackGeometry": [
+      "actual_normalized_tracks"
+    ],
+    "OAI.Combinatorics.Crossing.ExteriorArcReplacement": [
+      "exterior_arc_polygonal_replacement"
+    ],
+    "OAI.Combinatorics.Crossing.ExteriorChordMeeting": [
+      "chord_parameter_endpoint",
+      "exterior_chord_meeting_parameters"
+    ],
+    "OAI.Combinatorics.Crossing.ExteriorCrossingCut": [
+      "ExteriorCrossingCut",
+      "PolygonalExterior.nonempty_exteriorCrossingCut",
+      "prefixInSurgery",
+      "suffixInSurgery",
+      "prefixInSurgery_trace",
+      "suffixInSurgery_trace"
+    ],
+    "OAI.Combinatorics.Crossing.ExteriorSegmentGraph": [
+      "exteriorSegmentGraph",
+      "exteriorSegmentGraph_le",
+      "graphWalkPath_edge_subset_range",
+      "exteriorGraphWalk",
+      "exteriorGraphWalk_getVert",
+      "exteriorGraphWalk_length",
+      "exteriorGraphWalk_trace"
+    ],
+    "OAI.Combinatorics.Crossing.ExteriorSpokeMeeting": [
+      "exterior_spoke_meeting_parameters"
+    ],
+    "OAI.Combinatorics.Crossing.ExtraDrawingSubdivision": [
+      "exists_drawing_subdivision_at",
+      "exists_assembled_port_subdivision"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteAffineCover": [
+      "HasFiniteAffineCover",
+      "hasFiniteAffineCover_refl",
+      "hasFiniteAffineCover_segment",
+      "HasFiniteAffineCover.trans",
+      "HasFiniteAffineCover.cast",
+      "polygonalArcPath_hasFiniteAffineCover",
+      "PolygonalChain.hasFiniteAffineCover"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteCircleCoordinates": [
+      "exists_circle_cut_vector",
+      "exists_finite_circle_coordinates"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteConePoint": [
+      "exists_polygon_cone_point"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteDiskCollar": [
+      "outsideDisks",
+      "isOpen_disk_exterior",
+      "isOpen_outsideDisks",
+      "exists_finite_disk_collar"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteEventualRadius": [
+      "finite_eventual_radius"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteIntersectionDrawing": [
+      "FiniteIntersectionDrawing",
+      "AdmissibleDrawing.toFiniteIntersectionDrawing",
+      "finiteCrossingCount",
+      "finiteCrossingCount_of_admissible",
+      "finiteCrossingCount_eq_ncard"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteLineAvoidance": [
+      "lineAvoidancePolynomial",
+      "lineAvoidancePolynomial_eval",
+      "lineAvoidancePolynomial_ne_zero",
+      "exists_near_avoiding_lines"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteMovingPoints": [
+      "finite_moving_points_separation"
+    ],
+    "OAI.Combinatorics.Crossing.FinitePathChain": [
+      "finitePathChain",
+      "finitePathChain_range_iff",
+      "finitePathChain_injective"
+    ],
+    "OAI.Combinatorics.Crossing.FinitePolygonalComposition": [
+      "finitePolygonalChain",
+      "finitePolygonalChain_intersection_left",
+      "finitePolygonalChain_intersection_right",
+      "finitePolygonalChain_transverse_left",
+      "finitePolygonalChain_transverse_right",
+      "finitePolygonalChain_intersection_double"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteScaledRadius": [
+      "finite_scaled_radius"
+    ],
+    "OAI.Combinatorics.Crossing.FiniteSeparation": [
+      "finite_positive_lower_bound",
+      "finite_node_separation"
+    ],
+    "OAI.Combinatorics.Crossing.FirstLastVisits": [
+      "first_last_sublevel_visits"
+    ],
+    "OAI.Combinatorics.Crossing.FloorArithmetic": [
+      "axisPairs",
+      "square_quarter_even",
+      "square_quarter_odd",
+      "axisPairs_even",
+      "axisPairs_odd",
+      "diagonal_floor_identity"
+    ],
+    "OAI.Combinatorics.Crossing.FourCyclePairing": [
+      "edgeBlock",
+      "blockRectangle",
+      "fourCycle_pairing_rectangle"
+    ],
+    "OAI.Combinatorics.Crossing.FourCycles": [
+      "completeBipartite",
+      "orientedEdgeStep",
+      "walkEdgeChain",
+      "fourCycleWalk",
+      "fourCycleWalk_isCycle",
+      "fourCycleWalk_chain"
+    ],
+    "OAI.Combinatorics.Crossing.GeneralOrderAveraging": [
+      "orderSign_of_close",
+      "orderSign_straddling_average"
+    ],
+    "OAI.Combinatorics.Crossing.GeneralSpokeAveraging": [
+      "small_perturbation_injective",
+      "fixed_node_ne_small_perturbation",
+      "local_spoke_straddling_average"
+    ],
+    "OAI.Combinatorics.Crossing.GenericPointExtension": [
+      "exists_generic_point_extension"
+    ],
+    "OAI.Combinatorics.Crossing.GenericPointFamily": [
+      "exists_generic_point_family"
+    ],
+    "OAI.Combinatorics.Crossing.GenericPolygonIntersection": [
+      "PolygonLinePosition",
+      "polygon_intersection_zero_in_line_position"
+    ],
+    "OAI.Combinatorics.Crossing.GenericPolynomialBox": [
+      "exists_box_avoiding_polynomials"
+    ],
+    "OAI.Combinatorics.Crossing.GlobalCycleAveraging": [
+      "closed_cycle_averaged_sum",
+      "graph_cycles_averaged_sum"
+    ],
+    "OAI.Combinatorics.Crossing.GlobalCycleIntersection": [
+      "exists_closed_cycle_intersection_radius"
+    ],
+    "OAI.Combinatorics.Crossing.GraphSequenceWalk": [
+      "graphSequenceWalk",
+      "graphSequenceWalk_length",
+      "graphSequenceWalk_getVert",
+      "graphSequenceWalk_isPath"
+    ],
+    "OAI.Combinatorics.Crossing.GraphWalkRealizationLaws": [
+      "graphWalkPath_range_iff",
+      "graphWalkPath_copy_range",
+      "graphWalkPath_mapLe_range",
+      "graphWalkPath_append_range",
+      "graphWalkPath_toWalk_range"
+    ],
+    "OAI.Combinatorics.Crossing.GraphWalkTrace": [
+      "polygonalArcPath_piece_subset_range",
+      "graphWalkPath_dart_subset_range",
+      "walk_dart_at",
+      "graphWalkPath_range_subset_of_darts_subset",
+      "graphWalkPath_bypass_range_subset"
+    ],
+    "OAI.Combinatorics.Crossing.HalfOrderInvertibility": [
+      "rankDetector_halfOrder_isUnit",
+      "lemma4_2"
+    ],
+    "OAI.Combinatorics.Crossing.HalfOrderReduction": [
+      "strictLowerMatrix",
+      "halfOrder_decomposition",
+      "triangleCoefficient",
+      "rowCut",
+      "lower_triangle_decomposition",
+      "triangleCoefficient_nat_nonzero",
+      "triangleCoefficient_ne_zero_iff",
+      "rankDetector_halfOrder_reduction"
+    ],
+    "OAI.Combinatorics.Crossing.IncidentSpokePorts": [
+      "IncidentEdges",
+      "incident_edges_adjacent",
+      "drawingSpokePort",
+      "drawingSpokePort_interior",
+      "drawingSpokePort_circle",
+      "drawingSpokePort_injective"
+    ],
+    "OAI.Combinatorics.Crossing.IndexedMatrixRankSum": [
+      "matrix_rank_sum_bound_indexed",
+      "matrix_rank_sum_bound_product"
+    ],
+    "OAI.Combinatorics.Crossing.InnerDrawingPassages": [
+      "InnerIndex",
+      "innerMark",
+      "incomingArc",
+      "outgoingArc",
+      "incomingPort",
+      "outgoingPort",
+      "incoming_node",
+      "outgoing_node",
+      "incomingPort_mark",
+      "outgoingPort_mark",
+      "incomingPort_point",
+      "outgoingPort_point",
+      "inner_parameter_interior",
+      "innerMark_is_crossing",
+      "crossingChord",
+      "crossingChord_injective"
+    ],
+    "OAI.Combinatorics.Crossing.Interpolation": [
+      "bounded_sum",
+      "eq_zero_of_node_roots",
+      "nodeEvaluation",
+      "nodeEvaluation_injective",
+      "vectorInterpolant",
+      "eval_vectorInterpolant",
+      "bounded_vectorInterpolant",
+      "nodeEvaluation_surjective",
+      "nodeEvaluationEquiv",
+      "finrank_constrained_zero",
+      "constrained_finrank_mono",
+      "sum_rankIncrement",
+      "interpolation_identity"
+    ],
+    "OAI.Combinatorics.Crossing.IntervalSegmentStrict": [
+      "intervalSegment_strict_between"
+    ],
+    "OAI.Combinatorics.Crossing.IntervalSegments": [
+      "intervalSegment",
+      "intervalSegment_between"
+    ],
+    "OAI.Combinatorics.Crossing.LocalLineBends": [
+      "segment_direction_of_local_line",
+      "bend_det_zero_of_local_line"
+    ],
+    "OAI.Combinatorics.Crossing.LocalSegmentTransversality": [
+      "segment_direction_of_local_line_at_interior",
+      "det2_ne_zero_of_parallel_nonzero"
+    ],
+    "OAI.Combinatorics.Crossing.LocallyStraightNormalization": [
+      "LocallyStraightAt",
+      "LocallyStraightCrossings",
+      "assembled_locallyStraightCrossings",
+      "polygonal_normalization_locally_straight"
+    ],
+    "OAI.Combinatorics.Crossing.LocallyTransverseNormalization": [
+      "LocallyTransverseCrossings",
+      "DrawingPassages.crossingChord_meeting_det",
+      "PolygonalExterior.assembled_locallyTransverseCrossings",
+      "polygonal_no_adjacent_locally_transverse"
+    ],
+    "OAI.Combinatorics.Crossing.Main": [
+      "mainTarget_proof",
+      "ordinary_crossing_number_eq",
+      "ordinary_crossing_number_attained"
+    ],
+    "OAI.Combinatorics.Crossing.MarkedCurveDisks": [
+      "closedRoundDisk_mono",
+      "finite_curve_mark_isolation"
+    ],
+    "OAI.Combinatorics.Crossing.MatrixGraphs": [
+      "graphKernelEquiv",
+      "matrix_graph_finrank_add_rank",
+      "matrix_graph_disjoint"
+    ],
+    "OAI.Combinatorics.Crossing.MatrixRankBounds": [
+      "matrix_rank_eq_zero_iff",
+      "matrix_rank_add_le",
+      "matrix_rank_smul_le",
+      "matrix_rank_sum_le"
+    ],
+    "OAI.Combinatorics.Crossing.MatrixRankSum": [
+      "offDiagonalRankSum",
+      "matrix_rank_sum_bound"
+    ],
+    "OAI.Combinatorics.Crossing.MiddleEdgeIncidence": [
+      "middle_exterior_edge_eq",
+      "middle_spoke_edge_eq",
+      "middle_middle_meeting_chords"
+    ],
+    "OAI.Combinatorics.Crossing.MiddlePathInjective": [
+      "middlePath_injective",
+      "middlePath_range_iff"
+    ],
+    "OAI.Combinatorics.Crossing.MiddleSpokeMeeting": [
+      "vertex_spoke_range_in_disk",
+      "vertex_spokes_disjoint_of_vertices_ne",
+      "middle_spoke_meeting",
+      "anchoredMiddle",
+      "anchoredMiddle_range",
+      "anchoredMiddle_injective"
+    ],
+    "OAI.Combinatorics.Crossing.MinimumChainGeometry": [
+      "adjacent_segments_meet_only_at_bend",
+      "minimum_piece_ne_zero",
+      "minimum_bend_det_ne_zero",
+      "minimum_adjacent_intersection"
+    ],
+    "OAI.Combinatorics.Crossing.MinimumChainVertexPieces": [
+      "PolygonalChain.minimum_vertex_piece_index",
+      "drawing_chain_piece_vertex"
+    ],
+    "OAI.Combinatorics.Crossing.MovingDiskClearance": [
+      "eventually_moving_segment_outside_disk",
+      "exists_shifted_segment_disk_radius"
+    ],
+    "OAI.Combinatorics.Crossing.MovingSegmentStability": [
+      "moving_endpoints_tendsto",
+      "eventually_moving_segment_pair",
+      "eventually_moving_disjoint_segments"
+    ],
+    "OAI.Combinatorics.Crossing.NoAdjacentLocalNormalization": [
+      "polygonal_no_adjacent_locally_straight"
+    ],
+    "OAI.Combinatorics.Crossing.NoAdjacentNormalization": [
+      "exists_no_adjacent_assembled",
+      "polygonal_normalization_no_adjacent"
+    ],
+    "OAI.Combinatorics.Crossing.NodeMoments": [
+      "nodePolynomial",
+      "derivativeAtNode",
+      "derivativeAtNode_eq_prod",
+      "derivativeAtNode_ne_zero",
+      "node_polynomial_moment",
+      "node_power_moment"
+    ],
+    "OAI.Combinatorics.Crossing.NodeRankLoss": [
+      "off_node_projected_rank",
+      "node_rank_loss"
+    ],
+    "OAI.Combinatorics.Crossing.NormalOffsetExterior": [
+      "dot2_rotateQuarter_self",
+      "squaredLength_normal_offset",
+      "normal_offset_radial_exterior",
+      "normal_offset_segment_exterior"
+    ],
+    "OAI.Combinatorics.Crossing.NormalizedPolygonalDrawing": [
+      "polygonal_normalization_subdivided",
+      "PolygonalParametrization.pieces_pos"
+    ],
+    "OAI.Combinatorics.Crossing.OddCrossingLowerBound": [
+      "odd_crossing_lower_bound"
+    ],
+    "OAI.Combinatorics.Crossing.OddNormalizedLowerBound": [
+      "odd_normalized_crossing_lower_bound"
+    ],
+    "OAI.Combinatorics.Crossing.OffsetBendSegments": [
+      "offset_bend_no_reverse_contact",
+      "incoming_shifted_outgoing_disjoint",
+      "outgoing_shifted_incoming_disjoint"
+    ],
+    "OAI.Combinatorics.Crossing.OffsetSegments": [
+      "offset_segment_parameterization",
+      "offset_segment_side",
+      "offset_segment_no_contact",
+      "offset_bend_no_contact"
+    ],
+    "OAI.Combinatorics.Crossing.OffsetTrack": [
+      "trackDirection",
+      "trackOffset",
+      "shiftedTrack",
+      "trackOffset_incident_levels",
+      "shiftedTrack_stretch_no_contact",
+      "exists_forward_shiftedTrack_radius"
+    ],
+    "OAI.Combinatorics.Crossing.OffsetVectors": [
+      "rotateQuarter",
+      "squaredLength",
+      "squaredLength_pos",
+      "normalShift",
+      "det2_normalShift",
+      "cornerShift",
+      "det2_cornerShift_left",
+      "det2_cornerShift_right"
+    ],
+    "OAI.Combinatorics.Crossing.OpenSegmentEndpoints": [
+      "openSegmentTrace_subset_segment",
+      "openSegmentTrace_ne_endpoints"
+    ],
+    "OAI.Combinatorics.Crossing.OrderShift": [
+      "orderSign_shift_of_separated",
+      "orderSign_opposite_average",
+      "shifted_node_ne"
+    ],
+    "OAI.Combinatorics.Crossing.OrderedAffineSubdivision": [
+      "strictMono_no_between_successors",
+      "HasFiniteAffineCover.nonempty_polygonalParametrization"
+    ],
+    "OAI.Combinatorics.Crossing.OrderedCrossingPorts": [
+      "middlePath_contains_chord",
+      "assembledEdge_contains_chord",
+      "assembled_crossing_ports_ordered",
+      "crossing_port_walk_indices"
+    ],
+    "OAI.Combinatorics.Crossing.OrderedExteriorPaths": [
+      "orderedArc",
+      "orderedArc_val",
+      "orderedArc_inj",
+      "orderedArc_first",
+      "orderedArc_last",
+      "orderedInner",
+      "orderedInner_incoming",
+      "orderedInner_outgoing",
+      "orderedInner_inj",
+      "orderedPath",
+      "orderedBridge",
+      "orderedBridge_apply",
+      "orderedBridge_range",
+      "middlePath"
+    ],
+    "OAI.Combinatorics.Crossing.OrderedKnotCover": [
+      "ordered_knots_cover",
+      "PolygonalParametrization.knot_cover"
+    ],
+    "OAI.Combinatorics.Crossing.OrderedNodeIndices": [
+      "OrderedNode",
+      "extendOrderedNode",
+      "extendOrderedNode_injOn",
+      "triangle_nodes_mem",
+      "triangleNodePair",
+      "triangleNodePair_injective",
+      "orderedTriangle",
+      "triangleNodeEquiv",
+      "triangleMatrix_ordered_entry"
+    ],
+    "OAI.Combinatorics.Crossing.OrderedPassages": [
+      "diskPassage_separated",
+      "retainedSubarc",
+      "ordered_passage_enter_strictMono",
+      "ordered_passage_leave_strictMono",
+      "retained_interval_no_mark",
+      "retained_interval_pair_disjoint"
+    ],
+    "OAI.Combinatorics.Crossing.OrderedPathParts": [
+      "OrderedPathPart",
+      "OrderedPathPart.refl",
+      "OrderedPathPart.trans",
+      "OrderedPathPart.left",
+      "OrderedPathPart.right",
+      "OrderedPathPart.congr_right",
+      "OrderedPathPart.endpoints_ordered",
+      "alternatingPath_contains_path",
+      "alternatingPath_contains_bridge"
+    ],
+    "OAI.Combinatorics.Crossing.OrientedSimilarity": [
+      "similarityPoint",
+      "similarityPoint_injective",
+      "similarityPoint_segment",
+      "similarityPoint_det",
+      "segmentsCrossProperly_similarity",
+      "segmentCrossingSign_similarity"
+    ],
+    "OAI.Combinatorics.Crossing.ParallelDirection": [
+      "dot2",
+      "planar_vector_decomposition",
+      "vector_parallel_of_det_zero",
+      "offset_direction_det_zero",
+      "exists_forward_offset_radius"
+    ],
+    "OAI.Combinatorics.Crossing.ParameterNeighborhoods": [
+      "parameterNeighborhood",
+      "parameterNeighborhood_open",
+      "parameterNeighborhood_between",
+      "parameterNeighborhood_ordered",
+      "finite_parameter_neighborhoods"
+    ],
+    "OAI.Combinatorics.Crossing.PathConcatenationInjective": [
+      "path_meeting_parameters",
+      "path_trans_injective"
+    ],
+    "OAI.Combinatorics.Crossing.PathEndpointNeighborhoods": [
+      "path_near_endpoints"
+    ],
+    "OAI.Combinatorics.Crossing.PathSubarc": [
+      "intervalSegment_injective",
+      "intervalSegment_surjective_interval",
+      "pathSubarc",
+      "pathSubarc_injective",
+      "pathSubarc_range"
+    ],
+    "OAI.Combinatorics.Crossing.PeriodicPolygon": [
+      "cyclicIndex",
+      "periodicPolygon",
+      "cyclicIndex_of_lt",
+      "cyclicIndex_period",
+      "periodicPolygon_closed",
+      "cyclicIndex_succ_ne",
+      "periodicPolygon_near"
+    ],
+    "OAI.Combinatorics.Crossing.PhysicalCircleAveraging": [
+      "physical_spoke_average_in_similarity",
+      "actual_circle_spoke_averaging"
+    ],
+    "OAI.Combinatorics.Crossing.PhysicalSpokeAveraging": [
+      "exists_physical_spoke_average"
+    ],
+    "OAI.Combinatorics.Crossing.PhysicalVertexChords": [
+      "shifted_chords_transverse",
+      "chord_connector_disjoint"
+    ],
+    "OAI.Combinatorics.Crossing.PlanarDeterminant": [
+      "det2_add_left",
+      "det2_add_right",
+      "det2_sub_left",
+      "det2_sub_right",
+      "det2_smul_left",
+      "det2_smul_right"
+    ],
+    "OAI.Combinatorics.Crossing.PlanarSegments": [
+      "det2",
+      "segmentPoint",
+      "openSegmentTrace",
+      "SegmentsCrossProperly",
+      "segmentCrossingSign",
+      "segmentPoint_reverse",
+      "det2_swap",
+      "det2_neg_left",
+      "det2_neg_right",
+      "segment_intersection_parameters_unique"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonComposition": [
+      "joinedSequence",
+      "joinedSequence_left",
+      "joinedSequence_right",
+      "polygonIntersection_join_left",
+      "polygonIntersection_join_right",
+      "reversedSequence",
+      "polygonIntersection_reverse_left"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonStability": [
+      "exists_polygon_intersection_stability_radius"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonTransversalityStability": [
+      "exists_polygon_transversality_radius"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalArcInjective": [
+      "polygonalArcPath_range_piece",
+      "polygonalArcPath_injective",
+      "minimum_path_injective",
+      "exists_simple_polygonalChain_of_path"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalBoundaryReplacement": [
+      "PolygonalChain.widen",
+      "simple_path_interior_of_range_insert",
+      "polygonal_replacement_with_spurs"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalChainComposition": [
+      "reverse",
+      "intersection_join_left",
+      "intersection_join_right",
+      "intersection_reverse_left",
+      "intersection_reverse_right"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalChainExistence": [
+      "polygonalArcPath_range_subset",
+      "path_range_subset",
+      "exists_minimum_polygonalChain",
+      "exists_minimum_polygonalChain_of_path"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalChainOperations": [
+      "vertex_mem",
+      "single",
+      "take",
+      "drop",
+      "join"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalChainShortcuts": [
+      "withEndpoints",
+      "minimum_shortcut_bound",
+      "minimum_vertices_ne",
+      "minimum_nonadjacent_disjoint",
+      "minimum_two_step_not_subset"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalChainTransversality": [
+      "Transverse",
+      "transverse_swap",
+      "transverse_join_left",
+      "transverse_join_right",
+      "closed_intersection_zero"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalChains": [
+      "polygonalArcPath",
+      "PolygonalChain",
+      "point",
+      "append",
+      "path",
+      "nonempty_polygonalChain_of_reach",
+      "nonempty_polygonalChain_of_path"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalEndpointCasts": [
+      "castEndpoints",
+      "castEndpoints_pieces",
+      "castEndpoints_vertices"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalExterior": [
+      "PolygonalExterior",
+      "nonempty_polygonalExterior",
+      "outside_open_disks",
+      "avoids_new_vertices",
+      "parameter_endpoint_of_mem_disk"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalNormalization": [
+      "alternatingPath_hasFiniteAffineCover",
+      "middlePath_hasFiniteAffineCover",
+      "assembledEdge_hasFiniteAffineCover",
+      "finite_intersection_normalization",
+      "polygonal_normalization"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalParametrization": [
+      "PolygonalParametrization",
+      "vertices",
+      "vertices_at",
+      "vertices_first",
+      "vertices_last",
+      "segment_formula",
+      "direction_ne_zero",
+      "segments_disjoint_before",
+      "nonadjacent_segments_disjoint"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalParametrizationCover": [
+      "PolygonalParametrization.hasFiniteAffineCover"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalReach": [
+      "SegmentReach",
+      "segmentReach_mem",
+      "isOpen_segmentReach",
+      "isOpen_non_segmentReach",
+      "segmentReach_of_path"
+    ],
+    "OAI.Combinatorics.Crossing.PolygonalWalks": [
+      "polygonalPath",
+      "polygonIntersection",
+      "polygonIntersection_swap",
+      "telescoping_real_sum",
+      "triangleSegmentIntersection",
+      "polygon_cone_cancellation"
+    ],
+    "OAI.Combinatorics.Crossing.PolynomialCoordinates": [
+      "scalarPolynomial",
+      "scalarPolynomial_coeff",
+      "scalarPolynomial_eval",
+      "scalarPolynomial_natDegree_le",
+      "polynomialColumnMatrix",
+      "polynomialColumnMatrix_eval",
+      "exists_polynomial_minor"
+    ],
+    "OAI.Combinatorics.Crossing.PolynomialFiltration": [
+      "evaluationFiltration",
+      "evaluationFiltration_mono",
+      "evaluationFiltration_zero",
+      "columnIncrement",
+      "columnIncrement_zero",
+      "columnIncrement_succ",
+      "sum_columnIncrement",
+      "exists_adapted_polynomials",
+      "exists_adapted_minor"
+    ],
+    "OAI.Combinatorics.Crossing.PolynomialKernel": [
+      "Bounded",
+      "bounded_zero",
+      "bounded_mono",
+      "bounded_add",
+      "bounded_sub",
+      "bounded_single",
+      "bounded_zero_iff",
+      "mulRoot",
+      "mulRoot_coeff_zero",
+      "mulRoot_coeff_succ",
+      "eval_mulRoot",
+      "bounded_mulRoot",
+      "eq_constant_of_bounded_one",
+      "exists_mulRoot_of_eval_zero",
+      "eq_zero_of_mulRoot_eq_zero",
+      "mulRootLinear",
+      "constrained",
+      "constrainedEval",
+      "toEvalKernel",
+      "toEvalKernel_injective",
+      "toEvalKernel_surjective",
+      "evalKernelEquiv",
+      "constrainedCoefficients",
+      "constrainedCoefficients_injective",
+      "rankIncrement",
+      "finrank_eval_range"
+    ],
+    "OAI.Combinatorics.Crossing.PolynomialLinearMatrix": [
+      "polynomialLinearMatrix",
+      "polynomialLinearMatrix_eval",
+      "polynomialLinearMatrix_rank"
+    ],
+    "OAI.Combinatorics.Crossing.PolynomialMinors": [
+      "natDegree_det_le_column_sum",
+      "pow_card_dvd_det_of_columns_vanish",
+      "prod_pow_roots_dvd",
+      "sum_multiplicities_le_natDegree",
+      "sum_multiplicities_le_column_sum"
+    ],
+    "OAI.Combinatorics.Crossing.ProperCrossingLocality": [
+      "chart_image_mem_iff",
+      "chart_restr_image_of_local_eq",
+      "properCrossing_of_local_eq"
+    ],
+    "OAI.Combinatorics.Crossing.ProperSegmentCrossing": [
+      "properCrossing_openSegments"
+    ],
+    "OAI.Combinatorics.Crossing.RadialBoundaryPorts": [
+      "radialPort",
+      "squaredLength_smul",
+      "radialPort_sub",
+      "radialPort_on_circle",
+      "radialPort_parameter",
+      "radialPort_parameter_between",
+      "radialPort_mem_openSegment",
+      "radialPort_ne_center"
+    ],
+    "OAI.Combinatorics.Crossing.RadialExterior": [
+      "squaredLength_add_smul",
+      "squaredLength_segment_translated",
+      "exterior_segment_of_dot",
+      "radial_spur_exterior",
+      "radial_tip_dot"
+    ],
+    "OAI.Combinatorics.Crossing.RankDetector": [
+      "detectorVector",
+      "detectorWeight",
+      "detectorAtom",
+      "rankDetector",
+      "detectorAtom_self",
+      "detectorWeight_ne_zero",
+      "detectorAtom_entry",
+      "rankDetector_diagonal"
+    ],
+    "OAI.Combinatorics.Crossing.RankMultiplicity": [
+      "rank_deficiency_pow_dvd_det",
+      "pow_dvd_det_of_rank_le"
+    ],
+    "OAI.Combinatorics.Crossing.RankSpecialization": [
+      "exists_row_minor",
+      "exists_rank_minor",
+      "polynomial_rank_specialization"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectedIntersectionCases": [
+      "reconnected_paths_meeting_cases",
+      "reconnected_paths_meeting_old_edges"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectedPaths": [
+      "reconnectedForwardPath",
+      "reconnectedBackwardPath",
+      "reconnectedForwardPath_injective",
+      "reconnectedBackwardPath_injective",
+      "reconnectedForwardPath_hasFiniteAffineCover",
+      "reconnectedBackwardPath_hasFiniteAffineCover",
+      "reconnectedForwardPath_trace",
+      "reconnectedBackwardPath_trace"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectedPointRemoval": [
+      "reconnected_paths_avoid_crossing"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectedVertexAvoidance": [
+      "path_interior_avoids_vertices_of_range",
+      "reconnectedForwardPath_vertex_eq",
+      "reconnectedBackwardPath_vertex_eq",
+      "reconnectedForwardPath_interior_avoids_vertices",
+      "reconnectedBackwardPath_interior_avoids_vertices"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectedWalks": [
+      "surgery_forward_adj",
+      "surgery_backward_adj",
+      "reconnectedForwardWalk",
+      "reconnectedBackwardWalk",
+      "reconnectedForwardWalk_trace",
+      "reconnectedBackwardWalk_trace"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectionAvoidance": [
+      "segment_avoids_of_affine_positive",
+      "crossing_reconnections_avoid_point",
+      "DrawingPassages.reconnection_avoids_chord_meeting"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectionChords": [
+      "reconnectionStart",
+      "reconnectionEnd",
+      "reconnection_endpoints_ne",
+      "crossingChord_meeting_segmentsCrossProperly",
+      "reconnection_chords_disjoint",
+      "reconnection_endpoints_on_circle",
+      "reconnection_open_in_disk"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectionOppositeCuts": [
+      "forward_chord_disjoint_opposite_prefix",
+      "forward_chord_disjoint_opposite_suffix",
+      "backward_chord_disjoint_opposite_prefix",
+      "backward_chord_disjoint_opposite_suffix"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectionOtherEdges": [
+      "segment_disjoint_of_open_containment",
+      "assembled_port_not_mem_other_edge",
+      "reconnection_other_edge_disjoint"
+    ],
+    "OAI.Combinatorics.Crossing.ReconnectionVertexAvoidance": [
+      "reconnection_segment_in_disk",
+      "reconnection_segment_avoids_vertices"
+    ],
+    "OAI.Combinatorics.Crossing.RectangleAlgebra": [
+      "edgePairing",
+      "edgePairing_single",
+      "edgePairing_add_left",
+      "edgePairing_add_right",
+      "edgePairing_sub_left",
+      "edgePairing_sub_right",
+      "rectangle_additive"
+    ],
+    "OAI.Combinatorics.Crossing.ReducedCrossingCorners": [
+      "det2_of_common_openSegment",
+      "LocallyStraightAt.exists_trace_line",
+      "minimum_bend_not_locallyStraight",
+      "minimum_bend_not_crossing",
+      "minimum_vertices_not_crossing",
+      "minimum_piece_crossing_open"
+    ],
+    "OAI.Combinatorics.Crossing.ReducedCrossingTransversality": [
+      "LocallyTransverseCrossings.exists_trace_lines",
+      "minimum_piece_det_at_crossing"
+    ],
+    "OAI.Combinatorics.Crossing.ReducedPolygonalPresentation": [
+      "PolygonalParametrization.containedChain",
+      "PolygonalChain.pieces_pos_of_ne",
+      "exists_reduced_polygonalChain"
+    ],
+    "OAI.Combinatorics.Crossing.ReplaceDrawingEdges": [
+      "replaceTwoRoutes",
+      "replaceTwoRoutes_first",
+      "replaceTwoRoutes_second",
+      "replaceTwoRoutes_other",
+      "replaceTwoEdges"
+    ],
+    "OAI.Combinatorics.Crossing.ReplaceDrawingRangeCases": [
+      "replaceTwoRoutes_range_cases"
+    ],
+    "OAI.Combinatorics.Crossing.RetainedArcDisjointness": [
+      "arcs_pairwise_disjoint"
+    ],
+    "OAI.Combinatorics.Crossing.RetainedDrawingArcs": [
+      "ArcIndex",
+      "node_mark",
+      "arcStartMark",
+      "arcEndMark",
+      "arcStart",
+      "arcEnd",
+      "arc",
+      "arc_gap",
+      "arc_injective",
+      "arc_endpoints_ne",
+      "arc_range",
+      "arc_avoids_marks",
+      "retained_parameter_outside",
+      "arc_interior_outside",
+      "arc_start_on_circle",
+      "arc_end_on_circle"
+    ],
+    "OAI.Combinatorics.Crossing.RoundCircleChords": [
+      "round_circle_line_two_points",
+      "round_circle_orient_ne_zero",
+      "round_circle_chords_transverse",
+      "round_chord_in_open_disk"
+    ],
+    "OAI.Combinatorics.Crossing.RoundDiskChords": [
+      "round_chord_subset_closed_disk",
+      "round_chord_boundary_endpoints"
+    ],
+    "OAI.Combinatorics.Crossing.RoundDiskClearance": [
+      "closedRoundDisk",
+      "dist_le_of_mem_closedRoundDisk",
+      "exists_round_disk_clearance",
+      "exists_disjoint_round_disks"
+    ],
+    "OAI.Combinatorics.Crossing.RoundDiskVisits": [
+      "continuous_path_squared_distance",
+      "path_round_disk_visits",
+      "path_initial_disk_last_visit"
+    ],
+    "OAI.Combinatorics.Crossing.RowCrossingCount": [
+      "NoAdjacentCrossings",
+      "pairCrossings_eq_empty_of_adjacent",
+      "rowCrossingCount",
+      "rowCrossingCount_self",
+      "sum_rowCrossingCount",
+      "sum_offDiagonal_rowCrossingCount"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentAffineForms": [
+      "segmentPoint_start_form",
+      "segmentPoint_end_form"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentAugmentation": [
+      "segment_endpoint_or_open",
+      "segmentAugmentedGraph",
+      "le_segmentAugmentedGraph",
+      "segmentAugmentedGraph_added_adj",
+      "exterior_segment_chord_meeting",
+      "segmentAugmentedGraph_embedding"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentClosedIncidence": [
+      "closedSegmentsMeet_iff_nonempty_inter",
+      "not_closedSegmentsMeet_of_disjoint"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentContinuity": [
+      "ClosedSegmentsMeet",
+      "closedSegmentsMeet_of_proper",
+      "isClosed_closedSegmentsMeet",
+      "eventually_segmentCrossingSign_of_proper",
+      "SegmentPairTransverse",
+      "eventually_segmentCrossingSign"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentCrossingCoordinates": [
+      "inverseCoordinates_first_segment",
+      "inverseCoordinates_second_segment",
+      "crossingCoordinates_first_segment",
+      "crossingCoordinates_second_segment"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentIntersectionUnique": [
+      "transverse_segment_intersection_subsingleton"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentParameters": [
+      "firstIntersectionParameter",
+      "secondIntersectionParameter",
+      "intersection_parameters_eq",
+      "segmentsCrossProperly_iff_parameters"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentSides": [
+      "orient2",
+      "orient2_self_segment",
+      "orient2_segment",
+      "orient2_difference",
+      "orient2_other_difference",
+      "segmentCrossingSign_of_positive_sides",
+      "not_segmentsCrossProperly_of_same_side"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentSymmetries": [
+      "segmentsCrossProperly_swap",
+      "segmentsCrossProperly_reverse_left",
+      "nonzero_orientation_sign_neg",
+      "segmentCrossingSign_swap",
+      "segmentCrossingSign_reverse_left",
+      "openSegment_intersection_subsingleton"
+    ],
+    "OAI.Combinatorics.Crossing.SegmentTraversalReversal": [
+      "segmentPairTransverse_of_not_meet",
+      "segmentCrossingSign_eq_zero_of_not_meet",
+      "segmentPairTransverse_reverse_left",
+      "segmentPairTransverse_reverse_right",
+      "transverse_reverse_left",
+      "transverse_reverse_right"
+    ],
+    "OAI.Combinatorics.Crossing.SharedTrackAvoidance": [
+      "exists_shared_track_avoidance_radius"
+    ],
+    "OAI.Combinatorics.Crossing.ShiftedEdgeIntersections": [
+      "exists_complete_edge_intersection_radius"
+    ],
+    "OAI.Combinatorics.Crossing.ShiftedRadialPieces": [
+      "shifted_first_piece_exterior",
+      "shifted_last_piece_exterior"
+    ],
+    "OAI.Combinatorics.Crossing.ShiftedSegmentStability": [
+      "shifted_endpoints_tendsto",
+      "eventually_shifted_segment_pair",
+      "closedSegmentsMeet_symm",
+      "eventually_shifted_disjoint_segments",
+      "exists_shifted_segment_pairs_radius"
+    ],
+    "OAI.Combinatorics.Crossing.ShiftedTrackDisks": [
+      "exists_nonincident_shift_radius",
+      "exists_all_vertex_disk_radius"
+    ],
+    "OAI.Combinatorics.Crossing.ShortVertexRadius": [
+      "exists_short_vertex_radius"
+    ],
+    "OAI.Combinatorics.Crossing.SimilarityCoordinates": [
+      "similarityCoordinates",
+      "similarityPoint_coordinates",
+      "similarityCoordinates_point",
+      "similarityCoordinates_length",
+      "similarityPoint_cut",
+      "circle_similarity_parameter"
+    ],
+    "OAI.Combinatorics.Crossing.SimultaneousExteriorArcs": [
+      "finite_exterior_arc_replacements"
+    ],
+    "OAI.Combinatorics.Crossing.SimultaneousPolygonalReplacement": [
+      "exists_simple_polygonalChain",
+      "finite_disjoint_polygonal_replacements"
+    ],
+    "OAI.Combinatorics.Crossing.SortedMarkedParameters": [
+      "exists_sorted_unitInterval_finset",
+      "exists_sorted_drawing_parameters"
+    ],
+    "OAI.Combinatorics.Crossing.SortedSideEvents": [
+      "exists_sorted_permutation",
+      "sum_affine_side_events_unordered",
+      "prod_positiveIndicator"
+    ],
+    "OAI.Combinatorics.Crossing.SpokeEndpointSeparation": [
+      "continuous_shiftedPort",
+      "shiftedPort_zero",
+      "shiftedPort_ne_original",
+      "exists_endpoint_separation_radius"
+    ],
+    "OAI.Combinatorics.Crossing.SpokePieceIsolation": [
+      "spokePort_interior",
+      "spokePort_piece_unique"
+    ],
+    "OAI.Combinatorics.Crossing.SpokeTrackDirections": [
+      "drawingSpokeDirection",
+      "drawingSpokeDirection_ne_zero",
+      "drawingSpokeDirection_port_parallel",
+      "drawingSpokeScale_ne_zero"
+    ],
+    "OAI.Combinatorics.Crossing.StageDegreeBound": [
+      "polynomial_columns_rank_le",
+      "stage_degree_bound"
+    ],
+    "OAI.Combinatorics.Crossing.StepEvents": [
+      "stepAt",
+      "stepEvent",
+      "sum_stepEvent"
+    ],
+    "OAI.Combinatorics.Crossing.StraightChainIntersections": [
+      "intersection_single_right",
+      "intersection_single_left",
+      "transverse_single_right",
+      "transverse_single_left",
+      "intersection_single_right_zero",
+      "intersection_single_single"
+    ],
+    "OAI.Combinatorics.Crossing.StraightChainTransversality": [
+      "transverse_single_single",
+      "intersection_single_left_zero"
+    ],
+    "OAI.Combinatorics.Crossing.SubdivisionPointEndpoints": [
+      "subdivision_point_endpoint",
+      "drawingSubdivisionGraph_point_endpoint"
+    ],
+    "OAI.Combinatorics.Crossing.SubdivisionSegments": [
+      "pieceTrace",
+      "pieceTrace_parameter",
+      "pieceTrace_subset_range",
+      "pieceTrace_knot_endpoint",
+      "pieceTrace_other_piece_endpoint",
+      "subdivision_mark_endpoint"
+    ],
+    "OAI.Combinatorics.Crossing.SublevelExtrema": [
+      "sublevel_passage_extrema"
+    ],
+    "OAI.Combinatorics.Crossing.SubspaceIntersection": [
+      "subspace_intersection_bound",
+      "lemma2_1"
+    ],
+    "OAI.Combinatorics.Crossing.SubspaceProjection": [
+      "finrank_map_add_le",
+      "finrank_map_of_disjoint"
+    ],
+    "OAI.Combinatorics.Crossing.SurgeryCrossingContainment": [
+      "adjacentSurgeryDrawing_crossings_subset"
+    ],
+    "OAI.Combinatorics.Crossing.SurgeryCutWalks": [
+      "surgeryPrefixWalk",
+      "surgerySuffixWalk",
+      "surgeryPrefixWalk_trace",
+      "surgerySuffixWalk_trace"
+    ],
+    "OAI.Combinatorics.Crossing.SurgeryFiniteDrawing": [
+      "adjacentSurgeryFiniteDrawing",
+      "adjacentSurgeryFiniteDrawing_count_lt"
+    ],
+    "OAI.Combinatorics.Crossing.SurgeryNoTriples": [
+      "adjacentSurgeryDrawing_no_triples"
+    ],
+    "OAI.Combinatorics.Crossing.SurgeryPathWitnesses": [
+      "walkThroughChord",
+      "walkThroughChord_range",
+      "exists_simple_path_through_chord",
+      "surgery_mixed_endpoints_ne"
+    ],
+    "OAI.Combinatorics.Crossing.SurgeryRouteIntersections": [
+      "reconnectedForwardPath_meeting_other",
+      "reconnectedBackwardPath_meeting_other",
+      "adjacentSurgeryRoutes_meeting_other",
+      "adjacentSurgeryRoutes_meeting_each_other"
+    ],
+    "OAI.Combinatorics.Crossing.SurgeryStrictPointCount": [
+      "crossingChord_meeting_is_assembled_crossing",
+      "adjacentSurgeryDrawing_strict_crossing_ncard"
+    ],
+    "OAI.Combinatorics.Crossing.TangentTrackIdentity": [
+      "det2_rotateQuarter_self",
+      "normalShift_eq_circleTrackScale",
+      "similarity_circleTangentOffset",
+      "tangentOffset_eq_normalShift",
+      "similarityPoint_squaredLength",
+      "physical_circleConnector_strictly_outside"
+    ],
+    "OAI.Combinatorics.Crossing.TrackChordSeparation": [
+      "track_in_disk_is_port",
+      "track_shifted_chord_disjoint"
+    ],
+    "OAI.Combinatorics.Crossing.TrackEndpointConnections": [
+      "leftIncident",
+      "rightIncident",
+      "vertices_first",
+      "vertices_last",
+      "spokePort_left",
+      "spokePort_right",
+      "shiftedTrack_first",
+      "shiftedTrack_last"
+    ],
+    "OAI.Combinatorics.Crossing.TransversalityStability": [
+      "segmentPairTransverse_of_proper",
+      "segmentPairTransverse_swap",
+      "eventually_segmentPairTransverse"
+    ],
+    "OAI.Combinatorics.Crossing.TransversePolygonIntersection": [
+      "segmentCrossingSign_self_left",
+      "polygon_intersection_zero_transverse"
+    ],
+    "OAI.Combinatorics.Crossing.TriangleEntryExit": [
+      "triangleStart",
+      "triangleEnd",
+      "triangleIndicator",
+      "triangle_area_cycle",
+      "affine_side_factor",
+      "triangle_segment_entry_exit"
+    ],
+    "OAI.Combinatorics.Crossing.TriangleFactorization": [
+      "triangleDiagonalWeight",
+      "triangleDiagonalWeight_ne_zero",
+      "rankDetector_triangle_sum",
+      "rankDetector_triangle_factorization",
+      "rankDetector_ordered_isUnit"
+    ],
+    "OAI.Combinatorics.Crossing.TriangleOrientations": [
+      "orient2_reverse_edge",
+      "det2_reverse_edge",
+      "triangle_position_reverse",
+      "triangle_intersection_reverse",
+      "orientedTriangleIndicator",
+      "oriented_triangle_entry_exit",
+      "triangle_closed_walk_intersection_zero"
+    ],
+    "OAI.Combinatorics.Crossing.TriangleSideEvent": [
+      "triangle_side_at_first_edge",
+      "triangle_other_side_at_first_edge",
+      "triangle_edge_side_tests",
+      "segmentCrossingSign_triangle_event"
+    ],
+    "OAI.Combinatorics.Crossing.TriangleTransversality": [
+      "TriangleSegmentPosition",
+      "triangle_consecutive_roots_ne",
+      "second_parameter_ne_zero",
+      "second_parameter_ne_one",
+      "triangle_roots_injective",
+      "triangle_segment_entry_exit_of_position"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedChainDirections": [
+      "truncatedScale",
+      "truncated_start_formula",
+      "truncated_end_formula",
+      "truncated_direction",
+      "truncatedScale_pos",
+      "truncated_direction_ne_zero"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedChainPath": [
+      "truncated",
+      "truncated_segments_disjoint",
+      "truncated_path_injective"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedChainVertices": [
+      "radialPort_parameter_half",
+      "startFraction",
+      "endFraction",
+      "truncatedVertices",
+      "startPort_eq_fraction",
+      "endPort_eq_fraction",
+      "truncatedVertices_first",
+      "truncatedVertices_last",
+      "truncated_piece_subset"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedCrossingCorners": [
+      "truncated_vertices_not_crossing"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedCrossingRetention": [
+      "crossing_mem_truncated_edge"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedDrawingDisks": [
+      "truncated_piece_vertex_disk_cases",
+      "truncated_path_vertex_disk_cases"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedDrawingInteriors": [
+      "truncated_range_subset_edgeInterior",
+      "truncated_edge_intersections_eq"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedRadialDots": [
+      "dot2_scaled_self",
+      "start_radial_dot_pos",
+      "end_radial_dot_neg",
+      "bend_ne_zero",
+      "exists_forward_radius"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedRadialEnds": [
+      "radial_segment_of_coefficients",
+      "truncated_first_exterior",
+      "truncated_last_exterior"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedSegmentTransversality": [
+      "segment_parameter_strict_of_avoids_endpoints",
+      "truncated_segment_pair_transverse"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedSignedIntersections": [
+      "piece_subset_range",
+      "signedIntersection",
+      "signedIntersection_self",
+      "signedIntersection_swap",
+      "signedIntersection_zero_of_pairCrossings_empty",
+      "pairCrossings_pos_of_signedIntersection_ne_zero",
+      "signedIntersection_adjacent_zero"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedSpokeCoordinates": [
+      "TruncatedSpokeCoordinates",
+      "nonempty_truncatedSpokeCoordinates",
+      "shiftedPort",
+      "tangentPort",
+      "tangentPort_eq",
+      "shiftedPort_level",
+      "shiftedPort_circle",
+      "connector_strictly_outside",
+      "exists_vertex_average_radius"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedSpokeDirections": [
+      "spokePort",
+      "spokeIndex",
+      "spokeDirection",
+      "spokeIndex_lt",
+      "spokeDirection_ne_zero",
+      "spokeDirection_eq_scale",
+      "spokePort_circle",
+      "spokePort_ne_center",
+      "spokeDirection_parallel",
+      "spokeScale",
+      "spokeScale_ne_zero",
+      "spokePort_injective"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedTraceDecomposition": [
+      "center_segment_in_disk",
+      "drawing_edge_trace_decomposition"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedTrackAvoidance": [
+      "truncated_bend_ne_zero",
+      "truncated_offset_avoidance"
+    ],
+    "OAI.Combinatorics.Crossing.TruncatedTrackStability": [
+      "exists_distinct_edge_shift_radius"
+    ],
+    "OAI.Combinatorics.Crossing.TwoTriangleBasis": [
+      "TriangleIndex",
+      "triangleCoordEquiv",
+      "monomialVector",
+      "triangleMatrix",
+      "triangleMatrix_eval",
+      "triangleMatrix_isUnit",
+      "twoTriangleBasis",
+      "twoTriangleBasis_apply"
+    ],
+    "OAI.Combinatorics.Crossing.TwoTriangleIndices": [
+      "lowerTriangle",
+      "upperTriangle",
+      "twoTriangle",
+      "mem_lowerTriangle",
+      "mem_upperTriangle",
+      "mem_twoTriangle",
+      "disjoint_triangles",
+      "card_lowerTriangle",
+      "card_upperTriangle",
+      "adjacent_choose_two",
+      "card_twoTriangle",
+      "triangleRelabel",
+      "triangleRelabel_injective_on",
+      "triangleRelabel_range",
+      "relabel_twoTriangle"
+    ],
+    "OAI.Combinatorics.Crossing.TwoTriangleUnisolvence": [
+      "eq_zero_of_roots_injOn",
+      "twoTriangle_unisolvent",
+      "twoTriangle_evaluation_injective"
+    ],
+    "OAI.Combinatorics.Crossing.UniformCrossTypeGeometry": [
+      "exists_cross_type_radius"
+    ],
+    "OAI.Combinatorics.Crossing.UniformSpokeRadii": [
+      "port_injective",
+      "exists_uniform_endpoint_radius",
+      "exists_uniform_scale_radius",
+      "exists_uniform_average_radius"
+    ],
+    "OAI.Combinatorics.Crossing.UniformTrackPerturbation": [
+      "exists_all_edge_shift_radius",
+      "exists_uniform_track_intersections"
+    ],
+    "OAI.Combinatorics.Crossing.UniqueWalkPassage": [
+      "UniqueWalkVisit",
+      "walk_dart_parameters",
+      "unique_walk_visit_passage",
+      "bypass_unique_walk_visit_passage"
+    ],
+    "OAI.Combinatorics.Crossing.VertexChordIntersections": [
+      "chordChain_intersection",
+      "exists_vertex_chord_chain_radius"
+    ],
+    "OAI.Combinatorics.Crossing.VertexDiskSpokes": [
+      "spokes_meet_only_at_center",
+      "spoke_in_open_disk",
+      "exists_vertex_disk_point"
+    ],
+    "OAI.Combinatorics.Crossing.VertexDisksCrossingFree": [
+      "vertex_disks_crossing_free"
+    ],
+    "OAI.Combinatorics.Crossing.VertexEndpointPorts": [
+      "firstArc",
+      "lastArc",
+      "lastArc_node",
+      "firstArc_mark",
+      "lastArc_mark",
+      "startPortAt",
+      "endPortAt"
+    ],
+    "OAI.Combinatorics.Crossing.VertexOrderDetector": [
+      "leftNode",
+      "leftNode_injective",
+      "leftHalfOrder_eq_halfOrder",
+      "diagonal_detector_isUnit",
+      "offDiagonal_detector",
+      "additive_detector_relation"
+    ],
+    "OAI.Combinatorics.Crossing.VertexPassagePairing": [
+      "vertexChordPairing",
+      "passagePairing",
+      "exists_vertex_pairing_radius",
+      "exists_passage_pairing_radius"
+    ],
+    "OAI.Combinatorics.Crossing.VertexPieceClearance": [
+      "exists_vertex_piece_clearance"
+    ],
+    "OAI.Combinatorics.Crossing.VertexSpokeBounds": [
+      "exists_small_squared_radius",
+      "exists_vertex_spoke_bound"
+    ],
+    "OAI.Combinatorics.Crossing.VertexTraceDisks": [
+      "exists_vertex_trace_disks"
+    ],
+    "OAI.Combinatorics.Crossing.VertexTruncation": [
+      "VertexTruncation",
+      "nonempty_vertexTruncation",
+      "pieces",
+      "vertices",
+      "startPort",
+      "endPort",
+      "pieces_pos",
+      "weak_short",
+      "path",
+      "path_injective",
+      "path_hasFiniteAffineCover",
+      "range_subset_edgeInterior",
+      "direction_ne_zero"
+    ],
+    "OAI.Combinatorics.Crossing.VertexTruncationGeometry": [
+      "offset_avoidance",
+      "edge_intersections_eq",
+      "pair_transverse",
+      "crossing_free_disks",
+      "vertices_not_crossing",
+      "vertex_disk_cases"
+    ],
+    "OAI.Combinatorics.Crossing.WalkVectorSum": [
+      "walkEdgeChain_sum_steps",
+      "walkEdgeChain_sum_cyclic_darts",
+      "edgePairing_sum_left",
+      "edgePairing_sum_right",
+      "edgePairing_smul_single",
+      "edgePairing_walk_dart_sum"
+    ],
+    "OAI.Combinatorics.Crossing.WeightedGram": [
+      "weightedGram_eq_sum",
+      "weightedGram_isUnit"
+    ]
+  }
+}

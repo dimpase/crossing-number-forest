@@ -1,0 +1,12 @@
+\title{Graphs of linear maps}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{graph subspace of a linear map}
+\meta{dependencies}{None.}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), proof of Corollary 2.3; reconstructed as a reading account on 9 October 2026. [Lean source: IndexedMatrixRankSum](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/IndexedMatrixRankSum.lean).}
+
+\p{For a linear map #{X:\mathbb R^d\to\mathbb R^d}, its \em{graph subspace} is}
+
+##{\Gamma_X=\{(v,Xv):v\in\mathbb R^d\}\subseteq\mathbb R^d\oplus\mathbb R^d.}
+
+\p{The map #{v\mapsto(v,Xv)} identifies #{\ker(X-Y)} with #{\Gamma_X\cap\Gamma_Y}. Therefore #{\dim(\Gamma_X\cap\Gamma_Y)=d-\operatorname{rank}(X-Y)}. In particular, these two graph subspaces are disjoint exactly when #{X-Y} is invertible. This is the conversion used by [the rank-sum corollary](cn-0027).}

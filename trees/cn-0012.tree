@@ -1,0 +1,10 @@
+\title{Signed edge vectors of cycles}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{signed edge vector of a cycle}
+\meta{dependencies}{[Edge orientations](cn-0002)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Lemma 3.1; reconstructed as a reading account on 9 October 2026. [Lean source: WalkVectorSum](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/WalkVectorSum.lean).}
+
+\p{Fix the [edge orientations](cn-0002). The \em{signed edge vector} #{z\in\mathbb R^{E(K_{m,n})}} of an oriented simple graph cycle has entry #{+1} on an edge traversed with its fixed orientation, #{-1} on one traversed against it, and #{0} on unused edges. At every vertex the incoming and outgoing contributions balance.}
+
+\p{A simple graph cycle can have a self-intersecting image in a drawing. Two cycles can share vertices and edges; their traversals of a common edge can be opposite. The [cycle-pairing lemma](cn-0016) allows all of these cases.}

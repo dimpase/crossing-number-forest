@@ -1,0 +1,42 @@
+\title{Crossing numbers of complete bipartite graphs: a reading forest}
+\taxon{Overview}
+\tag{top}
+\meta{dependencies}{None.}
+\meta{provenance}{Reading project based on the OpenAI preprint of 23 September 2026 and its accompanying Lean sources, pinned on 9 October 2026.}
+
+\p{A structured reading of [the paper](cn-0042) and its proof of the Zarankiewicz formula:}
+
+##{\operatorname{cr}(K_{m,n})=\left\lfloor\frac m2\right\rfloor\left\lfloor\frac{m-1}{2}\right\rfloor\left\lfloor\frac n2\right\rfloor\left\lfloor\frac{n-1}{2}\right\rfloor.}
+
+\p{\strong{Start here.} [The guided reading](cn-0001) explains how the three proof branches fit together. [The main theorem](cn-0007) states the result and links its complete argument. [The Lean guide](cn-0038) maps the paper's lemmas to formal declarations.}
+
+\ol{
+\li{[Algebra: subspace interpolation and the rank-sum inequality](cn-0061).}
+\li{[Topology: normalize a drawing and derive the additive block relation](cn-0060).}
+\li{[The detector: barycentric weights and two-triangle interpolation](cn-0062).}
+\li{[Odd-size lower bound](cn-0035), [even-size deletion](cn-0037), and [the matching upper bound](cn-0036).}
+\li{[An exact four-by-four example](cn-0040), [sources and checks](cn-0039), and [references](cn-0041).}
+}
+
+\p{\strong{Definition index.} Each concept below has a permanent tag and is linked at its points of use.}
+
+\ul{
+\li{[Complete bipartite graphs and stars](cn-0002).}
+\li{[Continuous plane drawings](cn-0003).}
+\li{[Proper crossings and admissible drawings](cn-0004).}
+\li{[Crossing count and ordinary crossing number](cn-0005).}
+\li{[Balanced pair counts and the Zarankiewicz number](cn-0006).}
+\li{[Normalized drawings](cn-0008).}
+\li{[Signed interior intersections](cn-0010).}
+\li{[Spoke orders and half-order matrices](cn-0011).}
+\li{[Signed edge vectors of cycles](cn-0012).}
+\li{[The endpoint-corrected intersection matrix](cn-0013).}
+\li{[Row-plus-column matrices](cn-0017).}
+\li{[Polynomial constraints and evaluation filtrations](cn-0019).}
+\li{[Graphs of linear maps](cn-0026).}
+\li{[Bivariate evaluation vectors and the two triangles](cn-0028).}
+\li{[Barycentric interpolation weights](cn-0030).}
+\li{[The rank detector and its atoms](cn-0032).}
+}
+
+\p{\strong{Status.} The mathematical results are labelled proof-account: they reconstruct the pinned paper's proof. Exact finite examples and static Lean source checks are recorded separately. No local Lean or Comparator run is claimed. [Details of the verification scope](cn-0039).}

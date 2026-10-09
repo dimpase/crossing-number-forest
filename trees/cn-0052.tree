@@ -1,0 +1,11 @@
+\title{Kleitman: The crossing number of K(5,n)}
+\taxon{Reference}
+\tag{bibliography}
+\meta{dependencies}{None.}
+\meta{provenance}{Expository organization and source review, 9 October 2026.}
+
+\p{\strong{Paper reference 10.} Daniel J. Kleitman. \em{The crossing number of K(5,n)}. Journal of Combinatorial Theory 9(4) (1970), 315–323. [Source](https://doi.org/10.1016/S0021-9800(70)80087-4).}
+
+\p{Section 8, equation (17), is cited for local cyclic-order arguments; Section 3, equations (6)–(7), for [vertex deletion](cn-0037).}
+
+\p{Bibliographic details and the stated role are taken from the pinned paper's [bibliography](cn-0042); these entries are not claims that every cited paper was independently reviewed here.}

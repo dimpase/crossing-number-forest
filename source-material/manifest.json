@@ -1,0 +1,2900 @@
+{
+  "sources": [
+    {
+      "id": "upstream:LICENSE",
+      "title": "LICENSE",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:README.md",
+      "title": "README.md",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/README.md",
+      "sha256": "5e8878ee04866f52ec942852552b9c28db278f65691c7ab49a87c9e93a9199fd",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/ComparatorChallenges/BipartiteCrossing.json",
+      "title": "lean/ComparatorChallenges/BipartiteCrossing.json",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/ComparatorChallenges/BipartiteCrossing.json",
+      "sha256": "805fa1d52cc07581d9951ad6d927c123c933f5c75fc4a2a6b08f5096a555625c",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/ComparatorChallenges/BipartiteCrossing.lean",
+      "title": "lean/ComparatorChallenges/BipartiteCrossing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/ComparatorChallenges/BipartiteCrossing.lean",
+      "sha256": "37ea82a967ca9fa95fd504fa75a8fb063dd99d91651ae3f5b68bc150950e2032",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/ComparatorChallenges/README.md",
+      "title": "lean/ComparatorChallenges/README.md",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/ComparatorChallenges/README.md",
+      "sha256": "2ed835b3c59709be6feffe0dec54fc9783fb26aa22d35517475a82ef5199c555",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AdaptedFamily.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AdaptedFamily.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AdaptedFamily.lean",
+      "sha256": "83f929f9d30c4548b9430b965b0a7c2cd382966d9f4330b364c029cf1c46b6ae",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AdditiveBlockRelation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AdditiveBlockRelation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AdditiveBlockRelation.lean",
+      "sha256": "30a526006ef31c3b2b2551f37419798cf4d6d4a4876a633d65c3f8a586c99635",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AdjacentSurgeryDrawing.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AdjacentSurgeryDrawing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AdjacentSurgeryDrawing.lean",
+      "sha256": "64f3c03ce7f03231d0dae14b2634d0b5f317803e80288d7f4394ff1c7ea6b213",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AdjacentSurgeryPointRemoval.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AdjacentSurgeryPointRemoval.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AdjacentSurgeryPointRemoval.lean",
+      "sha256": "58a34a4f78e55ae8e426eb765d82e783b9934babb1808a9176a1b84a08a8daed",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AdjacentSurgeryRoutes.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AdjacentSurgeryRoutes.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AdjacentSurgeryRoutes.lean",
+      "sha256": "356d2ddf702411a1e57f1fde69d84ffe8cdc09c88f3403baac33e93db5fae106",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AdmissibleAdjacentSurgery.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AdmissibleAdjacentSurgery.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AdmissibleAdjacentSurgery.lean",
+      "sha256": "9d0b7e2b8471b9f8052756c8df5be5d0e197aea776f0909669498e2010088e0c",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AffineIntervalRestriction.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AffineIntervalRestriction.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AffineIntervalRestriction.lean",
+      "sha256": "dd0b5d1b3ae3872320251f6e586c46b660a84389c5216e2cc8515655c3f65c73",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AffinePathHalves.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AffinePathHalves.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AffinePathHalves.lean",
+      "sha256": "9c951b9605288289b4d170a1f9ae4d7ce95c80b11e2bdbadc54ca5f16e703d36",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AffineSideEvents.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AffineSideEvents.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AffineSideEvents.lean",
+      "sha256": "84f36b35dffe75426e74d5f33a7ad7bd6bb26c2bdc133c143e47bfddb4e205ce",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AffineSubdivisionRefinement.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AffineSubdivisionRefinement.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AffineSubdivisionRefinement.lean",
+      "sha256": "79ca43cd2e78ef864743aebdeabd8af1113239256ad6e91d2d673e4d3b5dd70e",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AlternatingPaths.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AlternatingPaths.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AlternatingPaths.lean",
+      "sha256": "1e8e8cc598aeb9129ef44fe3f09f2f18e0dd52eca789ea2c7b842bce672b2c32",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ArcRangeMinimality.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ArcRangeMinimality.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ArcRangeMinimality.lean",
+      "sha256": "a8dc26e6608923aa4a90d0f949196a4a04ae125995de783673f5071dca86a91e",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AssembledAdmissibleDrawing.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AssembledAdmissibleDrawing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AssembledAdmissibleDrawing.lean",
+      "sha256": "08770b574ec4d39b259fae63db2d1387216a1d4880fae7699631efc6c6ed9af8",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AssembledContinuousDrawing.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AssembledContinuousDrawing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AssembledContinuousDrawing.lean",
+      "sha256": "3b5513a5d5688aea3c516e52f8f75d43fe7c9e57b924b30c67f67ec3442d58d4",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AssembledCrossings.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AssembledCrossings.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AssembledCrossings.lean",
+      "sha256": "3a5d5cda3f34cc722205b1d952f066212c74aefb3a9e37d85b73f57d926dc3c4",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AssembledEdge.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AssembledEdge.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AssembledEdge.lean",
+      "sha256": "29e97fd7d6cd3b46bd935affed502d3f739701e617133fadcc537e1d0b401cca",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AssembledNoTriples.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AssembledNoTriples.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AssembledNoTriples.lean",
+      "sha256": "6849dba05fbe69532a95ac497c725dafdfb060043c5c00fc6a2ade92c1931275",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AssembledPortIncidence.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AssembledPortIncidence.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AssembledPortIncidence.lean",
+      "sha256": "0541a9ca6b6998f352743707c52ab0eb1ebd73e3937fb237e7986879711e4276",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AxisAdmissibility.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AxisAdmissibility.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AxisAdmissibility.lean",
+      "sha256": "c1d3681c652a5863f71561e743927681a149108b1cd1469c81d51b03561eed17",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AxisConcurrency.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AxisConcurrency.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AxisConcurrency.lean",
+      "sha256": "c1f2d2b7b014cc88b92ae40e338a766b2697a166d06952ad3632bdbba209068e",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AxisContinuousDrawing.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AxisContinuousDrawing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AxisContinuousDrawing.lean",
+      "sha256": "8170a03afbdf36cedc0b1b5a37e9f62bae9c3f0740bac782a02f89cc27469af2",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AxisCrossingOrder.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AxisCrossingOrder.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AxisCrossingOrder.lean",
+      "sha256": "c870b505a90c6328565b3151b4f1ce147dfdd76d2e6522ef1bb96a0877169bd7",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AxisFiniteCrossings.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AxisFiniteCrossings.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AxisFiniteCrossings.lean",
+      "sha256": "c9f91cad55ead1638eda14d6e6464092964836e3bd71a485a4ffd9cbec336b4b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AxisGenericPositions.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AxisGenericPositions.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AxisGenericPositions.lean",
+      "sha256": "2b02d080d4eab8dcd88094d89743853f35eaa12dab9f8803e2682ebe6ac31e28",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/AxisSegments.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/AxisSegments.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/AxisSegments.lean",
+      "sha256": "89f29a4faea5b8da24fd96355d9ed4c7a3f86a92ed43b70674329626b023fedb",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/BalancedAxisCrossingCount.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/BalancedAxisCrossingCount.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/BalancedAxisCrossingCount.lean",
+      "sha256": "e0bed01c6a8085ec8a9d1f9ca6787c855b6c4666908fffee7ec544c65482a7fa",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/BalancedAxisDrawing.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/BalancedAxisDrawing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/BalancedAxisDrawing.lean",
+      "sha256": "e1092acd4be965bd3daae0c71cda64df6f3d83d43b75aa538171d8d27cd440c0",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/BalancedAxisIntervals.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/BalancedAxisIntervals.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/BalancedAxisIntervals.lean",
+      "sha256": "79932f8355c66cb0dd0e2662d1b626e28a3b08bea58bf023ecb9da287543ed86",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/BalancedRayPairs.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/BalancedRayPairs.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/BalancedRayPairs.lean",
+      "sha256": "d13d2ad511053c8c01f6bb42949de290019aaa3353bcea5d27115f84f96cebc0",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/BipartiteDartGeometry.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/BipartiteDartGeometry.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/BipartiteDartGeometry.lean",
+      "sha256": "d6e11a5146143c7af21daa2b08d6ec78a974f8646868e997b3bb11a4c1d8b0d6",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/Bivariate.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/Bivariate.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/Bivariate.lean",
+      "sha256": "2299899117589ef6d5010a3d511d6c472a3744830b7796febe391f1546b781d6",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/BivariateCoefficients.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/BivariateCoefficients.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/BivariateCoefficients.lean",
+      "sha256": "904f3e183cab183b3c269bbedcbc27e802845818a6d1c14f280745de241007ae",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/BoundaryCollar.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/BoundaryCollar.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/BoundaryCollar.lean",
+      "sha256": "11340d6a1f4146ba2a7bfb695971b830f6cd17e294aa2b55e798367d0e1b4360",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ChainPieceInteriors.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ChainPieceInteriors.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ChainPieceInteriors.lean",
+      "sha256": "ab46668ede046a7c6330d2b285a8fcebb0a262eabb55a60a0d789cc624d23bd8",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ChainTracePieces.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ChainTracePieces.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ChainTracePieces.lean",
+      "sha256": "db62dc714ea0ad2ade0187b772780073ac3c022a3619b516e197f3486dd1f3c7",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ChordEdgeIntersections.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ChordEdgeIntersections.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ChordEdgeIntersections.lean",
+      "sha256": "d8aee805a577762bf627ebaaf8ba6657a2a45a03c63753e299d42dcb9ad1c7c0",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ChordExteriorSeparation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ChordExteriorSeparation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ChordExteriorSeparation.lean",
+      "sha256": "0a4e73c538c450782d51dc0d77714c32f74bb45799c521b4e3afa6ba1090b75a",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ChordOrientations.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ChordOrientations.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ChordOrientations.lean",
+      "sha256": "906fefd13b97d633286f1d58b68d17450e4abe2bcf731e625e35352cdc4a5b25",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ChordPairing.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ChordPairing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ChordPairing.lean",
+      "sha256": "5462ad82e69f6f01e93b7f26d3223a1086fef6d19a876c3b77a791629b3769a1",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ChordTransversality.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ChordTransversality.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ChordTransversality.lean",
+      "sha256": "02a97785174beadad083970be6f6e83bf72b54cf6429047e07c45bcbc1bd1761",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CircleChords.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CircleChords.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CircleChords.lean",
+      "sha256": "1ff88ee19f4ad0fcca78e7b152b8068849acba826020c6a7ac2514e79ff534c7",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CircleConnectors.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CircleConnectors.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CircleConnectors.lean",
+      "sha256": "2655e2ca931f860c6d3040bbc65c2a7cb5cfffd7816f27e3ce757c56d1c5f412",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CircleDeterminantOrder.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CircleDeterminantOrder.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CircleDeterminantOrder.lean",
+      "sha256": "e3483709d358528ed4d1916dd7a398e65e649c381cd328d19cd6ebf88bbc7db5",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CircleOffset.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CircleOffset.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CircleOffset.lean",
+      "sha256": "f58037df3e7037ea1d26997d8a121f1affa66bd7ef6e110e9e3407c5c47ada26",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CircleOffsetLine.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CircleOffsetLine.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CircleOffsetLine.lean",
+      "sha256": "4842406a177037cb39888eeeafd2914579fd20df9f9feda862dde3d65470b8ce",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CircleOffsetParameter.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CircleOffsetParameter.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CircleOffsetParameter.lean",
+      "sha256": "f1892b19991f9637c16ad3da76d2dacf8938dfa79b3f9c93caaa85be98c796f4",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CircleParameterChart.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CircleParameterChart.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CircleParameterChart.lean",
+      "sha256": "db81ffae95b9ad47f6309d25e5849e42379f6d8350b5ad7e161889091308e188",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ClosedPolygonIntersection.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ClosedPolygonIntersection.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ClosedPolygonIntersection.lean",
+      "sha256": "b1393ecfb82a72c19d1515442d685a916d647dc89d04d0a3a4c80bcdfb0fccd1",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CollinearSegmentUnion.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CollinearSegmentUnion.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CollinearSegmentUnion.lean",
+      "sha256": "4d83ae636201161edefdf0dccc781aefa56e4caf794433ed6667fbe5c84d1d81",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CompactCorridors.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CompactCorridors.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CompactCorridors.lean",
+      "sha256": "1e72dd7ff33949a812d54a3fffa61fc89071436669aaa3970e4177a8ab5e05eb",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ConeIntersection.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ConeIntersection.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ConeIntersection.lean",
+      "sha256": "61a539f388a02fea8d0052c73e4dda7a38dbf5c6a066a03d139be6e361fb59e6",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ConnectorOtherDisks.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ConnectorOtherDisks.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ConnectorOtherDisks.lean",
+      "sha256": "f192767a664afaaa198680672d30a6ba071770ff4331c6fb33433455932ca62d",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ConnectorSupportingLines.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ConnectorSupportingLines.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ConnectorSupportingLines.lean",
+      "sha256": "1c13a074af4bb5eaf3eafa488794fb813a39fd7759730df41b2544da53f4dcec",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ConnectorTrackAvoidance.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ConnectorTrackAvoidance.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ConnectorTrackAvoidance.lean",
+      "sha256": "bad5df7a8472a4c2d515fd90e1776812a0f64de3b76cbdc880bce013ac2fac7f",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ConstructAdjacentSurgery.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ConstructAdjacentSurgery.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ConstructAdjacentSurgery.lean",
+      "sha256": "0d652c0a2a4a35ff59ac598ab46d2fd2b43267df202ec878bf7fe1892728bc9d",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CrossingCoordinates.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CrossingCoordinates.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CrossingCoordinates.lean",
+      "sha256": "70a5d162ab47352fc09538064c2c1399ebab8e1e093db78ed9e8386a234d5651",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CrossingCutWalks.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CrossingCutWalks.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CrossingCutWalks.lean",
+      "sha256": "23c97e2465332e8615f6bb659f77f6224f7ef7f099c05edb7470ceed25e0b69a",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CrossingDiskCount.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CrossingDiskCount.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CrossingDiskCount.lean",
+      "sha256": "064c79618f8b23e24460c692782d227c8ded49e3c043c6936b8821ff96b75fbb",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CrossingDiskIncidence.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CrossingDiskIncidence.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CrossingDiskIncidence.lean",
+      "sha256": "e2371b02582cd0660e72f8b12de3d81923d010f74615eceb2d6ae01fd9c4457c",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CrossingDiskNeighborhood.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CrossingDiskNeighborhood.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CrossingDiskNeighborhood.lean",
+      "sha256": "a8d5d976f4f530c7bf04823313e73bdfa58ed9b9e8c2c486adc68b5a218e2fca",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CrossingDiskOwners.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CrossingDiskOwners.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CrossingDiskOwners.lean",
+      "sha256": "35465b3d3a383cbf43076ac0f9706101d7eb9a497419b617fb596048363a439d",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CrossingDiskUniqueness.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CrossingDiskUniqueness.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CrossingDiskUniqueness.lean",
+      "sha256": "6a43d64c809a013756410ea2302f7754d2890bec17ee868f7052b77205619251",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CrossingIncidence.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CrossingIncidence.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CrossingIncidence.lean",
+      "sha256": "2ad3f5a872b920a47e3b6652cec4e89f9389c986ac5920a5d63f2461f0d8c0da",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CrossingPortClearance.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CrossingPortClearance.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CrossingPortClearance.lean",
+      "sha256": "da8a9e5d239486c7e5f7d0c63d041259124b59a1dd91b4d09e7eaa4b812c2cc6",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CrossingReconnection.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CrossingReconnection.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CrossingReconnection.lean",
+      "sha256": "ce0ac9144ea2d35769c3ea452f5190a45163b96f5b2056e1c69bc2e7fea10e48",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CrossingSurgeryGraph.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CrossingSurgeryGraph.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CrossingSurgeryGraph.lean",
+      "sha256": "95baeab59557a62e2a30a13b2e30ef410b70ff39caafcad53e7d6a0ca967d648",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CurveDiskIsolation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CurveDiskIsolation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CurveDiskIsolation.lean",
+      "sha256": "9c79c2d1fdd2fc3b623ca3ab9f4397ac68136e06b438ccf344922e49c701a413",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CutTraceSeparation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CutTraceSeparation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CutTraceSeparation.lean",
+      "sha256": "a9a80d6343cdadac2f869898551455b309b0f04cd4cfc5bb309e8d42432db28a",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CutVertexAvoidance.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CutVertexAvoidance.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CutVertexAvoidance.lean",
+      "sha256": "36c6e2d29863b826f30c4b42ce2eb2064c09351d93cee87f565a87eba5ae6583",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CycleBlockIntersections.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CycleBlockIntersections.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CycleBlockIntersections.lean",
+      "sha256": "8c55cff8df83a475d4dc943cc9cfafbfdbd4eecbdd81e345a83620e093684372",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CycleEndpointSum.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CycleEndpointSum.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CycleEndpointSum.lean",
+      "sha256": "49607d73cd4eadd1720cc3aac851547cafa4f2b1466f8ed62fef1c2093cdaf75",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CycleMatrixBlocks.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CycleMatrixBlocks.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CycleMatrixBlocks.lean",
+      "sha256": "d99e0fdce8cf63482a5d380a3493fa123764547015dfb7fa6efe65733667a7e7",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CyclePairing.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CyclePairing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CyclePairing.lean",
+      "sha256": "359ab7268693a26e2cfbe75596ad66ea8840c910122e561d57030859376a01eb",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CyclicSumArithmetic.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CyclicSumArithmetic.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CyclicSumArithmetic.lean",
+      "sha256": "35f22865b96d975738bf93ab51565d2695257baf923439c6403903e04f91f973",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/CyclicWalkDarts.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/CyclicWalkDarts.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/CyclicWalkDarts.lean",
+      "sha256": "331f4705b4eeec4250bd9481f18078b66d37193918caf4791daa20df237465a6",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DartCyclePaths.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DartCyclePaths.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DartCyclePaths.lean",
+      "sha256": "f50fe1e8a183d62cd3dcd22dcc8bb7f62fa131c015b663747a462f9962487f8a",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DartPairIntersections.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DartPairIntersections.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DartPairIntersections.lean",
+      "sha256": "48df16a1db967093aa9d08a5b6548b33e84516710418f786d5d437bab788497d",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DartPathRealizations.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DartPathRealizations.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DartPathRealizations.lean",
+      "sha256": "7ff858f609eb7e550b0f6017ab51850e116261583891ecf0243730845da1162e",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DegreeCounting.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DegreeCounting.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DegreeCounting.lean",
+      "sha256": "c23f2221304a639c1eeb0f1a82b60388580f01742580399df56c6e420609ddbc",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DeletionCount.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DeletionCount.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DeletionCount.lean",
+      "sha256": "f05a27ea612e589dd2ddb58fb82199495891671acc2a69d416c8cec42ae10538",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DetectorAnnihilation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DetectorAnnihilation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DetectorAnnihilation.lean",
+      "sha256": "2dbc407d1f85b8ab4e3904be376abcc7d414b3075f141a7f4f3794c310095641",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DetectorCrossingBound.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DetectorCrossingBound.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DetectorCrossingBound.lean",
+      "sha256": "3f374eeb971ba43e4345171d2e15a74d705f4ff27fb384e37227ac19707812b1",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DetectorRank.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DetectorRank.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DetectorRank.lean",
+      "sha256": "e760ffc6b310be45cace76b4dcda73d37c51eb25c78764bf822d545363bab0b1",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DetectorRelabeling.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DetectorRelabeling.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DetectorRelabeling.lean",
+      "sha256": "3bf86419252a9f4a0fcc3ed81f469f75bfcc42939dae8f851752851c44d17b7a",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DiskFillingContainment.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DiskFillingContainment.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DiskFillingContainment.lean",
+      "sha256": "765aced03bc2f78c68b5a77de0c0bcf11d03fa85d34366fa62e9cf552c53341b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DiskPassage.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DiskPassage.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DiskPassage.lean",
+      "sha256": "faef1585ac911f3777ccb910b563d89f73d57a5e8bd5c4474d57a18f6eafa7f3",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DiskSegments.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DiskSegments.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DiskSegments.lean",
+      "sha256": "635bcd2777ec8b0a350e5df791695c3c32a1d9d02750778b307a679e8e56c33a",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingDefinition.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingDefinition.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingDefinition.lean",
+      "sha256": "fed7c28fa20f024ffa105cc486cc28d046ce9726a132622835a2a06cfdf1948b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingDeletion.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingDeletion.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingDeletion.lean",
+      "sha256": "4a90ac7475252d26af64973d0bdec5ba250401b31faad6749474d4ced331e89f",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingDiskIsolation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingDiskIsolation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingDiskIsolation.lean",
+      "sha256": "e6dbbb69c20a9c5454e757acacf3e6c9edba5060a59c68107f0d8f8ac64aa842",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingEdgeWalk.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingEdgeWalk.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingEdgeWalk.lean",
+      "sha256": "5b8f8b61e703664aa5960767cc5fc56d1981aec76dc821704b23812ef4f25b18",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingEdgeWalkTrace.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingEdgeWalkTrace.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingEdgeWalkTrace.lean",
+      "sha256": "8266990387c47c01b2ac0b165952f12fc29fd3bdb9f7af60f57f20d5e7c7d58d",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingExteriorReplacement.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingExteriorReplacement.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingExteriorReplacement.lean",
+      "sha256": "4ee85dc2c256f66face9fbed357558cf7ffa1922b0c7bf6b99043ef781831e31",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingMarks.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingMarks.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingMarks.lean",
+      "sha256": "38b5c0e94b13c497f820876ac9e3d23d89df0a7fae222f827abc1446a7d80887",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingPassages.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingPassages.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingPassages.lean",
+      "sha256": "b8c9314d9985ff5f2c7a41c26e6a34987a2df98cb4c036f53f5ab869f6aba696",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingPorts.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingPorts.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingPorts.lean",
+      "sha256": "4c26fd2b5984cbc633bb739de405e18755acddf10cd08d794de9232dc37ea102",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingRangeCrossings.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingRangeCrossings.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingRangeCrossings.lean",
+      "sha256": "5bfed0b58cf408984da0f0b39df6582db7e53a9a079fb14691e7cf3ade1615c5",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingRestriction.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingRestriction.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingRestriction.lean",
+      "sha256": "20f8675212cabddb99677ff27b64269c3d2f495b0bbd0bf53c05a58519fc6a5a",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingSegmentIncidence.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingSegmentIncidence.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingSegmentIncidence.lean",
+      "sha256": "948cfde4e5c51cb5c2484749471e40dcd1410a62eec1b6ad41f856d603533b79",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingSpokePorts.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingSpokePorts.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingSpokePorts.lean",
+      "sha256": "b745c080b830cc2e42d883c861096a28c500cac004dda2381d772f0486f5ba97",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingSubdivisionGraph.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingSubdivisionGraph.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingSubdivisionGraph.lean",
+      "sha256": "359d476c73a46da55a8a4a8cf01a1c5853380a1e0b057507dc00ae05a5ead734",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingVertexPlacement.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingVertexPlacement.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingVertexPlacement.lean",
+      "sha256": "19d1494aa59c61afabf197f605fa872f444374ccdde23ea9d9df74cfe4f9a2ec",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawingWalkCutTraces.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawingWalkCutTraces.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingWalkCutTraces.lean",
+      "sha256": "6ebf1afae1f4905133eb505b3ba33c57e11611dd3a5b891981ad142300ae1a76",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/DrawnEdgeChains.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/DrawnEdgeChains.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawnEdgeChains.lean",
+      "sha256": "b6f7a0e44cba4dba69a502731e0f4248892dc74f6111a12f30b113b16c0333de",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/EmbeddedGraphPaths.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/EmbeddedGraphPaths.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/EmbeddedGraphPaths.lean",
+      "sha256": "30fae2ec05096f6a32f9f4ab30a66257ad799fa48ad367fec8c88af41539ee02",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/EndpointFlagPairing.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/EndpointFlagPairing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/EndpointFlagPairing.lean",
+      "sha256": "3846b601b7e6ad0e0d0ea59fc3f5582ab3c6382c2c789439cfe302f7b46c4f0d",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/EndpointVisits.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/EndpointVisits.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/EndpointVisits.lean",
+      "sha256": "5f6edf9af6958d16ba8f6675987f18477e420a58a2ecc0c7f1f81c70098cab76",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/EvaluationAmbient.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/EvaluationAmbient.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/EvaluationAmbient.lean",
+      "sha256": "d2d6a8c14b4982e462ceacea2fe7ff0baf55fb295b36c11a06ab86a7d4af7a31",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/EvenCrossingLowerBound.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/EvenCrossingLowerBound.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/EvenCrossingLowerBound.lean",
+      "sha256": "69cd3efa864b834a9fe9ec2af477ee4ac25ce081bc9d3cc6f5fcf432e2daebf8",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ExpectedTrackGeometry.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ExpectedTrackGeometry.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ExpectedTrackGeometry.lean",
+      "sha256": "c5da12af8b1a6e3bb6fb64ac2e920ed9291bb9e2941a62579cb2280d9d077484",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ExteriorArcReplacement.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ExteriorArcReplacement.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ExteriorArcReplacement.lean",
+      "sha256": "82d02d3de3288c3c9f8eab97c7932e909e5b84b81fbff6bf125b086d9e721358",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ExteriorChordMeeting.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ExteriorChordMeeting.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ExteriorChordMeeting.lean",
+      "sha256": "d2a7c372ab32846746a54524458eb407f99245c32b86f54c9b25cefb555cb43b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ExteriorCrossingCut.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ExteriorCrossingCut.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ExteriorCrossingCut.lean",
+      "sha256": "0fe88d32d6b537ac25439e144884a005d3b4ff72009848140e9fea7026d34e72",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ExteriorSegmentGraph.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ExteriorSegmentGraph.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ExteriorSegmentGraph.lean",
+      "sha256": "2451ad685c10ab91ecdf8165735ae4e01b054c74fe4155f185a976bfa89d370a",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ExteriorSpokeMeeting.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ExteriorSpokeMeeting.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ExteriorSpokeMeeting.lean",
+      "sha256": "4f6b1836f15245f17ed1b8b44524ebafe2071a95187f33014d9ab1e63de30712",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ExtraDrawingSubdivision.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ExtraDrawingSubdivision.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ExtraDrawingSubdivision.lean",
+      "sha256": "e9ca81b89ed2cdba335e0f49c2802ebc062baf733b46d0462940720442fef4ac",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FiniteAffineCover.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FiniteAffineCover.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FiniteAffineCover.lean",
+      "sha256": "6a5c9ad8cc52f3e75ce9f3587ed7b9cc48a99b9953da7e3d95f8942efbf42103",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FiniteCircleCoordinates.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FiniteCircleCoordinates.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FiniteCircleCoordinates.lean",
+      "sha256": "624f1a2998c80022248634692ebc701f2c16e09dc99f1bc36f9ef957d1f2b6a6",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FiniteConePoint.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FiniteConePoint.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FiniteConePoint.lean",
+      "sha256": "56200ad4d9b6fb1ae16c9b977203a5661cdf8c32bce009776adf3dddf33bcfee",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FiniteDiskCollar.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FiniteDiskCollar.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FiniteDiskCollar.lean",
+      "sha256": "cea8c90e8dc3522783f3d794e2fa610d7ad2852c404b522ac5bec3113d05423c",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FiniteEventualRadius.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FiniteEventualRadius.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FiniteEventualRadius.lean",
+      "sha256": "0a20ef38982d2ba868269b313b698fa2640e4cd1815309aa56ff1016b8ce1668",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FiniteIntersectionDrawing.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FiniteIntersectionDrawing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FiniteIntersectionDrawing.lean",
+      "sha256": "acf8dafff6d37be4b2993f53f9357650f6f994a8cf8acb4eb2d9d9f3dadfe5ce",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FiniteLineAvoidance.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FiniteLineAvoidance.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FiniteLineAvoidance.lean",
+      "sha256": "2179fa73363fff99037ec97cd75cd3dfbb9c16bb8bcc83fc1336d92eba5f342f",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FiniteMovingPoints.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FiniteMovingPoints.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FiniteMovingPoints.lean",
+      "sha256": "15a8b94f529fe5ff89c848a93bd3a97966d0751c0a223dfd5eacd94dbc686ba8",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FinitePathChain.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FinitePathChain.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FinitePathChain.lean",
+      "sha256": "898514cd17b47632a3737da5aec9ba8242bd95a924928908bce699081c302aa3",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FinitePolygonalComposition.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FinitePolygonalComposition.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FinitePolygonalComposition.lean",
+      "sha256": "9e0dc1fbded5cb52ecdb5a5bc310c66c822e3b2a612f37447f95dc27d8027fce",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FiniteScaledRadius.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FiniteScaledRadius.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FiniteScaledRadius.lean",
+      "sha256": "e9c393d204d3ebb3eab78fee58214e17514c07dc0c761ee93a3667d3f9dad163",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FiniteSeparation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FiniteSeparation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FiniteSeparation.lean",
+      "sha256": "5edece5743b4d8afaf1e6010c529756d14f0064ae3c404e947a6bf8bbeb879fc",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FirstLastVisits.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FirstLastVisits.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FirstLastVisits.lean",
+      "sha256": "4b74d3eaffd249c3aad664d6dbc25b61c9ca3749f2fbd1ce6d9f25c81493bcfc",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FloorArithmetic.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FloorArithmetic.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FloorArithmetic.lean",
+      "sha256": "74e316045912ecf73cb0aa1cf2ff0b3ab5fe0e8e48ecca0e09853cab3b048b05",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FourCyclePairing.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FourCyclePairing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FourCyclePairing.lean",
+      "sha256": "83d3a4ded6518f6fa94ea4b9563df711fabae3926fb5fab6c7d017944b7dd26b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/FourCycles.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/FourCycles.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/FourCycles.lean",
+      "sha256": "7400fb2ae659ffb477c84c6f4aafca8bca8c7c7617eb57f8c8e71d4a9a99f92b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/GeneralOrderAveraging.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/GeneralOrderAveraging.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/GeneralOrderAveraging.lean",
+      "sha256": "b11723085aef8bee33be7a5109b370781dc8beb6389380b690e6efa158767a16",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/GeneralSpokeAveraging.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/GeneralSpokeAveraging.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/GeneralSpokeAveraging.lean",
+      "sha256": "75a9d070076943d6c67e3f47880866ab8fc35ef29ab02c79f2bd4a0c893e697d",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/GenericPointExtension.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/GenericPointExtension.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/GenericPointExtension.lean",
+      "sha256": "32a675344bd30fdf91952a80f7fff03749c1036dd3a2eb5a1f864e9696c474a6",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/GenericPointFamily.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/GenericPointFamily.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/GenericPointFamily.lean",
+      "sha256": "5a95cf61365054bef45851c76e9649112caebae1c0db1f3ad67313fd21da517e",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/GenericPolygonIntersection.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/GenericPolygonIntersection.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/GenericPolygonIntersection.lean",
+      "sha256": "105fed4fed55422c787df60ef7edc217f7889c94b5608c69374eba9cef3b0956",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/GenericPolynomialBox.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/GenericPolynomialBox.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/GenericPolynomialBox.lean",
+      "sha256": "c9a6ae873eb8b257435d69b702ab6c88a151eda9385e7c19caa8f32289c55db3",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/GlobalCycleAveraging.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/GlobalCycleAveraging.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/GlobalCycleAveraging.lean",
+      "sha256": "a0c66a7cbe17922679d052b8eb378a6568b71c7cb24800183dcbd75dc606f462",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/GlobalCycleIntersection.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/GlobalCycleIntersection.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/GlobalCycleIntersection.lean",
+      "sha256": "c6914b0268f610a7aab36aae5bd2cd9d99dc21c25dd5dab82436a80d5e6e830e",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/GraphSequenceWalk.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/GraphSequenceWalk.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/GraphSequenceWalk.lean",
+      "sha256": "2410cff0f057da777a8219b724c11a21c1aedf63bffc0416681c5ddf7f19bd16",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/GraphWalkRealizationLaws.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/GraphWalkRealizationLaws.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/GraphWalkRealizationLaws.lean",
+      "sha256": "5a908245c88548bfbb9a477f151201eaa042a5166b4d1047bbb11a164b052d75",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/GraphWalkTrace.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/GraphWalkTrace.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/GraphWalkTrace.lean",
+      "sha256": "e6a37118a3bc9e416c8f37027a37c6b0e0b1a048109effb2f5822cab81dce875",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/HalfOrderInvertibility.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/HalfOrderInvertibility.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/HalfOrderInvertibility.lean",
+      "sha256": "0dd4c4c58e6dc42157f98847277058697eba7dcd46278d24dd30b68cafe5ff14",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/HalfOrderReduction.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/HalfOrderReduction.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/HalfOrderReduction.lean",
+      "sha256": "e1a7f17f5afaf56050ee4b4b86213cb318a28577a8e65483f9a65bc08db355be",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/IncidentSpokePorts.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/IncidentSpokePorts.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/IncidentSpokePorts.lean",
+      "sha256": "9c3a401b640d4803b9c9584e5458ac6a6b3c571b5bc35031e6bc7d3ed705ede1",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/IndexedMatrixRankSum.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/IndexedMatrixRankSum.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/IndexedMatrixRankSum.lean",
+      "sha256": "14201d8fda875f37d3cdc40939fc5f74211dc3c5b558568a23333bdd48c2e3ba",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/InnerDrawingPassages.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/InnerDrawingPassages.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/InnerDrawingPassages.lean",
+      "sha256": "7c5333266aa97c6580c4093d79c636d346341ed888dffdfbe7e02a410d3a49d9",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/Interpolation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/Interpolation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/Interpolation.lean",
+      "sha256": "eb3cd177980c1e117102b136c52ba03af134543ec14e06379c4146187fa71cdc",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/IntervalSegmentStrict.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/IntervalSegmentStrict.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/IntervalSegmentStrict.lean",
+      "sha256": "f48f7aded742e86b4716c195ec83f47a6fc08f0a90d21cba383bb9fe001f95ae",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/IntervalSegments.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/IntervalSegments.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/IntervalSegments.lean",
+      "sha256": "b86ff3974f272398ef89c6f0d29ea696898e1e8920c195d1444ff81908045f26",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/LocalLineBends.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/LocalLineBends.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/LocalLineBends.lean",
+      "sha256": "9815499e08175f82ea6c4eb571910b69cb680183c80fb404f916974df718e1e4",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/LocalSegmentTransversality.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/LocalSegmentTransversality.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/LocalSegmentTransversality.lean",
+      "sha256": "ecd497c769b00f747d71ae0f20fbbdc0019e1acd2fcd9d809aef3931d8973b37",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/LocallyStraightNormalization.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/LocallyStraightNormalization.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/LocallyStraightNormalization.lean",
+      "sha256": "97cd411d3300df3bba86bb63353d480de8f1bfe45153108b42d8dc00f790560b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/LocallyTransverseNormalization.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/LocallyTransverseNormalization.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/LocallyTransverseNormalization.lean",
+      "sha256": "192d4151be79f3235193aab065f897745e62f2fcdb05484ddbee7adbda6f2650",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/Main.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/Main.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/Main.lean",
+      "sha256": "7291182875afe4e1d5bb53c68eca65286191b44aca6e4efdb823cdc932b28057",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/MarkedCurveDisks.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/MarkedCurveDisks.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/MarkedCurveDisks.lean",
+      "sha256": "9a14b2dab3fd0526d738054cc0cbcc177a2ced3c54e3f094372045d1303a7ade",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/MatrixGraphs.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/MatrixGraphs.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/MatrixGraphs.lean",
+      "sha256": "a14a9257f635ff8e72a2901c58a9150ab21bdd7f61e484069ea539f0cc0dff9d",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/MatrixRankBounds.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/MatrixRankBounds.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/MatrixRankBounds.lean",
+      "sha256": "ed87c140e0c962e9d554ca9f2189f61af8c4babe82c0c717fe9a9b706378392d",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/MatrixRankSum.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/MatrixRankSum.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/MatrixRankSum.lean",
+      "sha256": "369c117bdf21495707bbd4c21ba41b2d9ca0bd3cc982313cadb0b58b9cd988e7",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/MiddleEdgeIncidence.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/MiddleEdgeIncidence.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/MiddleEdgeIncidence.lean",
+      "sha256": "3f67ce6ec4eeef7454721743340dbac4a31a859bab563cc6efb93bb123e46259",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/MiddlePathInjective.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/MiddlePathInjective.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/MiddlePathInjective.lean",
+      "sha256": "f1d2449b4087282d7c5351f56fbbbd2a650d477b8446a5b4390fe4d496d730ff",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/MiddleSpokeMeeting.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/MiddleSpokeMeeting.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/MiddleSpokeMeeting.lean",
+      "sha256": "2797de6b93446f5d4543b9d464a25172c2e52098cae3171dec1c2513e96f5cbe",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/MinimumChainGeometry.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/MinimumChainGeometry.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/MinimumChainGeometry.lean",
+      "sha256": "6f4a3033cc9c738faca84ab2617788ddf5e26e32c0f00b06fe050d0d84e7bed5",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/MinimumChainVertexPieces.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/MinimumChainVertexPieces.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/MinimumChainVertexPieces.lean",
+      "sha256": "66c46d9e7e386c301ff66f557633b773794afbb0d0a62bc538bd29bd21c98ef3",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/MovingDiskClearance.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/MovingDiskClearance.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/MovingDiskClearance.lean",
+      "sha256": "b7d4da5be52c37670d0621cf6df7d0a657fa229777c69a2dc3fd80da4af6a82a",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/MovingSegmentStability.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/MovingSegmentStability.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/MovingSegmentStability.lean",
+      "sha256": "ceb60d731591bf62ebe6f35b452ff611b72f334b666862ebea4c7fb5e1cc3420",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/NoAdjacentLocalNormalization.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/NoAdjacentLocalNormalization.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/NoAdjacentLocalNormalization.lean",
+      "sha256": "315ea56fce73b148edb088711eb2e48281edb8f326518ea28df346733e1150cf",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/NoAdjacentNormalization.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/NoAdjacentNormalization.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/NoAdjacentNormalization.lean",
+      "sha256": "7a675680fed61376975e6d4d4c8583b5de60c1e143b0b709e1c843532a79d413",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/NodeMoments.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/NodeMoments.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/NodeMoments.lean",
+      "sha256": "8420c4deaa953392a2a688b2a903e7845ca816712c553ae94a9906168d015aad",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/NodeRankLoss.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/NodeRankLoss.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/NodeRankLoss.lean",
+      "sha256": "517bcddd4b3dc1a46a6b10ca3aef3c7b31dfa69ac75e57d7f80d63614670d4f6",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/NormalOffsetExterior.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/NormalOffsetExterior.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/NormalOffsetExterior.lean",
+      "sha256": "5706057f948122b6f7353900977d3405381b5c5330a03bf165ebbc9c555324f0",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/NormalizedPolygonalDrawing.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/NormalizedPolygonalDrawing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/NormalizedPolygonalDrawing.lean",
+      "sha256": "621287766df1f618cf1a98f3db563b72b16491a2218b33ec10bbc38e3e6e5eb9",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OddCrossingLowerBound.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OddCrossingLowerBound.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OddCrossingLowerBound.lean",
+      "sha256": "5b9758df468a34064e3e5dd30579f5bf06663271660de9cd6cfe6721ed197ed6",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OddNormalizedLowerBound.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OddNormalizedLowerBound.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OddNormalizedLowerBound.lean",
+      "sha256": "3e84735a80492c7f3cf2b8c89964a83ec3e08ad31936c549f0fdcdd46eba9131",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OffsetBendSegments.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OffsetBendSegments.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OffsetBendSegments.lean",
+      "sha256": "ca11d9b116a9d15ddcc31f0e03decb554c62f6c6f457858788138f803cb95591",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OffsetSegments.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OffsetSegments.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OffsetSegments.lean",
+      "sha256": "7eb2c3176f057cdb701cc0996fe8a8d8ee7e30c439fdf40f913c2b73409bbe47",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OffsetTrack.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OffsetTrack.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OffsetTrack.lean",
+      "sha256": "3e6744e9b68c724723c7ca150935d9191f8f8fc120f4eed0e02b6d8aca891051",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OffsetVectors.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OffsetVectors.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OffsetVectors.lean",
+      "sha256": "d480ca6f4ecd2cf6db0796554cf75792b9cd470e86d0b0657a5b895c6617377c",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OpenSegmentEndpoints.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OpenSegmentEndpoints.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OpenSegmentEndpoints.lean",
+      "sha256": "aae2660bae4ac871ffc369712f30cf30e835bd666ea8be55c550ad7c1b848428",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OrderShift.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OrderShift.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OrderShift.lean",
+      "sha256": "23bc43be11a0db514ea4399ca0a4137c66ff8d5e23167a38424b36d7c8755083",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OrderedAffineSubdivision.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OrderedAffineSubdivision.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OrderedAffineSubdivision.lean",
+      "sha256": "3a5216a8a25c28c4ca64a15a00b8ee02cd3150a724b3b804c73c9d4e85ddca9b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OrderedCrossingPorts.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OrderedCrossingPorts.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OrderedCrossingPorts.lean",
+      "sha256": "43a21fadbce53bd8ef5a1fa04b8f49f413b792a736748d1303bf6782f13d8bf7",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OrderedExteriorPaths.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OrderedExteriorPaths.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OrderedExteriorPaths.lean",
+      "sha256": "9893c323fd36bb7df3816c944232c48d0fe0da48aafea43e87486430d038920b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OrderedKnotCover.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OrderedKnotCover.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OrderedKnotCover.lean",
+      "sha256": "c55dc44c2749a68975353a70e4bb4e313aedd3f8003e2f18008b8f70c5d09a38",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OrderedNodeIndices.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OrderedNodeIndices.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OrderedNodeIndices.lean",
+      "sha256": "2f738df46bd3126f9a125e50e1b71b4e73b7ec6a1741ec06221ea6f5d807f7e8",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OrderedPassages.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OrderedPassages.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OrderedPassages.lean",
+      "sha256": "72e9586e60b816abc845e96e19262b65d8869c097c266466e89794779242bf22",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OrderedPathParts.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OrderedPathParts.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OrderedPathParts.lean",
+      "sha256": "4483f3a9809ae02a3160d0ce7d255496482397402d371cd31ca0ae0b7769bad0",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/OrientedSimilarity.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/OrientedSimilarity.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/OrientedSimilarity.lean",
+      "sha256": "d117f66a3833372bb2ce6dc6b98ded328ebcab6a3068cf7ee2202a22b6d0b5a2",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ParallelDirection.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ParallelDirection.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ParallelDirection.lean",
+      "sha256": "70038d246574485e86bd4f7c1ee08b03d10b4c78ffc32fd662e8ecc0fef0b83c",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ParameterNeighborhoods.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ParameterNeighborhoods.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ParameterNeighborhoods.lean",
+      "sha256": "ed8aada0ad7a313fbf99433161c9ad824a4c29f7c5ecaba091f0a39ca8ed5520",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PathConcatenationInjective.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PathConcatenationInjective.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PathConcatenationInjective.lean",
+      "sha256": "5dec9e9e13c81167bdc9807c892687a32026ef2416ac970d67bee938df849437",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PathEndpointNeighborhoods.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PathEndpointNeighborhoods.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PathEndpointNeighborhoods.lean",
+      "sha256": "d66cfbde8074d8a35c87f14adc8163bb07d7857de0c8a8c1c1f86f1ca143a357",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PathSubarc.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PathSubarc.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PathSubarc.lean",
+      "sha256": "d2ec247b9359712198de3971594c40a5b0030064847bafffd56927dbeb29b38e",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PeriodicPolygon.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PeriodicPolygon.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PeriodicPolygon.lean",
+      "sha256": "9e1c5704a2600ebc9ebf3de40802c4e5a77a7766e567bdce55e2a9269a258541",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PhysicalCircleAveraging.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PhysicalCircleAveraging.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PhysicalCircleAveraging.lean",
+      "sha256": "85ee96fbf65dacba37fc4e449127687cf6e6629e8294d4fb557d9794a69d7d27",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PhysicalSpokeAveraging.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PhysicalSpokeAveraging.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PhysicalSpokeAveraging.lean",
+      "sha256": "f2cf8890b3721f548956316f3047fb978057073809023756362b6eeec27e523e",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PhysicalVertexChords.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PhysicalVertexChords.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PhysicalVertexChords.lean",
+      "sha256": "1413d725f6dba01bbd9c6deaba06a1bb8d95ed141f6720f6d4310e3ada7864c6",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PlanarDeterminant.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PlanarDeterminant.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PlanarDeterminant.lean",
+      "sha256": "f18e85789b6e88cbe5f341bde006bb92b4cd1ad8d9889b479adb3b8f224e83f9",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PlanarSegments.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PlanarSegments.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PlanarSegments.lean",
+      "sha256": "61a6d28352a30872ac2dc88da9514a0699c492171839eb8750872afbf3c8cc4b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonComposition.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonComposition.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonComposition.lean",
+      "sha256": "a13d27d9ab5b5e6beba69256122b2f9a6548461fa13a6385091481efbcbe12f8",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonStability.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonStability.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonStability.lean",
+      "sha256": "bd38130e1495a837b3694ec13a4a19e002485d539d8e4136b6b95cf1d3334459",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonTransversalityStability.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonTransversalityStability.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonTransversalityStability.lean",
+      "sha256": "de8fe6dac9c89f23c1cd6b226209e9678d36151f3a9762320111aee66eb9392b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalArcInjective.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalArcInjective.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalArcInjective.lean",
+      "sha256": "9f82bbc26dc48b16170d1f88e9244cf2894c9c06b6d40ad36982f9cd27895bd7",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalBoundaryReplacement.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalBoundaryReplacement.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalBoundaryReplacement.lean",
+      "sha256": "42a41547c4e492ad8200be83f8cc56c7b269b83f5b378b57ec098c6818402b42",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalChainComposition.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalChainComposition.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalChainComposition.lean",
+      "sha256": "3e6a765e9958f5183f3c64cee982cb5717ffa46fd8b185ef4f2309250a5c9352",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalChainExistence.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalChainExistence.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalChainExistence.lean",
+      "sha256": "2dff1285382c2b973c2c21c94c199fa8ad027884a151987a0ffea382a50cb09d",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalChainOperations.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalChainOperations.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalChainOperations.lean",
+      "sha256": "db90039735a08877ba6d955316ff0e7a2c9287b157d4a0dbef805783d8c76a0e",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalChainShortcuts.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalChainShortcuts.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalChainShortcuts.lean",
+      "sha256": "5300b76e9b944493ff601d73eb2f4154fa56efae27f28e65628359714ed73060",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalChainTransversality.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalChainTransversality.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalChainTransversality.lean",
+      "sha256": "c65e2462b60e38635ef8ea60fba634e4884d69aa267f977fb307c7a8cc04949f",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalChains.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalChains.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalChains.lean",
+      "sha256": "5e3d2287dc2d799696763f0e38b3e648fcbbf8b1069dd29366142464405748f0",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalEndpointCasts.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalEndpointCasts.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalEndpointCasts.lean",
+      "sha256": "f79451cff12ac7d3ca5484e9093b0bf19597c5205f2122c27fd593d386b29d18",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalExterior.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalExterior.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalExterior.lean",
+      "sha256": "3608e1c181b98357dfd3b37d5c1740b0600d685b02fba2a20ed84f25564efc98",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalNormalization.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalNormalization.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalNormalization.lean",
+      "sha256": "21fc724c28b433fa3fe7a33d8f286e5b1207c750563603158c1bbafef2e88ab7",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalParametrization.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalParametrization.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalParametrization.lean",
+      "sha256": "e7b70a49832a2b66f5ec6fc9826b403042c0027197e9f9a20d4ea15f51a5b24f",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalParametrizationCover.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalParametrizationCover.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalParametrizationCover.lean",
+      "sha256": "3bde5fe706de21eec69fa62e8139e071467e94cae02a0cb2253650fc36efff40",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalReach.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalReach.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalReach.lean",
+      "sha256": "b68df64bce4e5a54e54b6b28f5836e812ffd32fd0a329668df104640f9a70a38",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolygonalWalks.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolygonalWalks.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalWalks.lean",
+      "sha256": "f838be7227f0c37a6db8a442ae5263a578edaa1239e5b2d31f03dd9b7f978a29",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolynomialCoordinates.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolynomialCoordinates.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolynomialCoordinates.lean",
+      "sha256": "f3dcf13d7b281dca32d65ce36ac496fa2af188362050a2f0b09d25fca502cba4",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolynomialFiltration.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolynomialFiltration.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolynomialFiltration.lean",
+      "sha256": "6c32061aa712861b850cb96c2d46afb9a1124bfba28f4119237e25d6134b632e",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolynomialKernel.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolynomialKernel.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolynomialKernel.lean",
+      "sha256": "4a885b3f73e096cbf3f4c2643ad53b9eca4facb8b27a73601a66c9ebaef2f2d6",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolynomialLinearMatrix.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolynomialLinearMatrix.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolynomialLinearMatrix.lean",
+      "sha256": "b9fefbe8237761121a7bb19c11d71ec2ec8f31191b56653b36682d679205bc53",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/PolynomialMinors.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/PolynomialMinors.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolynomialMinors.lean",
+      "sha256": "6c8ac8937bcc9447dc9a69e46c07f8418350bc1a568135d6947d9a2ce0bea02f",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ProperCrossingLocality.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ProperCrossingLocality.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ProperCrossingLocality.lean",
+      "sha256": "af9ca6df0edb680fd2cc40e50590aea46b9c592c786e6f2780dfdb9984207393",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ProperSegmentCrossing.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ProperSegmentCrossing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ProperSegmentCrossing.lean",
+      "sha256": "f14cdec0712e335f58928f96a36c91e49f7fa41e5e8973b746482c128ed0e372",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/RadialBoundaryPorts.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/RadialBoundaryPorts.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/RadialBoundaryPorts.lean",
+      "sha256": "8af549fa49807442065662f22044186114cbf78464f41fa912ba32228b5a8eef",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/RadialExterior.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/RadialExterior.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/RadialExterior.lean",
+      "sha256": "dac47d45fe67ec62cb34b7ecc8a33b88f0e1798aad6ce1b91d9c6aaccc6c38d9",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/RankDetector.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/RankDetector.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/RankDetector.lean",
+      "sha256": "76df613085c053ca4b534ab1d0b6a6e08142850c3d3e4cea22ea3a45dfad9d0e",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/RankMultiplicity.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/RankMultiplicity.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/RankMultiplicity.lean",
+      "sha256": "de75d1206ee0f783274053bb7e3dcd2a06ae9fa9d2d512070a0f9d410356b36e",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/RankSpecialization.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/RankSpecialization.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/RankSpecialization.lean",
+      "sha256": "52352cc3e2ac6bf8a1069e04cde1665fc365d448bd9ce7201e7b08d574af7125",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReconnectedIntersectionCases.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReconnectedIntersectionCases.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReconnectedIntersectionCases.lean",
+      "sha256": "bd528af309aa38b7ab098df86ce64d730a02d10fe82d8b536febe019dc2f30b3",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReconnectedPaths.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReconnectedPaths.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReconnectedPaths.lean",
+      "sha256": "57465e1eda92680f5c77ea618bcb029ffea46a8459863055299ced5f56d47ce6",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReconnectedPointRemoval.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReconnectedPointRemoval.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReconnectedPointRemoval.lean",
+      "sha256": "06b470187fb1bec8b49645e257ccd774a3d0272a6981cae6ae901fa1791a8a1c",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReconnectedVertexAvoidance.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReconnectedVertexAvoidance.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReconnectedVertexAvoidance.lean",
+      "sha256": "a143bb5557521caada03e4a3d911ac50d864e1d0d357ed72c8083ae2ba4ce8b1",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReconnectedWalks.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReconnectedWalks.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReconnectedWalks.lean",
+      "sha256": "b177d1f0bd51d60e66fc0f536f3327f93d6f7e001843739e354de070618aeb1c",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReconnectionAvoidance.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReconnectionAvoidance.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReconnectionAvoidance.lean",
+      "sha256": "cfe22f9155ceca7bdd0a80f1b5148b3fc5a5e29564971d390c86848c66e0cd42",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReconnectionChords.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReconnectionChords.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReconnectionChords.lean",
+      "sha256": "173bac649155a682034587fa2fb7f32fa4c28269d0906f27987d60d53441b7d2",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReconnectionOppositeCuts.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReconnectionOppositeCuts.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReconnectionOppositeCuts.lean",
+      "sha256": "2ca1527c4f452dbc52521aaa77c6cbf71c504ef2fe152f16f05356861833619a",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReconnectionOtherEdges.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReconnectionOtherEdges.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReconnectionOtherEdges.lean",
+      "sha256": "5e5583115da82d3a621d012e2d1f77f8ad1cce99b8182a25f462727ed5720ce2",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReconnectionVertexAvoidance.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReconnectionVertexAvoidance.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReconnectionVertexAvoidance.lean",
+      "sha256": "a14d79ba8c6c8bf5f6506a544782340dd53c14e802037b6ab69e2cbd8eb78300",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/RectangleAlgebra.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/RectangleAlgebra.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/RectangleAlgebra.lean",
+      "sha256": "ceb9faf75e2f3b7326f2028f9df0ddf1925bc00b28b1dd3975689148e0997f2a",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReducedCrossingCorners.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReducedCrossingCorners.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReducedCrossingCorners.lean",
+      "sha256": "7d34b7aeffc09233aa656e4893fade82934e5e8549af63331067501925297ba4",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReducedCrossingTransversality.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReducedCrossingTransversality.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReducedCrossingTransversality.lean",
+      "sha256": "f65aa5e63d8774d8be6165edc7aea72bcd1804fd2381e19aa354599c8101c538",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReducedPolygonalPresentation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReducedPolygonalPresentation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReducedPolygonalPresentation.lean",
+      "sha256": "241f3d2a7fd604aa042dd7020fbabb612d3842f3f051127570d0e1df7046350c",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReplaceDrawingEdges.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReplaceDrawingEdges.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReplaceDrawingEdges.lean",
+      "sha256": "c2bb1f3da6f29e931fa04ae0e809518f5c58c295276c26820f13b140770d3076",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ReplaceDrawingRangeCases.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ReplaceDrawingRangeCases.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ReplaceDrawingRangeCases.lean",
+      "sha256": "217c0dff92817e88303abc09fb0854b73aad15b4689e277305c7222a86280385",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/RetainedArcDisjointness.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/RetainedArcDisjointness.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/RetainedArcDisjointness.lean",
+      "sha256": "fd1541fc598ed3c4eeb05b822ee3e8cfce3f41538d23e1cacb05a2ee5db27e5f",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/RetainedDrawingArcs.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/RetainedDrawingArcs.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/RetainedDrawingArcs.lean",
+      "sha256": "5f5705f8366b403244f00c069b5d40796b7544199f7ecff8924806011a4d8f0b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/RoundCircleChords.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/RoundCircleChords.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/RoundCircleChords.lean",
+      "sha256": "6aa694b83fece7e5180f113263a9a7f3dddc9323ae0c5c9f7c47087da1f7c817",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/RoundDiskChords.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/RoundDiskChords.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/RoundDiskChords.lean",
+      "sha256": "6efe4d3c7105b5bc0ef449b7fe5aca927a9715e283a4ca976aee46ef97134e34",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/RoundDiskClearance.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/RoundDiskClearance.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/RoundDiskClearance.lean",
+      "sha256": "44be72fbea2633367f7a13d2a81696ba986a3079b87d09a98464abc2a5149741",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/RoundDiskVisits.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/RoundDiskVisits.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/RoundDiskVisits.lean",
+      "sha256": "caba3662605bddf5b6960a7da7921ed23f5c8129f67b16fe09935caa824cca04",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/RowCrossingCount.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/RowCrossingCount.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/RowCrossingCount.lean",
+      "sha256": "5892766c54749abcea1c6c6f6187e8269f71e00bd91e9fcd1e1521e291c402ed",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SegmentAffineForms.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SegmentAffineForms.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SegmentAffineForms.lean",
+      "sha256": "8c0d56887f931108a6863c06862e68e9eda6cdf87b3b9abd29a7c882415778ee",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SegmentAugmentation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SegmentAugmentation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SegmentAugmentation.lean",
+      "sha256": "3e325f4d22b334fb523e1d070898176f2c4adcf44b9670257900de6bdef67c76",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SegmentClosedIncidence.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SegmentClosedIncidence.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SegmentClosedIncidence.lean",
+      "sha256": "21fb81704f186871b59a7b4530b8242046f09054843143142c32618fd6c1b808",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SegmentContinuity.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SegmentContinuity.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SegmentContinuity.lean",
+      "sha256": "a4fb8a9d979e074f71b9cdab2e44305e050569c467978515c6691c6b09cbb38c",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SegmentCrossingCoordinates.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SegmentCrossingCoordinates.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SegmentCrossingCoordinates.lean",
+      "sha256": "b5304ad1732cfd1bd3404be73c61b95f7ec247d5aec90264d2a39e06be4c98a3",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SegmentIntersectionUnique.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SegmentIntersectionUnique.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SegmentIntersectionUnique.lean",
+      "sha256": "6d370c4c4c4a143d4571ba8783d78fcfdc20b6b59dfc034307429560b8b702e5",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SegmentParameters.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SegmentParameters.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SegmentParameters.lean",
+      "sha256": "619564dfedfb791d092daa8a1bbf3083c6d0268fc34d5df644650f5e5e05aea4",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SegmentSides.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SegmentSides.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SegmentSides.lean",
+      "sha256": "c47710843d03c9fe6db3b00b608a20826f3b663a30c3bef297f312f37ff39c59",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SegmentSymmetries.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SegmentSymmetries.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SegmentSymmetries.lean",
+      "sha256": "6edc6cbe907e6b15abde6bca0ebbd80f7f2e31d4c54f500927aebe4b37bec5d0",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SegmentTraversalReversal.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SegmentTraversalReversal.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SegmentTraversalReversal.lean",
+      "sha256": "162c737f956c2daa177bae17ddaf1b22cec60ceb0a491d999310306ec76543fe",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SharedTrackAvoidance.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SharedTrackAvoidance.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SharedTrackAvoidance.lean",
+      "sha256": "56a47f81a90f15ee58874f778f095909f39e8e6d6b544b343596f424cd890c0b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ShiftedEdgeIntersections.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ShiftedEdgeIntersections.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ShiftedEdgeIntersections.lean",
+      "sha256": "7db50ebc75f4c0de7c6b3892afa82982d05228dcb5b2957e6b400b1f91866cec",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ShiftedRadialPieces.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ShiftedRadialPieces.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ShiftedRadialPieces.lean",
+      "sha256": "58ec3213237fa14e8783b5af4167e73ac4210f95b75bc87e06290ab23cc43ec7",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ShiftedSegmentStability.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ShiftedSegmentStability.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ShiftedSegmentStability.lean",
+      "sha256": "eded9263fb14b5d3bee414f2fd1d080ab2d3ef514a3d6d175885f52a3a50ddbd",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ShiftedTrackDisks.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ShiftedTrackDisks.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ShiftedTrackDisks.lean",
+      "sha256": "b226550cc54316e4bb681dfe3258e97e210a1732a0cc2f7da4b50b4eda3d9345",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/ShortVertexRadius.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/ShortVertexRadius.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/ShortVertexRadius.lean",
+      "sha256": "b586cb5a7c4bcb08392eec75f1b831bb7a540a789d0ef463b063120174e1989c",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SimilarityCoordinates.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SimilarityCoordinates.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SimilarityCoordinates.lean",
+      "sha256": "78e79e4bfb80073386da85410781d4a6a94a529956893038e3b357adb9c7d8b8",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SimultaneousExteriorArcs.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SimultaneousExteriorArcs.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SimultaneousExteriorArcs.lean",
+      "sha256": "7586780802891979c28808ca1f372cab6fbc2ffb86a023e0c8335e6a0a43924f",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SimultaneousPolygonalReplacement.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SimultaneousPolygonalReplacement.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SimultaneousPolygonalReplacement.lean",
+      "sha256": "f7ec106719a272652ebf37378e1d1ac24188812fa07740c67ac945fcd808cc2c",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SortedMarkedParameters.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SortedMarkedParameters.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SortedMarkedParameters.lean",
+      "sha256": "7fa97269e7ae71759066e1498d4fe425d272248d304fa8531cb1b3e0d9a95e85",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SortedSideEvents.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SortedSideEvents.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SortedSideEvents.lean",
+      "sha256": "440757b91361e86dd7e9cd7c1304f5e1fdd023397e7b794851b89afafafc916b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SpokeEndpointSeparation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SpokeEndpointSeparation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SpokeEndpointSeparation.lean",
+      "sha256": "02a26f3222e014f43d432e8c1f461892ce325999e2930b8caba026c409d68abc",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SpokePieceIsolation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SpokePieceIsolation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SpokePieceIsolation.lean",
+      "sha256": "7fc200ba59fef6b0f5acb80c6c4f19928423aa1176fda4e1ade2ba8a57bc4c7d",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SpokeTrackDirections.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SpokeTrackDirections.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SpokeTrackDirections.lean",
+      "sha256": "b15fe68d0b90b8c9486d956456761e3d1b0d61ff1022c51dfec1000a0c31a8b5",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/StageDegreeBound.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/StageDegreeBound.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/StageDegreeBound.lean",
+      "sha256": "db662ee15fb907fccb5d5f8c71f1a0f5586f8ed0cb3a111015dd14b6558e01ec",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/StepEvents.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/StepEvents.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/StepEvents.lean",
+      "sha256": "b9a748dc65ab4fafb49f19e6d45557a1a0dc82732e9d6f6461274d19024a6bff",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/StraightChainIntersections.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/StraightChainIntersections.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/StraightChainIntersections.lean",
+      "sha256": "f96e780a8659bbd8cb4caa8f46a949aa0caf738a048121e94742abfb36481cdb",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/StraightChainTransversality.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/StraightChainTransversality.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/StraightChainTransversality.lean",
+      "sha256": "7b5f6b7d3c4b165366d5f8c1f0fee2a99cc47e839ac0360f936755707ee1beaf",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SubdivisionPointEndpoints.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SubdivisionPointEndpoints.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SubdivisionPointEndpoints.lean",
+      "sha256": "f7bc3c44972333b82d2a0a082cbca2f7fceefe944237146da3d0463cae00f3e2",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SubdivisionSegments.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SubdivisionSegments.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SubdivisionSegments.lean",
+      "sha256": "6a336e84d66cf38dbbaba5f7752740adcaa4ac0bca4a0f3619373fde0b999ac9",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SublevelExtrema.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SublevelExtrema.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SublevelExtrema.lean",
+      "sha256": "b484ab98d5d07f01c6324692461d50c849bb2fb0f4e55ff740551c47bf3a3c8f",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SubspaceIntersection.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SubspaceIntersection.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SubspaceIntersection.lean",
+      "sha256": "c89e2dea6dd0dc97f21c1fa955bef8b4a01829074c67cf6ea2778f19c7d0b696",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SubspaceProjection.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SubspaceProjection.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SubspaceProjection.lean",
+      "sha256": "0cbc905cd33fc118de826276823503425467d2de66e07d34c364abe4c346f088",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SurgeryCrossingContainment.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SurgeryCrossingContainment.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SurgeryCrossingContainment.lean",
+      "sha256": "c3559c86f80813eeeb673a1615130dd238466434b934a457addb53a5e4716765",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SurgeryCutWalks.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SurgeryCutWalks.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SurgeryCutWalks.lean",
+      "sha256": "64597eca379d8507c59873f89bfd748a0c0fd5a52156f06d38c52afcbf7c1ba9",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SurgeryFiniteDrawing.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SurgeryFiniteDrawing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SurgeryFiniteDrawing.lean",
+      "sha256": "ed413e77cb46528882739d94e70b665b46e416233253ae8cf259d0ff3ae6575a",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SurgeryNoTriples.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SurgeryNoTriples.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SurgeryNoTriples.lean",
+      "sha256": "596d2af084ac67e3f972d16157dd72698d2f51ae0667bdd977c5c46f93173844",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SurgeryPathWitnesses.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SurgeryPathWitnesses.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SurgeryPathWitnesses.lean",
+      "sha256": "28af03119618aa5086cdce5e2fcfcd640be9ddd260da0cd7b358ebe715ba8b0e",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SurgeryRouteIntersections.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SurgeryRouteIntersections.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SurgeryRouteIntersections.lean",
+      "sha256": "6bba064e96a5d60fe2c3d94f74e821e967a6e59580a4b0876ef00a74ca4e8e56",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/SurgeryStrictPointCount.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/SurgeryStrictPointCount.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/SurgeryStrictPointCount.lean",
+      "sha256": "6faff62d19b4394dcc87f5fab37ac831855f1120a797010c13616a15cf382b9d",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TangentTrackIdentity.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TangentTrackIdentity.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TangentTrackIdentity.lean",
+      "sha256": "8f42cf14043eaf49313830b23eebd6cd8a09b3019b4ba08526a7578ab152634f",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TrackChordSeparation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TrackChordSeparation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TrackChordSeparation.lean",
+      "sha256": "4a7dbd8c4a4e88a5ff474453419f086ebb841d3e8e3a6e335031af63d5ecbbad",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TrackEndpointConnections.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TrackEndpointConnections.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TrackEndpointConnections.lean",
+      "sha256": "a0e0a06178cef0058e77925a59c1aa2b65a3c9d9a3ccb5b07e913d81fc93888f",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TransversalityStability.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TransversalityStability.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TransversalityStability.lean",
+      "sha256": "27a938eddebe2f7cbe4a81d60d3f205536746a5a4e652926f7b42048cefef252",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TransversePolygonIntersection.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TransversePolygonIntersection.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TransversePolygonIntersection.lean",
+      "sha256": "f017085010e813851a4289938f5b6ffc098d4165a32c6b0ff44d14f30b6ed21f",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TriangleEntryExit.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TriangleEntryExit.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TriangleEntryExit.lean",
+      "sha256": "6a5e223ed2b449a49cb937f002529bf432036e29c1c862298b011fe9791cc572",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TriangleFactorization.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TriangleFactorization.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TriangleFactorization.lean",
+      "sha256": "fa740273f752fce1a2df41fb58a53c8196a3846996038396f61fe1eeb3916d75",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TriangleOrientations.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TriangleOrientations.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TriangleOrientations.lean",
+      "sha256": "b5d4aab71914d5e158957d0255997d86778c69b7671ef93251e07313856d0656",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TriangleSideEvent.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TriangleSideEvent.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TriangleSideEvent.lean",
+      "sha256": "4c0ad1c31d345a1b2e6601d7870adddf2981a907ce1d9e80a8f8c762f195b49b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TriangleTransversality.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TriangleTransversality.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TriangleTransversality.lean",
+      "sha256": "423fdc4f6c5a2c5a598ed937780b77f67ebd6cd8a07a3319d4fada95e913bb03",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedChainDirections.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedChainDirections.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedChainDirections.lean",
+      "sha256": "3b38cea28e45728882e6912f4e898e6c00cb86c39774c8d834c61518e1741112",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedChainPath.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedChainPath.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedChainPath.lean",
+      "sha256": "6536c0bc4f8af9667d4caedb58a67ccfa393247223911aadbbc1b748538e6f94",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedChainVertices.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedChainVertices.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedChainVertices.lean",
+      "sha256": "6fde6c25170a1f09d1419fc4e5cd859a7242f866237782a1f945587cf115f132",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedCrossingCorners.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedCrossingCorners.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedCrossingCorners.lean",
+      "sha256": "c0c7cceff78688a57be5f6aced3452c8e53646d7b914d78dc5e2621d4e995710",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedCrossingRetention.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedCrossingRetention.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedCrossingRetention.lean",
+      "sha256": "cb8532d208914f7553dc98878dfded5c8b30e8a7e84c1ecfe8f87b60f0688675",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedDrawingDisks.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedDrawingDisks.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedDrawingDisks.lean",
+      "sha256": "b0a86c0141d93f6b33ff258e646d5ef13ee12b0ea0d977342b35a220b61f2d0d",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedDrawingInteriors.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedDrawingInteriors.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedDrawingInteriors.lean",
+      "sha256": "87e4d67299a7ba78f534c00a2d7120043131c68f2c38d042f29ed3d2823019f1",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedRadialDots.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedRadialDots.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedRadialDots.lean",
+      "sha256": "5cd7fc33c1280554437320ed2ff99fc656799bab235dda65bb76e51e29827ecd",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedRadialEnds.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedRadialEnds.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedRadialEnds.lean",
+      "sha256": "dfd9e174d93fe532929ebd0a87aae7d67541b7b6c24582d15c3e3a07e659322d",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedSegmentTransversality.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedSegmentTransversality.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedSegmentTransversality.lean",
+      "sha256": "c5f3969e2300740fd32adb041a5d26aa8b4c1917459b4d9298866dec19d0ed12",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedSignedIntersections.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedSignedIntersections.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedSignedIntersections.lean",
+      "sha256": "823e44a2ad2d764645dacc8f740b98570e516765a69dbc1295e172133d35c881",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedSpokeCoordinates.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedSpokeCoordinates.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedSpokeCoordinates.lean",
+      "sha256": "9f5b1e9335c26d2b1c6a948439f0372ddb8302506a95b7af35f8fa993a88bc7a",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedSpokeDirections.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedSpokeDirections.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedSpokeDirections.lean",
+      "sha256": "5b2279a7f23d6d66fa6aee458f9d1c38072d087e4e4fd083adc9aa8d30a5f3db",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedTraceDecomposition.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedTraceDecomposition.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedTraceDecomposition.lean",
+      "sha256": "89406c00a1090b38dc4ca8806651331fccf9853b95eeb8e67a070a8119ea647b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedTrackAvoidance.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedTrackAvoidance.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedTrackAvoidance.lean",
+      "sha256": "1aa17dfd2448e953b2c63badd2fc7b1e3e16aafe1fb9b27ebb8bec66805bae6f",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TruncatedTrackStability.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TruncatedTrackStability.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedTrackStability.lean",
+      "sha256": "20ec2dd5f47e194292d460a15f13991b4bf6fb03e4f44fd0d2834d4bf430362b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TwoTriangleBasis.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TwoTriangleBasis.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TwoTriangleBasis.lean",
+      "sha256": "437c461fd7bc5b5b20450bd22d66904beb37bdd86bcc1755027a53d59dc3f1ea",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TwoTriangleIndices.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TwoTriangleIndices.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TwoTriangleIndices.lean",
+      "sha256": "de3e5d18bb5ea0fc2d274ceacf6a6ce43bc9e038c751a4c543459a2940c2c7d0",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/TwoTriangleUnisolvence.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/TwoTriangleUnisolvence.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/TwoTriangleUnisolvence.lean",
+      "sha256": "26dec46fdd075e722757e3a850dc476aba95bf7047660f8e624c39355c1dc77e",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/UniformCrossTypeGeometry.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/UniformCrossTypeGeometry.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/UniformCrossTypeGeometry.lean",
+      "sha256": "32095981858690d301533feb4eb4374ace680ee0128948f6214789dc83d19a19",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/UniformSpokeRadii.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/UniformSpokeRadii.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/UniformSpokeRadii.lean",
+      "sha256": "4733a22bee993ef61d4676e10c70c7813cd9196a3121c11646ac4d69fbbc9f29",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/UniformTrackPerturbation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/UniformTrackPerturbation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/UniformTrackPerturbation.lean",
+      "sha256": "23c4b58291c017226658aca7790276048ccecc0c1927a666d4eec81196fd56de",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/UniqueWalkPassage.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/UniqueWalkPassage.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/UniqueWalkPassage.lean",
+      "sha256": "460afcd345cf9eda7772be21d8c55702235b6124ba077ea865deccebf9a260ef",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/VertexChordIntersections.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/VertexChordIntersections.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/VertexChordIntersections.lean",
+      "sha256": "3dda89448431b3cfa0da1f8186d7acbb3213e9bb3d0feb6891c3db06e5b92b8a",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/VertexDiskSpokes.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/VertexDiskSpokes.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/VertexDiskSpokes.lean",
+      "sha256": "f2b1cfd3f7689ed47bc39ef7b714ecdbd21b08aa62170090327c7c890c87f5ce",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/VertexDisksCrossingFree.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/VertexDisksCrossingFree.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/VertexDisksCrossingFree.lean",
+      "sha256": "972b21231a11fb0b5fedb2fa351bd2b769f0b771e1250a3188d03188304f0abc",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/VertexEndpointPorts.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/VertexEndpointPorts.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/VertexEndpointPorts.lean",
+      "sha256": "a0413d7f59505d33600ea45eaf5cef2a2df2697314ecfa415fb116ac3a3157b2",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/VertexOrderDetector.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/VertexOrderDetector.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/VertexOrderDetector.lean",
+      "sha256": "29d7289917391b83f667fb1e396bd9a140e0b6beafe8498649a870cd2cf180ef",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/VertexPassagePairing.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/VertexPassagePairing.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/VertexPassagePairing.lean",
+      "sha256": "aef45e368bef3063f5ebe85956a8c14367f37d0ee1b7cccda131189226329455",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/VertexPieceClearance.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/VertexPieceClearance.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/VertexPieceClearance.lean",
+      "sha256": "c4da6309b98b7d5303565cac304670c4b2f45842aa7d57e5803f50e4cc7a5ce9",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/VertexSpokeBounds.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/VertexSpokeBounds.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/VertexSpokeBounds.lean",
+      "sha256": "6650fdb5399ef3ef4f24ffd30851c92f4874a083534a91a743b684ca410145ea",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/VertexTraceDisks.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/VertexTraceDisks.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/VertexTraceDisks.lean",
+      "sha256": "8aac3103f00535c38ca9f479a592d3852c030da9b45e0b4ffd68416583be9256",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/VertexTruncation.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/VertexTruncation.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/VertexTruncation.lean",
+      "sha256": "0fc6171f3eb27d550220ad2cba3648ec9b3cb169d3ef2e21a5888d308e01c2dc",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/VertexTruncationGeometry.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/VertexTruncationGeometry.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/VertexTruncationGeometry.lean",
+      "sha256": "87fa25d6fdbc4ad7bc89a5013ad73d34a1047dcde2ba21ec7a2913c02cbe5475",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/WalkVectorSum.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/WalkVectorSum.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/WalkVectorSum.lean",
+      "sha256": "01e7f4ad7a2518db1b837ae0c5075e3342a07c30227cd57b6ae2a39b89f325ac",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/OAI/Combinatorics/Crossing/WeightedGram.lean",
+      "title": "lean/OAI/Combinatorics/Crossing/WeightedGram.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/OAI/Combinatorics/Crossing/WeightedGram.lean",
+      "sha256": "077e433bee708492cb5620ca06d1ed67293d4c31e7675114d5f7996fbf8dd375",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/README.md",
+      "title": "lean/README.md",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/README.md",
+      "sha256": "292ff9d539f494158dfbf68d989ba85a82782a4343b2fe43088f8fa62525bf1b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/formalization.yaml",
+      "title": "lean/formalization.yaml",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/formalization.yaml",
+      "sha256": "5a8a164259591208886cd018416e61552665265ec9e20cff636f9d51117c2278",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/lake-manifest.json",
+      "title": "lean/lake-manifest.json",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/lake-manifest.json",
+      "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/lakefile.lean",
+      "title": "lean/lakefile.lean",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/lakefile.lean",
+      "sha256": "4cca977ebece444b6c999d99755c1ad3c93119bafc127ea761f7f703c7279e74",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:lean/lean-toolchain",
+      "title": "lean/lean-toolchain",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/lean/lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/README.md",
+      "title": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/README.md",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/README.md",
+      "sha256": "5b0ec18c8e9f4d123a7e7c3ca6585c62925e1dad2f5bdaf37ee2675c451834c5",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/figures/chord-pairing.tex",
+      "title": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/figures/chord-pairing.tex",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/figures/chord-pairing.tex",
+      "sha256": "fdbaa485d05ea2242a3ac677cf573e992937c4d5f1526324d480a0820b566bac",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/figures/triangular-grid.tex",
+      "title": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/figures/triangular-grid.tex",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/figures/triangular-grid.tex",
+      "sha256": "ed9c02f3021e71c4f55d45abe1bc1e3bcad349ae5ac781ed6abded716fd2d191",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/paper.tex",
+      "title": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/paper.tex",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/paper.tex",
+      "sha256": "1e029b01e70bbb2daa7bb7b9030576108f68e8dbaf7b8d187f23d8d855b54593",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/references.bib",
+      "title": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/references.bib",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/references.bib",
+      "sha256": "8105932f660a9af742a6566da3176aff873de80b9898a3b4cef1bcd15d54dc64",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/conclusion.tex",
+      "title": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/conclusion.tex",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/conclusion.tex",
+      "sha256": "f7e4d955326ee701fc10eb0da6f4617e8941c84a0b7528fcddd0c73214e30942",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/detector.tex",
+      "title": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/detector.tex",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/detector.tex",
+      "sha256": "9a250d2121cee0c7762cabfa550f2b6903baaebd8c9878714d7cec8c109daf40",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/intersections.tex",
+      "title": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/intersections.tex",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/intersections.tex",
+      "sha256": "e80f4a1d1b49776c45bb6339859fe961a0fb7968ab1534f463e75eaf94177a48",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/introduction.tex",
+      "title": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/introduction.tex",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/introduction.tex",
+      "sha256": "dc78139c31a33f51d4a07a6dd79943434af1cbc2bab0af73662ffcdab7b3be73",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/normalization.tex",
+      "title": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/normalization.tex",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/normalization.tex",
+      "sha256": "b379f27e7a3826901ec3183c56f905f8c2bebe334118f0628b32e2d0f131beb6",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/subspaces.tex",
+      "title": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/subspaces.tex",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/subspaces.tex",
+      "sha256": "e76cf72bfac2fd79fb97aa7392a568c6427ed90fa174bc593e012b3c4a2234ed",
+      "status": "archived"
+    },
+    {
+      "id": "crossing-paper",
+      "title": "preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/paper.pdf",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/paper.pdf",
+      "sha256": "95b9fc254d730aa35a82585779dfcbe7e1e39840749ef17b329aecc55659f599",
+      "status": "archived"
+    },
+    {
+      "id": "upstream:snapshot.json",
+      "title": "snapshot.json",
+      "version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "source-material/openai-math/snapshot.json",
+      "sha256": "d4bce40a3712c9f26a737d43a227ccbfd5a82c917c3dca0f7fff4a19ac7efb3b",
+      "status": "archived"
+    }
+  ]
+}

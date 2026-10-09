@@ -1,0 +1,19 @@
+\title{Two-triangle interpolation}
+\taxon{Lemma}
+\meta{status}{proof-account}
+\meta{dependencies}{[Bivariate space and pattern](cn-0028)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Lemma 4.1, equation (4.2); reconstructed as a reading account on 9 October 2026. [Lean source: TwoTriangleUnisolvence](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/TwoTriangleUnisolvence.lean).}
+
+\p{\strong{Statement.} For any distinct real nodes #{x_1,\ldots,x_{2s+1}}, the #{s^2} [evaluation vectors](cn-0028) #{h_{pq}}, #{(p,q)\in Q_s}, form a basis of #{\mathbb R^{s^2}}. Equivalently, evaluation on the two triangles determines a bivariate polynomial of degree at most #{s-1} in each variable uniquely.}
+
+\p{\strong{Proof.} There are #{s^2} positions and coefficients, so it is enough to show that vanishing on the pattern forces the polynomial #{P} to be zero. Induct on #{s}. For #{s=1}, #{P} is constant and vanishes at #{(x_2,x_1)}.}
+
+\p{For #{s>1}, the row #{p=s+1} supplies #{s} roots of #{P(x_{s+1},v)}, whose degree is at most #{s-1}. Hence it vanishes identically, and #{P=(u-x_{s+1})P_1} with degree at most #{s-2} in #{u}. The remaining positions #{(p,1)}, #{2\leq p\leq s}, give #{s-1} roots of #{P_1(u,x_1)}, since their first factors are nonzero. Therefore}
+
+##{P(u,v)=(u-x_{s+1})(v-x_1)R(u,v),\qquad \deg_u R,\deg_v R\leq s-2.}
+
+\p{On the remaining triangles the two factors are nonzero, so #{R(x_p,x_q)=0} for #{2\leq q<p\leq s} and for #{s+2\leq p<q\leq2s+1}. Relabel the surviving nodes as}
+
+##{(y_1,\ldots,y_{2s-1})=(x_{s+2},\ldots,x_{2s+1},x_2,\ldots,x_s),\qquad S(u,v)=R(v,u).}
+
+\p{Swapping the variables interchanges the remaining triangles, and this relabeling makes them exactly #{Q_{s-1}}. The induction hypothesis gives #{S=0}, hence #{R=0} and #{P=0}. Thus the square evaluation matrix is invertible.}

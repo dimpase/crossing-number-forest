@@ -1,0 +1,14 @@
+\title{Row-plus-column matrices}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{row-plus-column matrix; additive matrix}
+\meta{dependencies}{None.}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equation (3.5) and the proof of Lemma 3.2; reconstructed as a reading account on 9 October 2026. [Lean source: AdditiveBlockRelation](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/AdditiveBlockRelation.lean).}
+
+\p{An #{n\times n} real matrix is \em{row-plus-column}, or \em{additive}, if its entries have the form #{H(p,q)=r_p+c_q} for some vectors #{r,c\in\mathbb R^n}. Write #{\mathcal L} for this linear subspace. It is the ambiguity removed by the detector.}
+
+\p{Equivalently, every rectangular difference vanishes:}
+
+##{H(p,q)-H(p,q')-H(p',q)+H(p',q')=0.}
+
+\p{Indeed the additive form gives cancellation. Conversely, fix #{p_0,q_0}; the vanishing identity gives #{H(p,q)=H(p,q_0)+H(p_0,q)-H(p_0,q_0)}, which has the required form.}

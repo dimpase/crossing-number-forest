@@ -1,0 +1,15 @@
+\title{A four-by-four detector you can inspect}
+\taxon{Example}
+\meta{status}{computational-evidence}
+\meta{dependencies}{[Half orders](cn-0011); [Evaluation pattern](cn-0028); [Weights](cn-0030); [Detector](cn-0032); [Factorization](cn-0034)}
+\meta{provenance}{Expository organization and source review, 9 October 2026.}
+
+\p{\strong{Statement.} For the [detector](cn-0032) with #{s=2}, #{n=5}, and nodes #{x_p=p}, the natural [half-order matrix](cn-0011) has the following image. Coordinates are ordered as #{(a,b)=(0,0),(0,1),(1,0),(1,1)}:}
+
+##{\Phi(S)=\frac1{144}\begin{pmatrix}5&15&15&49\\15&47&49&165\\15&49&47&165\\49&165&165&593\end{pmatrix},\qquad\det\Phi(S)=-\frac1{1492992}.}
+
+\p{Its negative determinant shows concretely that an invertible detector image need not be positive semidefinite. The proof needs full rank. The [barycentric weights](cn-0030) here are #{(1/24,-1/6,1/4,-1/6,1/24)}.}
+
+\p{The [two-triangle positions](cn-0028) are #{(2,1),(3,1),(3,2),(4,5)}. Their evaluation matrix has determinant #{-4}. Substituting these columns and their scalar weights into [the factorization](cn-0034) gives exactly the displayed matrix.}
+
+\p{The [exact script](/computations/check_examples.py) recomputes this example with rational arithmetic and also checks invertibility and the factorization for all 120 linear orders on these five nodes. It records smaller and larger examples in [examples.json](/computations/examples.json). The [interpolation proof](cn-0029), rather than these finite checks, supplies the assertion for arbitrary distinct nodes and all odd sizes.}

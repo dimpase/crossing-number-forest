@@ -1,0 +1,14 @@
+\title{Crossing count and ordinary crossing number}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{crossing count; ordinary crossing number}
+\meta{dependencies}{[Admissible drawings](cn-0004)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Section 1; reconstructed as a reading account on 9 October 2026. [Lean source: DrawingDefinition](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingDefinition.lean).}
+
+\p{For an [admissible drawing](cn-0004) #{D}, its \em{crossing count} #{c(D)} is the number of points belonging to two distinct edge interiors. Every crossing point is counted: a pair that crosses three times contributes three. This is neither a count of crossing edge pairs nor a parity count. See [Pach–Tóth](cn-0053) for the distinctions between these invariants.}
+
+\p{The \em{ordinary crossing number} is}
+
+##{\operatorname{cr}(G)=\min\{c(D):D\text{ is an admissible drawing of }G\}.}
+
+\p{For the complete bipartite graphs studied here, [the axis construction](cn-0036) supplies an admissible drawing. The attainable counts form a nonempty subset of the nonnegative integers, so their least element is attained. The Lean definition uses the infimum of this set; existence and attainment are proved separately.}

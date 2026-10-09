@@ -1,0 +1,16 @@
+\title{Source versions and the scope of the checks}
+\taxon{Overview}
+\meta{dependencies}{None.}
+\meta{provenance}{Expository organization and source review, 9 October 2026.}
+
+\p{This forest reads [OpenAI's paper](cn-0042), dated 23 September 2026, from repository commit fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb, retrieved on 9 October 2026. The [snapshot description](/source-material/openai-math/snapshot.json), [source manifest](/source-material/manifest.json), and [paper-to-note map](/source-map.json) record the version and destinations.}
+
+\p{The local archive contains the paper PDF, its complete LaTeX sources and bibliography, all 339 Crossing Lean modules, and the challenge and build metadata. Each archived file is covered by a SHA-256 checksum. Mathlib, Lean binaries, and unrelated parts of the upstream repository are not included. The [upstream license](/source-material/openai-math/LICENSE) is preserved.}
+
+\p{\strong{Proof accounts.} A result labelled proof-account is an exposition of the supplied proof, with its assumptions and steps written out and linked. This label is distinct from a report of a successful local formal verification. No gap is silently filled by a numerical example or a successful site build.}
+
+\p{\strong{Site checks.} The build checks stable addresses, required metadata, definition indexing, dependencies and transclusions for cycles, local links and assets, and source hashes. These are editorial and rendering checks.}
+
+\p{\strong{Exact examples.} [The rational-arithmetic script](/computations/check_examples.py) checks atom ranks, row and column cancellation, evaluation determinants, and the detector factorization. It tests every order for #{n=3,5}, four specified orders for #{n=7}, and floor/deletion identities through #{30}. [Stored results](/computations/examples.json) include the actual matrices. These finite checks illustrate the general arguments, and do not prove the crossing-number formula.}
+
+\p{\strong{Lean source checks.} [The source checker](/computations/check_lean_sources.py) inventories the complete project-import closure, compares the challenge's shared declarations with the solution, scans for placeholders and additional axiom declarations, and checks the curated [paper-to-Lean map](/lean-map.json). It does not run Lean or Comparator or inspect compiled axiom dependencies. The [Lean guide](cn-0038) explains the distinction and provides entry points for further verification.}

@@ -1,0 +1,81 @@
+WRITING BRIEF FOR A LINKED MATHEMATICAL OR TECHNICAL REFERENCE
+
+Write a reference in the style of the Stacks Project and Jon Sterling's
+Forester notes: a connected collection of precisely stated, individually
+addressable definitions and results, with a readable exposition assembled
+from them.
+
+1. Structure concepts explicitly.
+
+Every reusable definition should appear in a labelled Definition with its
+own permanent tag. Separate definitions, lemmas, theorems, proofs, examples,
+and open questions; avoid burying them in long paragraphs. For technical
+documentation, use corresponding types such as specifications, procedures,
+and examples where appropriate.
+
+2. Help readers navigate.
+
+Link definitions when concepts first appear, in statements of results, and
+again where an argument relies on them. References should be frequent enough
+to orient the reader without cluttering every occurrence. Link to the
+specific definition or result, rather than a broad overview. Maintain a
+definition index and a suggested reading order.
+
+3. Keep one canonical version.
+
+Each definition or result lives in one note with a stable address. Longer
+reading accounts include those notes by transclusion, with connecting prose
+explaining the argument. Edit the canonical note rather than duplicating
+its content. Preserve addresses when titles or organization change. Keep
+superseded notes with an explanation and a link to their replacements.
+
+4. State claims precisely.
+
+Specify the relevant objects, ambient spaces, assumptions, hypotheses, and
+quantifiers. In mathematics, include coefficient fields and degrees where
+needed. Use natural generality for definitions without unnecessary
+abstraction. Distinguish a definition from a theorem characterizing the
+defined object. Define notation before relying on it and use it consistently.
+
+5. Make proofs and justifications accessible.
+
+Keep the complete proof or justification reachable from its statement.
+Identify logical dependencies and explain essential steps. Distinguish
+these dependencies from background reading and ordinary cross-references.
+Avoid circular arguments. For external inputs, cite the exact theorem or
+section and check its hypotheses; distinguish direct applications from
+analogies. Supply a separate argument when the cited result does not apply
+directly.
+
+6. Maintain a proper bibliography.
+
+Give each paper, report, or other cited source a tagged reference entry.
+Collect entries in a references tree and cite them in the substantive text.
+Record authors, title, publication details or version, source links, and
+precise locators for the material used. Preserve supplied source documents
+and distinguish their original content from later editorial changes.
+
+7. Be explicit about what is established.
+
+Separate proved results, conjectures, computational evidence, and unresolved
+gaps. State the scope and limitations of each claim. Do not extend a local
+or conditional result beyond its hypotheses. Explain exactly what a
+computation or test establishes; successful rendering, symbolic checks, or
+numerical experiments do not by themselves verify an entire argument.
+
+8. Write clear, economical, explanatory prose.
+
+Provide enough connective discussion to show why each step is needed,
+alongside precise statements and proofs. Use short, coherent paragraphs and
+descriptive titles. Avoid walls of text, unexplained notation, unnecessary
+repetition, and inflated language. A reader should be able to follow either
+the continuous exposition or the links between individual notes.
+
+When revising, update the canonical notes, their references and dependencies,
+and the relevant reading accounts and indexes. Check links and inspect the
+rendered reading path. Treat editorial and rendering checks separately from
+substantive review of the claims.
+
+Style models:
+- The Stacks Project: https://stacks.math.columbia.edu/
+- Jon Sterling's course forest: https://cl-l313.jonmsterling.com/01FE/

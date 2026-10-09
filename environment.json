@@ -1,0 +1,18 @@
+{
+  "switch": "4ary-4tics-forester-5.0",
+  "ocaml": "5.3.0",
+  "forester": "5.0",
+  "theme_repository": "https://git.sr.ht/~jonsterling/forester-base-theme",
+  "theme_tag": "5.0",
+  "theme_revision": "23017d9c49e7685e9ec5949378f9b5e3cb924b58",
+  "initial_host": "Gentoo Linux x86_64",
+  "opam": "2.5.0",
+  "python": "3.14.7",
+  "lxml": "6.1.2",
+  "libxslt": "1.1.45",
+  "forester_archive_sha512": "d36b896aca11858bb4a00fc704c16cc27a1f197bdb3e479d6132fd70f70d67d7158096285cb0b6fb00db14417f0f822cc27fe65d82f0971e42378fd8271ce573",
+  "python_check_dependencies": {
+    "sympy": "1.14.0",
+    "markdown-it-py": "4.2.0"
+  }
+}
