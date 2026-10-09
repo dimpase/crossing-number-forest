@@ -2,10 +2,10 @@
 \taxon{Definition}
 \tag{definition}
 \meta{defines}{constrained polynomial space; evaluation space; dimension increment; evaluation-filtration increment}
-\meta{dependencies}{[Univariate polynomials with vector coefficients](cn-0064); [Interpolation nodes](cn-0063)}
+\meta{dependencies}{[Univariate polynomial maps](cn-0064); [Interpolation nodes](cn-0063)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), proof of Lemma 2.1; reconstructed as a reading account on 9 October 2026. [Lean source: PolynomialFiltration](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolynomialFiltration.lean).}
 
-\p{Let #{W} be a finite-dimensional real space of coefficient vectors, #{U_1,\ldots,U_m\subseteq W} subspaces, and #{t_1,\ldots,t_m} distinct real numbers chosen as [interpolation nodes](cn-0063), the points at which we impose conditions on polynomial values. For a subspace #{Z\subseteq W}, write #{Z[\xi]} for the [univariate polynomials with vector coefficients](cn-0064): #{P(\xi)=\sum_{r=0}^{h}z_r\xi^r} with each #{z_r\in Z}. The coefficient tuple has slot #{r} corresponding to monomial #{\xi^r}.}
+\p{Let #{W} be a finite-dimensional real vector space, the ambient space of polynomial values, and let #{U_1,\ldots,U_m\subseteq W} be subspaces. Choose distinct real [interpolation nodes](cn-0063) #{t_1,\ldots,t_m}, at which we impose conditions on those vector values. For a subspace #{Z\subseteq W}, write #{Z[\xi]} for the [univariate polynomial maps](cn-0064) with coefficients in #{Z}: #{P(\xi)=\sum_{r=0}^{h}z_r\xi^r} with each #{z_r\in Z}.}
 
 \p{The \em{constrained polynomial space}, for #{h\geq0}, is}
 

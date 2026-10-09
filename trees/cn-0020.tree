@@ -12,7 +12,7 @@
 
 ##{\sum_{h=0}^{m-1}k_h(Z)=\sum_{i=1}^m\dim(U_i\cap Z).}
 
-\p{\strong{Proof.} A polynomial vanishing at #{t} is divisible by #{\xi-t}, coordinate by coordinate in #{Z}. At each constraint node, division rescales its value by the nonzero scalar #{(t_i-t)^{-1}}, so membership in #{U_i} is preserved. Multiplication proves the reverse inclusion. Rank-nullity yields the first identity.}
+\p{\strong{Proof.} A polynomial map vanishing at #{t} is divisible by #{\xi-t}, coordinate by coordinate in #{Z}. At each constraint node, division rescales its value by the nonzero scalar #{(t_i-t)^{-1}}, so membership in #{U_i} is preserved. Multiplication proves the reverse inclusion. Rank-nullity yields the first identity.}
 
 \p{For values #{z_i\in U_i\cap Z}, the Lagrange interpolant}
 

@@ -8,7 +8,7 @@
 
 ##{\sum_j k_h(V_j)\leq\sum_{e=0}^h e\ell_e.}
 
-\p{\strong{Proof.} Fix a non-node #{t_*}. At stage #{e}, choose #{\ell_e} polynomials of degree at most #{e} whose evaluations at #{t_*} extend the previously chosen basis of the evaluation space. Through stage #{h} there are #{r_h=k_h(W)} columns, independent at #{t_*}. Some #{r_h}-row square minor #{\Delta_h} is therefore nonzero at #{t_*}.}
+\p{\strong{Proof.} Fix a non-node #{t_*}. At stage #{e}, choose #{\ell_e} polynomial maps of degree at most #{e} whose evaluations at #{t_*} extend the previously chosen basis of the evaluation space. Through stage #{h} there are #{r_h=k_h(W)} columns, independent at #{t_*}. Some #{r_h}-row square minor #{\Delta_h} is therefore nonzero at #{t_*}.}
 
 \p{Expanding its determinant and using the degree of each column gives}
 

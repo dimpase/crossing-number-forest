@@ -1,28 +1,27 @@
-\title{Univariate polynomials with vector coefficients}
+\title{Univariate polynomial maps into a vector space}
 \taxon{Definition}
 \tag{definition}
-\meta{defines}{vector-valued univariate polynomial; polynomial with vector coefficients; coefficient tuple; polynomial coefficient matrix}
+\meta{defines}{univariate polynomial map; vector coefficient; coefficient tuple; polynomial coefficient matrix}
 \meta{dependencies}{None.}
 \meta{provenance}{Notation used in [OpenAI, 23 September 2026](cn-0042), proof of Lemma 2.1; explanatory definition added on 9 October 2026.}
 
-\p{Let #{W} be a finite-dimensional real vector space, the space of coefficient vectors. A \em{univariate polynomial with coefficients in #{W}} is a finite formal sum}
+\p{Let #{W} be a real vector space of dimension #{N}. Here #{W} is the ambient space of polynomial values. Choose a basis #{e_1,\ldots,e_N}. A \em{univariate polynomial map} #{P:\mathbb R\to W} has one scalar polynomial for each coordinate of its value:}
 
-##{P(\xi)=\sum_{r=0}^{h}w_r\xi^r,\qquad w_r\in W.}
+##{P(t)=\sum_{j=1}^{N}p_j(t)e_j,\qquad p_j\in\mathbb R[\xi].}
 
-\p{There is one indeterminate, #{\xi}. The notation #{W[\xi]} denotes the space of all such polynomials. For #{P\ne0}, its degree is the largest #{r} with #{w_r\ne0}; the zero polynomial is included in every degree bound. For a fixed bound #{h\geq0}, the \em{coefficient tuple} gives the linear bijection}
+\p{This definition is independent of the chosen basis: a change of coordinates takes real linear combinations of the scalar polynomials #{p_j}. For example, #{P(t)=(1+2t,3-t^2)} is a polynomial map from #{\mathbb R} to #{\mathbb R^2}. Its two coordinates are two scalar polynomial functions of the same variable.}
 
-##{\begin{aligned}
-W^{h+1}&\longrightarrow W[\xi]_{\leq h},\\
-(w_0,\ldots,w_h)&\longmapsto\sum_{r=0}^{h}w_r\xi^r.
-\end{aligned}}
+\p{Writing #{p_j(\xi)=\sum_{r=0}^{h}c_{jr}\xi^r} and collecting equal powers expresses the map in terms of its \em{vector coefficients} #{w_r}:}
 
-\p{Tuple slots are numbered #{0,\ldots,h}: slot #{r} contains the vector coefficient of the monomial #{\xi^r}. This is the correspondence #{r\leftrightarrow\xi^r} between slots and monomial degrees. Evaluation at a scalar #{\zeta\in\mathbb R} gives #{P(\zeta)=\sum_{r=0}^{h}\zeta^r w_r\in W}.}
+##{P(\xi)=\sum_{r=0}^{h}w_r\xi^r,\qquad w_r=\sum_{j=1}^{N}c_{jr}e_j\in W.}
 
-\p{To express each coefficient vector in scalar coordinates, choose a basis #{e_1,\ldots,e_N} of #{W} and write #{w_r=\sum_{j=1}^{N}c_{jr}e_j}. The \em{polynomial coefficient matrix} #{C=(c_{jr})} has #{N} rows and #{h+1} columns. Row #{j} records the #{e_j}-coordinate in #{W}; column #{r}, numbered from zero, records the coefficient of #{\xi^r}. Equivalently, the scalar coordinates of the whole polynomial correspond to the basis elements #{e_j\xi^r}, indexed by pairs #{(j,r)}.}
+\p{The paper's notation #{W[\xi]} encodes these maps by their coefficient expansions. For a subspace #{Z\subseteq W}, #{Z[\xi]} consists of the maps with every #{w_r\in Z}, so their values also lie in #{Z}. For #{P\ne0}, its degree is the largest #{r} with #{w_r\ne0}; the zero map is included in every degree bound.}
+
+\p{For degree at most #{h}, the \em{coefficient tuple} #{(w_0,\ldots,w_h)} belongs to #{W^{h+1}}. Slot #{r} corresponds to monomial #{\xi^r}. Thus #{W[\xi]_{\leq h}\cong W^{h+1}}. The \em{polynomial coefficient matrix} #{C=(c_{jr})} has #{N} rows, one for each coordinate function #{p_j}, and #{h+1} columns, one for each monomial #{1,\xi,\ldots,\xi^h}.}
 
 ##{[P(\zeta)]_{(e_1,\ldots,e_N)}=C\begin{pmatrix}1\\\zeta\\\vdots\\\zeta^h\end{pmatrix}.}
 
-\p{Thus #{N=\dim W} counts coordinates of each vector coefficient, while #{h+1} counts monomial slots. These are independent parameters. For a subspace #{Z\subseteq W}, the notation #{Z[\xi]} imposes #{w_r\in Z} for every #{r}; its degree-at-most-#{h} part corresponds to #{Z^{h+1}}.}
+\p{The distinction is between the coordinate index #{j} of a value in #{W} and the degree index #{r} within each scalar polynomial #{p_j}. The monomial correspondence is with #{r}; the dimension #{N} of the value space and the polynomial degree bound #{h} are independent.}
 
 \p{For example, with #{W=\mathbb R^2},}
 
@@ -32,4 +31,6 @@ W^{h+1}&\longrightarrow W[\xi]_{\leq h},\\
 
 ##{C=\begin{pmatrix}1&2&0\\3&0&-1\end{pmatrix}.}
 
-\p{This is a degree-two polynomial in one variable, with values in #{\mathbb R^2}; for instance #{P(1)=(3,2)}.}
+\p{This is a degree-two polynomial map #{\mathbb R\to\mathbb R^2}; for instance #{P(1)=(3,2)}.}
+
+\p{In the [rank-sum application](cn-0027), #{W=\mathbb R^d\oplus\mathbb R^d}. A polynomial map has the form #{P(t)=(a(t),b(t))}, where #{a,b} are #{\mathbb R^d}-valued polynomial maps. Requiring #{P(t_i)} to lie in [the graph](cn-0026) of #{X_i} means #{b(t_i)=X_i a(t_i)}. This explains why evaluation in the subspace argument must produce a vector in #{W}.}

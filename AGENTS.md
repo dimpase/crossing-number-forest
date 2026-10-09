@@ -29,6 +29,10 @@ and brief context, unless the user requests a detailed comparison.
   in cn-0041. Retain precise theorem/section locators at citations.
 - Use plain explanatory prose, explicit hypotheses and quantifiers, and
   connecting paragraphs that explain why each step is needed.
+- In the algebraic branch, call P: R -> W a univariate polynomial map.
+  W is its ambient value space. Distinguish coordinates of W from monomial
+  degrees in each scalar coordinate polynomial; avoid calling W a space
+  of coefficient vectors, which suggests coefficients of a scalar polynomial.
 - For printed TeX equation numbers, escape Forester's metadata command:
   `\startverb\tag{2.1}\stopverb` inside the display.
 

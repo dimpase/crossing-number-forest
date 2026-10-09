@@ -3,7 +3,7 @@
 \meta{dependencies}{None.}
 \meta{provenance}{Expository organization and source review, 9 October 2026.}
 
-\p{Let #{W} be the finite-dimensional real space of coefficient vectors. We consider [univariate polynomials](cn-0064) #{P(\xi)=\sum_r w_r\xi^r} with #{w_r\in W}; slot #{r} of the coefficient tuple corresponds to monomial #{\xi^r}. Choose distinct real numbers at which to impose subspace conditions on polynomial values; these evaluation points are called [interpolation nodes](cn-0063). The route is evaluation dimensions, rank loss at those points, multiplicity of polynomial determinants, and a degree count. Graphs of linear maps then turn intersection dimensions into matrix ranks.}
+\p{Let #{W} be a finite-dimensional real vector space. We use [univariate polynomial maps](cn-0064) #{P:\mathbb R\to W}: after choosing coordinates in #{W}, each coordinate of #{P(t)} is a scalar polynomial in #{t}. Choose distinct real [interpolation nodes](cn-0063) #{t_i} and require the value #{P(t_i)} to lie in a prescribed subspace #{U_i\subseteq W}. The route is evaluation dimensions, rank loss at those points, multiplicity of polynomial determinants, and a degree count. Graphs of linear maps then turn intersection dimensions into matrix ranks.}
 
 \transclude{cn-0064}
 \transclude{cn-0063}
