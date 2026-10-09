@@ -34,3 +34,5 @@
 \p{This is a degree-two polynomial map #{\mathbb R\to\mathbb R^2}; for instance #{P(1)=(3,2)}.}
 
 \p{In the [rank-sum application](cn-0027), #{W=\mathbb R^d\oplus\mathbb R^d}. A polynomial map has the form #{P(t)=(a(t),b(t))}, where #{a,b} are #{\mathbb R^d}-valued polynomial maps. Requiring #{P(t_i)} to lie in [the graph](cn-0026) of #{X_i} means #{b(t_i)=X_i a(t_i)}. This explains why evaluation in the subspace argument must produce a vector in #{W}.}
+
+\p{These auxiliary maps serve the interpolation proof; they do not approximate drawing arcs. The same definition works over any infinite field by replacing #{\mathbb R} throughout. Infinitude ensures that a scalar polynomial is determined by its values, so degree and coefficients are well-defined for the map. See [the field-of-scalars remark](cn-0065) for the algebraic inequality over arbitrary fields.}

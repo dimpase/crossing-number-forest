@@ -35,8 +35,8 @@ serves only generated output/.
 
 ## Reading routes
 
-There are 65 trees: the landing page and cn-0001 through cn-0064, including
-18 tagged definitions and 18 bibliographic entries. Next unused: cn-0065.
+There are 66 trees: the landing page and cn-0001 through cn-0065, including
+18 tagged definitions and 18 bibliographic entries. Next unused: cn-0066.
 
 - cn-0001: guided reading; cn-0007: main theorem and proof assembly.
 - cn-0061: algebraic branch, from polynomial constraints to the rank sum.
@@ -46,6 +46,8 @@ There are 65 trees: the landing page and cn-0001 through cn-0064, including
 - cn-0040: an exact four-by-four detector and its determinant.
 - cn-0038: paper-to-Lean route and notation differences.
 - cn-0039: source versions and verification scope; cn-0041: references.
+- cn-0065: an editorial extension of the algebraic inequality to arbitrary
+  fields, and the distinction between interpolation maps and drawing arcs.
 
 The label `proof-account` identifies an exposition of the supplied proof.
 The local checks do not establish a successful Lean or Comparator run.

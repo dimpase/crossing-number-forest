@@ -1,0 +1,32 @@
+\title{The field of scalars in the algebraic argument}
+\taxon{Remark}
+\meta{status}{proof-account}
+\meta{dependencies}{[Subspace inequality](cn-0024); [Rank-sum corollary](cn-0027)}
+\meta{provenance}{Editorial extension of the argument in [OpenAI, 23 September 2026](cn-0042), Lemma 2.1 and Corollary 2.3, added on 9 October 2026. The paper and archived Lean declarations state the real case; the extension below is justified here and has not been formalized locally.}
+
+\p{\strong{Statement.} Let #{K} be any field and #{W} an #{N}-dimensional #{K}-vector space. For #{m\geq1} and #{K}-linear subspaces #{U_i,V_i\subseteq W} satisfying #{U_i\cap V_i=0}, the [subspace inequality](cn-0024) holds with dimensions over #{K}:}
+
+##{\sum_{i,j=1}^{m}\dim_K(U_i\cap V_j)\leq\left\lfloor\frac{m^2}{4}\right\rfloor N.}
+
+\p{Consequently the [rank-sum corollary](cn-0027) holds for matrices over #{K}, with ranks over #{K}. No characteristic-zero assumption is needed for these two algebraic statements.}
+
+\p{\strong{Proof.} First suppose #{K} is infinite. Run the paper's polynomial argument over #{K}, choosing distinct interpolation nodes in #{K}. The proof uses the following field-independent steps.}
+
+\ul{
+\li{[Evaluation and interpolation](cn-0020) use division by nonzero node differences and the bound on the number of roots of a nonzero scalar polynomial.}
+\li{[Specialization of the rank bound](cn-0022) uses polynomial minors vanishing at every non-node. Infinitude of #{K} makes that an infinite set, so the minors vanish identically.}
+\li{[Determinant multiplicity](cn-0021) uses a constant change of basis and factors #{\xi-t_j} from vanishing columns. This requires no derivatives or division by factorials.}
+\li{[The degree budget](cn-0023) and [its summation](cn-0024) compare ordinary nonnegative integers: dimensions, degrees, and multiplicities. They require no order on #{K}.}
+}
+
+\p{These steps prove the inequality over every infinite field. For a finite field #{K}, pass to the infinite extension #{L=K(u)}, the rational-function field in an indeterminate #{u}. Set #{W_L=L\otimes_K W}, and let #{U_{i,L},V_{j,L}} be the #{L}-spans of the corresponding subspaces. Dimensions and intersection dimensions are preserved:}
+
+##{\dim_L W_L=N,\qquad\dim_L(U_{i,L}\cap V_{j,L})=\dim_K(U_i\cap V_j).}
+
+\p{For completeness, choose bases of #{U_i,V_j} and express their columns in a basis of #{W}. Each such matrix and their concatenation have the same rank over #{K} and #{L}: every minor is an element of #{K}, and passage to #{L} preserves whether it is zero. Apply #{\dim(U\cap V)=\dim U+\dim V-\dim(U+V)}. This proves the displayed equality and preserves the disjointness hypothesis. The inequality over #{L} therefore gives exactly the claimed inequality over #{K}.}
+
+\p{Finally apply the generalized inequality to the graph subspaces in #{K^d\oplus K^d}, just as in [the rank-sum proof](cn-0027). The graph-kernel identification and rank-nullity hold over every field.}
+
+\p{\strong{Role of the polynomial maps.} The [maps](cn-0064) #{P(t)} encode subspace constraints in this algebraic argument. They do not approximate the edge curves of a drawing. In the crossing-number application, #{W=\mathbb R^d\oplus\mathbb R^d} with #{d=s^2} for #{n=2s+1}. The actual [drawing arcs](cn-0003) have the separate form #{\gamma_e:[0,1]\to\mathbb R^2}; their normalization is handled in [the topological branch](cn-0060).}
+
+\p{\strong{Using the complex numbers.} Identifying the drawing plane #{\mathbb R^2} with #{\mathbb C} lets us write the same continuous arcs with complex values. It does not impose holomorphicity or alter the real subspaces in the rank argument. Independently, that algebraic argument can be carried out over #{\mathbb C}, by extending the real matrices and subspaces to complex scalars; their ranks and intersection dimensions are preserved as above. These are two different uses of #{\mathbb C}.}

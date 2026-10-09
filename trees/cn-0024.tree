@@ -22,3 +22,5 @@
 ##{\sum_{e=0}^{m-1}\ell_e=k_{m-1}(W)=\dim E_{m-1}(W;t_*)\leq N,}
 
 \p{the claimed bound follows. The [sharpness example](cn-0025) explains the constant. The paper compares the determinant-multiplicity method with [subspace designs](cn-0050), but the proof here supplies its own argument for these arbitrary subspaces.}
+
+\p{The real field matches the paper's statement. [The field-of-scalars remark](cn-0065) proves that this algebraic inequality holds over every field.}
