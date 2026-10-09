@@ -10,7 +10,7 @@
 
 ##{R^{ik}=\Phi(J^{ik}),\qquad X_i=R^{i1},\qquad Y_k=R^{11}-R^{1k}.}
 
-\p{[The additive block relation](cn-0018) and [detector annihilation](cn-0033) give #{R^{ik}=X_i-Y_k}. On the diagonal, #{J^{ii}} is the spoke half-order matrix. By [invertibility for every order](cn-0034), #{\operatorname{rank}(X_i-Y_i)=s^2}.}
+\p{[The additive block relation](cn-0018) and [detector annihilation](cn-0033) give #{R^{ik}=X_i-Y_k}. On the diagonal, #{J^{ii}} is the spoke half-order matrix because normalization has removed all crossings between edges of the same star. By [invertibility for every order](cn-0034), #{\operatorname{rank}(X_i-Y_i)=s^2}.}
 
 \p{For #{i\ne k}, let #{c_{ik}} count crossing points between the stars at #{a_i,a_k}. The entries #{J^{ik}(p,p)} may contain terms at their shared second-class endpoint, but the detector kills all diagonal entries. For #{p\ne q}, the edges are independent, so #{J^{ik}(p,q)} is just their signed crossing count. A nonzero entry requires at least one crossing of that pair. The rank-one support bound therefore gives #{\operatorname{rank}R^{ik}\leq c_{ik}}. Repeated crossings and cancellation of signs can only decrease this rank estimate.}
 
@@ -19,3 +19,7 @@
 ##{2d_m s^2\leq\sum_{i\ne k}\operatorname{rank}R^{ik}\leq\sum_{i\ne k}c_{ik}=2c(D).}
 
 \p{The final equality uses normalization: every crossing involves two distinct first-class stars and contributes once to each of their two orders. Divide by two. The original drawing has at least as many crossings as its normalized replacement, so the lower bound holds for it as well.}
+
+\p{\strong{Why this does not establish the independent-count bound.} If adjacent crossings are retained, the same formula for the [corrected matrix](cn-0013) gives #{J^{ii}=S_i+I^{ii}}, where #{S_i} is the spoke half-order matrix and #{I^{ii}(p,q)=I(ip,iq)} records signed interior crossings within the star at #{a_i}. The [invertibility lemma](cn-0034) applies to #{S_i}; it does not establish invertibility of #{\Phi(S_i+I^{ii})}. Although the off-diagonal support estimate counts independent crossings, the diagonal rank step therefore cannot simply be applied to an unnormalized drawing.}
+
+\p{This hypothesis is explicit in the Lean declaration [diagonal_detector_isUnit](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/VertexOrderDetector.lean), which takes #{\mathtt{NoAdjacentCrossings}\ D}. Moreover, [normalization](cn-0009) compares the replacement's total count with the original total count, not with its [independent count](cn-0066). An extension to #{\operatorname{cr}_-} would require an additional argument.}

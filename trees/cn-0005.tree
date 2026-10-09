@@ -12,3 +12,5 @@
 ##{\operatorname{cr}(G)=\min\{c(D):D\text{ is an admissible drawing of }G\}.}
 
 \p{For the complete bipartite graphs studied here, [the axis construction](cn-0036) supplies an admissible drawing. The attainable counts form a nonempty subset of the nonnegative integers, so their least element is attained. The Lean definition uses the infimum of this set; existence and attainment are proved separately.}
+
+\p{Counting only crossings between edges with no common endpoint gives the separately defined [independent crossing number](cn-0066).}

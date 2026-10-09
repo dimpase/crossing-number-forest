@@ -2895,6 +2895,26 @@
       "path": "source-material/openai-math/snapshot.json",
       "sha256": "d4bce40a3712c9f26a737d43a227ccbfd5a82c917c3dca0f7fff4a19ac7efb3b",
       "status": "archived"
+    },
+    {
+      "id": "fulek-et-al-adjacent-crossings-2012",
+      "title": "Adjacent Crossings Do Matter",
+      "version": "JGAA 16(3), 2012, pp. 759\u2013782",
+      "path": "source-material/references/fulek-et-al-2012-adjacent-crossings.pdf",
+      "url": "https://jgaa.info/index.php/jgaa/article/download/paper266/2690/2497",
+      "retrieved": "2026-10-09",
+      "status": "archived",
+      "sha256": "1ead9b4c1a881e16c5b71aa5fcd8d0d59a9cf8cdf56abb81f6bae7a93624254e"
+    },
+    {
+      "id": "schaefer-crossing-survey-2026",
+      "title": "The Graph Crossing Number and its Variants: A Survey",
+      "version": "Ninth edition, 2026-07-17",
+      "path": "source-material/references/schaefer-crossing-survey-2026.pdf",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/download/DS21/pdf",
+      "retrieved": "2026-10-09",
+      "status": "archived",
+      "sha256": "c55a0bc968838624f8accf27aae13e7e98d5d46f732dbc66712672d01ab37b07"
     }
   ]
 }

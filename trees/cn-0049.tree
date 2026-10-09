@@ -2,8 +2,10 @@
 \taxon{Reference}
 \tag{bibliography}
 \meta{dependencies}{None.}
-\meta{provenance}{Expository organization and source review, 9 October 2026.}
+\meta{provenance}{Bibliographic entry from the pinned paper; abstract and Section 1, pp. 759–760, consulted on 9 October 2026.}
 
-\p{\strong{Paper reference 7.} Radoslav Fulek, Michael J. Pelsmajer, Marcus Schaefer, and Daniel Štefankovič. \em{Adjacent crossings do matter}. Journal of Graph Algorithms and Applications 16(3) (2012), 759–782. [Source](https://doi.org/10.7155/jgaa.00266).}
+\p{\strong{Paper reference 7.} Radoslav Fulek, Michael J. Pelsmajer, Marcus Schaefer, and Daniel Štefankovič. \em{Adjacent crossings do matter}. Journal of Graph Algorithms and Applications 16(3) (2012), 759–782. [Source](https://doi.org/10.7155/jgaa.00266). [Archived PDF](/source-material/references/fulek-et-al-2012-adjacent-crossings.pdf).}
 
-\p{Cited for the distinction between crossing invariants and the ordinary-crossing reduction discussed in [normalization](cn-0009).}
+\p{Section 1, p. 760, distinguishes prohibiting adjacent crossings from allowing them without counting them. The first restriction preserves the [ordinary crossing number](cn-0005), as in [normalization](cn-0009). The second gives the [independent crossing number](cn-0066), and the authors explicitly leave equality with the ordinary crossing number open, even for complete graphs. Their separations concern odd and algebraic crossing-number variants; they do not provide a counterexample to #{\operatorname{cr}=\operatorname{cr}_-}.}
+
+\p{For a later statement of the complete-graph question, see [Schaefer's July 2026 survey](cn-0067), Question 2, p. 103. The scope of the September 2026 bipartite argument is explained at [its lower-bound step](cn-0035).}

@@ -3,9 +3,9 @@
 \meta{dependencies}{None.}
 \meta{provenance}{Expository organization and source review, 9 October 2026.}
 
-\p{The main paper and its Lean development come first, followed by all sixteen references in the paper's original numbering. The mathematical notes cite individual entries where they are used. Older crossing-number and semidefinite-programming work provides context; the reading account concentrates on the new proof.}
+\p{The main paper and its Lean development come first, followed by all sixteen references in the paper's original numbering and an additional survey used to check the status of the independent crossing-number question. The mathematical notes cite individual entries where they are used. Older crossing-number and semidefinite-programming work provides context; the reading account concentrates on the new proof.}
 
-\p{Bibliographic details and descriptions of cited works follow [the paper's bibliography](cn-0042). Not every cited work has been independently reviewed for this forest.}
+\p{The sixteen entries inherited from [the paper](cn-0042) follow its bibliography. Not every cited work has been independently reviewed for this forest.}
 
 \transclude{cn-0042}
 \transclude{cn-0059}
@@ -25,3 +25,4 @@
 \transclude{cn-0056}
 \transclude{cn-0057}
 \transclude{cn-0058}
+\transclude{cn-0067}

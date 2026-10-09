@@ -1,0 +1,14 @@
+\title{Independent crossing count and crossing number}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{independent crossing count; independent crossing number}
+\meta{dependencies}{[Independent edges](cn-0002); [Admissible drawings](cn-0004); [Ordinary crossing count](cn-0005)}
+\meta{provenance}{[Fulek et al.](cn-0049), Section 1, p. 760; [Schaefer's survey](cn-0067), ninth edition, p. 62. Definition and comparison added on 9 October 2026.}
+
+\p{Let #{D} be an [admissible drawing](cn-0004) of a finite simple graph #{G}. Its \em{independent crossing count} #{c_-(D)} is the number of crossing points between [independent edges](cn-0002), meaning edges with no common endpoint. Crossings between adjacent edges contribute zero. Every crossing point between independent edges is counted, even when the same pair crosses repeatedly.}
+
+\p{The \em{independent crossing number} is}
+
+##{\operatorname{cr}_-(G)=\min\{c_-(D):D\text{ is an admissible drawing of }G\}.}
+
+\p{For each drawing, #{c_-(D)\leq c(D)}, where #{c(D)} is the [ordinary crossing count](cn-0005). Consequently #{\operatorname{cr}_-(G)\leq\operatorname{cr}(G)}. Both minima allow drawings with adjacent-edge crossings; the difference is whether those crossings are counted. Prohibiting them is a separate restriction, whose relation to the ordinary count is explained in [normalization](cn-0009).}

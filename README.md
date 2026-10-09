@@ -35,8 +35,8 @@ serves only generated output/.
 
 ## Reading routes
 
-There are 66 trees: the landing page and cn-0001 through cn-0065, including
-18 tagged definitions and 18 bibliographic entries. Next unused: cn-0066.
+There are 68 trees: the landing page and cn-0001 through cn-0067, including
+19 tagged definitions and 19 bibliographic entries. Next unused: cn-0068.
 
 - cn-0001: guided reading; cn-0007: main theorem and proof assembly.
 - cn-0061: algebraic branch, from polynomial constraints to the rank sum.
@@ -48,6 +48,9 @@ There are 66 trees: the landing page and cn-0001 through cn-0065, including
 - cn-0039: source versions and verification scope; cn-0041: references.
 - cn-0065: an editorial extension of the algebraic inequality to arbitrary
   fields, and the distinction between interpolation maps and drawing arcs.
+- cn-0066: independent crossing counts; cn-0009 and cn-0035 explain why the
+  normalization and lower-bound arguments do not establish a bound for this
+  different count. cn-0067 records the July 2026 survey's open question.
 
 The label `proof-account` identifies an exposition of the supplied proof.
 The local checks do not establish a successful Lean or Comparator run.
@@ -67,6 +70,10 @@ challenge, and build metadata. The snapshot is pinned to commit
 entry in source-material/manifest.json. The upstream license is preserved.
 The source subset contains all project modules imported by Crossing.Main;
 Mathlib, Lean binaries, and unrelated OAI files are not vendored.
+
+source-material/references preserves the 2012 *Adjacent Crossings Do Matter*
+paper and the ninth edition (17 July 2026) of Schaefer's crossing-number
+survey. Their versions and SHA-256 hashes are recorded in the same manifest.
 
 source-map.json connects paper locations to notes. lean-map.json connects
 key paper results to actual source declarations. computations/ stores the

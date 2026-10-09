@@ -251,6 +251,34 @@
       "label": "Section 5.3 \u2014 Vertex deletion transfers the lower bound to even sizes",
       "status": "verified",
       "destination": "cn-0037"
+    },
+    {
+      "source_id": "fulek-et-al-adjacent-crossings-2012",
+      "source_version": "JGAA 16(3), 2012, pp. 759\u2013782",
+      "label": "Section 1, p. 760 \u2014 Independent crossing number and the open equality question",
+      "status": "verified",
+      "destination": "cn-0066"
+    },
+    {
+      "source_id": "fulek-et-al-adjacent-crossings-2012",
+      "source_version": "JGAA 16(3), 2012, pp. 759\u2013782",
+      "label": "Abstract and Section 1, pp. 759\u2013760 \u2014 Scope of the separations",
+      "status": "verified",
+      "destination": "cn-0049"
+    },
+    {
+      "source_id": "schaefer-crossing-survey-2026",
+      "source_version": "Ninth edition, 2026-07-17",
+      "label": "Independent crossing number entry, p. 62",
+      "status": "verified",
+      "destination": "cn-0066"
+    },
+    {
+      "source_id": "schaefer-crossing-survey-2026",
+      "source_version": "Ninth edition, 2026-07-17",
+      "label": "Question 2 and discussion, pp. 103\u2013104 \u2014 Complete graphs",
+      "status": "verified",
+      "destination": "cn-0067"
     }
   ]
 }

@@ -1,0 +1,11 @@
+\title{Schaefer: The Graph Crossing Number and its Variants}
+\taxon{Reference}
+\tag{bibliography}
+\meta{dependencies}{None.}
+\meta{provenance}{Ninth edition, 17 July 2026; pp. 62 and 103–104 consulted on 9 October 2026.}
+
+\p{Marcus Schaefer. \em{The Graph Crossing Number and its Variants: A Survey}. The Electronic Journal of Combinatorics, Dynamic Survey 21, ninth edition, 17 July 2026. [Publisher](https://doi.org/10.37236/2713). [Archived edition](/source-material/references/schaefer-crossing-survey-2026.pdf).}
+
+\p{The entry on p. 62 defines the [independent crossing number](cn-0066). Question 2 on p. 103 asks whether #{\operatorname{cr}(K_n)=\operatorname{cr}_-(K_n)}; the discussion continues on p. 104. This edition therefore records the complete-graph question as open in July 2026.}
+
+\p{That date precedes the September 2026 OpenAI papers. For the specific limitation of the bipartite proof studied here, see [the scope of normalization](cn-0009) and [the diagonal-block step in the lower bound](cn-0035).}
