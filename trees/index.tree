@@ -8,7 +8,7 @@
 
 ##{\operatorname{cr}(K_{m,n})=\left\lfloor\frac m2\right\rfloor\left\lfloor\frac{m-1}{2}\right\rfloor\left\lfloor\frac n2\right\rfloor\left\lfloor\frac{n-1}{2}\right\rfloor.}
 
-\p{\strong{Start here.} [The guided reading](cn-0001) explains how the three proof branches fit together. [The main theorem](cn-0007) states the result and links its complete argument. [The Lean guide](cn-0038) maps the paper's lemmas to formal declarations.}
+\p{\strong{Start here.} [The proof introduction](cn-0070) explains the route from subspaces to crossings, introducing notation before use. [The guided reading](cn-0001) includes it with the main statement and final proof assembly. [The main theorem](cn-0007) links its complete argument, and [the Lean guide](cn-0038) maps the paper's lemmas to formal declarations.}
 
 \ol{
 \li{[Algebra: subspace interpolation and the rank-sum inequality](cn-0061).}

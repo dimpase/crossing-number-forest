@@ -12,8 +12,4 @@
 
 \p{\strong{Proof.} The [balanced-axis construction](cn-0036) gives the upper bound. If either part has at most two vertices, the claimed value is zero and nonnegativity gives equality. For odd #{n\geq3}, [the odd lower bound](cn-0035) proves the reverse inequality by converting signed intersections into a rank sum. For even #{n>2}, [vertex deletion](cn-0037) reduces the lower bound to the odd case. These cases exhaust the positive integers.}
 
-\p{The essential estimate, with #{n=2s+1} and #{d=s^2}, is}
-
-##{2d_m d\ \leq\ \sum_{i\ne k}\operatorname{rank}R^{ik}\ \leq\ \sum_{i\ne k}c_{ik}\ =\ 2c(D).}
-
-\p{The first inequality comes from [subspace interpolation](cn-0024) via [matrix differences](cn-0027). The matrices have that difference form because of [the cycle relation](cn-0018). [The detector](cn-0034) supplies full-rank diagonal blocks, while [its rank-one atoms](cn-0033) bound off-diagonal ranks by crossings. The [guided account](cn-0001) explains these connections in order.}
+\p{The [proof introduction](cn-0070) explains the subspace inequality, the matrix sizes and star indices, and the conversion from ranks to crossing counts. The [guided account](cn-0001) includes the final proof assembly in full.}

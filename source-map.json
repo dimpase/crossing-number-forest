@@ -293,6 +293,13 @@
       "label": "Final topological step in Lemma 3.1 \u2014 Mutual intersections counted by segment traversals",
       "status": "verified",
       "destination": "cn-0069"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Section 1, equation (1.2) through the end \u2014 Rewritten introduction to the proof",
+      "status": "verified",
+      "destination": "cn-0070"
     }
   ]
 }

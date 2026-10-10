@@ -3,21 +3,15 @@
 \meta{dependencies}{None.}
 \meta{provenance}{Expository organization and source review, 9 October 2026.}
 
-\p{The paper seeks an exact [crossing count](cn-0005), not merely an asymptotic estimate. Its [balanced-axis construction](cn-0036) gives the familiar upper bound. The central task is a matching lower bound for every admissible drawing, including curved edges and repeated crossings.}
+\p{The [balanced-axis construction](cn-0036) attains the proposed [crossing number](cn-0005). The central task is a matching lower bound for every [admissible drawing](cn-0004), including curved edges and repeated crossings.}
 
 \transclude{cn-0007}
 
-\p{\strong{Three branches meet at one inequality.} Start with [the rank-sum corollary](cn-0027): matrices #{X_i,Y_j} with invertible diagonal differences force a large total off-diagonal rank. The [algebraic branch](cn-0061) proves this using polynomial constraints on subspaces and determinant multiplicity.}
+\transclude{cn-0070}
 
-\p{Next read [the topological branch](cn-0060). Correcting signed crossings by half-order terms at endpoints makes cycle pairings vanish. Four-cycles convert this into a block identity modulo row-plus-column matrices. This is the source of the difference form #{R^{ik}=X_i-Y_k}.}
-
-\p{Finally read [the detector branch](cn-0062). Its linear map kills row-plus-column terms and same-second-endpoint terms; a single nonzero crossing entry contributes at most one rank. Yet every diagonal star-order block has full rank #{s^2}. The [worked example](cn-0040) shows an explicit image and its determinant.}
-
-\p{With these three ingredients understood, the entire odd-size lower bound is the following short assembly.}
+\p{The full arguments are collected in [the algebraic branch](cn-0061), [the topological branch](cn-0060), and [the detector branch](cn-0062). The [worked example](cn-0040) gives an explicit detector image and its determinant. The following canonical notes assemble the lower and upper bounds.}
 
 \transclude{cn-0035}
-
-\p{There is a reason to prove odd second-part sizes first: the detector has dimension #{s^2=d_{2s+1}} and uses #{2s+1} nodes. Even sizes are obtained by a count over vertex deletions.}
 
 \transclude{cn-0037}
 \transclude{cn-0036}

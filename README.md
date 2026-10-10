@@ -35,10 +35,12 @@ serves only generated output/.
 
 ## Reading routes
 
-There are 70 trees: the landing page and cn-0001 through cn-0069, including
-21 tagged definitions and 19 bibliographic entries. Next unused: cn-0070.
+There are 71 trees: the landing page and cn-0001 through cn-0070, including
+21 tagged definitions and 19 bibliographic entries. Next unused: cn-0071.
 
 - cn-0001: guided reading; cn-0007: main theorem and proof assembly.
+- cn-0070: rewritten proof introduction, beginning with the paper's equation
+  (1.2), with explicit notation and links to definitions and full arguments.
 - cn-0061: algebraic branch, from polynomial constraints to the rank sum.
 - cn-0060: topological branch, from normalization to the block relation.
 - cn-0062: detector branch, including two-triangle interpolation.
