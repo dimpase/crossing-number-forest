@@ -1,37 +1,54 @@
 # Crossing-number forest
 
-A local Forester reading project for OpenAI's *The crossing number of
-complete bipartite graphs* (23 September 2026), with a guide to its Lean
-development. It follows the linked-definition and proof style of the existing
-4ary forest. The focus is the new argument; older work appears as context
-and in the bibliography.
+A Forester reading project for OpenAI's [*The crossing number of complete
+bipartite graphs* (23 September 2026)](https://github.com/openai/math/tree/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026),
+with a guide to its Lean development. Definitions, results, and proofs have
+permanent tags and links connecting their uses and dependencies. The focus
+is the new argument; older work appears as context and in the bibliography.
 
 ## Run it
 
-No opam activation commands are needed. The Makefile explicitly selects the
-already installed `4ary-4tics-forester-5.0` switch: OCaml 5.3.0, Forester 5.0.
+Install opam, Git, Make, Python with venv support, and the C build tools
+needed by OCaml. If opam is not initialized, run `opam init --bare` first.
+From the checkout's parent directory:
 
 ```sh
-cd /home/dima/work/papers/4ary/crossing-number-forest
+cd crossing-number-forest
+git submodule update --init -- theme
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements.txt
+export FORESTER_SWITCH=crossing-forester-5.0
+make setup
 make check
 make serve
 ```
 
-Open **http://127.0.0.1:8001/index/index.html**. This is a separate server from
-the 4ary forest on port 8000. Stop it with Ctrl-C. If it is already running,
-edit a source, run `make check` in another terminal, and refresh the page.
-There is no file watcher. Use `make serve PORT=8002` if another process uses
-8001.
+`make setup` creates the named switch if needed, restoring OCaml 5.3.0 and
+Forester 5.0 from the pinned export. It leaves your global opam switch
+unchanged. The Makefile selects the switch explicitly, so no `eval $(opam
+env)` or other opam activation is needed. In a new terminal, activate the
+Python environment and export the same `FORESTER_SWITCH` before running
+the make commands.
+
+Open **http://127.0.0.1:8001/index/index.html**. Stop the server with Ctrl-C.
+If it is already running, edit a source, run `make check` in another terminal,
+and refresh the page. There is no file watcher. Use `make serve PORT=8002`
+if another process uses 8001.
 
 If the server runs on a remote host, forward its port from your browser's
 computer, for example:
 
 ```sh
-ssh -N -L 8001:127.0.0.1:8001 dima@tarski
+ssh -N -L 8001:127.0.0.1:8001 user@server
 ```
 
 Then use the same localhost URL. The server binds only to localhost and
 serves only generated output/.
+
+For public hosting, build with `make build` and deploy the whole output/
+directory, including its license and notice files. Links assume that output/
+is served at the website root.
 
 ## Reading routes
 
@@ -104,19 +121,17 @@ kernel axiom audit. Lean and Comparator were not run locally.
 
 ## Restoration
 
-The theme is the same pinned Forester 5.0 submodule as in the 4ary forest.
-environment.json, opam-switch.export, and opam-packages.txt record the
-environment. A new machine needs opam, Git, Make, Python and requirements.txt;
-initialize opam, restore the theme with `git submodule update --init -- theme`,
-then run `make setup`. Installing missing dependencies requires network access.
-Routine reading and building use local assets and fonts.
+The theme is a pinned Forester 5.0 submodule. environment.json,
+opam-switch.export, and opam-packages.txt record the environment. Follow the
+setup commands above to restore it on a new machine. Installing missing
+dependencies requires network access. Routine reading and building use
+local assets and fonts.
 
-An optional Python environment can be created with:
+You can also select the Python interpreter and opam switch per command,
+without activating either environment:
 
 ```sh
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-make check PYTHON=.venv/bin/python
+make check PYTHON=.venv/bin/python FORESTER_SWITCH=crossing-forester-5.0
 ```
 
 To restore Forester into a different switch without changing the global one,
@@ -133,3 +148,18 @@ upstream repository at the recorded commit and follow its Lean and Comparator
 READMEs, using ComparatorChallenges/BipartiteCrossing.json as the configuration.
 The upstream library is large; its README recommends building only needed
 parts. No compilation of that library is part of `make check` here.
+
+## License
+
+The forest's original notes, documentation, scripts, and local style
+customizations are licensed under the [Apache License 2.0](LICENSE).
+OpenAI's paper and Lean sources use the same license in the
+[pinned upstream repository](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/LICENSE),
+which expressly permits copying, adaptation, and redistribution under its
+conditions. Reuse of that material here relies on this license grant.
+
+[NOTICE](NOTICE) records the upstream attribution and the forest's editorial
+changes. Included third-party materials retain their own notices and terms;
+the project's license does not relicense them. The build includes LICENSE,
+NOTICE, the archived upstream license, and the theme's license files in
+output/ for publication with the site.

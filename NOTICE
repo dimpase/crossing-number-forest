@@ -1,0 +1,41 @@
+Crossing-number forest
+Copyright 2026 Dima Pasechnik and contributors.
+
+The project's original notes, documentation, scripts, and local style
+customizations are licensed under the Apache License, Version 2.0.
+See LICENSE for the full terms.
+
+OpenAI source material
+
+This forest adapts and expands the exposition of:
+  OpenAI, The crossing number of complete bipartite graphs,
+  23 September 2026, and its accompanying Lean development.
+  https://github.com/openai/math
+  Commit: fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb
+
+OpenAI distributes this material under the Apache License, Version 2.0.
+The archived subset in source-material/openai-math preserves the upstream
+files unchanged, including its LICENSE. The snapshot description and
+source-material/manifest.json identify the archived files and their hashes.
+
+The forest's native notes reorganize and rewrite the exposition, separate
+and tag definitions and results, expand proof steps, link the paper to Lean
+declarations, and add examples and editorial discussions. Each note records
+its provenance; source-map.json and lean-map.json give further source
+locations. These changes belong to this reading project.
+
+Forester theme and bundled assets
+
+The site uses forester-base-theme 5.0 by Jon Sterling and contributors:
+  https://git.sr.ht/~jonsterling/forester-base-theme
+  Commit: 23017d9c49e7685e9ec5949378f9b5e3cb924b58
+
+The theme's license texts are preserved in theme/LICENSES in the source
+checkout and LICENSES in the generated site. They include CC0-1.0, MIT,
+and OFL-1.1. Bundled assets retain their respective copyright and license
+notices, including those for KaTeX and Inria Sans.
+
+Other cited sources and archived reference documents retain their own
+copyrights and terms. The project's Apache license does not relicense them.
+
+This notice records attribution and does not change the license terms.

@@ -45,3 +45,5 @@
 }
 
 \p{\strong{Status.} The mathematical results are labelled proof-account: they reconstruct the pinned paper's proof. Exact finite examples and static Lean source checks are recorded separately. No local Lean or Comparator run is claimed. [Details of the verification scope](cn-0039).}
+
+\p{\strong{License.} The forest's original notes and code are licensed under [Apache 2.0](/LICENSE). The [source attribution and notices](/NOTICE) describe the material adapted from OpenAI and the included third-party components.}

@@ -71,7 +71,7 @@ def run():
         '<title>Crossing-number forest</title><a href="/index/index.html">Open the forest</a>\n')
     for directory in ("source-material", "computations"):
         shutil.copytree(directory, out / directory, ignore=shutil.ignore_patterns("__pycache__"))
-    for name in ("source-map.json", "lean-map.json"):
+    for name in ("source-map.json", "lean-map.json", "LICENSE", "NOTICE"):
         shutil.copy2(name, out / name)
     shutil.copy2("assets/project.css", out / "project.css")
     check.output(check.sources())
