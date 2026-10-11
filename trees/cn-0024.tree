@@ -1,12 +1,14 @@
 \title{The subspace-intersection inequality}
 \taxon{Lemma}
 \meta{status}{proof-account}
-\meta{dependencies}{[Constrained spaces](cn-0019); [Interpolation identity](cn-0020); [Degree budget](cn-0023)}
-\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Lemma 2.1, equation (2.1); reconstructed as a reading account on 9 October 2026. [Lean source: SubspaceIntersection](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/SubspaceIntersection.lean).}
+\meta{dependencies}{[Constrained spaces](cn-0019); [Interpolation identity](cn-0020); [Degree budget](cn-0023); [Sharpness construction](cn-0025)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Lemma 2.1, equation (2.1), and Remark 2.2; reconstructed as a reading account on 9 October 2026, with sharpness made explicit in the statement on 11 October 2026. [Lean source for the inequality: SubspaceIntersection](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/SubspaceIntersection.lean).}
 
 \p{\strong{Statement.} Let #{W} be a real vector space of dimension #{N}, and let #{U_i,V_i\subseteq W}, #{1\leq i\leq m}, be subspaces with #{m\geq1} and #{U_i\cap V_i=0}. Then}
 
 ##{\sum_{i,j=1}^m\dim(U_i\cap V_j)\leq\left\lfloor\frac{m^2}{4}\right\rfloor N.}
+
+\p{This bound is sharp: for every #{m\geq1} and #{N\geq0}, there are such families attaining equality.}
 
 \p{\strong{Proof.} Choose distinct nodes and use [the constrained spaces](cn-0019). Sum [the degree budget](cn-0023) over #{0\leq h\leq m-1}. By [the interpolation identity](cn-0020),}
 
@@ -21,6 +23,6 @@
 
 ##{\sum_{e=0}^{m-1}\ell_e=k_{m-1}(W)=\dim E_{m-1}(W;t_*)\leq N,}
 
-\p{the claimed bound follows. The [sharpness example](cn-0025) explains the constant. The paper compares the determinant-multiplicity method with [subspace designs](cn-0050), but the proof here supplies its own argument for these arbitrary subspaces.}
+\p{the claimed bound follows. Sharpness follows from [the construction in cn-0025](cn-0025), which attains equality for every #{m} and #{N}. The paper compares the determinant-multiplicity method with [subspace designs](cn-0050), but the proof here supplies its own argument for these arbitrary subspaces.}
 
 \p{The real field matches the paper's statement. [The field-of-scalars remark](cn-0065) proves that this algebraic inequality holds over every field.}

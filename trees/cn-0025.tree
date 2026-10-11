@@ -1,7 +1,7 @@
 \title{Why the subspace constant is sharp}
 \taxon{Proposition}
 \meta{status}{proof-account}
-\meta{dependencies}{[Subspace inequality](cn-0024)}
+\meta{dependencies}{None.}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Remark 2.2; reconstructed as a reading account on 9 October 2026.}
 
 \p{\strong{Statement.} The constant in [the subspace inequality](cn-0024) cannot be decreased.}
