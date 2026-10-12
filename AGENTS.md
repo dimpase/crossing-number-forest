@@ -69,8 +69,10 @@ and brief context, unless the user requests a detailed comparison.
   paths. For mathematical changes, separately review the argument.
 - GitHub Pages builds use `FOREST_URL` for the public URL and a local opam
   switch restored from the export. Pushes to GitHub's `main` run the checks
-  and deploy through .github/workflows/pages.yml. Check both root and project
-  paths when changing the build or navigation.
+  and deploy through .github/workflows/pages.yml. Pull requests must not
+  trigger the Pages workflow. Dependabot checks the GitHub Actions pins
+  weekly. Check both root and project paths when changing the build or
+  navigation.
 - Serve only output/ on localhost, normally port 8001. Do not disturb the
   existing 4ary forest's server on port 8000.
 - Commit coherent source changes after validation. Do not publish or add a

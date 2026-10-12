@@ -58,6 +58,13 @@ and Forester packages, runs `make check`, and deploys output/ to
 deployment. The workflow can also be started manually from the repository's
 Actions tab.
 
+[Dependabot](.github/dependabot.yml) checks for GitHub Actions updates weekly
+and opens pull requests to update the pinned commit hashes. Minor and patch
+updates are grouped together; major updates get separate pull requests.
+Opening or updating a pull request does not run the Pages workflow. Merging
+an update into `main` triggers the build, checks, and publication through the
+normal push workflow.
+
 After editing and committing the native sources, push `main` to the GitHub
 remote to update the public site. Generated files remain outside the source
 branch; the workflow uploads them as a Pages artifact, including the license,
