@@ -4,7 +4,7 @@
 \meta{dependencies}{None.}
 \meta{provenance}{Reading project based on the OpenAI preprint of 23 September 2026 and its accompanying Lean sources, pinned on 9 October 2026.}
 
-\p{Deployed from [https://github.com/dimpase/crossing-number-forest](https://github.com/dimpase/crossing-number-forest). Please feel free to leave your comments there.}
+\p{\em{Deployed from [my github repo](https://github.com/dimpase/crossing-number-forest). Please feel free to leave your comments there.}}
 
 \p{A structured reading of [the paper](cn-0042) and its proof of the Zarankiewicz formula:}
 
