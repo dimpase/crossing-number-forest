@@ -42,7 +42,7 @@ jobs:
         run: opam switch import --switch=. opam-switch.export --yes --jobs=4
       - name: Read the GitHub Pages URL
         id: pages
-        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
       - name: Build and check the site
         run: make check FORESTER_SWITCH=.
         env:
