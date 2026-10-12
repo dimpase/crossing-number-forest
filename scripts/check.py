@@ -121,6 +121,9 @@ def sources():
 
 def output(notes):
     out = ROOT / "output"
+    base_path = etree.parse(str(out / "index/index.xml")).getroot().get("base-url")
+    require(base_path and base_path.startswith("/") and base_path.endswith("/"),
+            "Missing or invalid site base path")
     pages = {}
     for path in out.rglob("*.html"):
         doc = html.parse(str(path))
@@ -130,6 +133,8 @@ def output(notes):
         path = out / addr / "index.html"
         require(path.resolve() in pages, f"Missing rendered note: {addr}")
         doc = pages[path.resolve()]
+        require(doc.getroot().get("data-base-url") == base_path,
+                f"{addr}: search uses the wrong site base path")
         body = " ".join(doc.xpath("//body//text()"))
         require("Provenance" in body and "Proof dependencies" in body,
                 f"{addr}: provenance/dependencies are not visible")
@@ -161,8 +166,11 @@ def output(notes):
                 if url.scheme or url.netloc:
                     require(attr != "src" and node.tag != "link", f"Remote reading asset: {value}")
                     continue
-                target = (out / unquote(url.path).lstrip("/") if url.path.startswith("/")
-                          else path.parent / unquote(url.path)).resolve()
+                if url.path.startswith("/"):
+                    require(url.path.startswith(base_path), f"Link escapes site base path: {value}")
+                    target = (out / unquote(url.path[len(base_path):])).resolve()
+                else:
+                    target = (path.parent / unquote(url.path)).resolve()
                 if not url.path:
                     target = path
                 if target.is_dir():
@@ -172,6 +180,15 @@ def output(notes):
                 if url.fragment and target in pages:
                     require(pages[target].xpath("//*[@id=$id]", id=unquote(url.fragment)),
                             f"{path.relative_to(out)}: missing anchor {value}")
+    search = json.loads((out / "forest.json").read_text())
+    require({entry["uri"] for entry in search} == set(notes), "Search index omits or adds notes")
+    for entry in search:
+        route = entry["route"]
+        require(route.startswith(base_path), f"Search route escapes site base path: {route}")
+        target = out / route[len(base_path):]
+        if target.is_dir():
+            target /= "index.html"
+        require(target.resolve() in pages, f"Search route has no rendered page: {route}")
     print(f"Checked {len(notes)} notes, rendered links/assets, metadata, and dependency/transclusion graphs.")
     for addr, (_, meta) in notes.items():
         if meta.get("status") in {"source-needed", "incomplete"}:

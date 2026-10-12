@@ -6,9 +6,12 @@ with a guide to its Lean development. Definitions, results, and proofs have
 permanent tags and links connecting their uses and dependencies. The focus
 is the new argument; older work appears as context and in the bibliography.
 
+Read the [published forest](https://dimpase.github.io/crossing-number-forest/)
+or browse the [source repository](https://github.com/dimpase/crossing-number-forest).
+
 ## Run it
 
-Install opam, Git, Make, Python with venv support, and the C build tools
+Install opam, Git, Make, Python 3.11 or newer with venv support, and the C build tools
 needed by OCaml. If opam is not initialized, run `opam init --bare` first.
 From the checkout's parent directory:
 
@@ -46,9 +49,29 @@ ssh -N -L 8001:127.0.0.1:8001 user@server
 Then use the same localhost URL. The server binds only to localhost and
 serves only generated output/.
 
-For public hosting, build with `make build` and deploy the whole output/
-directory, including its license and notice files. Links assume that output/
-is served at the website root.
+## Publishing
+
+Every push to `main` on GitHub triggers the
+[Pages workflow](.github/workflows/pages.yml). It restores the pinned OCaml
+and Forester packages, runs `make check`, and deploys output/ to
+**https://dimpase.github.io/crossing-number-forest/**. A failed check prevents
+deployment. The workflow can also be started manually from the repository's
+Actions tab.
+
+After editing and committing the native sources, push `main` to the GitHub
+remote to update the public site. Generated files remain outside the source
+branch; the workflow uploads them as a Pages artifact, including the license,
+notices, archived sources, and fonts.
+
+To reproduce the published paths locally, run:
+
+```sh
+make check FOREST_URL=https://dimpase.github.io/crossing-number-forest/
+```
+
+This builds output/ for hosting at `/crossing-number-forest/`. For the normal
+localhost preview, run `make serve` with no `FOREST_URL` override. Other
+hosts or subdirectories can be selected with the same variable.
 
 ## Reading routes
 

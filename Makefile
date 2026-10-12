@@ -1,7 +1,8 @@
 PYTHON ?= python3
 PORT ?= 8001
 FORESTER_SWITCH ?= 4ary-4tics-forester-5.0
-export FORESTER_SWITCH
+FOREST_URL ?=
+export FORESTER_SWITCH FOREST_URL
 
 .PHONY: setup build serve check
 
