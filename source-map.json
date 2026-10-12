@@ -300,6 +300,27 @@
       "label": "Section 1, equation (1.2) through the end \u2014 Rewritten introduction to the proof",
       "status": "verified",
       "destination": "cn-0070"
+    },
+    {
+      "source_id": "scott-wilmer-exterior-two-families",
+      "source_version": "arXiv:1907.06019v2 (2020-07-14)",
+      "label": "Bibliographic record and reviewed preprint version",
+      "status": "verified",
+      "destination": "cn-0071"
+    },
+    {
+      "source_id": "scott-wilmer-exterior-two-families",
+      "source_version": "arXiv:1907.06019v2 (2020-07-14)",
+      "label": "Sections 2.1 and 2.6; Theorems 4.5 and 5.1 \u2014 Comparison with the unrestricted intersection-dimension sum",
+      "status": "verified",
+      "destination": "cn-0072"
+    },
+    {
+      "source_id": "scott-wilmer-exterior-two-families",
+      "source_version": "arXiv:1907.06019v2 (2020-07-14)",
+      "label": "Lemma 3.1 \u2014 Editorial deduction: refine the ambient dimension to the largest designated pair sum",
+      "status": "verified",
+      "destination": "cn-0074"
     }
   ]
 }

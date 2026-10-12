@@ -1,0 +1,30 @@
+\title{Exterior algebra and the subspace-intersection inequality}
+\taxon{Overview}
+\meta{dependencies}{None.}
+\meta{provenance}{Comparison of [Scott and Wilmer](cn-0071), arXiv:1907.06019v2, Sections 2–4 and Theorem 5.1, with [OpenAI](cn-0042), Lemma 2.1 and Corollary 2.3. The examples and deductions below are editorial, added on 12 October 2026.}
+
+\p{[Scott and Wilmer](cn-0071) offer a natural comparison for the algebraic ingredient of [the crossing-number proof](cn-0070). There is [a short counting proof](cn-0073) when all the subspaces are spanned by subsets of one basis, and their projection lemma gives [a refinement of the ambient dimension](cn-0074). Neither argument supplies the general subspace estimate used in [the rank-sum corollary](cn-0027).}
+
+\p{\strong{The extra intersection hypothesis.} Their Theorem 4.5 concerns nonzero subspaces with #{a_i=\dim U_i}, #{b_i=\dim V_i}. Besides #{U_i\cap V_i=0}, it requires}
+
+##{U_i\cap V_j\ne0\quad(i<j),\qquad a_1\leq\cdots\leq a_m,\qquad b_1\geq\cdots\geq b_m,}
+
+\p{and bounds #{\sum_i\binom{a_i+b_i}{a_i}^{-1}} by #{1}. Our [inequality](cn-0024) has no off-diagonal intersection hypothesis and bounds the sum of the intersection dimensions themselves. Theorem 5.1 retains the same off-diagonal hypothesis and adds lower bounds on intersections within the first family.}
+
+\p{The obstruction already occurs at equality in our bound. Take complementary lines #{P,Q\subseteq\mathbb R^2} and three pairs}
+
+##{(U_1,V_1)=(P,Q),\qquad(U_2,V_2)=(P,Q),\qquad(U_3,V_3)=(Q,P).}
+
+\p{The total intersection dimension is #{4=\lfloor 9/4\rfloor\cdot 2}, as in [the sharpness construction](cn-0025). But #{U_1\cap V_2=U_2\cap V_1=0}; no ordering of the three pairs meets Theorem 4.5's hypothesis. All six spaces have dimension #{1}, so the ordering of dimensions causes no difficulty in this example.}
+
+\p{\strong{Why leading coordinates do not give the general bound.} Section 2.1 suggests trying to replace subspaces by coordinate subspaces and then use [the counting proof](cn-0073). Already for a line, taking its first nonzero coordinate replaces it by one coordinate axis. This can destroy disjointness. In fact, some families admit no common ordered basis for which this replacement preserves all the designated disjoint pairs.}
+
+\p{To see this, choose three distinct lines #{L_1,L_2,L_3\subseteq\mathbb R^2}, for example the spans of #{(1,0)}, #{(0,1)}, and #{(1,1)}, and use the pairs}
+
+##{(L_1,L_2),\qquad(L_2,L_3),\qquad(L_3,L_1).}
+
+\p{Each pair has zero intersection. For any ordered basis, each of the three lines is replaced by one of only two coordinate axes. Two lines must receive the same axis, and those two lines occur together in one of the designated pairs. That pair ceases to be disjoint. Thus this common leading-coordinate replacement cannot reduce the general statement to its coordinate case.}
+
+\p{\strong{What projection does give.} [The projection refinement](cn-0074) replaces the ambient dimension #{N} in the bound by #{\max_i(\dim U_i+\dim V_i)}. Its proof still uses [the subspace inequality](cn-0024) in the smaller space. For the [graph subspaces](cn-0026) used in the crossing argument, every designated pair consists of complementary #{d}-dimensional spaces in #{\mathbb R^{2d}}. The refined dimension is therefore still #{2d}.}
+
+\p{Moreover, projecting those graph pairs to dimension #{2d-1} while retaining both dimensions #{d} forces an intersection of dimension at least #{d+d-(2d-1)=1}. Such a projection breaks the hypothesis needed for the rank-sum proof. The comparison therefore gives a useful special case and a refinement, but the present account still needs [the interpolation and determinant argument](cn-0061) for arbitrary subspaces.}

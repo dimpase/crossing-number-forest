@@ -26,3 +26,5 @@
 \p{the claimed bound follows. Sharpness follows from [the construction in cn-0025](cn-0025), which attains equality for every #{m} and #{N}. The paper compares the determinant-multiplicity method with [subspace designs](cn-0050), but the proof here supplies its own argument for these arbitrary subspaces.}
 
 \p{The real field matches the paper's statement. [The field-of-scalars remark](cn-0065) proves that this algebraic inequality holds over every field.}
+
+\p{[A short counting proof](cn-0073) handles subspaces spanned by subsets of one common basis. [The comparison with Scott and Wilmer](cn-0072) examines whether exterior-algebra methods can replace the general proof; [a projection argument](cn-0074) refines #{N} to #{\max_i(\dim U_i+\dim V_i)}.}

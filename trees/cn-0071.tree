@@ -1,0 +1,9 @@
+\title{Scott and Wilmer: Combinatorics in the exterior algebra and the Bollobás Two Families Theorem}
+\taxon{Reference}
+\tag{bibliography}
+\meta{dependencies}{None.}
+\meta{provenance}{Bibliographic details checked against the publisher; mathematical comparison based on arXiv:1907.06019v2, 14 July 2020, read on 12 October 2026.}
+
+\p{Alex Scott and Elizabeth Wilmer. \em{Combinatorics in the exterior algebra and the Bollobás Two Families Theorem}. Journal of the London Mathematical Society 104(4) (2021), 1812–1839. [Publisher and DOI](https://doi.org/10.1112/jlms.12484). [Version read](https://arxiv.org/abs/1907.06019v2); [full text](https://arxiv.org/pdf/1907.06019v2).}
+
+\p{The relevant parts are Section 2.1 on initial monomials, Lemma 3.1 on generic projections, and Theorem 4.5 on weighted subspace pairs. Numbered locators here refer to the linked preprint version. [The comparison](cn-0072) explains their relation to [the subspace-intersection inequality](cn-0024). Lemma 3.1 also yields [an ambient-dimension refinement](cn-0074).}

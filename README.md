@@ -82,8 +82,8 @@ hosts or subdirectories can be selected with the same variable.
 
 ## Reading routes
 
-There are 71 trees: the landing page and cn-0001 through cn-0070, including
-21 tagged definitions and 19 bibliographic entries. Next unused: cn-0071.
+There are 75 trees: the landing page and cn-0001 through cn-0074, including
+21 tagged definitions and 20 bibliographic entries. Next unused: cn-0075.
 
 - cn-0001: guided reading; cn-0007: main theorem and proof assembly.
 - cn-0070: rewritten proof introduction, beginning with the paper's equation
@@ -100,6 +100,8 @@ There are 71 trees: the landing page and cn-0001 through cn-0070, including
 - cn-0066: independent crossing counts; cn-0009 and cn-0035 explain why the
   normalization and lower-bound arguments do not establish a bound for this
   different count. cn-0067 records the July 2026 survey's open question.
+- cn-0071–0074: Scott and Wilmer's exterior-algebra paper, its relation to the
+  subspace bound, a coordinate-case warm-up, and a refinement by projection.
 
 The label `proof-account` identifies an exposition of the supplied proof.
 The local checks do not establish a successful Lean or Comparator run.

@@ -1,0 +1,27 @@
+\title{A refinement by projecting the ambient space}
+\taxon{Corollary}
+\meta{status}{proof-account}
+\meta{dependencies}{[Subspace inequality](cn-0024); [Sharpness construction](cn-0025); [Scott–Wilmer projection lemma](cn-0071)}
+\meta{provenance}{Editorial consequence of [OpenAI](cn-0042), Lemma 2.1, and the generic-projection argument of [Scott and Wilmer](cn-0071), arXiv:1907.06019v2, Lemma 3.1. Added on 12 October 2026, with the needed projection argument written out below.}
+
+\p{\strong{Statement.} Let #{m\geq1}, let #{W} be a finite-dimensional real vector space, and let #{U_i,V_i\subseteq W}, #{1\leq i\leq m}, satisfy #{U_i\cap V_i=0}. Put}
+
+##{r=\max_{1\leq i\leq m}\bigl(\dim U_i+\dim V_i\bigr).}
+
+\p{Then the [subspace-intersection bound](cn-0024) has the refinement}
+
+##{\sum_{i,j=1}^{m}\dim(U_i\cap V_j)\leq\left\lfloor\frac{m^2}{4}\right\rfloor r.}
+
+\p{\strong{Proof.} The case #{r=0} is immediate. Write #{C_i=U_i+V_i}; diagonal disjointness gives #{\dim C_i\leq r}. There is a linear map #{\pi:W\to\mathbb R^r} injective on every #{C_i}, by [Scott and Wilmer, Lemma 3.1](cn-0071). If #{r=\dim W}, take an isomorphism; otherwise all the #{C_i} are proper subspaces, as required there.}
+
+\p{Here is the needed existence argument directly. Regard the entries of an #{r\times\dim W} matrix as variables. For each nonzero #{C_i}, choose a basis and a maximal minor of its image matrix that is a nonzero polynomial: such a minor exists because some linear map embeds #{C_i} into #{\mathbb R^r}. The product of these finitely many nonzero polynomials is nonzero, so it is nonzero at some real matrix. That matrix defines the required #{\pi}. Zero spaces impose no condition.}
+
+\p{Injectivity on #{C_i} gives #{\pi(U_i)\cap\pi(V_i)=0}. For every #{i,j}, the map is injective on #{U_i\cap V_j\subseteq C_i}, and}
+
+##{\pi(U_i\cap V_j)\subseteq\pi(U_i)\cap\pi(V_j).}
+
+\p{Apply [the subspace inequality](cn-0024) to the image pairs in #{\mathbb R^r}:}
+
+##{\sum_{i,j}\dim(U_i\cap V_j)\leq\sum_{i,j}\dim\bigl(\pi(U_i)\cap\pi(V_j)\bigr)\leq\left\lfloor\frac{m^2}{4}\right\rfloor r.}
+
+\p{The bound is sharp: place [the balanced equality construction](cn-0025) inside a fixed #{r}-dimensional subspace of #{W}. The argument improves the parameter in the bound when #{r<\dim W}; it still relies on the general inequality in dimension #{r}. [For the graph subspaces in the crossing proof](cn-0072), one has #{r=\dim W=2d}.}

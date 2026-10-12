@@ -2915,6 +2915,16 @@
       "retrieved": "2026-10-09",
       "status": "archived",
       "sha256": "c55a0bc968838624f8accf27aae13e7e98d5d46f732dbc66712672d01ab37b07"
+    },
+    {
+      "id": "scott-wilmer-exterior-two-families",
+      "title": "Combinatorics in the exterior algebra and the Bollob\u00e1s Two Families Theorem",
+      "version": "arXiv:1907.06019v2 (2020-07-14)",
+      "url": "https://arxiv.org/abs/1907.06019v2",
+      "doi": "10.1112/jlms.12484",
+      "retrieved": "2026-10-12",
+      "status": "reviewed",
+      "review_scope": "Sections 2.1 and 2.6, Section 3, Theorem 4.5 and its proof, and Theorem 5.1; linked externally."
     }
   ]
 }
