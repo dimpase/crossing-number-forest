@@ -2,10 +2,10 @@
 \taxon{Definition}
 \tag{definition}
 \meta{defines}{linear spoke order; half-order matrix; spoke comparison sign}
-\meta{dependencies}{[Normalized drawings](cn-0008)}
+\meta{dependencies}{[Normalized drawings](cn-0008); [Spokes](cn-0075)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Section 3 and Lemma 4.2; reconstructed as a reading account on 9 October 2026. [Lean source: HalfOrderInvertibility](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/HalfOrderInvertibility.lean).}
 
-\p{At a vertex of a [normalized drawing](cn-0008), choose a gap between outward spokes. Reading counterclockwise from that gap gives a \em{linear spoke order}. For incident edges #{e,f}, let #{T_v(e,f)=1} if #{e} precedes #{f}, #{-1} if #{f} precedes #{e}, and #{0} if #{e=f}. Let #{\sigma_{ve}=1} for an edge oriented out of #{v} and #{-1} for an edge oriented into #{v}.}
+\p{At a vertex of a [normalized drawing](cn-0008), choose a gap between [outward spokes](cn-0075). Reading counterclockwise from that gap gives a \em{linear spoke order}. For incident edges #{e,f}, let #{T_v(e,f)=1} if #{e} precedes #{f}, #{-1} if #{f} precedes #{e}, and #{0} if #{e=f}. Let #{\sigma_{ve}=1} for an edge oriented out of #{v} and #{-1} for an edge oriented into #{v}.}
 
 \p{For any strict linear order #{\prec} on #{\{1,\ldots,n\}}, its \em{half-order matrix} is}
 

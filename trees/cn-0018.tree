@@ -8,7 +8,7 @@
 
 ##{J^{ik}-J^{i1}-J^{1k}+J^{11}\in\mathcal L,}
 
-\p{where #{\mathcal L} is the space of [row-plus-column matrices](cn-0017). Any fixed first-class vertex may replace the reference vertex #{a_1}.}
+\p{where #{\mathcal L} is the space of [row-plus-column matrices](cn-0017). Any fixed [first-class](cn-0002) vertex may replace the reference vertex #{a_1}.}
 
 \p{\strong{Proof.} Call the displayed matrix #{H}. For #{i,k\ne1}, #{p\ne p'}, and #{q\ne q'}, take the four-cycle vector with entries #{+1} on #{ip,1p'} and #{-1} on #{ip',1p}, and the analogous vector using #{k,q,q'}. Expanding [cycle pairing](cn-0016) gives}
 

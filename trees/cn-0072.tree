@@ -9,7 +9,7 @@
 
 ##{U_i\cap V_j\ne0\quad(i<j),\qquad a_1\leq\cdots\leq a_m,\qquad b_1\geq\cdots\geq b_m,}
 
-\p{and bounds #{\sum_i\binom{a_i+b_i}{a_i}^{-1}} by #{1}. Our [inequality](cn-0024) has no off-diagonal intersection hypothesis and bounds the sum of the intersection dimensions themselves. Theorem 5.1 retains the same off-diagonal hypothesis and adds lower bounds on intersections within the first family.}
+\p{and bounds #{\sum_i\binom{a_i+b_i}{a_i}^{-1}} by #{1}. Our [inequality](cn-0024) has no [off-diagonal](cn-0076) intersection hypothesis and bounds the sum of the intersection dimensions themselves. Theorem 5.1 retains the same off-diagonal hypothesis and adds lower bounds on intersections within the first family.}
 
 \p{The obstruction already occurs at equality in our bound. Take complementary lines #{P,Q\subseteq\mathbb R^2} and three pairs}
 
@@ -17,7 +17,7 @@
 
 \p{The total intersection dimension is #{4=\lfloor 9/4\rfloor\cdot 2}, as in [the sharpness construction](cn-0025). But #{U_1\cap V_2=U_2\cap V_1=0}; no ordering of the three pairs meets Theorem 4.5's hypothesis. All six spaces have dimension #{1}, so the ordering of dimensions causes no difficulty in this example.}
 
-\p{\strong{Why leading coordinates do not give the general bound.} Section 2.1 suggests trying to replace subspaces by coordinate subspaces and then use [the counting proof](cn-0073). Already for a line, taking its first nonzero coordinate replaces it by one coordinate axis. This can destroy disjointness. In fact, some families admit no common ordered basis for which this replacement preserves all the designated disjoint pairs.}
+\p{\strong{Why leading coordinates do not give the general bound.} Section 2.1 suggests trying to replace subspaces by coordinate subspaces and then use [the counting proof](cn-0073). Already for a line, taking its first nonzero coordinate replaces it by one coordinate axis. This can destroy disjointness. In fact, some families admit no common ordered basis for which this replacement preserves all the [designated disjoint pairs](cn-0076).}
 
 \p{To see this, choose three distinct lines #{L_1,L_2,L_3\subseteq\mathbb R^2}, for example the spans of #{(1,0)}, #{(0,1)}, and #{(1,1)}, and use the pairs}
 

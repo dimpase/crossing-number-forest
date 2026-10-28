@@ -3,7 +3,7 @@
 \meta{dependencies}{None.}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Section 1, from the paragraph containing equation (1.2) to the end of the introduction; rewritten with explicit notation and links on 9 October 2026.}
 
-\p{The first ingredient is an inequality about subspaces. Fix an integer #{m\geq1}, a real vector space #{W} of finite dimension #{N}, and two indexed families of linear subspaces #{U_1,\ldots,U_m} and #{V_1,\ldots,V_m} of #{W}. Suppose #{U_i\cap V_i=\{0\}} for every #{i}. The [subspace-intersection inequality](cn-0024) states that}
+\p{The first ingredient is an inequality about subspaces. Fix an integer #{m\geq1}, a real vector space #{W} of finite dimension #{N}, and two indexed families of linear subspaces #{U_1,\ldots,U_m} and #{V_1,\ldots,V_m} of #{W}. Suppose #{U_i\cap V_i=\{0\}} for every #{i}; that is, each [designated pair](cn-0076) #{(U_i,V_i)} is disjoint. The [subspace-intersection inequality](cn-0024) states that}
 
 ##{\sum_{i,j=1}^{m}\dim(U_i\cap V_j)\leq\left\lfloor\frac{m^2}{4}\right\rfloor N.\startverb\tag{1.2}\stopverb}
 
@@ -22,7 +22,7 @@ V_j&=\Gamma_{Y_j}=\{(v,Y_jv):v\in\mathbb R^d\}.
 
 ##{\dim(U_i\cap V_j)=d-\operatorname{rank}(X_i-Y_j).}
 
-\p{In particular, invertibility of #{X_i-Y_i} gives the required diagonal disjointness. Recall the [balanced pair count](cn-0006) #{d_r=\lfloor r/2\rfloor\lfloor(r-1)/2\rfloor} for a positive integer #{r}. Substituting the displayed dimension formula into (1.2) and removing the #{m} diagonal rank terms gives the [rank-sum corollary](cn-0027):}
+\p{In particular, invertibility of #{X_i-Y_i} gives the required [diagonal disjointness](cn-0076). Recall the [balanced pair count](cn-0006) #{d_r=\lfloor r/2\rfloor\lfloor(r-1)/2\rfloor} for a positive integer #{r}. Substituting the displayed dimension formula into (1.2) and removing the #{m} diagonal rank terms gives the [rank-sum corollary](cn-0027):}
 
 ##{\sum_{i\ne j}\operatorname{rank}(X_i-Y_j)\geq2d_m d.}
 
@@ -50,9 +50,9 @@ V_j&=\Gamma_{Y_j}=\{(v,Y_jv):v\in\mathbb R^d\}.
 
 \p{We now obtain the input matrices from a drawing. Write the vertex classes of [#{K_{m,n}}](cn-0002) as #{\{a_1,\ldots,a_m\}} and #{\{b_1,\ldots,b_n\}}. Begin with any [admissible drawing](cn-0004) #{D_0}. By [normalization](cn-0009), replace it by a [normalized drawing](cn-0008) #{D}, with polygonal edges and no adjacent-edge crossings, such that its [crossing count](cn-0005) satisfies #{c(D)\leq c(D_0)}. A lower bound for #{c(D)} will therefore give the same lower bound for #{c(D_0)}.}
 
-\p{Orient the edge #{a_i b_p} from #{a_i} to #{b_p}, and abbreviate it to #{ip}. We use #{i,k\in\{1,\ldots,m\}} for first-class vertices and #{p,q\in\{1,\ldots,n\}} for second-class vertices. The [star at #{a_i}](cn-0002) consists of its #{n} incident edges #{i1,\ldots,in}.}
+\p{Orient the edge #{a_i b_p} from #{a_i} to #{b_p}, and abbreviate it to #{ip}. We use #{i,k\in\{1,\ldots,m\}} for [first-class](cn-0002) vertices and #{p,q\in\{1,\ldots,n\}} for [second-class](cn-0002) vertices. The [star at #{a_i}](cn-0002) consists of its #{n} incident edges #{i1,\ldots,in}.}
 
-\p{At each vertex #{v}, choose a gap between outward spokes and read them counterclockwise from that gap. The resulting [spoke comparison sign](cn-0011) #{T_v(e,f)} is #{+1} if the spoke of #{e} precedes that of #{f}, #{-1} for the reverse order, and #{0} if #{e=f}. For two distinct oriented edges #{e,f}, let #{I(e,f)} be their [signed interior intersection count](cn-0010), summing the signs of all their crossing points.}
+\p{At each vertex #{v}, choose a gap between [outward spokes](cn-0075) and read them counterclockwise from that gap. The resulting [spoke comparison sign](cn-0011) #{T_v(e,f)} is #{+1} if the spoke of #{e} precedes that of #{f}, #{-1} for the reverse order, and #{0} if #{e=f}. For two distinct oriented edges #{e,f}, let #{I(e,f)} be their [signed interior intersection count](cn-0010), summing the signs of all their crossing points.}
 
 \p{The [endpoint-corrected intersection matrix](cn-0013) #{J} is a real #{mn\times mn} matrix whose rows and columns are indexed by edges. Set #{J(e,e)=0}. If #{e,f} are independent, set #{J(e,f)=I(e,f)}; if they share a vertex #{v}, add the endpoint term #{\tfrac12T_v(e,f)}. This form of the endpoint term uses our orientation: at any shared vertex, both incident edges point outward or both point inward.}
 

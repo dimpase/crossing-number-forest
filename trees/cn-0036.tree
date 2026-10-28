@@ -6,7 +6,7 @@
 
 \p{\strong{Statement.} For positive integers #{m,n}, there is an [admissible drawing](cn-0004) of [#{K_{m,n}}](cn-0002) with exactly the [Zarankiewicz count](cn-0006) #{d_m d_n}.}
 
-\p{\strong{Proof.} Put the first-class vertices on the vertical axis, split evenly between its positive and negative rays. Put the second-class vertices on the horizontal axis with the same balanced split. Choose distinct nonzero positions and draw straight edges. Every edge interior lies in an open quadrant.}
+\p{\strong{Proof.} Put the [first-class](cn-0002) vertices on the vertical axis, split evenly between its positive and negative rays. Put the [second-class](cn-0002) vertices on the horizontal axis with the same balanced split. Choose distinct nonzero positions and draw straight edges. Every edge interior lies in an open quadrant.}
 
 \p{If a quadrant has #{u} first-class and #{v} second-class vertices on its bounding rays, each choice of two from each ray forms a convex quadrilateral. Exactly its two diagonals cross. Thus the quadrant contributes #{\binom u2\binom v2} crossings, provided triple concurrence is avoided. Summing the four products gives}
 
