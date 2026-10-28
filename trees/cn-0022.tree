@@ -12,6 +12,6 @@
 
 ##{\dim\pi_j(E_h(W;t))\leq k_h(W)-k_h(V_j).}
 
-\p{Choose a fixed basis of #{\mathcal P_h(W)}, evaluate it at the variable #{\xi}, and project by #{\pi_j}. This is a polynomial matrix. Every minor exceeding the displayed rank bound vanishes at all non-nodes, an infinite set, and is therefore the zero polynomial. The same rank bound holds at #{t_j}. Finally #{E_h(W;t_j)\subseteq U_j}, and #{\pi_j} is injective on #{U_j} by disjointness. Thus projection does not reduce its dimension there.}
+\p{Choose a fixed basis of #{\mathcal P_h(W)}, evaluate it at the variable #{\xi}, and project by #{\pi_j}. This is a polynomial matrix. Every minor exceeding the displayed rank bound vanishes at all non-nodes, an infinite set, and is therefore the zero polynomial. The same rank bound holds at #{t_j}. Finally #{E_h(W;t_j)\subseteq U_j}, and #{\pi_j} is injective on #{U_j} by [disjointness](cn-0076). Thus projection does not reduce its dimension there.}
 
 \p{The proof uses vanishing polynomial minors to specialize the rank bound. It does not assume that a generic basis stays independent at a constraint node.}

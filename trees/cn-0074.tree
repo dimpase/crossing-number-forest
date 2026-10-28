@@ -12,7 +12,7 @@
 
 ##{\sum_{i,j=1}^{m}\dim(U_i\cap V_j)\leq\left\lfloor\frac{m^2}{4}\right\rfloor r.}
 
-\p{\strong{Proof.} The case #{r=0} is immediate. Write #{C_i=U_i+V_i}; diagonal disjointness gives #{\dim C_i\leq r}. There is a linear map #{\pi:W\to\mathbb R^r} injective on every #{C_i}, by [Scott and Wilmer, Lemma 3.1](cn-0071). If #{r=\dim W}, take an isomorphism; otherwise all the #{C_i} are proper subspaces, as required there.}
+\p{\strong{Proof.} The case #{r=0} is immediate. Write #{C_i=U_i+V_i}; [diagonal disjointness](cn-0076) gives #{\dim C_i\leq r}. There is a linear map #{\pi:W\to\mathbb R^r} injective on every #{C_i}, by [Scott and Wilmer, Lemma 3.1](cn-0071). If #{r=\dim W}, take an isomorphism; otherwise all the #{C_i} are proper subspaces, as required there.}
 
 \p{Here is the needed existence argument directly. Regard the entries of an #{r\times\dim W} matrix as variables. For each nonzero #{C_i}, choose a basis and a maximal minor of its image matrix that is a nonzero polynomial: such a minor exists because some linear map embeds #{C_i} into #{\mathbb R^r}. The product of these finitely many nonzero polynomials is nonzero, so it is nonzero at some real matrix. That matrix defines the required #{\pi}. Zero spaces impose no condition.}
 

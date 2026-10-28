@@ -8,7 +8,7 @@
 
 ##{\sum_{i,j=1}^{m}\dim(U_i\cap V_j)\leq\left\lfloor\frac{m^2}{4}\right\rfloor N.}
 
-\p{\strong{Proof.} For each basis index #{k}, let #{a_k} be the number of spaces #{U_i} containing #{e_k}, and #{b_k} the number of spaces #{V_i} containing #{e_k}. The two sets of indices are disjoint, since no designated pair contains a common basis vector. Hence #{a_k+b_k\leq m}, so #{a_kb_k\leq\lfloor m^2/4\rfloor}.}
+\p{\strong{Proof.} For each basis index #{k}, let #{a_k} be the number of spaces #{U_i} containing #{e_k}, and #{b_k} the number of spaces #{V_i} containing #{e_k}. The two sets of indices are disjoint, since no [designated pair](cn-0076) contains a common basis vector. Hence #{a_k+b_k\leq m}, so #{a_kb_k\leq\lfloor m^2/4\rfloor}.}
 
 \p{The intersection of two spaces spanned by subsets of one basis is spanned by their common basis vectors. Count the contribution of each #{e_k} to the sum: it occurs in exactly #{a_kb_k} ordered intersections. Therefore}
 

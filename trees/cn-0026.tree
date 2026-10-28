@@ -9,4 +9,4 @@
 
 ##{\Gamma_X=\{(v,Xv):v\in\mathbb R^d\}\subseteq\mathbb R^d\oplus\mathbb R^d.}
 
-\p{The map #{v\mapsto(v,Xv)} identifies #{\ker(X-Y)} with #{\Gamma_X\cap\Gamma_Y}. Therefore #{\dim(\Gamma_X\cap\Gamma_Y)=d-\operatorname{rank}(X-Y)}. In particular, these two graph subspaces are disjoint exactly when #{X-Y} is invertible. This is the conversion used by [the rank-sum corollary](cn-0027).}
+\p{The map #{v\mapsto(v,Xv)} identifies #{\ker(X-Y)} with #{\Gamma_X\cap\Gamma_Y}. Therefore #{\dim(\Gamma_X\cap\Gamma_Y)=d-\operatorname{rank}(X-Y)}. In particular, these two graph subspaces are [disjoint](cn-0076) exactly when #{X-Y} is invertible. This is the conversion used by [the rank-sum corollary](cn-0027).}

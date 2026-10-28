@@ -1,10 +1,10 @@
 \title{The subspace-intersection inequality}
 \taxon{Lemma}
 \meta{status}{proof-account}
-\meta{dependencies}{[Constrained spaces](cn-0019); [Interpolation identity](cn-0020); [Degree budget](cn-0023); [Sharpness construction](cn-0025)}
+\meta{dependencies}{[Constrained spaces](cn-0019); [Interpolation identity](cn-0020); [Degree budget](cn-0023); [Sharpness construction](cn-0025); [Diagonal disjointness](cn-0076)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Lemma 2.1, equation (2.1), and Remark 2.2; reconstructed as a reading account on 9 October 2026, with sharpness made explicit in the statement on 11 October 2026. [Lean source for the inequality: SubspaceIntersection](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/SubspaceIntersection.lean).}
 
-\p{\strong{Statement.} Let #{W} be a real vector space of dimension #{N}, and let #{U_i,V_i\subseteq W}, #{1\leq i\leq m}, be subspaces with #{m\geq1} and #{U_i\cap V_i=0}. Then}
+\p{\strong{Statement.} Let #{W} be a real vector space of dimension #{N}, and let #{U_i,V_i\subseteq W}, #{1\leq i\leq m}, be subspaces with #{m\geq1} and #{U_i\cap V_i=0}, that is, with [diagonal disjointness](cn-0076). Then}
 
 ##{\sum_{i,j=1}^m\dim(U_i\cap V_j)\leq\left\lfloor\frac{m^2}{4}\right\rfloor N.}
 

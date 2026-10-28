@@ -1,0 +1,14 @@
+\title{Disjoint subspaces and designated pairs}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{disjoint subspaces; designated pair; off-diagonal pair; diagonal disjointness}
+\meta{dependencies}{None.}
+\meta{provenance}{Terminology used in [OpenAI, 23 September 2026](cn-0042), Sections 1–2; explanatory definition added on 28 October 2026.}
+
+\p{Let #{W} be a finite-dimensional vector space over a field #{K}. In the paper and the [subspace inequality](cn-0024), #{K=\mathbb R}; [the field-of-scalars remark](cn-0065) allows any field. Two subspaces #{U,V\subseteq W} are \em{disjoint} if #{U\cap V=0}, the zero subspace. Subspaces always share the zero vector, so disjointness never means an empty intersection. For example, two distinct lines through the origin in #{\mathbb R^2} are disjoint.}
+
+\p{Now fix #{m\geq1} and subspaces #{U_1,\ldots,U_m,V_1,\ldots,V_m\subseteq W}, indexed so that #{U_i} is paired with #{V_i}. For each #{i}, the pair #{(U_i,V_i)} with equal indices is a \em{designated pair}. A pair #{(U_i,V_j)} with #{i\ne j} is an \em{off-diagonal pair}. The family satisfies \em{diagonal disjointness} if every designated pair is disjoint:}
+
+##{U_i\cap V_i=0\qquad(1\leq i\leq m).}
+
+\p{This is the only hypothesis of the [subspace inequality](cn-0024). It says nothing about off-diagonal pairs, whose intersection dimensions #{\dim(U_i\cap V_j)} make up the sum that the inequality bounds; the diagonal terms of that sum vanish by diagonal disjointness.}
