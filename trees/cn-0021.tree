@@ -1,10 +1,10 @@
 \title{Rank deficiency forces determinant multiplicity}
 \taxon{Lemma}
 \meta{status}{proof-account}
-\meta{dependencies}{None.}
+\meta{dependencies}{[Polynomial matrices and rank deficiency](cn-0077)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), determinant-divisibility step in Lemma 2.1; reconstructed as a reading account on 9 October 2026. [Lean source: RankMultiplicity](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/RankMultiplicity.lean).}
 
-\p{\strong{Statement.} Let #{A(\xi)} be an #{r\times r} real polynomial matrix. If #{\operatorname{rank}A(t)\leq r-q}, then #{(\xi-t)^q} divides #{\det A(\xi)}. If distinct nodes #{t_j} have deficiencies at least #{q_j} and the determinant is nonzero, then}
+\p{\strong{Statement.} Let #{A(\xi)\in\mathbb R[\xi]^{r\times r}} be a square [polynomial matrix](cn-0077), let #{t\in\mathbb R}, and let #{0\leq q\leq r} be an integer. If its evaluated matrix #{A(t)} has [rank deficiency](cn-0077) at least #{q}, that is, #{\operatorname{rank}A(t)\leq r-q}, then #{(\xi-t)^q} divides #{\det A(\xi)}. If finitely many distinct real nodes #{t_1,\ldots,t_m} have deficiencies at least the nonnegative integers #{q_j} and the determinant is not the zero polynomial, then}
 
 ##{\sum_j q_j\leq\deg\det A.}
 

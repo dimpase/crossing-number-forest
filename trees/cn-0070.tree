@@ -9,7 +9,7 @@
 
 \p{The sum runs over all #{m^2} ordered pairs of indices. Its diagonal terms, with #{i=j}, are zero by hypothesis; intersections with #{i\ne j} can have positive dimension. Thus (1.2) bounds the total of these intersection dimensions in terms of the number of pairs of subspaces and the dimension of their common ambient space.}
 
-\p{To prove this inequality, choose distinct real [interpolation nodes](cn-0063) #{t_1,\ldots,t_m} and consider [univariate polynomial maps](cn-0064) #{P:\mathbb R\to W} subject to #{P(t_i)\in U_i}. The [constrained evaluation spaces](cn-0019) record how their values can vary as the degree increases. [Determinant multiplicity](cn-0021) turns the restrictions at the nodes into a bound on polynomial degrees. The [algebraic branch](cn-0061) gives the complete argument leading to (1.2).}
+\p{To prove this inequality, choose distinct real [interpolation nodes](cn-0063) #{t_1,\ldots,t_m} and consider [univariate polynomial maps](cn-0064) #{P:\mathbb R\to W} subject to #{P(t_i)\in U_i}. The [constrained evaluation spaces](cn-0019) record how their values can vary as the degree increases. Choose [stagewise adapted columns](cn-0078) to form a polynomial matrix with a nonzero determinant minor of controlled degree. [Determinant multiplicity](cn-0021) turns the restrictions at the nodes into the [degree budget](cn-0023). The [algebraic branch](cn-0061) gives the complete argument leading to (1.2).}
 
 \p{The useful consequence for crossings is a bound on matrix ranks. Fix a positive integer #{d}, and let #{X_1,\ldots,X_m} and #{Y_1,\ldots,Y_m} be real #{d\times d} matrices. Here #{\operatorname{rank}} is the dimension of the image of the corresponding linear map on #{\mathbb R^d}. Assume every diagonal difference #{X_i-Y_i} is invertible. Apply (1.2) in the ambient space #{W=\mathbb R^d\oplus\mathbb R^d}, of dimension #{N=2d}, to the [graph subspaces](cn-0026)}
 
@@ -60,7 +60,7 @@ V_j&=\Gamma_{Y_j}=\{(v,Y_jv):v\in\mathbb R^d\}.
 
 ##{J^{ik}(p,q)=J(ip,kq).}
 
-\p{The endpoint corrections make the [cycle-pairing identity](cn-0016) hold. Its topological input is that the [mutual signed intersection](cn-0069) of two closed polygonal walks meeting transversely away from their corners in the plane is [zero](cn-0015). Applying the cycle identity to suitable four-cycles gives the [additive block relation](cn-0018)}
+\p{The endpoint corrections make the [cycle-pairing identity](cn-0016) hold. Its topological input is that the [mutual signed intersection](cn-0069) of two closed polygonal walks [meeting transversely away from their corners](cn-0079) in the plane is [zero](cn-0015). Applying the cycle identity to suitable four-cycles gives the [additive block relation](cn-0018)}
 
 ##{J^{ik}-J^{i1}-J^{1k}+J^{11}\in\mathcal L.}
 

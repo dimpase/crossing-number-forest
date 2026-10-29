@@ -1,0 +1,32 @@
+\title{Adapted polynomial columns and their selected minors}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{stagewise adapted family; adapted polynomial columns; adapted column matrix; selected maximal minor; M_h; Delta_h}
+\meta{dependencies}{[Polynomial constraints and evaluation spaces](cn-0019); [Evaluation dimensions](cn-0020); [Polynomial matrices and minors](cn-0077)}
+\meta{provenance}{Construction used in [OpenAI, 23 September 2026](cn-0042), proof of Lemma 2.1, paragraph preceding equation (2.4); explanatory definition added on 29 October 2026. [Lean source: AdaptedFamily](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/AdaptedFamily.lean), exists_adapted_family, and [PolynomialFiltration](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolynomialFiltration.lean), exists_adapted_polynomials and exists_adapted_minor.}
+
+\p{Use the [constrained polynomial spaces](cn-0019) for a real vector space #{W} of dimension #{N}, subspaces #{U_1,\ldots,U_m}, and distinct nodes #{t_1,\ldots,t_m}. Fix one non-node #{t_*} and one ordered basis #{w_1,\ldots,w_N} of #{W}. The evaluation spaces form a nested sequence}
+
+##{0=E_{-1}(W;t_*)\subseteq E_0(W;t_*)\subseteq E_1(W;t_*)\subseteq\cdots.}
+
+\p{By [the evaluation identity](cn-0020), their dimensions are #{k_e(W)}. The [evaluation-filtration increment](cn-0019) #{\ell_e=k_e(W)-k_{e-1}(W)} counts the new basis vectors needed at stage #{e}. A \em{stagewise adapted family} consists of polynomial maps}
+
+##{P_{e,a}\in\mathcal P_e(W),\qquad e\geq0,\quad 1\leq a\leq\ell_e,}
+
+\p{chosen so that, for each #{h}, the values #{P_{e,a}(t_*)} with #{e\leq h} form a basis of #{E_h(W;t_*)}. Such choices exist: at stage #{e}, extend the previously chosen basis to a basis of #{E_e(W;t_*)}, and lift each new vector to a polynomial in #{\mathcal P_e(W)} using the definition of that evaluation space. Keep the earlier choices. If #{\ell_e=0}, no polynomial is added at that stage. These polynomials are adapted to the evaluation spaces at #{t_*}; they need not form a basis of the whole space #{\mathcal P_h(W)}.}
+
+\p{Write each polynomial map in the fixed coordinates of #{W}:}
+
+##{P_{e,a}(\xi)=\sum_{\alpha=1}^{N}p_{\alpha,e,a}(\xi)w_\alpha,\qquad p_{\alpha,e,a}\in\mathbb R[\xi],\quad \deg p_{\alpha,e,a}\leq e.}
+
+\p{The \em{adapted polynomial columns} are the coordinate columns #{(p_{\alpha,e,a}(\xi))_{\alpha=1}^{N}}. The \em{adapted column matrix} #{M_h(\xi)} contains all columns chosen through stage #{h}, ordered first by #{e} and then by #{a}. It is the #{N\times r_h} [polynomial matrix](cn-0077)}
+
+##{M_h(\xi)=\bigl(p_{\alpha,e,a}(\xi)\bigr)_{\alpha,(e,a)},\qquad r_h=\sum_{e=0}^{h}\ell_e=k_h(W).}
+
+\p{Thus rows correspond to coordinates in #{W}, and columns correspond to selected polynomial maps. The entries are scalar polynomials, rather than the constant coefficients arranged by monomial degree in [cn-0064](cn-0064). Since the column values at #{t_*} form a basis, #{\operatorname{rank}M_h(t_*)=r_h}.}
+
+\p{Choose #{r_h} row indices #{I_h\subseteq\{1,\ldots,N\}} for which the square submatrix #{A_h(t_*)} is invertible, where #{A_h(\xi)} is obtained from #{M_h(\xi)} by retaining those rows, in increasing order, and all columns. The \em{selected maximal minor} is the scalar polynomial}
+
+##{\Delta_h(\xi)=\det A_h(\xi),\qquad \Delta_h(t_*)\ne0.}
+
+\p{Here maximal refers to its size #{r_h}, the full column rank of #{M_h}; it does not select a numerical maximum among determinants. The row set may depend on #{h}, but once chosen it is held fixed while #{\xi} varies. The family and row sets are choices, so #{M_h} and #{\Delta_h} are not canonical. At a constraint node the evaluated columns may lose independence, and #{\Delta_h} may vanish. If #{r_h=0}, take #{I_h=\varnothing} and the empty determinant #{\Delta_h=1}. These columns and minors are used in [the degree-budget argument](cn-0023).}

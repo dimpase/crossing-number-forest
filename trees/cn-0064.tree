@@ -23,6 +23,8 @@
 
 \p{The distinction is between the coordinate index #{j} of a value in #{W} and the degree index #{r} within each scalar polynomial #{p_j}. The monomial correspondence is with #{r}; the dimension #{N} of the value space and the polynomial degree bound #{h} are independent.}
 
+\p{The entries #{c_{jr}} of this coefficient matrix are constants in #{\mathbb R}. A [polynomial matrix](cn-0077) formed from several maps #{P_1,\ldots,P_q} instead has their scalar coordinate polynomials as entries, with one column per map. Evaluating that matrix at #{t} gives the columns #{P_1(t),\ldots,P_q(t)} in coordinates. Its columns are indexed by maps, whereas the columns of #{C} are indexed by monomial degrees.}
+
 \p{For example, with #{W=\mathbb R^2},}
 
 ##{P(\xi)=(1,3)+\xi(2,0)+\xi^2(0,-1)=(1+2\xi,\,3-\xi^2).}

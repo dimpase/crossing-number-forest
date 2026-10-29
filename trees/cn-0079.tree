@@ -1,0 +1,26 @@
+\title{Transverse meetings of polygonal segments}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{directed segment vector; transverse segment meeting; transverse position; transverse meetings away from corners; segment crossing sign; corner of a polygonal presentation}
+\meta{dependencies}{None.}
+\meta{provenance}{Editorial definitions added on 29 October 2026 for the final topological step in [OpenAI, 23 September 2026](cn-0042), proof of Lemma 3.1. [Lean source: PlanarSegments](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/PlanarSegments.lean), definitions SegmentsCrossProperly and segmentCrossingSign; [SegmentContinuity](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/SegmentContinuity.lean), definition SegmentPairTransverse.}
+
+\p{In the oriented plane #{\mathbb R^2}, a directed nonconstant segment #{e=[a,b]} is traversed as #{e(s)=(1-s)a+sb}, #{0\leq s\leq1}. Its \em{directed segment vector} is #{b-a}. For another directed segment #{f=[c,d]}, write}
+
+##{\delta(e,f)=\det(b-a,d-c),\qquad \det(u,v)=u_1v_2-u_2v_1.}
+
+\p{A \em{transverse segment meeting} is an equality #{e(s)=f(t)} with #{0<s<1}, #{0<t<1}, and #{\delta(e,f)\ne0}. Thus the meeting lies in the interior of each segment and their directions are nonparallel. Nonparallel straight segments have at most one meeting.}
+
+\p{The pair #{e,f} is \em{in transverse position} if every meeting of their closed segment traces is a transverse segment meeting. Disjoint segments satisfy this condition, including disjoint parallel segments. Contacts at either segment's endpoints and shared subsegments do not satisfy it. For a pair in transverse position, its \em{segment crossing sign} is}
+
+##{I(e,f)=\begin{cases}
+0,&\text{if the segments are disjoint},\\
++1,&\text{if they meet and }\delta(e,f)>0,\\
+-1,&\text{if they meet and }\delta(e,f)<0.
+\end{cases}}
+
+\p{Two finite lists of segment traversals \em{meet transversely away from their corners} if every pair consisting of one traversal from each list is in transverse position. The \em{corners of a polygonal presentation} here are all its listed segment endpoints, including straight subdivision vertices. An unnecessary subdivision vertex may be removed when the walk continues straight through it in the same direction, before checking this condition.}
+
+\p{For [polygonal walks](cn-0069), the condition concerns mutual pairs of traversals. Self-crossings and repeated traversals within either walk are allowed. If several traversals pass through one geometric point, each mutual pair must satisfy the condition and contributes its own sign to the [mutual intersection sum](cn-0069).}
+
+\p{A transverse meeting of two segments is a [topological proper crossing](cn-0004): a linear change of coordinates sends their two nonparallel local traces to the coordinate axes. The topological definition also applies to curved arcs and to crossings at polygonal bends, without requiring a straight-segment direction at the crossing.}

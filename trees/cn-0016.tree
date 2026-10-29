@@ -22,4 +22,4 @@
 
 ##{\frac12\sum_{e,f\text{ incident with }v}z_e y_f\sigma_{ve}\sigma_{vf}T_v(e,f).}
 
-\p{Each total intersection of #{\gamma} with #{\eta_+} or #{\eta_-} is zero by [the closed-walk lemma](cn-0015). Average those two zero totals. Adding the exterior term to the local contributions gives #{z^TJy}, proving the identity.}
+\p{The constructed walks [meet transversely away from their corners](cn-0079), so each total intersection of #{\gamma} with #{\eta_+} or #{\eta_-} is zero by [the closed-walk lemma](cn-0015). Average those two zero totals. Adding the exterior term to the local contributions gives #{z^TJy}, proving the identity.}

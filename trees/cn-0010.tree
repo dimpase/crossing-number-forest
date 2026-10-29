@@ -2,9 +2,9 @@
 \taxon{Definition}
 \tag{definition}
 \meta{defines}{signed intersection number}
-\meta{dependencies}{[Normalized drawings](cn-0008)}
+\meta{dependencies}{[Normalized drawings](cn-0008); [Transverse segment meetings](cn-0079)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Section 3 before equation (3.1); reconstructed as a reading account on 9 October 2026. [Lean source: TruncatedSignedIntersections](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/TruncatedSignedIntersections.lean).}
 
-\p{For oriented edges #{e,f} in a [normalized drawing](cn-0008), give a crossing sign #{+1} when their ordered tangent directions have positive determinant in the oriented plane and #{-1} otherwise. Their \em{signed intersection number} #{I(e,f)} is the sum of these signs over all their interior crossings; set #{I(e,e)=0}.}
+\p{For oriented edges #{e,f} in a [normalized drawing](cn-0008), their straight pieces at an interior crossing have a [transverse meeting](cn-0079). Give it sign #{+1} when the ordered directed segment vectors have positive determinant in the oriented plane and #{-1} when the determinant is negative. Their \em{signed intersection number} #{I(e,f)} is the sum of these signs over all their interior crossings; set #{I(e,e)=0}.}
 
 \p{Thus #{I(f,e)=-I(e,f)}, and #{|I(e,f)|} is at most the number of crossing points of that pair. A zero signed count need not mean that the edges are disjoint. This distinction is used explicitly in [the rank bound](cn-0035).}

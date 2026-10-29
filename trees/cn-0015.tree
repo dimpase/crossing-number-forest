@@ -1,15 +1,15 @@
 \title{Closed polygonal walks have zero total signed intersection}
 \taxon{Lemma}
 \meta{status}{proof-account}
-\meta{dependencies}{[Polygonal walks and mutual signed intersections](cn-0069)}
+\meta{dependencies}{[Polygonal walks and mutual signed intersections](cn-0069); [Transverse segment meetings](cn-0079)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), final topological step in the proof of Lemma 3.1; reconstructed as a reading account on 9 October 2026. [Lean source: ClosedPolygonIntersection](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/ClosedPolygonIntersection.lean).}
 
-\p{\strong{Statement.} Let #{\gamma,\eta} be two [closed polygonal walks](cn-0069) in the plane. Assume every meeting between them is transverse and away from all their corners. Their [mutual signed intersection](cn-0069), counting segment traversals with multiplicity, satisfies}
+\p{\strong{Statement.} Let #{\gamma,\eta} be two [closed polygonal walks](cn-0069) in the plane. Assume that they [meet transversely away from their corners](cn-0079): each mutual meeting is interior to both segment traversals and their directed segment vectors have nonzero determinant. Their [mutual signed intersection](cn-0069), counting segment traversals with multiplicity, satisfies}
 
 ##{I(\gamma,\eta)=0.}
 
 \p{Either walk may cross itself, as in a figure-eight. Such self-crossings need not be removed: the sum #{I(\gamma,\eta)} includes only pairs with one traversal from each walk. A crossing between two portions of #{\gamma} alone, or of #{\eta} alone, is not a summand. If the other walk also passes through that point, all mutual pairs of traversals are counted separately with their signs.}
 
-\p{\strong{Proof.} For the first walk, cone every oriented segment #{[u,w]} to a point #{o}, forming the oriented triangle #{[o,u,w]}. Choose #{o} away from the finitely many lines that cause degenerate triangles, nontransverse cone-segment intersections, or encounters with corners of the second walk.}
+\p{\strong{Proof.} For the first walk, cone every oriented segment #{[u,w]} to a point #{o}, forming the oriented triangle #{[o,u,w]}. Choose #{o} away from the finitely many lines that cause degenerate triangles, [nontransverse cone-segment intersections](cn-0079), or encounters with corners of the second walk.}
 
 \p{A closed second walk has equally many entrances into and exits from each triangle, with opposite intersection signs along its oriented boundary. Each triangle boundary therefore has total signed intersection zero. Sum the oriented triangle boundaries: the extra cone segments cancel in oppositely oriented pairs, leaving the first walk. Its intersection sum is zero. This cancellation concerns the auxiliary cone segments; self-crossings of either original walk remain in place throughout the argument.}

@@ -7,4 +7,6 @@
 
 \p{A common point of two [edge interiors](cn-0003) is a \em{proper crossing} if a homeomorphism from an open neighborhood to an open disk sends that point to the center and the two local traces to the horizontal and vertical diameters. This is a topological condition; differentiability is not assumed.}
 
+\p{For polygonal walks, [transverse meetings away from corners](cn-0079) additionally specify nonparallel straight-segment directions and exclude contacts at the listed segment endpoints. The definition of proper crossing does not impose these geometric requirements.}
+
 \p{A drawing is \em{admissible} if the set of crossings is finite, every intersection of distinct edge interiors is proper, and no point belongs to three edge interiors. Tangencies and shared subarcs are excluded. An edge pair may cross more than once, and adjacent edges are allowed to cross at this stage. Their removal is a [theorem](cn-0009).}

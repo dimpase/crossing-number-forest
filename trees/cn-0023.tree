@@ -1,21 +1,25 @@
 \title{Adapted minors give a degree budget}
 \taxon{Lemma}
 \meta{status}{proof-account}
-\meta{dependencies}{[Evaluation filtration](cn-0019); [Evaluation dimensions](cn-0020); [Determinant multiplicity](cn-0021); [Node-rank loss](cn-0022)}
-\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equations (2.4) and (2.6); reconstructed as a reading account on 9 October 2026. [Lean source: StageDegreeBound](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/StageDegreeBound.lean).}
+\meta{dependencies}{[Evaluation filtration](cn-0019); [Adapted columns and minors](cn-0078); [Determinant multiplicity](cn-0021); [Node-rank loss](cn-0022)}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equations (2.4) and (2.6); reconstructed as a reading account on 9 October 2026, with the adapted matrices and minors made explicit on 29 October 2026. [Lean source: StageDegreeBound](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/StageDegreeBound.lean).}
 
 \p{\strong{Statement.} In the [polynomial setup](cn-0019), assume #{U_j\cap V_j=0} for every #{j}. At each degree #{h\geq0},}
 
 ##{\sum_j k_h(V_j)\leq\sum_{e=0}^h e\ell_e.}
 
-\p{\strong{Proof.} Fix a non-node #{t_*}. At stage #{e}, choose #{\ell_e} polynomial maps of degree at most #{e} whose evaluations at #{t_*} extend the previously chosen basis of the evaluation space. Through stage #{h} there are #{r_h=k_h(W)} columns, independent at #{t_*}. Some #{r_h}-row square minor #{\Delta_h} is therefore nonzero at #{t_*}.}
+\p{\strong{Proof.} Fix a non-node #{t_*} and choose the [stagewise adapted columns](cn-0078). Their matrix #{M_h(\xi)} has #{r_h=k_h(W)} columns. Retaining the fixed row set #{I_h} gives the square polynomial matrix #{A_h(\xi)} and its [minor](cn-0077) #{\Delta_h(\xi)=\det A_h(\xi)}, with #{\Delta_h(t_*)\ne0}. In particular, #{\Delta_h} is not the zero polynomial.}
 
-\p{Expanding its determinant and using the degree of each column gives}
+\p{There are #{\ell_e} columns introduced at stage #{e}, each with entries of degree at most #{e}. Every nonzero term in the determinant expansion takes one entry from each column. Its degree is therefore at most #{\sum_{e=0}^{h}e\ell_e}; taking their sum gives}
 
 ##{\deg\Delta_h\leq\sum_{e=0}^h e\ell_e.}
 
-\p{At #{t_j}, [the node-rank bound](cn-0022) gives rank at most #{k_h(W)-k_h(V_j)} for the full evaluated column matrix. Restricting rows cannot increase rank, so the square minor has deficiency at least #{k_h(V_j)}. By [determinant multiplicity](cn-0021),}
+\p{Every chosen polynomial belongs to #{\mathcal P_h(W)}, so the columns of #{M_h(t_j)} lie in #{E_h(W;t_j)}. Restricting to the rows defining #{A_h} cannot increase rank. Thus [the node-rank bound](cn-0022) gives}
+
+##{\operatorname{rank}A_h(t_j)\leq\operatorname{rank}M_h(t_j)\leq\dim E_h(W;t_j)\leq r_h-k_h(V_j).}
+
+\p{The square matrix #{A_h(t_j)} consequently has [rank deficiency](cn-0077) #{r_h-\operatorname{rank}A_h(t_j)\geq k_h(V_j)}. By [determinant multiplicity](cn-0021), #{(\xi-t_j)^{k_h(V_j)}} divides #{\Delta_h(\xi)}. The nodes are distinct, so these factors are pairwise coprime and}
 
 ##{\prod_j(\xi-t_j)^{k_h(V_j)}\mid\Delta_h(\xi).}
 
-\p{Compare degrees. If #{r_h=0}, all #{k_h(V_j)=0} by inclusion of evaluation spaces at a non-node, and the empty determinant #{1} gives the same conclusion.}
+\p{The degree of the product is #{\sum_j k_h(V_j)}. Comparing it with the degree of the nonzero polynomial #{\Delta_h} proves the claim. If #{r_h=0}, inclusion #{E_h(V_j;t_*)\subseteq E_h(W;t_*)=0} and [the evaluation identity](cn-0020) give #{k_h(V_j)=0} for every #{j}. The empty determinant #{\Delta_h=1} has degree zero, giving the same conclusion.}

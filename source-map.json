@@ -321,6 +321,27 @@
       "label": "Lemma 3.1 \u2014 Editorial deduction: refine the ambient dimension to the largest designated pair sum",
       "status": "verified",
       "destination": "cn-0074"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Proof of Lemma 2.1, equations (2.4)\u2013(2.6) \u2014 Polynomial matrices, minors, and rank deficiency",
+      "status": "verified",
+      "destination": "cn-0077"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Proof of Lemma 2.1, construction before equation (2.4) \u2014 Stagewise adapted columns and determinant minors",
+      "status": "verified",
+      "destination": "cn-0078"
+    },
+    {
+      "source_id": "crossing-paper",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "label": "Final topological step in Lemma 3.1 \u2014 Transverse segment meetings away from polygonal corners",
+      "status": "verified",
+      "destination": "cn-0079"
     }
   ]
 }

@@ -1,7 +1,7 @@
 \title{Disjointness bounds the rank at an interpolation node}
 \taxon{Lemma}
 \meta{status}{proof-account}
-\meta{dependencies}{[Polynomial setup](cn-0019); [Evaluation identity](cn-0020)}
+\meta{dependencies}{[Polynomial setup](cn-0019); [Evaluation identity](cn-0020); [Polynomial matrices and minors](cn-0077)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equation (2.5); reconstructed as a reading account on 9 October 2026. [Lean source: NodeRankLoss](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/NodeRankLoss.lean).}
 
 \p{\strong{Statement.} In the [polynomial setup](cn-0019), suppose #{U_j\cap V_j=0}. Then}
@@ -12,6 +12,6 @@
 
 ##{\dim\pi_j(E_h(W;t))\leq k_h(W)-k_h(V_j).}
 
-\p{Choose a fixed basis of #{\mathcal P_h(W)}, evaluate it at the variable #{\xi}, and project by #{\pi_j}. This is a polynomial matrix. Every minor exceeding the displayed rank bound vanishes at all non-nodes, an infinite set, and is therefore the zero polynomial. The same rank bound holds at #{t_j}. Finally #{E_h(W;t_j)\subseteq U_j}, and #{\pi_j} is injective on #{U_j} by [disjointness](cn-0076). Thus projection does not reduce its dimension there.}
+\p{Choose a fixed basis of #{\mathcal P_h(W)} and coordinates in #{W/V_j}. The scalar coordinate polynomials of the projected basis maps form the columns of a [polynomial matrix](cn-0077). Its evaluation at #{t} has column space #{\pi_j(E_h(W;t))}. Every [minor](cn-0077) of order larger than the displayed rank bound vanishes at all non-nodes, an infinite set, and is therefore the zero polynomial. Evaluating these same minors at #{t_j} gives the same rank bound there. Finally #{E_h(W;t_j)\subseteq U_j}, and #{\pi_j} is injective on #{U_j} by [disjointness](cn-0076). Thus projection does not reduce its dimension there.}
 
 \p{The proof uses vanishing polynomial minors to specialize the rank bound. It does not assume that a generic basis stays independent at a constraint node.}

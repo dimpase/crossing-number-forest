@@ -1,0 +1,30 @@
+\title{Polynomial matrices, minors, and rank at a point}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{polynomial matrix; evaluated matrix; polynomial minor; vanishing order; root multiplicity; generic rank; rank drop; rank deficiency at a point}
+\meta{dependencies}{None.}
+\meta{provenance}{Terminology used in [OpenAI, 23 September 2026](cn-0042), proof of Lemma 2.1, in the polynomial-minor construction before equation (2.4), the rank specialization before (2.5), and the determinant-multiplicity argument before (2.6); explanatory definition added on 29 October 2026. [Lean source: PolynomialMinors](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolynomialMinors.lean) works with matrices whose entries lie in a polynomial ring; [RankMultiplicity](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/RankMultiplicity.lean) evaluates those entries before computing rank.}
+
+\p{Let #{K} be a field and #{\xi} an indeterminate. A \em{polynomial matrix} is a matrix #{A(\xi)=(a_{ij}(\xi))\in K[\xi]^{p\times q}} whose entries are scalar univariate polynomials. For #{t\in K}, its \em{evaluated matrix} #{A(t)=(a_{ij}(t))\in K^{p\times q}} is obtained by substituting #{t} in every entry. Its rank is computed over #{K}. In the paper, #{K=\mathbb R}.}
+
+\p{Choose row indices #{I} and column indices #{J}, each of size #{k}, in their inherited order. They determine a square polynomial submatrix #{A_{I,J}(\xi)}. The corresponding \em{polynomial minor} is the scalar polynomial}
+
+##{\Delta_{I,J}(\xi)=\det A_{I,J}(\xi)\in K[\xi].}
+
+\p{Thus the submatrix has a rank, while its minor has a degree and a vanishing order. Evaluation commutes with taking the determinant: #{\Delta_{I,J}(t)=\det A_{I,J}(t)}. For #{k=0}, the empty determinant is #{1}.}
+
+\p{For a nonzero scalar polynomial #{\Delta(\xi)}, its \em{vanishing order} at #{t} is the largest integer #{q\geq0} for which #{(\xi-t)^q} divides #{\Delta(\xi)}. This is also its \em{root multiplicity} at #{t}, with value zero when #{\Delta(t)\ne0}.}
+
+\p{The \em{generic rank} of #{A} is #{\rho=\operatorname{rank}_{K(\xi)}A(\xi)}, where #{K(\xi)} is the field of rational functions. By the usual minor criterion for matrix rank, #{\rho} is the largest size of a minor that is not the zero polynomial. All larger minors vanish identically, so #{\operatorname{rank}_K A(t)\leq\rho} at every #{t\in K}. The \em{rank drop} at #{t} is #{\rho-\operatorname{rank}_K A(t)}.}
+
+\p{For an #{r\times r} square polynomial matrix, its \em{rank deficiency at a point} #{t} is measured against the full size #{r}:}
+
+##{\delta_A(t)=r-\operatorname{rank}_K A(t).}
+
+\p{This is the reference rank used in [determinant multiplicity](cn-0021): deficiency at least #{q} means #{\operatorname{rank}A(t)\leq r-q}. If #{\det A(\xi)} is not the zero polynomial, its generic rank is #{r}, and this deficiency equals its rank drop. For example,}
+
+##{A(\xi)=\begin{pmatrix}1&\xi\\0&\xi\end{pmatrix},\qquad \det A(\xi)=\xi.}
+
+\p{This matrix has generic rank #{2}, rank #{1} at #{t=0}, and hence deficiency #{1} there.}
+
+\p{A polynomial matrix whose columns represent several [polynomial maps](cn-0064) has a column for each map; substituting #{t} gives their value vectors. The \em{polynomial coefficient matrix} in cn-0064 instead records the coefficients of one map: its entries are constants, and its columns are indexed by monomial degrees. It can be regarded as a constant polynomial matrix, but its entries do not vary with the evaluation point.}

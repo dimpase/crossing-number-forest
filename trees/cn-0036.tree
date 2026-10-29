@@ -13,6 +13,6 @@
 ##{\left(\binom{\lfloor m/2\rfloor}{2}+\binom{\lceil m/2\rceil}{2}\right)
 \left(\binom{\lfloor n/2\rfloor}{2}+\binom{\lceil n/2\rceil}{2}\right)=d_m d_n.}
 
-\p{To avoid triple concurrence, note that three edges concurrent in their interiors have six distinct endpoints: adjacent straight edges do not meet in their interiors. For each such triple, concurrence imposes a nonzero polynomial condition on its axis intercepts. Holding two segments fixed and varying an intercept of the third shows that this condition is not identically zero. The product of the finitely many polynomials cannot vanish on the open set of permitted positions. Choose positions outside its zero set. The resulting crossings are transverse and no three edges meet, so the drawing is admissible.}
+\p{To avoid triple concurrence, note that three edges concurrent in their interiors have six distinct endpoints: adjacent straight edges do not meet in their interiors. For each such triple, concurrence imposes a nonzero polynomial condition on its axis intercepts. Holding two segments fixed and varying an intercept of the third shows that this condition is not identically zero. The product of the finitely many polynomials cannot vanish on the open set of permitted positions. Choose positions outside its zero set. The resulting crossings are [transverse](cn-0079) and no three edges meet, so the drawing is admissible.}
 
 \p{This is the classical construction, cited in the paper through [Woodall, page 658](cn-0057) and [Zarankiewicz](cn-0058).}

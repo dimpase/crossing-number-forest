@@ -2,12 +2,12 @@
 \taxon{Definition}
 \tag{definition}
 \meta{defines}{polygonal walk; closed polygonal walk; mutual signed intersection of polygonal walks}
-\meta{dependencies}{None.}
+\meta{dependencies}{[Transverse segment meetings and crossing signs](cn-0079)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), final topological step in the proof of Lemma 3.1; notation and multiplicities made explicit on 9 October 2026. [Lean source: PolygonalWalks](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/PolygonalWalks.lean), definition polygonIntersection.}
 
 \p{A \em{polygonal walk} #{\gamma=(e_1,\ldots,e_r)} in the plane is a finite ordered sequence of directed straight-segment traversals, with the end of each traversal equal to the start of the next. It is \em{closed} if its final endpoint equals its initial endpoint. Stationary steps can be omitted. Different portions of the walk may meet or cross, and a segment may be traversed more than once. Each traversal retains its position in the sequence and its direction.}
 
-\p{Let #{\gamma=(e_1,\ldots,e_r)} and #{\eta=(f_1,\ldots,f_s)} be two such walks. Assume every meeting between them is transverse and away from all segment endpoints. For a pair of traversals, set #{I(e_i,f_j)=0} if they are disjoint; at a crossing set it equal to the sign of the determinant of their two directed segment vectors, in the order #{e_i,f_j}. This is the same [sign convention](cn-0010) used for graph edges. Their \em{mutual signed intersection} is}
+\p{Let #{\gamma=(e_1,\ldots,e_r)} and #{\eta=(f_1,\ldots,f_s)} be two such walks. Assume that they [meet transversely away from their corners](cn-0079): every mutual meeting lies in the interiors of two traversals with nonparallel directions. Use the [segment crossing sign](cn-0079) #{I(e_i,f_j)}, in the order #{e_i,f_j}. This is the same [sign convention](cn-0010) used for graph edges. Their \em{mutual signed intersection} is}
 
 ##{I(\gamma,\eta)=\sum_{i=1}^{r}\sum_{j=1}^{s}I(e_i,f_j).}
 
