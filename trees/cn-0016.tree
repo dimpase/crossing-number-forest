@@ -1,14 +1,14 @@
 \title{Cycle pairing with shared edges}
 \taxon{Lemma}
 \meta{status}{proof-account}
-\meta{dependencies}{[Cycle vectors](cn-0012); [Corrected matrix](cn-0013); [Chord formula](cn-0014); [Closed-walk intersections](cn-0015)}
+\meta{dependencies}{[Cycle vectors](cn-0012); [Corrected matrix](cn-0013); [Chord formula](cn-0014); [Closed-walk intersections](cn-0015); [Spokes](cn-0075)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Lemma 3.1; reconstructed as a reading account on 9 October 2026. [Lean source: CyclePairing](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/CyclePairing.lean).}
 
 \p{\strong{Statement.} For the [endpoint-corrected matrix](cn-0013) #{J} of a normalized drawing and [signed edge vectors](cn-0012) #{z,y} of oriented simple graph cycles,}
 
 ##{z^TJy=0.}
 
-\p{\strong{Proof.} Put disjoint small round disks around the vertices, meeting edges only in straight spokes. Replace each passage of the first cycle through a disk by a chord. Outside the disks keep its original tracks, obtaining a closed polygonal walk #{\gamma}.}
+\p{\strong{Proof.} Put disjoint small round disks around the vertices, meeting edges only in straight [spokes](cn-0075). Replace each passage of the first cycle through a disk by a chord. Outside the disks keep its original tracks, obtaining a closed polygonal walk #{\gamma}.}
 
 \p{For the second cycle construct two walks #{\eta_+,\eta_-}, shifting its tracks a small distance left and right relative to each fixed edge orientation. Join the shifted endpoints inside each vertex disk by chords. To construct the exterior tracks, also isolate bends and crossings in disjoint small disks and shift each intervening straight stretch parallel to itself.}
 

@@ -9,6 +9,6 @@
 
 ##{J(e,f)=I(e,f)+\frac12\sum_{v\text{ common to }e,f}\sigma_{ve}\sigma_{vf}T_v(e,f),\qquad J(e,e)=0.}
 
-\p{Its \em{star block} #{J^{ik}} is the #{n\times n} matrix #{J^{ik}(p,q)=J(ip,kq)}. At a first-class vertex all incident orientations are outward. Since adjacent edges do not cross, #{J^{ii}} is exactly its half-order matrix. For #{i\ne k}, the entry with #{p=q} can have an endpoint term at #{b_p}; entries with #{p\ne q} are purely signed crossing counts.}
+\p{Its \em{star block} #{J^{ik}} is the #{n\times n} matrix #{J^{ik}(p,q)=J(ip,kq)}. At a [first-class](cn-0002) vertex all incident orientations are outward. Since adjacent edges do not cross, #{J^{ii}} is exactly its half-order matrix. For #{i\ne k}, the entry with #{p=q} can have an endpoint term at #{b_p}; entries with #{p\ne q} are purely signed crossing counts.}
 
 \p{The half-endpoint terms are essential: [cycle pairing](cn-0016) vanishes for #{J}, and cannot simply be asserted for the interior-count matrix alone.}

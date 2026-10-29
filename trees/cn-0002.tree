@@ -1,10 +1,10 @@
 \title{Complete bipartite graphs and stars}
 \taxon{Definition}
 \tag{definition}
-\meta{defines}{complete bipartite graph; star; adjacent edges; independent edges}
+\meta{defines}{complete bipartite graph; star; adjacent edges; independent edges; first-class vertex; second-class vertex; first-class star}
 \meta{dependencies}{None.}
-\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Section 1; reconstructed as a reading account on 9 October 2026. [Lean source: DrawingDefinition](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingDefinition.lean).}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Section 1; reconstructed as a reading account on 9 October 2026; class terminology added on 28 October 2026. [Lean source: DrawingDefinition](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/DrawingDefinition.lean).}
 
-\p{For positive integers #{m,n}, the \em{complete bipartite graph} #{K_{m,n}} has vertex classes #{A=\{a_1,\ldots,a_m\}} and #{B=\{b_1,\ldots,b_n\}}, and one edge #{a_i b_p} for each pair #{(i,p)}. There are no edges within either class. We abbreviate the edge #{a_i b_p} to #{ip}.}
+\p{For positive integers #{m,n}, the \em{complete bipartite graph} #{K_{m,n}} has vertex classes #{A=\{a_1,\ldots,a_m\}} and #{B=\{b_1,\ldots,b_n\}}, and one edge #{a_i b_p} for each pair #{(i,p)}. There are no edges within either class. We abbreviate the edge #{a_i b_p} to #{ip}. The vertices #{a_i} of #{A} are \em{first-class} and the vertices #{b_p} of #{B} are \em{second-class}.}
 
-\p{The \em{star at a vertex} consists of all edges incident with it. Two edges are \em{adjacent} if they share an endpoint, and \em{independent} otherwise. We orient every edge #{ip} from #{a_i} to #{b_p}; this orientation records signs and imposes no restriction on a drawing.}
+\p{The \em{star at a vertex} consists of all edges incident with it. A \em{first-class star} is the star at a first-class vertex #{a_i}; it consists of the #{n} edges #{i1,\ldots,in}. Two edges are \em{adjacent} if they share an endpoint, and \em{independent} otherwise. We orient every edge #{ip} from #{a_i} to #{b_p}; this orientation records signs and imposes no restriction on a drawing.}

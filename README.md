@@ -82,8 +82,8 @@ hosts or subdirectories can be selected with the same variable.
 
 ## Reading routes
 
-There are 75 trees: the landing page and cn-0001 through cn-0074, including
-21 tagged definitions and 20 bibliographic entries. Next unused: cn-0075.
+There are 77 trees: the landing page and cn-0001 through cn-0076, including
+23 tagged definitions and 20 bibliographic entries. Next unused: cn-0077.
 
 - cn-0001: guided reading; cn-0007: main theorem and proof assembly.
 - cn-0070: rewritten proof introduction, beginning with the paper's equation
