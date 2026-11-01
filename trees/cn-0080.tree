@@ -1,0 +1,59 @@
+\title{Where the subspace bound loses rank: slack and equality}
+\taxon{Corollary}
+\meta{status}{proof-account}
+\meta{dependencies}{[Evaluation filtration](cn-0019); [Interpolation identity](cn-0020); [Degree budget](cn-0023); [Subspace inequality](cn-0024)}
+\meta{provenance}{Editorial consequence of the proof of [OpenAI](cn-0042), Lemma 2.1, equations (2.2)–(2.6), added on 1 November 2026. The identity and equality criterion below are derived here; no additional Lean theorem or full classification of extremal subspace families is claimed.}
+
+\p{\strong{Statement.} Use the hypotheses of [the subspace inequality](cn-0024), with #{m\geq2} and #{N=\dim W}. Fix any distinct real interpolation nodes. Put}
+
+##{C=\left\lfloor\frac{m^2}{4}\right\rfloor,\qquad
+D=CN-\sum_{i,j=1}^m\dim(U_i\cap V_j).}
+
+\p{For the [evaluation-filtration increments](cn-0019) #{\ell_e=k_e(W)-k_{e-1}(W)}, define}
+
+##{r=\sum_{e=0}^{m-1}\ell_e=k_{m-1}(W),\qquad
+\delta_h=\sum_{e=0}^{h}e\ell_e-\sum_{j=1}^m k_h(V_j)
+\quad(0\leq h\leq m-1).}
+
+\p{Then #{r=\dim(U_1+\cdots+U_m)}, each #{\delta_h\geq0}, and the exact deficit is}
+
+##{D=C(N-r)+\sum_{e=0}^{m-1}\bigl(C-e(m-e)\bigr)\ell_e
+       +\sum_{h=0}^{m-1}\delta_h.}
+
+\p{Every term on the right is a nonnegative integer. Consequently equality in the subspace bound holds if and only if all three conditions hold:}
+
+\ol{
+\li{#{U_1+\cdots+U_m=W}.}
+\li{#{\ell_e=0} unless #{e=m/2} when #{m} is even, or #{e\in\{(m-1)/2,(m+1)/2\}} when #{m} is odd.}
+\li{Every stage saturates its degree budget: #{\delta_h=0} for #{0\leq h\leq m-1}.}
+}
+
+\p{\strong{Proof.} Choose a non-node #{t_*}. At degree #{m-1}, Lagrange interpolation identifies the constrained polynomial maps with arbitrary choices of values #{u_i\in U_i}. Evaluating at #{t_*} gives}
+
+##{E_{m-1}(W;t_*)=\sum_{i=1}^m L_i(t_*)U_i=\sum_{i=1}^m U_i,}
+
+\p{where #{L_i} is the #{i}-th Lagrange basis polynomial. Every #{L_i(t_*)} is nonzero because #{t_*} is not a node. [The evaluation identity](cn-0020) therefore proves the asserted formula for #{r}. The [degree budget](cn-0023) gives #{\delta_h\geq0}. Summing its defining equations and using [the interpolation identity](cn-0020) gives}
+
+##{\begin{aligned}
+\sum_{h=0}^{m-1}\delta_h
+&=\sum_{h=0}^{m-1}\sum_{e=0}^{h}e\ell_e
+      -\sum_{i,j=1}^m\dim(U_i\cap V_j)\\
+&=\sum_{e=0}^{m-1}e(m-e)\ell_e
+      -\sum_{i,j=1}^m\dim(U_i\cap V_j).
+\end{aligned}}
+
+\p{Rearrange this equality using #{r=\sum_e\ell_e} to obtain the deficit identity. The increments are nonnegative, #{r\leq N}, and #{e(m-e)\leq C}. Since #{m\geq2} implies #{C>0}, the deficit vanishes exactly when each displayed nonnegative contribution vanishes. The maximum of #{e(m-e)} occurs precisely at the stated central degrees. This proves the equality criterion.}
+
+\p{The formula also measures near equality. For #{m=2s},}
+
+##{C-e(m-e)=(e-s)^2,}
+
+\p{whereas for #{m=2s+1},}
+
+##{C-e(m-e)=(e-s)(e-s-1).}
+
+\p{Every noncentral degree thus costs at least one unit of deficit in the even case, and at least two in the odd case. The number #{\sum_{0\leq e\leq m-1,\ e\text{ noncentral}}\ell_e} is at most #{D} or #{\lfloor D/2\rfloor}, respectively. Also #{N-r\leq\lfloor D/C\rfloor} and #{\sum_h\delta_h\leq D}. Reversing the two families gives the same unused-dimension bound for #{V_1+\cdots+V_m}; in particular both families span #{W} at equality.}
+
+\p{These are necessary and sufficient conditions for equality in this interpolation proof, not a classification of the subspace configurations or a geometric distance to the sharpness examples. The filtration and individual stage deficits can depend on the chosen node tuple. The identity holds for every such choice, so equality can be checked using any one tuple. For #{N=0} all terms vanish. The restriction #{m\geq2} matters: when #{m=1}, #{C=0} and [diagonal disjointness](cn-0076) gives equality without requiring #{U_1=W}.}
+
+\p{[Exact finite examples](/computations/check_subspace_slack.py) compute the constrained polynomial spaces and intersection dimensions over the rationals, including non-coordinate pairs and changes of node tuple. [The stored examples](/computations/subspace-slack.json) illustrate the identity and its boundary cases; they are not a proof of the general statement or a Lean check.}

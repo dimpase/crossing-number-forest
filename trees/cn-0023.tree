@@ -4,7 +4,7 @@
 \meta{dependencies}{[Evaluation filtration](cn-0019); [Adapted columns and minors](cn-0078); [Determinant multiplicity](cn-0021); [Node-rank loss](cn-0022)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equations (2.4) and (2.6); reconstructed as a reading account on 9 October 2026, with the adapted matrices and minors made explicit on 29 October 2026. [Lean source: StageDegreeBound](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/StageDegreeBound.lean).}
 
-\p{\strong{Statement.} In the [polynomial setup](cn-0019), assume #{U_j\cap V_j=0} for every #{j}. At each degree #{h\geq0},}
+\p{\strong{Statement.} In the [polynomial setup](cn-0019), let #{V_1,\ldots,V_m\subseteq W} be subspaces with #{U_j\cap V_j=0} for every #{j}. At each degree #{h\geq0},}
 
 ##{\sum_j k_h(V_j)\leq\sum_{e=0}^h e\ell_e.}
 

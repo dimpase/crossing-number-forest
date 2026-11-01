@@ -3,7 +3,7 @@
 \tag{definition}
 \meta{defines}{graph subspace of a linear map}
 \meta{dependencies}{None.}
-\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), proof of Corollary 2.3; reconstructed as a reading account on 9 October 2026. [Lean source: IndexedMatrixRankSum](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/IndexedMatrixRankSum.lean).}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), proof of Corollary 2.3; reconstructed as a reading account on 9 October 2026. [Lean source: MatrixGraphs](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/MatrixGraphs.lean), graphKernelEquiv, matrix_graph_finrank_add_rank, and matrix_graph_disjoint.}
 
 \p{For a linear map #{X:\mathbb R^d\to\mathbb R^d}, its \em{graph subspace} is}
 

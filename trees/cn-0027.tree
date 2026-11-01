@@ -2,7 +2,7 @@
 \taxon{Corollary}
 \meta{status}{proof-account}
 \meta{dependencies}{[Balanced count](cn-0006); [Subspace inequality](cn-0024); [Graph subspaces](cn-0026)}
-\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Corollary 2.3, equation (2.7); reconstructed as a reading account on 9 October 2026. [Lean source: IndexedMatrixRankSum](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/IndexedMatrixRankSum.lean).}
+\meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Corollary 2.3, equation (2.7); reconstructed as a reading account on 9 October 2026. [Lean source: MatrixRankSum](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/MatrixRankSum.lean), matrix_rank_sum_bound; [IndexedMatrixRankSum](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/IndexedMatrixRankSum.lean) gives the finite-index-set version.}
 
 \p{\strong{Statement.} Let #{X_i,Y_i} be real #{d\times d} matrices for #{1\leq i\leq m}, with every #{X_i-Y_i} invertible. For the [balanced count](cn-0006) #{d_m},}
 

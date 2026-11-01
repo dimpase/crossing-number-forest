@@ -1,0 +1,39 @@
+\title{Equality in the odd crossing-number lower bound}
+\taxon{Corollary}
+\meta{status}{proof-account}
+\meta{dependencies}{[Normalized drawings](cn-0008); [Graph subspaces](cn-0026); [Evaluation vectors](cn-0028); [Detector rank bound](cn-0033); [Odd lower bound](cn-0035); [Subspace slack](cn-0080)}
+\meta{provenance}{Editorial consequence of the proof of [OpenAI](cn-0042), Section 5.2, equations (5.2)–(5.4), and the slack identity in cn-0080. Added on 1 November 2026. This records equality conditions in the supplied proof, not a classification of all optimal drawings or a new Lean verification.}
+
+\p{\strong{Statement.} Let #{D} be a [normalized drawing](cn-0008) of #{K_{m,n}}, with #{m\geq3} and #{n=2s+1\geq3}. Fix one tuple of distinct detector nodes, put #{d=s^2}, and use the matrices #{R^{ik}=X_i-Y_k} from [the odd lower-bound proof](cn-0035). For #{i\ne k}, let #{c_{ik}} count [crossing points](cn-0005) between the stars #{a_i,a_k}, and set}
+
+##{A=\sum_{i\ne k}\bigl(c_{ik}-\operatorname{rank}R^{ik}\bigr),
+\qquad
+\Delta=2\left\lfloor\frac{m^2}{4}\right\rfloor d
+ -\sum_{i,j}\dim\bigl(\Gamma_{X_i}\cap\Gamma_{Y_j}\bigr).}
+
+\p{Then #{A,\Delta\geq0} and}
+
+##{2\bigl(c(D)-d_m d\bigr)=A+\Delta.}
+
+\p{Consequently #{D} attains the lower bound exactly when every distinct star-pair detector rank bound is tight and the [subspace equality conditions](cn-0080) hold for the graph families in #{\mathbb R^{2d}}. At equality, each pair of edges crosses at most once, and for each ordered pair of distinct stars the [evaluation vectors](cn-0028) #{h_{pq}} belonging to its crossed edge pairs are linearly independent. In particular, #{c_{ik}\leq s^2}. The empty collection is understood to be independent.}
+
+\p{\strong{Proof.} The [graph-intersection identity](cn-0026) gives}
+
+##{\begin{aligned}
+\Delta
+&=\sum_{i,j}\operatorname{rank}(X_i-Y_j)
+   -\left(m^2-2\left\lfloor\frac{m^2}{4}\right\rfloor\right)d\\
+&=\sum_{i\ne k}\operatorname{rank}R^{ik}-2d_m d.
+\end{aligned}}
+
+\p{The second equality removes the #{m} diagonal ranks, each equal to #{d}, and uses the same balanced-count identity as [the rank-sum argument](cn-0035). The subspace bound gives #{\Delta\geq0}. Each summand in #{A} is nonnegative by [the detector support bound](cn-0033). Finally, normalization gives #{\sum_{i\ne k}c_{ik}=2c(D)}, with ordered pairs counted twice. Adding the two expressions proves the exact deficit identity and its equality criterion.}
+
+\p{For the additional local consequences, fix #{i\ne k}. Let #{q_{ik}} be the number of distinct edge pairs between these stars that cross, and let #{b_{ik}} be the number with nonzero [signed crossing count](cn-0010). The same support argument gives}
+
+##{\operatorname{rank}R^{ik}\leq b_{ik}\leq q_{ik}\leq c_{ik}.}
+
+\p{If the rank bound is tight, every inequality here is an equality. Thus no crossed edge pair repeats a crossing, and each of its signed counts is #{+1} or #{-1}. Shared second-class endpoints create only diagonal input terms, which the detector kills; they are not crossing points in a normalized drawing.}
+
+\p{After the diagonal terms are removed, write #{R^{ik}=E\Lambda E^T}, where the columns of #{E} are the #{h_{pq}} for these crossed pairs and #{\Lambda} has their nonzero signed detector weights on its diagonal. Tightness gives #{\operatorname{rank}R^{ik}=q_{ik}}, so #{E} must have full column rank. Conversely, if each crossed pair crosses only once and these vectors are independent, #{E^T} is surjective and #{\Lambda} is invertible. Therefore #{E\Lambda E^T} has rank #{q_{ik}=c_{ik}}. This uses nonzero weights, not positive semidefiniteness. Since the vectors lie in #{\mathbb R^{s^2}}, their independence gives #{c_{ik}\leq s^2}.}
+
+\p{These statements concern a normalized drawing and the fixed detector. They do not characterize the geometric placement of optimal drawings, establish the independent-crossing-number bound, or make the filtration independent of its interpolation nodes. For an original non-normalized drawing, any crossings removed by normalization form an additional nonnegative loss; no unchanged local equality data are asserted for that original drawing.}

@@ -17,7 +17,7 @@
 \li{[Topology: normalize a drawing and derive the additive block relation](cn-0060).}
 \li{[The detector: barycentric weights and two-triangle interpolation](cn-0062).}
 \li{[Odd-size lower bound](cn-0035), [even-size deletion](cn-0037), and [the matching upper bound](cn-0036).}
-\li{[An exact four-by-four example](cn-0040), [sources and checks](cn-0039), and [references](cn-0041).}
+\li{[An exact four-by-four example](cn-0040), [subspace slack](cn-0080), [equality in the odd crossing bound](cn-0081), [sources and checks](cn-0039), and [references](cn-0041).}
 }
 
 \p{\strong{Definition index.} Each concept below has a permanent tag and is linked at its points of use.}
@@ -45,6 +45,7 @@
 \li{[Polynomial constraints and evaluation filtrations](cn-0019).}
 \li{[Stagewise adapted columns and determinant minors](cn-0078).}
 \li{[Disjoint subspaces and designated pairs](cn-0076).}
+\li{[Quotient spaces and restricted quotient maps](cn-0082).}
 \li{[Graphs of linear maps](cn-0026).}
 \li{[Bivariate evaluation vectors and the two triangles](cn-0028).}
 \li{[Barycentric interpolation weights](cn-0030).}

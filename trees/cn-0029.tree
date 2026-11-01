@@ -16,4 +16,12 @@
 
 ##{(y_1,\ldots,y_{2s-1})=(x_{s+2},\ldots,x_{2s+1},x_2,\ldots,x_s),\qquad S(u,v)=R(v,u).}
 
-\p{Swapping the variables interchanges the remaining triangles, and this relabeling makes them exactly #{Q_{s-1}}. The induction hypothesis gives #{S=0}, hence #{R=0} and #{P=0}. Thus the square evaluation matrix is invertible.}
+\p{To check the relabeling explicitly, #{y_r=x_{s+1+r}} for #{1\leq r\leq s}, whereas #{y_r=x_{r-s+1}} for #{s+1\leq r\leq2s-1}. On the lower triangle of #{Q_{s-1}},}
+
+##{S(y_p,y_q)=R(x_{s+1+q},x_{s+1+p})=0\qquad(1\leq q<p\leq s).}
+
+\p{These pairs run exactly through the remaining upper triangle #{s+2\leq s+1+q<s+1+p\leq2s+1}. On the upper triangle of #{Q_{s-1}},}
+
+##{S(y_p,y_q)=R(x_{q-s+1},x_{p-s+1})=0\qquad(s<p<q\leq2s-1).}
+
+\p{These pairs run exactly through the remaining lower triangle #{2\leq p-s+1<q-s+1\leq s}. When #{s=2}, both this second index range and the corresponding remaining lower triangle are empty. Thus #{S} vanishes on every point of #{Q_{s-1}} for the distinct #{y}-nodes and has degree at most #{s-2} in each variable. The induction hypothesis gives #{S=0}, hence #{R=0} and #{P=0}. Thus the square evaluation matrix is invertible.}

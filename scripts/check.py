@@ -13,11 +13,22 @@ ROOT = Path(__file__).resolve().parents[1]
 STATUSES = {"proved", "conjecture", "computational-evidence", "incomplete",
             "source-needed", "superseded", "proof-account"}
 NS = {"f": "http://www.forester-notes.org"}
+MAPPING_STATUSES = {"verified", "unresolved"}
 
 
 def require(condition, message):
     if not condition:
         raise ValueError(message)
+
+
+def dependency_targets(value, addr):
+    """Parse the whole metadata list before extracting graph edges."""
+    if value == "None.":
+        return []
+    link = r"\[[^\]\n]+\]\((?:cn-\d{4}|index)\)"
+    require(re.fullmatch(r"\s*" + link + r"(?:\s*;\s*" + link + r")*\s*", value),
+            f"{addr}: dependencies must be explicit note links separated by ';', or 'None.'")
+    return re.findall(r"\]\((cn-\d{4}|index)\)", value)
 
 
 def acyclic(graph, label):
@@ -74,9 +85,7 @@ def sources():
             require(r"\strong{Proof.}" in text, f"{addr}: missing Proof")
         if status == "source-needed":
             require(r"\strong{Missing source.}" in text, f"{addr}: explain the missing source")
-        dependencies[addr] = re.findall(r"\]\((cn-\d{4}|index)\)", meta["dependencies"])
-        require(meta["dependencies"] == "None." or dependencies[addr],
-                f"{addr}: dependencies must be explicit note links or 'None.'")
+        dependencies[addr] = dependency_targets(meta["dependencies"], addr)
         inclusions[addr] = re.findall(r"\\transclude\{([^{}]+)\}", text)
         notes[addr] = (text, meta)
     require("index" in notes, "Missing index tree")
@@ -111,6 +120,8 @@ def sources():
                 f"Mapped source version differs from manifest: {key}")
         require(key not in keys, f"Duplicate source mapping: {key}")
         keys.add(key)
+        require(entry["status"] in MAPPING_STATUSES,
+                f"Unknown source mapping status {entry['status']!r}: {key}")
         if entry["status"] == "unresolved":
             require(entry["destination"] is None, f"Unverified source mapping: {key}")
             require(entry["placeholder"] in notes, f"Missing placeholder: {key}")

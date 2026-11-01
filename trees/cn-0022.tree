@@ -1,17 +1,22 @@
 \title{Disjointness bounds the rank at an interpolation node}
 \taxon{Lemma}
 \meta{status}{proof-account}
-\meta{dependencies}{[Polynomial setup](cn-0019); [Evaluation identity](cn-0020); [Polynomial matrices and minors](cn-0077)}
+\meta{dependencies}{[Polynomial setup](cn-0019); [Evaluation identity](cn-0020); [Polynomial matrices and minors](cn-0077); [Quotient maps and restriction rank](cn-0082)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), equation (2.5); reconstructed as a reading account on 9 October 2026. [Lean source: NodeRankLoss](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/NodeRankLoss.lean).}
 
-\p{\strong{Statement.} In the [polynomial setup](cn-0019), suppose #{U_j\cap V_j=0}. Then}
+\p{\strong{Statement.} In the [polynomial setup](cn-0019), fix #{j\in\{1,\ldots,m\}} and #{h\geq0}, and let #{V_j\subseteq W} be a subspace with #{U_j\cap V_j=0}. Then}
 
 ##{\dim E_h(W;t_j)\leq k_h(W)-k_h(V_j).}
 
-\p{\strong{Proof.} Let #{\pi_j:W\to W/V_j} be the quotient map. For any non-node #{t}, its kernel on #{E_h(W;t)} contains #{E_h(V_j;t)}. [The evaluation identity](cn-0020) gives}
+\p{\strong{Proof.} Let #{\pi_j:W\to W/V_j} be the [quotient map](cn-0082). For a non-node #{t}, a constrained polynomial with coefficients in #{V_j} is also one with coefficients in #{W}, and its value lies in #{V_j}. Hence}
+
+##{E_h(V_j;t)\subseteq E_h(W;t)\cap V_j
+=\ker\bigl(\pi_j|_{E_h(W;t)}\bigr).}
+
+\p{The [restriction formula](cn-0082) and [evaluation identity](cn-0020) give #{\dim\pi_j(E_h(W;t))=k_h(W)-\dim(E_h(W;t)\cap V_j)}. The displayed inclusion bounds the subtracted dimension below by #{k_h(V_j)}, so}
 
 ##{\dim\pi_j(E_h(W;t))\leq k_h(W)-k_h(V_j).}
 
-\p{Choose a fixed basis of #{\mathcal P_h(W)} and coordinates in #{W/V_j}. The scalar coordinate polynomials of the projected basis maps form the columns of a [polynomial matrix](cn-0077). Its evaluation at #{t} has column space #{\pi_j(E_h(W;t))}. Every [minor](cn-0077) of order larger than the displayed rank bound vanishes at all non-nodes, an infinite set, and is therefore the zero polynomial. Evaluating these same minors at #{t_j} gives the same rank bound there. Finally #{E_h(W;t_j)\subseteq U_j}, and #{\pi_j} is injective on #{U_j} by [disjointness](cn-0076). Thus projection does not reduce its dimension there.}
+\p{Choose a fixed basis of #{\mathcal P_h(W)} and coordinates in #{W/V_j}. The scalar coordinate polynomials of the projected basis maps form the columns of a [polynomial matrix](cn-0077). Its evaluation at #{t} has column space #{\pi_j(E_h(W;t))}. Every [minor](cn-0077) of order larger than the displayed rank bound vanishes at all non-nodes, an infinite set, and is therefore the zero polynomial. Evaluating these same minors at #{t_j} gives the same rank bound there. Finally #{E_h(W;t_j)\subseteq U_j} and [disjointness](cn-0076) #{U_j\cap V_j=0} imply #{E_h(W;t_j)\cap V_j=0}. The [restriction formula](cn-0082) therefore gives #{\dim\pi_j(E_h(W;t_j))=\dim E_h(W;t_j)}. Combining this equality with the specialized rank bound proves the claim.}
 
-\p{The proof uses vanishing polynomial minors to specialize the rank bound. It does not assume that a generic basis stays independent at a constraint node.}
+\p{The proof uses vanishing polynomial minors to specialize the rank bound. It does not assume that a generic basis stays independent at a [constraint node](cn-0063).}

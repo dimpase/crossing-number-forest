@@ -82,8 +82,8 @@ hosts or subdirectories can be selected with the same variable.
 
 ## Reading routes
 
-There are 80 trees: the landing page and cn-0001 through cn-0079, including
-26 tagged definitions and 20 bibliographic entries. Next unused: cn-0080.
+There are 83 trees: the landing page and cn-0001 through cn-0082, including
+27 tagged definitions and 20 bibliographic entries. Next unused: cn-0083.
 
 - cn-0001: guided reading; cn-0007: main theorem and proof assembly.
 - cn-0070: rewritten proof introduction, beginning with the paper's equation
@@ -104,6 +104,9 @@ There are 80 trees: the landing page and cn-0001 through cn-0079, including
   subspace bound, a coordinate-case warm-up, and a refinement by projection.
 - cn-0077–0079: polynomial matrices and rank deficiency, the adapted columns
   and minors used in the degree budget, and transverse polygonal meetings.
+- cn-0080: exact slack, equality and filtration stability in the subspace bound.
+- cn-0081: local detector and global subspace equality conditions for optimal
+  normalized drawings with an odd second part.
 
 The label `proof-account` identifies an exposition of the supplied proof.
 The local checks do not establish a successful Lean or Comparator run.
@@ -138,7 +141,8 @@ exact example script, results, static Lean audit, and its checker.
 | --- | --- |
 | `make setup` | Verify the pinned environment; recreate its switch from the export if missing. |
 | `make build` | Check sources, compile Forester, apply XSLT locally, and check HTML links. |
-| `make check` | Build, then recompute exact examples and the static Lean source audit. |
+| `make check` | Build, then run the source, exact-example, static Lean and checker-regression tests. |
+| `make check-local` | Run those non-rendering checks without OCaml or Forester. |
 | `make serve` | Build and serve output/ on localhost, port 8001 by default. |
 
 The exact checks cover detector ranks, cancellation and factorizations for all
@@ -199,3 +203,13 @@ NOTICE, the archived upstream license, and the theme's license files in
 output/ for publication with the site.
 
 Codex session 01a11d84-13bd-7b42-82d7-b29036490524
+
+### Follow-up exact and regression checks
+
+`make check-local` checks source metadata, recomputes the existing detector examples
+and static Lean inventory, checks 31 exact rational subspace-slack examples, and
+runs regression tests against disposable corrupted copies. Acceptance checks in
+the two original computation scripts remain active under optimized Python (`-O`).
+The slack examples illustrate cn-0080; they are not a universal proof. Neither
+this target nor `make check` is a Lean build or Comparator run. Full `make check`
+additionally requires the pinned Forester toolchain and rendered-link checks.

@@ -3,7 +3,7 @@
 \meta{dependencies}{None.}
 \meta{provenance}{Expository organization and source review, 9 October 2026.}
 
-\p{Start with [the theorem's Lean entry point](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/Main.lean). The main declaration is OAI.Zarankiewicz.mainTarget_proof. Its conclusion combines an explicit drawing attaining the claimed count with a lower bound for every admissible drawing. The companion ordinary_crossing_number_eq then identifies the infimum with that value.}
+\p{Start with [the theorem's Lean entry point](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/Main.lean). The main declaration is OAI.Zarankiewicz.mainTarget_proof. Its conclusion combines an explicit drawing attaining the claimed count with a lower bound for every [admissible drawing](cn-0004). The companion ordinary_crossing_number_eq then identifies the infimum with that value.}
 
 \p{The following table is a route through the [pinned Lean sources](cn-0059). The two topology lemmas are in the namespace OAI.Zarankiewicz.TruncatedSpokeCoordinates; most other declarations are in OAI.Zarankiewicz. Source files expose their full namespaces and hypotheses.}
 

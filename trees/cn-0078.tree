@@ -29,4 +29,4 @@
 
 ##{\Delta_h(\xi)=\det A_h(\xi),\qquad \Delta_h(t_*)\ne0.}
 
-\p{Here maximal refers to its size #{r_h}, the full column rank of #{M_h}; it does not select a numerical maximum among determinants. The row set may depend on #{h}, but once chosen it is held fixed while #{\xi} varies. The family and row sets are choices, so #{M_h} and #{\Delta_h} are not canonical. At a constraint node the evaluated columns may lose independence, and #{\Delta_h} may vanish. If #{r_h=0}, take #{I_h=\varnothing} and the empty determinant #{\Delta_h=1}. These columns and minors are used in [the degree-budget argument](cn-0023).}
+\p{Here maximal refers to its size #{r_h}, the full column rank of #{M_h}; it does not select a numerical maximum among determinants. The row set may depend on #{h}, but once chosen it is held fixed while #{\xi} varies. The family and row sets are choices, so #{M_h} and #{\Delta_h} are not canonical. At a [constraint node](cn-0063) the evaluated columns may lose independence, and #{\Delta_h} may vanish. If #{r_h=0}, take #{I_h=\varnothing} and the empty determinant #{\Delta_h=1}. These columns and minors are used in [the degree-budget argument](cn-0023).}

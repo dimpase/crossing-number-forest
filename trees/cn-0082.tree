@@ -1,0 +1,27 @@
+\title{Quotient spaces and the rank of a restricted quotient map}
+\taxon{Definition}
+\tag{definition}
+\meta{defines}{quotient space; coset; quotient map; restricted quotient map}
+\meta{dependencies}{None.}
+\meta{provenance}{Quotient notation used in [OpenAI, 23 September 2026](cn-0042), proof of Lemma 2.1 at equation (2.5). The coset definition and elementary restriction argument below are explanatory elaborations added on 1 November 2026; the paper uses these facts without giving this separate definition.}
+
+\p{Let #{W} be a finite-dimensional real vector space and #{V\subseteq W} a subspace. The \em{coset} of #{w\in W} modulo #{V} is #{w+V=\{w+v:v\in V\}}. Two vectors represent the same coset exactly when their difference belongs to #{V}. The \em{quotient space} is}
+
+##{W/V=\{w+V:w\in W\}.}
+
+\p{Its operations are #{(w+V)+(u+V)=(w+u)+V} and #{a(w+V)=aw+V} for #{a\in\mathbb R}. They do not depend on the representatives because #{V} is closed under addition and scalar multiplication. Its zero vector is the coset #{V}. The \em{quotient map}}
+
+##{\pi:W\longrightarrow W/V,\qquad \pi(w)=w+V}
+
+\p{is linear and surjective, with #{\ker\pi=V}. It identifies vectors differing by an element of #{V}; no inner product or choice of a complementary subspace is needed. For #{E\subseteq W}, the \em{restricted quotient map} #{\pi|_E:E\to W/V} is the same map with domain restricted to #{E}.}
+
+\p{\strong{Statement.} For every linear subspace #{E\subseteq W},}
+
+##{\ker(\pi|_E)=E\cap V,\qquad
+\dim\pi(E)=\dim E-\dim(E\cap V).}
+
+\p{In particular, #{\pi|_E} is injective if and only if #{E\cap V=0}.}
+
+\p{\strong{Proof.} An element #{e\in E} maps to the zero coset exactly when #{e\in V}, proving the kernel identity. Choose a basis of #{E\cap V} and extend it to a basis of #{E}. The images of the added basis vectors span #{\pi(E)}. They are independent: a linear combination with zero image belongs to #{E\cap V}, so independence of the extended basis forces every added coefficient to vanish. Counting those vectors proves the dimension formula, including the zero-dimensional cases.}
+
+\p{In [the node-rank lemma](cn-0022), this formula bounds the projected [evaluation space](cn-0019) away from the nodes and shows that projection preserves its dimension at the chosen node. Passing the bound from non-nodes to that node still requires the polynomial-minor argument given there; the quotient definition alone does not justify that specialization.}

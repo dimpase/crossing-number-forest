@@ -342,6 +342,13 @@
       "label": "Final topological step in Lemma 3.1 \u2014 Transverse segment meetings away from polygonal corners",
       "status": "verified",
       "destination": "cn-0079"
+    },
+    {
+      "destination": "cn-0082",
+      "label": "Lemma 2.1, equation (2.5): quotient-space notation and restriction-rank explanation",
+      "source_id": "upstream:preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/build/sections/subspaces.tex",
+      "source_version": "git:fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "status": "verified"
     }
   ]
 }

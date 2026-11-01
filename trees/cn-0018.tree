@@ -4,7 +4,7 @@
 \meta{dependencies}{[Star blocks](cn-0013); [Cycle pairing](cn-0016); [Additive matrices](cn-0017)}
 \meta{provenance}{[OpenAI, 23 September 2026](cn-0042), Lemma 3.2, equation (3.6); reconstructed as a reading account on 9 October 2026. [Lean source: AdditiveBlockRelation](/source-material/openai-math/lean/OAI/Combinatorics/Crossing/AdditiveBlockRelation.lean).}
 
-\p{\strong{Statement.} The [star blocks](cn-0013) of a normalized drawing satisfy}
+\p{\strong{Statement.} The [star blocks](cn-0013) of a [normalized drawing](cn-0008) satisfy}
 
 ##{J^{ik}-J^{i1}-J^{1k}+J^{11}\in\mathcal L,}
 
