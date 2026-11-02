@@ -28,16 +28,10 @@ make serve
 ```
 
 `make setup` creates the named switch if needed, restoring OCaml 5.3.0 and
-Forester 5.0 from the pinned export. It leaves your global opam switch
-unchanged. The Makefile selects the switch explicitly, so no `eval $(opam
-env)` or other opam activation is needed. In a new terminal, activate the
-Python environment and export the same `FORESTER_SWITCH` before running
-the make commands.
-
-If you already have a switch with OCaml 5.3.0 and Forester 5.0, use its name
-for `FORESTER_SWITCH` instead of creating another. `opam switch list` lists
-the available switches. An exported `FORESTER_SWITCH` overrides the Makefile's
-default; `make setup FORESTER_SWITCH=your-switch-name` selects one explicitly.
+Forester 5.0 from the pinned export. If you already have a switch with those
+versions, use its name for `FORESTER_SWITCH` instead of creating another.
+No opam activation is needed; see [Opam switches](#opam-switches) for how
+the selection works and what to repeat in a new terminal.
 
 Open **http://127.0.0.1:8001/index/index.html**. Stop the server with Ctrl-C.
 If it is already running, edit a source, run `make check` in another terminal,
@@ -53,6 +47,50 @@ ssh -N -L 8001:127.0.0.1:8001 user@server
 
 Then use the same localhost URL. The server binds only to localhost and
 serves only generated output/.
+
+## Opam switches
+
+An [opam switch](https://opam.ocaml.org/doc/Usage.html#opam-switch) is a
+separate OCaml environment with its own compiler and installed packages,
+including executables such as Forester. This lets projects use different
+versions without changing each other's installations. It plays a similar
+role to Python's `.venv`: here the switch supplies OCaml and Forester, while
+`.venv` supplies the Python tools used to build and check the site.
+
+A switch name is just a label. Naming one `crossing-forester-5.0` does not
+install Forester or guarantee its version. Run `opam switch list` to see the
+available switches, then choose an existing compatible one or a new name.
+The `export FORESTER_SWITCH=...` command tells this project's scripts which
+switch to use; `make setup` creates it if absent or checks its compiler and
+Forester versions if it already exists.
+
+The scripts run tools through `opam exec --switch=... -- ...`, so their
+choice is independent of opam's currently selected switch. You do not need
+to run `opam switch set` or `eval $(opam env)` for the make commands. Setup
+and builds leave your global switch selection unchanged. To inspect the
+chosen environment directly, after setting `FORESTER_SWITCH`, run:
+
+```sh
+opam exec --switch="$FORESTER_SWITCH" -- ocamlc -version
+opam exec --switch="$FORESTER_SWITCH" -- forester --version
+```
+
+An exported `FORESTER_SWITCH` applies to subsequent make commands in that
+terminal and overrides the [Makefile](Makefile)'s default. A command such as
+`make check FORESTER_SWITCH=your-switch-name` overrides both for that one
+invocation. The installed switch persists on disk; the terminal setting
+does not carry over to an independently opened terminal. For later sessions,
+from the checkout, use the same switch name as during setup:
+
+```sh
+. .venv/bin/activate
+export FORESTER_SWITCH=crossing-forester-5.0
+make serve
+```
+
+You only need to install the environment once. If installation was interrupted
+and the switch exists but Forester is missing, follow [Restoration](#restoration)
+to finish it.
 
 ## Publishing
 
