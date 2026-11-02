@@ -34,6 +34,11 @@ env)` or other opam activation is needed. In a new terminal, activate the
 Python environment and export the same `FORESTER_SWITCH` before running
 the make commands.
 
+If you already have a switch with OCaml 5.3.0 and Forester 5.0, use its name
+for `FORESTER_SWITCH` instead of creating another. `opam switch list` lists
+the available switches. An exported `FORESTER_SWITCH` overrides the Makefile's
+default; `make setup FORESTER_SWITCH=your-switch-name` selects one explicitly.
+
 Open **http://127.0.0.1:8001/index/index.html**. Stop the server with Ctrl-C.
 If it is already running, edit a source, run `make check` in another terminal,
 and refresh the page. There is no file watcher. Use `make serve PORT=8002`
@@ -176,6 +181,23 @@ To restore Forester into a different switch without changing the global one,
 use `make setup FORESTER_SWITCH=crossing-forester-restored`, then use that
 same variable for build/check/serve. The setup refuses to overwrite an
 incompatible existing switch.
+
+If setup stopped during package installation, the switch may exist with
+OCaml installed but without Forester. A later `make setup` checks the existing
+switch and reports the missing command; it does not resume the interrupted
+import automatically. To finish restoring a dedicated forest switch, run
+these commands from the checkout (using the same switch name as before):
+
+```sh
+export FORESTER_SWITCH=crossing-forester-5.0
+opam switch import --switch="$FORESTER_SWITCH" opam-switch.export --jobs=4
+make setup
+```
+
+The import installs or changes packages in that named switch to restore the
+exported environment; it leaves the global switch selection unchanged. Use
+this for a switch dedicated to the forest. To reuse a compatible installation,
+export that switch's name instead and run `make setup`.
 
 ## Lean verification later
 

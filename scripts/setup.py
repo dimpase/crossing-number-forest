@@ -3,6 +3,7 @@
 import json
 import os
 from pathlib import Path
+import shlex
 import shutil
 import subprocess
 import sys
@@ -27,10 +28,20 @@ else:
     for command, expected in ((["ocamlc", "-version"], config["ocaml"]),
                                (["forester", "--version"], config["forester"])):
         result = subprocess.run(["opam", "exec", "--switch=" + switch, "--"] + command,
-                                text=True, stdout=subprocess.PIPE)
+                                text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         if result.returncode or result.stdout.strip() != expected:
-            sys.exit(f"Existing switch {switch!r} does not match the pinned environment. "
-                     "It was not modified. Use a new FORESTER_SWITCH name, or see README.md for explicit restoration.")
+            detail = (result.stderr.strip() or result.stdout.strip() or
+                      f"command exited with status {result.returncode}") if result.returncode else result.stdout.strip()
+            restore = shlex.join(["opam", "switch", "import", "--switch=" + switch,
+                                  "opam-switch.export", "--jobs=4"])
+            retry = shlex.join(["make", "setup", "FORESTER_SWITCH=" + switch])
+            sys.exit(f"Switch {switch!r} does not provide {command[0]} {expected}.\n"
+                     f"Found: {detail}\n"
+                     "The switch was not modified. If this is your dedicated forest switch, "
+                     "finish or restore its packages from the pinned export:\n"
+                     f"  {restore}\n  {retry}\n"
+                     "Otherwise select an existing compatible switch or a new FORESTER_SWITCH name; "
+                     "see README.md under Restoration.")
 if not (ROOT / "theme/default.xsl").exists():
     subprocess.run(["git", "submodule", "update", "--init", "--", "theme"], check=True)
 revision = subprocess.check_output(["git", "-C", "theme", "rev-parse", "HEAD"], text=True).strip()
